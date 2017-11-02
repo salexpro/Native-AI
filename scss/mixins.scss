@@ -1,0 +1,72 @@
+
+/* Box shadow
+  ======================================================================== */
+
+@mixin box-shadow ($bshadow) {
+    -webkit-box-shadow: $bshadow;
+    -moz-box-shadow: $bshadow;
+    -ms-box-shadow: $bshadow;
+    -o-box-shadow: $bshadow;
+    box-shadow: $bshadow;
+}
+
+
+/* Border raidus
+  ======================================================================== */
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+    border-radius: $radius;
+}
+
+
+/* Text shadow
+  ======================================================================== */
+
+@mixin text-shadow($tshadow) {
+    -webkit-text-shadow: $tshadow;
+    -moz-text-shadow: $tshadow;
+    -ms-text-shadow: $tshadow;
+    -o-text-shadow: $tshadow;
+    text-shadow: $tshadow;
+}
+
+
+/* Background gradient
+  ======================================================================== */
+
+@mixin background-gradient($direction, $first-color, $second-color) {
+    background: $first-color;
+    background-image: -webkit-linear-gradient($direction, $first-color, $second-color);
+    background-image: -moz-linear-gradient($direction, $first-color, $second-color);
+    background-image: -ms-linear-gradient($direction, $first-color, $second-color);
+    background-image: -o-linear-gradient($direction, $first-color, $second-color);
+    background-image: linear-gradient($direction, $first-color, $second-color);
+}
+
+
+/* Transition
+  ======================================================================== */
+
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+
+
+/* Transform
+  ======================================================================== */
+
+@mixin transform($transform) {
+    -webkit-transform: $transform;
+    -moz-transform: $transform;
+    -ms-transform: $transform;
+    -o-transform: $transform;
+    transform: $transform;
+}
