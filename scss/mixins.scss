@@ -2,7 +2,7 @@
 /* Box shadow
   ======================================================================== */
 
-@mixin box-shadow ($bshadow) {
+@mixin box-shadow ($bshadow...) {
     -webkit-box-shadow: $bshadow;
     -moz-box-shadow: $bshadow;
     -ms-box-shadow: $bshadow;
@@ -26,7 +26,7 @@
 /* Text shadow
   ======================================================================== */
 
-@mixin text-shadow($tshadow) {
+@mixin text-shadow($tshadow...) {
     -webkit-text-shadow: $tshadow;
     -moz-text-shadow: $tshadow;
     -ms-text-shadow: $tshadow;
@@ -51,7 +51,7 @@
 /* Transition
   ======================================================================== */
 
-@mixin transition($transition) {
+@mixin transition($transition...) {
     -webkit-transition: $transition;
     -moz-transition: $transition;
     -ms-transition: $transition;
@@ -63,7 +63,7 @@
 /* Transform
   ======================================================================== */
 
-@mixin transform($transform) {
+@mixin transform($transform...) {
     -webkit-transform: $transform;
     -moz-transform: $transform;
     -ms-transform: $transform;

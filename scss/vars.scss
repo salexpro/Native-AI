@@ -6,14 +6,16 @@ $orange-main: #FF832A;
 $orange-dark: #F2751C;
 
 $blue-main: #4C6EF5;
-$blue-dark: #4263EB
+$blue-dark: #4263EB;
 
 $black: #343A40;
-$border-grey: #DEE2E6;
-$bg-grey: #F8F9FA;
+$grey-border: #DEE2E6;
+$grey-bg: #F8F9FA;
+$shadow-color: rgba( 222, 226, 230, .5);
 
 
-/* Font
+/* Other
   ======================================================================== */
 
 $font: "Ubuntu", -apple-system, Arial, sans-serif;
+$border-grey: 1px solid #DEE2E6;

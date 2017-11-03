@@ -1,0 +1,67 @@
+@import "reset.scss";
+
+@import "vars.scss";
+@import "mixins.scss";
+@import "blocks.scss";
+
+@import "homepage.scss";
+
+
+
+/* Body
+  ======================================================================== */
+
+body { font-family: $font; }
+
+
+
+/* Buttons
+  ======================================================================== */
+
+.button {
+    display: inline-block;
+    min-width: 180px;
+    height: 45px;
+
+    @include border-radius( 4px );
+    cursor: pointer;
+
+    @include transition( border-color .3s, background-color .3s, color .3s );
+
+    font-size: 16px;
+    line-height: 45px;
+    text-decoration: none;
+
+    &.border {
+        border: 2px solid transparent;
+        background: transparent;
+
+        &.orange {
+            color: $orange-dark;
+            border-color: $orange-main;
+        }
+
+        &.blue {
+            color: $blue-dark;
+            border-color: $blue-main;
+        }
+
+        &:hover {
+            &.orange {
+                color: #fff;
+                background-color: $orange-main;
+            }
+
+            &.blue {
+                color: #fff;
+                background-color: $blue-main;
+            }
+        }
+    }
+
+    &.slim {
+        height: 35px;
+        line-height: 30px;
+        text-align: center;
+    }
+}
