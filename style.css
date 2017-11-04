@@ -74,16 +74,77 @@ button, input, select, textarea {
   ======================================================================== */
 /* Transform
   ======================================================================== */
-/* Wrapper
+/* Main
   ======================================================================== */
+body {
+  font-family: "Ubuntu", -apple-system, Arial, sans-serif; }
+
 .wrapper {
   margin: auto;
   width: 100%;
   max-width: 1120px; }
 
+/* Buttons
+  ======================================================================== */
+.button {
+  display: inline-block;
+  min-width: 180px;
+  height: 45px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: border-color 0.3s, background-color 0.3s, color 0.3s, fill 0.3s;
+  -moz-transition: border-color 0.3s, background-color 0.3s, color 0.3s, fill 0.3s;
+  -ms-transition: border-color 0.3s, background-color 0.3s, color 0.3s, fill 0.3s;
+  -o-transition: border-color 0.3s, background-color 0.3s, color 0.3s, fill 0.3s;
+  transition: border-color 0.3s, background-color 0.3s, color 0.3s, fill 0.3s;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 40px;
+  text-decoration: none;
+  text-align: center; }
+  .button.border {
+    border: 2px solid transparent;
+    background: transparent; }
+    .button.border.orange {
+      color: #F2751C;
+      border-color: #FF832A; }
+      .button.border.orange svg {
+        fill: #F2751C; }
+    .button.border.blue {
+      color: #4263EB;
+      border-color: #4C6EF5; }
+      .button.border.blue svg {
+        fill: #4263EB; }
+    .button.border:hover.orange {
+      color: #fff;
+      background-color: #FF832A; }
+      .button.border:hover.orange svg {
+        fill: #fff; }
+    .button.border:hover.blue {
+      color: #fff;
+      background-color: #4C6EF5; }
+      .button.border:hover.blue svg {
+        fill: #fff; }
+  .button.slim {
+    height: 35px;
+    line-height: 30px; }
+  .button.icon {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    text-align: left; }
+    .button.icon i {
+      display: flex;
+      align-items: center; }
+
 /* Header
   ======================================================================== */
 header {
+  position: relative;
+  z-index: 900;
   height: 70px;
   border-bottom: 1px solid #DEE2E6;
   background-color: #fff; }
@@ -111,11 +172,37 @@ header {
     -ms-border-radius: 2px;
     -o-border-radius: 2px;
     border-radius: 2px;
-    background-color: #343A40; }
+    background-color: #343A40;
+    -webkit-transition: top 0.3s, opacity 0.24s, transform 0.3s;
+    -moz-transition: top 0.3s, opacity 0.24s, transform 0.3s;
+    -ms-transition: top 0.3s, opacity 0.24s, transform 0.3s;
+    -o-transition: top 0.3s, opacity 0.24s, transform 0.3s;
+    transition: top 0.3s, opacity 0.24s, transform 0.3s; }
     .header--nav-toggle span:nth-child(2) {
       top: 7px; }
     .header--nav-toggle span:nth-child(3) {
       top: 14px; }
+  .header--nav-toggle.open span:nth-child(1) {
+    top: 6px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg); }
+  .header--nav-toggle.open span:nth-child(2) {
+    opacity: 0;
+    -webkit-transform: translateX(-10px);
+    -moz-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    -o-transform: translateX(-10px);
+    transform: translateX(-10px); }
+  .header--nav-toggle.open span:nth-child(3) {
+    top: 6px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg); }
 
 /* Header - Logo
   ======================================================================== */
@@ -162,49 +249,235 @@ header {
 .header--sign-in-box {
   padding: 17px 0 0 30px; }
 
-/* Body
+/* Header - Mobile box
   ======================================================================== */
-body {
-  font-family: "Ubuntu", -apple-system, Arial, sans-serif; }
+.header--mobile-box {
+  position: relative;
+  display: none;
+  background-color: #fff;
+  -webkit-transition: transform 0.3s;
+  -moz-transition: transform 0.3s;
+  -ms-transition: transform 0.3s;
+  -o-transition: transform 0.3s;
+  transition: transform 0.3s; }
 
-/* Buttons
+/* Header - Mobile box - Top bar
   ======================================================================== */
-.button {
-  display: inline-block;
-  min-width: 180px;
-  height: 45px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-  cursor: pointer;
-  -webkit-transition: border-color 0.3s, background-color 0.3s, color 0.3s;
-  -moz-transition: border-color 0.3s, background-color 0.3s, color 0.3s;
-  -ms-transition: border-color 0.3s, background-color 0.3s, color 0.3s;
-  -o-transition: border-color 0.3s, background-color 0.3s, color 0.3s;
-  transition: border-color 0.3s, background-color 0.3s, color 0.3s;
-  font-size: 16px;
-  line-height: 45px;
-  text-decoration: none; }
-  .button.border {
-    border: 2px solid transparent;
-    background: transparent; }
-    .button.border.orange {
-      color: #F2751C;
-      border-color: #FF832A; }
-    .button.border.blue {
-      color: #4263EB;
-      border-color: #4C6EF5; }
-    .button.border:hover.orange {
-      color: #fff;
-      background-color: #FF832A; }
-    .button.border:hover.blue {
-      color: #fff;
-      background-color: #4C6EF5; }
-  .button.slim {
-    height: 35px;
-    line-height: 30px;
-    text-align: center; }
+.mobile-box--top-bar {
+  display: none;
+  justify-content: space-between;
+  min-height: 64px;
+  padding: 18px 18px 0 25px; }
+
+/* Header - Mobile box - Top bar - Logo box
+  ======================================================================== */
+.mobile-box--logo-box a {
+  display: block;
+  width: 44px;
+  height: 46px;
+  background: url(assets/images/logo-mini.png) no-repeat;
+  background-size: contain; }
+
+/* Header - Mobile box - Top bar - Close button
+  ======================================================================== */
+.mobile-box--close-btn {
+  width: 46px;
+  height: 46px;
+  padding: 15px;
+  opacity: .75; }
+
+/* Header - Mobile box - Top bar - Close button
+  ======================================================================== */
+.mobile-box--nav-box ul {
+  display: flex; }
+  .mobile-box--nav-box ul a {
+    display: flex;
+    align-items: center;
+    color: #343A40;
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: none; }
+  .mobile-box--nav-box ul i {
+    display: none;
+    align-items: center;
+    margin: 0 35px 0 32px;
+    width: 24px;
+    height: 24px; }
+
+/* Header - Mobile box - Sign in
+  ======================================================================== */
+.mobile-box--sign-in-box {
+  display: none;
+  padding: 0 20px 32px; }
+
+/* Header < 1160
+  ======================================================================== */
+@media screen and (max-width: 1160px) {
+  header {
+    padding: 0 18px; } }
+/* Header < 1024
+  ======================================================================== */
+@media screen and (max-width: 1023px) {
+  header {
+    padding: 0 18px 0 0; }
+
+  .header--nav-toggle {
+    display: block; }
+
+  .header--logo-box {
+    flex: 1; }
+
+  .header--nav-box {
+    display: none; }
+
+  /* Header - Mobile box
+    ======================================================================== */
+  .header--mobile-box {
+    display: block;
+    z-index: 890;
+    height: 70px;
+    border-bottom: 1px solid #DEE2E6;
+    -webkit-transform: translateY(-70px);
+    -moz-transform: translateY(-70px);
+    -ms-transform: translateY(-70px);
+    -o-transform: translateY(-70px);
+    transform: translateY(-70px); }
+    .header--mobile-box.show {
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+      transform: translateY(0); }
+
+  /* Header - Mobile box - Top bar - Close button
+    ======================================================================== */
+  .mobile-box--nav-box ul {
+    justify-content: space-evenly; }
+    .mobile-box--nav-box ul a {
+      display: block;
+      margin: 0 7px;
+      height: 70px;
+      padding: 25px 10px 0;
+      border-bottom: 3px solid transparent;
+      -webkit-transition: border-color 0.2s;
+      -moz-transition: border-color 0.2s;
+      -ms-transition: border-color 0.2s;
+      -o-transition: border-color 0.2s;
+      transition: border-color 0.2s; }
+      .mobile-box--nav-box ul a:hover, .mobile-box--nav-box ul a.active {
+        border-color: #FF832A; }
+      .mobile-box--nav-box ul a.active {
+        font-weight: 700; } }
+/* Header < 640
+  ======================================================================== */
+@media screen and (max-width: 640px) {
+  header {
+    height: 56px;
+    padding: 0; }
+
+  /* Header - Nav toggle
+    ======================================================================== */
+  .header--nav-toggle {
+    order: 2;
+    width: 56px;
+    height: 52px;
+    padding: 20px 16px; }
+
+  /* Header - Logo
+    ======================================================================== */
+  .header--logo-box {
+    padding: 10px 0 0 16px; }
+    .header--logo-box a {
+      width: 111px;
+      height: 36px; }
+
+  /* Header - Sign in
+    ======================================================================== */
+  .header--sign-in-box {
+    display: none; }
+
+  /* Header - Mobile box
+    ======================================================================== */
+  .header--mobile-box {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 920;
+    width: 280px;
+    height: 100vh;
+    overflow-y: auto;
+    -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0 0 12px rgba(0, 0, 0, 0.24);
+    -ms-box-shadow: 0 0 12px rgba(0, 0, 0, 0.24);
+    -o-box-shadow: 0 0 12px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.24);
+    border-bottom: none;
+    -webkit-transform: translate(292px, 0);
+    -moz-transform: translate(292px, 0);
+    -ms-transform: translate(292px, 0);
+    -o-transform: translate(292px, 0);
+    transform: translate(292px, 0); }
+    .header--mobile-box.show {
+      -webkit-transform: translate(0, 0);
+      -moz-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      -o-transform: translate(0, 0);
+      transform: translate(0, 0); }
+
+  /* Header - Mobile box - Top bar
+    ======================================================================== */
+  .mobile-box--top-bar {
+    display: flex; }
+
+  /* Header - Mobile box - Top bar - Close button
+    ======================================================================== */
+  .mobile-box--nav-box {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin: 20px 0;
+    min-height: 360px; }
+    .mobile-box--nav-box nav {
+      width: 100%; }
+    .mobile-box--nav-box ul {
+      flex-direction: column; }
+      .mobile-box--nav-box ul a {
+        display: flex;
+        margin: 0;
+        height: 60px;
+        padding: 0;
+        border-left: 3px solid transparent;
+        border-bottom: none; }
+      .mobile-box--nav-box ul i {
+        display: flex; }
+
+  /* Header - Mobile box - Sign in
+    ======================================================================== */
+  .mobile-box--sign-in-box {
+    display: block; }
+
+  /* Header - Filter
+    ======================================================================== */
+  .header--filter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 910;
+    visibility: hidden;
+    background-color: #343A40;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s, visibility 0.3s;
+    -moz-transition: opacity 0.3s, visibility 0.3s;
+    -ms-transition: opacity 0.3s, visibility 0.3s;
+    -o-transition: opacity 0.3s, visibility 0.3s;
+    transition: opacity 0.3s, visibility 0.3s; }
+    .header--filter.show {
+      opacity: .5;
+      visibility: visible; } }
 
 /*# sourceMappingURL=style.css.map */
