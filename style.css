@@ -143,11 +143,23 @@ body {
 /* Header
   ======================================================================== */
 header {
-  position: relative;
+  position: fixed;
   z-index: 900;
+  width: 100%;
   height: 70px;
   border-bottom: 1px solid #DEE2E6;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s; }
+  header.is-hidden {
+    -webkit-transform: translateY(-100px);
+    -moz-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    -o-transform: translateY(-100px);
+    transform: translateY(-100px); }
   header .wrapper {
     display: flex; }
 
@@ -255,11 +267,11 @@ header {
   position: relative;
   display: none;
   background-color: #fff;
-  -webkit-transition: transform 0.3s;
-  -moz-transition: transform 0.3s;
-  -ms-transition: transform 0.3s;
-  -o-transition: transform 0.3s;
-  transition: transform 0.3s; }
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s; }
 
 /* Header - Mobile box - Top bar
   ======================================================================== */
@@ -343,11 +355,11 @@ header {
     -o-transform: translateY(-70px);
     transform: translateY(-70px); }
     .header--mobile-box.show {
-      -webkit-transform: translateY(0);
-      -moz-transform: translateY(0);
-      -ms-transform: translateY(0);
-      -o-transform: translateY(0);
-      transform: translateY(0); }
+      -webkit-transform: translateY(70px);
+      -moz-transform: translateY(70px);
+      -ms-transform: translateY(70px);
+      -o-transform: translateY(70px);
+      transform: translateY(70px); }
 
   /* Header - Mobile box - Top bar - Close button
     ======================================================================== */
@@ -479,5 +491,161 @@ header {
     .header--filter.show {
       opacity: .5;
       visibility: visible; } }
+/* Footer
+  ======================================================================== */
+footer {
+  padding-top: 40px;
+  border-top: 1px solid #DEE2E6; }
+
+/* Footer - First box
+  ======================================================================== */
+.footer--first-box .wrapper {
+  display: flex;
+  padding: 30px 0; }
+
+/* Footer - First box - Logo box
+  ======================================================================== */
+.footer--logo-box {
+  flex: 1;
+  margin-right: 30px; }
+  .footer--logo-box a {
+    display: block;
+    width: 125px;
+    height: 40px;
+    background: url(assets/images/logo.png) no-repeat;
+    background-size: contain; }
+
+/* Footer - First box - Nav box
+  ======================================================================== */
+.footer--nav-box nav > ul {
+  display: flex; }
+  .footer--nav-box nav > ul > li {
+    margin-left: 32px; }
+.footer--nav-box a {
+  display: block;
+  padding: 9px 0;
+  color: #343A40;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 18px;
+  text-decoration: none; }
+  .footer--nav-box a.bold {
+    font-weight: 700; }
+  .footer--nav-box a:hover {
+    text-decoration: underline; }
+
+/* Footer - Second box
+  ======================================================================== */
+.footer--second-box {
+  border-top: 1px solid #DEE2E6; }
+
+.footer--second-box .wrapper {
+  display: flex;
+  padding: 26px 0 22px; }
+
+/* Footer - Copyright box
+  ======================================================================== */
+.footer--copyright-box {
+  display: flex;
+  flex: 1; }
+  .footer--copyright-box span {
+    display: block;
+    margin-right: 50px; }
+    .footer--copyright-box span, .footer--copyright-box span a {
+      color: #343A40;
+      text-decoration: none; }
+
+/* Footer - Social box
+  ======================================================================== */
+.footer--soc-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+  .footer--soc-links a {
+    display: block;
+    margin-left: 24px; }
+
+/* Header < 1160
+  ======================================================================== */
+@media screen and (max-width: 1160px) {
+  footer .wrapper {
+    padding-left: 18px !important;
+    padding-right: 18px !important; } }
+/* Header < 900
+  ======================================================================== */
+@media screen and (max-width: 900px) {
+  /* Footer - First box
+    ======================================================================== */
+  .footer--first-box .wrapper {
+    display: flex;
+    padding: 30px 0 10px; }
+
+  /* Footer - First box - Nav box
+    ======================================================================== */
+  .footer--nav-box nav > ul {
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .footer--nav-box nav > ul > li {
+      margin: 0 32px 40px 0;
+      min-width: 180px; } }
+/* Header < 640
+  ======================================================================== */
+@media screen and (max-width: 640px) {
+  /* Footer - First box
+    ======================================================================== */
+  .footer--first-box .wrapper {
+    flex-direction: column; }
+
+  /* Footer - First box - Logo box
+    ======================================================================== */
+  .footer--logo-box {
+    margin-bottom: 30px; }
+    .footer--logo-box a {
+      width: 111px;
+      height: 36px; }
+
+  /* Footer - First box - Nav box
+    ======================================================================== */
+  .footer--nav-box nav > ul {
+    justify-content: space-between; }
+
+  /* Footer - Copyright box
+    ======================================================================== */
+  .footer--copyright-box span {
+    flex-basis: 180px; } }
+/* Header < 480
+  ======================================================================== */
+@media screen and (max-width: 480px) {
+  footer .wrapper {
+    padding-left: 16px !important;
+    padding-right: 16px !important; }
+
+  /* Footer - First box - Nav box
+    ======================================================================== */
+  .footer--nav-box nav > ul {
+    justify-content: space-between; }
+    .footer--nav-box nav > ul > li {
+      margin: 0 16px 40px 0;
+      min-width: 0;
+      width: calc(50% - 16px); }
+
+  /* Footer - Second box
+    ======================================================================== */
+  .footer--second-box .wrapper {
+    padding: 26px 0; }
+
+  /* Footer - Copyright box
+    ======================================================================== */
+  .footer--copyright-box {
+    display: flex;
+    justify-content: space-between; }
+    .footer--copyright-box span {
+      margin-right: 0;
+      flex-basis: auto; }
+
+  /* Footer - Social box
+    ======================================================================== */
+  .footer--soc-links {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */

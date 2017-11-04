@@ -11,7 +11,9 @@
 /* Main
   ======================================================================== */
 
-body { font-family: $font; }
+body {
+    font-family: $font;
+}
 
 .wrapper {
     margin: auto;
@@ -97,15 +99,18 @@ body { font-family: $font; }
   ======================================================================== */
 
 header {
-    position: relative;
+    position: fixed;
     z-index: 900;
+    width: 100%;
     height: 70px;
+
     border-bottom: $border-grey;
     background-color: #fff;
+    @include transition( transform .5s );
 
-    .wrapper {
-        display: flex;
-    }
+    &.is-hidden { @include transform( translateY( -100px ) ); }
+
+    .wrapper { display: flex; }
 }
 
 
@@ -227,7 +232,7 @@ header {
     display: none;
 
     background-color: #fff;
-    @include transition( transform .3s );
+    @include transition( transform .5s );
 }
 
 
@@ -340,7 +345,7 @@ header {
         border-bottom: $border-grey;
         @include transform( translateY(-70px) );
 
-        &.show { @include transform( translateY(0) ); }
+        &.show { @include transform( translateY(70px) ); }
     }
 
 
@@ -477,8 +482,7 @@ header {
 /* Header - Mobile box - Sign in
   ======================================================================== */
 
-.mobile-box--sign-in-box { display: block; }
-
+    .mobile-box--sign-in-box { display: block; }
 
 
 /* Header - Filter
@@ -502,4 +506,255 @@ header {
             visibility: visible;
         }
     }
+}
+
+
+
+/* Footer
+  ======================================================================== */
+
+footer {
+    padding-top: 40px;
+    border-top: $border-grey;
+}
+
+
+/* Footer - First box
+  ======================================================================== */
+
+.footer--first-box .wrapper {
+    display: flex;
+    padding: 30px 0;
+}
+
+
+/* Footer - First box - Logo box
+  ======================================================================== */
+
+.footer--logo-box {
+    flex: 1;
+    margin-right: 30px;
+
+    a {
+        display: block;
+        width: 125px;
+        height: 40px;
+
+        background: url(assets/images/logo.png) no-repeat;
+        background-size: contain;
+    }
+}
+
+
+/* Footer - First box - Nav box
+  ======================================================================== */
+
+.footer--nav-box {
+    nav > ul {
+        display: flex;
+
+        > li { margin-left: 32px; }
+    }
+
+    a {
+        display: block;
+        padding: 9px 0;
+
+        color: $black;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 18px;
+        text-decoration: none;
+
+        &.bold { font-weight: 700; }
+        &:hover { text-decoration: underline; }
+    }
+}
+
+
+/* Footer - Second box
+  ======================================================================== */
+
+.footer--second-box { border-top: $border-grey; }
+
+.footer--second-box .wrapper {
+    display: flex;
+    padding: 26px 0 22px;
+}
+
+
+/* Footer - Copyright box
+  ======================================================================== */
+
+.footer--copyright-box {
+    display: flex;
+    flex: 1;
+
+    span {
+        display: block;
+        margin-right: 50px;
+
+        &, a {
+            color: $black;
+            text-decoration: none;
+        }
+    }
+}
+
+
+/* Footer - Social box
+  ======================================================================== */
+
+.footer--soc-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    a {
+        display: block;
+        margin-left: 24px;
+    }
+}
+
+
+
+/* Header < 1160
+  ======================================================================== */
+
+@media screen and ( max-width: 1160px ) {
+
+    footer .wrapper {
+        padding-left: 18px !important;
+        padding-right: 18px !important;
+    }
+}
+
+
+
+/* Header < 900
+  ======================================================================== */
+
+@media screen and ( max-width: 900px ) {
+
+/* Footer - First box
+  ======================================================================== */
+
+    .footer--first-box .wrapper {
+        display: flex;
+        padding: 30px 0 10px;
+    }
+
+
+/* Footer - First box - Nav box
+  ======================================================================== */
+
+    .footer--nav-box {
+        nav > ul {
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            > li {
+                margin: 0 32px 40px 0;
+                min-width: 180px;
+            }
+        }
+    }
+}
+
+
+
+/* Header < 640
+  ======================================================================== */
+
+@media screen and ( max-width: 640px ) {
+
+
+/* Footer - First box
+  ======================================================================== */
+
+    .footer--first-box .wrapper { flex-direction: column; }
+
+
+/* Footer - First box - Logo box
+  ======================================================================== */
+
+    .footer--logo-box {
+        margin-bottom: 30px;
+
+        a {
+            width: 111px;
+            height: 36px;
+        }
+    }
+
+
+/* Footer - First box - Nav box
+  ======================================================================== */
+
+    .footer--nav-box {
+        nav > ul { justify-content: space-between; }
+    }
+
+
+/* Footer - Copyright box
+  ======================================================================== */
+
+    .footer--copyright-box {
+        span { flex-basis: 180px; }
+    }
+}
+
+
+
+/* Header < 480
+  ======================================================================== */
+
+@media screen and ( max-width: 480px ) {
+
+    footer .wrapper {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+
+
+/* Footer - First box - Nav box
+  ======================================================================== */
+
+    .footer--nav-box {
+        nav > ul {
+            justify-content: space-between;
+
+            > li {
+                margin: 0 16px 40px 0;
+                min-width: 0;
+                width: calc(50% - 16px);
+            }
+        }
+    }
+
+
+/* Footer - Second box
+  ======================================================================== */
+
+    .footer--second-box .wrapper { padding: 26px 0; }
+
+
+/* Footer - Copyright box
+  ======================================================================== */
+
+    .footer--copyright-box {
+        display: flex;
+        justify-content: space-between;
+
+        span {
+            margin-right: 0;
+            flex-basis: auto;
+        }
+    }
+
+
+/* Footer - Social box
+  ======================================================================== */
+
+    .footer--soc-links { display: none; }
 }
