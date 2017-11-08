@@ -1188,7 +1188,7 @@ input {
     height: 35px;
     line-height: 30px; }
   .button.mobile-icon {
-    background: url(assets/images/arrow-right-white.svg) 20px 14px no-repeat; }
+    background: url(assets/images/arrow-right-white.svg) calc( 100% - 16px ) 16px no-repeat; }
   .button.orange, .button.blue {
     color: #fff;
     border: none;
