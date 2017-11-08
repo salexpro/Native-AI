@@ -243,14 +243,6 @@ input { font-family: $font; }
     }
 
 
-/* Buttons - mobile icon
-  ======================================================================== */
-
-    &.mobile-icon {
-        background: url(assets/images/arrow-right-white.svg) calc( 100% - 16px ) 16px no-repeat;
-    }
-
-
 /* Buttons - colors
   ======================================================================== */
 
@@ -284,7 +276,11 @@ input { font-family: $font; }
             align-items: center;
         }
     }
+}
 
+
+@media screen and ( max-width: 480px ) {
+    .button.mobile-icon { background: $orange-dark url(assets/images/arrow-right-white.svg) calc( 100% - 16px ) 16px no-repeat; }
 }
 
 
@@ -529,7 +525,9 @@ header {
     .header--logo-box { flex: 1; }
     .header--nav-box { display: none; }
 
-
+    header.is-hidden + .header--mobile-box.show {
+        @include transform( translateY(-140px) );
+    }
 
 /* Header - Mobile box
   ======================================================================== */
@@ -539,7 +537,7 @@ header {
         z-index: 890;
         height: 70px;
         border-bottom: $border-grey;
-        @include transform( translateY(-70px) );
+        @include transform( translateY(-140px) );
 
         &.show { @include transform( translateY(0) ); }
     }

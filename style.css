@@ -1152,8 +1152,6 @@ input {
     ======================================================================== */
   /* Buttons - slim
     ======================================================================== */
-  /* Buttons - mobile icon
-    ======================================================================== */
   /* Buttons - colors
     ======================================================================== */
   /* Buttons - icon
@@ -1187,8 +1185,6 @@ input {
   .button.slim {
     height: 35px;
     line-height: 30px; }
-  .button.mobile-icon {
-    background: url(assets/images/arrow-right-white.svg) calc( 100% - 16px ) 16px no-repeat; }
   .button.orange, .button.blue {
     color: #fff;
     border: none;
@@ -1210,6 +1206,9 @@ input {
       display: flex;
       align-items: center; }
 
+@media screen and (max-width: 480px) {
+  .button.mobile-icon {
+    background: #F2751C url(assets/images/arrow-right-white.svg) calc( 100% - 16px ) 16px no-repeat; } }
 /* Header
   ======================================================================== */
 header {
@@ -1414,6 +1413,13 @@ header {
   .header--nav-box {
     display: none; }
 
+  header.is-hidden + .header--mobile-box.show {
+    -webkit-transform: translateY(-140px);
+    -moz-transform: translateY(-140px);
+    -ms-transform: translateY(-140px);
+    -o-transform: translateY(-140px);
+    transform: translateY(-140px); }
+
   /* Header - Mobile box
     ======================================================================== */
   .header--mobile-box {
@@ -1421,11 +1427,11 @@ header {
     z-index: 890;
     height: 70px;
     border-bottom: 1px solid #DEE2E6;
-    -webkit-transform: translateY(-70px);
-    -moz-transform: translateY(-70px);
-    -ms-transform: translateY(-70px);
-    -o-transform: translateY(-70px);
-    transform: translateY(-70px); }
+    -webkit-transform: translateY(-140px);
+    -moz-transform: translateY(-140px);
+    -ms-transform: translateY(-140px);
+    -o-transform: translateY(-140px);
+    transform: translateY(-140px); }
     .header--mobile-box.show {
       -webkit-transform: translateY(0);
       -moz-transform: translateY(0);
