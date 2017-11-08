@@ -930,6 +930,7 @@
 }
 
 
+
 /* Screen 04
   ======================================================================== */
 
@@ -997,17 +998,24 @@
 .homepage--five-screen {
     padding: 66px 0 44px;
 
+
 /* Screen 05 - Interests box
   ======================================================================== */
 
-    .interests-box {
+    .interests-box-wrapper {
         float: right;
-        margin-left: 50px;
-        width: 520px;
-        height: 350px;
+        width: 570px;
+        height: 370px;
+        padding: 0 0 20px 50px;
+        background-color: $grey-bg;
 
-        border-radius: 4px;
-        background-color: #eee;
+        .int-box {
+            width: 520px;
+            height: 350px;
+            overflow: hidden;
+            @include border-radius( 4px );
+            background-color: #eee;
+        }
     }
 
     blockquote {
@@ -1025,7 +1033,67 @@
     blockquote {
         padding-bottom: 25px;
     }
+}
 
+
+/* Screen 05 < 1140
+  ======================================================================== */
+
+@media screen and ( max-width: 1140px ) {
+    .homepage--five-screen { padding: 66px 40px 44px; }
+}
+
+
+/* Header < 1024
+  ======================================================================== */
+
+@media screen and ( max-width: 1023px ) {
+    .homepage--five-screen {
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+/* Screen 05 - Interests box
+  ======================================================================== */
+
+        .interests-box-wrapper {
+            order: 2;
+            float: none;
+            width: 100%;
+            height: 460px;
+            padding: 30px 0;
+
+            .int-box {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+
+/* Header < 640
+  ======================================================================== */
+
+@media screen and ( max-width: 640px ) {
+    .homepage--five-screen {
+        .interests-box-wrapper { display: none; }
+    }
+}
+
+
+/* Header < 480
+  ======================================================================== */
+
+@media screen and ( max-width: 480px ) {
+    .homepage--five-screen {
+        padding: 36px 16px 16px;
+
+        p { padding-bottom: 22px; }
+    }
 }
 
 
