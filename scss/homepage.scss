@@ -106,23 +106,550 @@
   ======================================================================== */
 
 .homepage--second-screen {
-    padding-bottom: 77px;
+    overflow: hidden;
+    padding-bottom: 107px;
 
-    .wrapper {
-        position: relative;
+    .wrapper { position: relative; }
+
+
+/* Screen 02 - How work - Text section
+  ======================================================================== */
+
+    .text-section {
+        position: absolute;
+          top: 0;
+          left: 0;
+        width: 550px;
+
+        .title-box,
+        .text-box p { padding-bottom: 30px; }
+    }
+
+
+/* Screen 02 - How work - How work section
+  ======================================================================== */
+
+    .how-work-section {
+        height: 764px;
+
+        .bg {
+            position: absolute;
+              top: 26px;
+              right: 220px;
+            width: 541px;
+            height: 590px;
+            background: url(assets/images/how-it-work/lines-desktop.svg) no-repeat;
+        }
+
+
+/* Screen 02 - How work - How work section - Items
+  ======================================================================== */
+
+        .how-work-item {
+            position: absolute;
+
+            .number {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 32px;
+                height: 32px;
+
+                background-color: $orange-dark;
+                @include border-radius( 50% );
+
+                color: #fff;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 32px;
+            }
+
+            .ill {
+                display: flex;
+                flex-direction: column;
+
+                &:hover + .drop-info {
+                    visibility: visible;
+                    opacity: .93;
+                    @include transform( translateX( 0 ) );
+                }
+            }
+
+            .drop-info {
+                position: absolute;
+                  top: 0;
+                visibility: hidden;
+                width: 250px;
+                padding: 18px 20px;
+
+                @include box-shadow( 0 4px 12px $shadow-color );
+                @include border-radius( 8px );
+                background-color: $blue-dark;
+                opacity: 0;
+                @include transform( translateX( 100px ) );
+                @include transition( transform .4s, opacity .3s, visibility .4s );
+
+                color: #fff;
+                z-index: 40;
+            }
+
+
+            &.start,
+            &.four,
+            &.fifth,
+            &.extra,
+            &.sixth,
+            &.final {
+                .ill { align-items: center; }
+            }
+
+            &.start,
+            &.four,
+            &.fifth {
+                .number {
+                    top: -42px;
+                    left: calc( 50% - 16px );
+                }
+
+                .drop-info { left: -272px; }
+            }
+
+            &.first,
+            &.second,
+            &.third {
+                right: 35px;
+
+                .drop-info { left: -308px; }
+            }
+
+            &.first,
+            &.second,
+            &.third,
+            &.extra {
+                .number {
+                    top: calc( 50% - 32px );
+                    left: -42px;
+                }
+            }
+
+
+/* Screen 02 - How work - How work section - Items - Start
+  ======================================================================== */
+
+            &.start {
+                top: 53px;
+                right: 335px;
+            }
+
+
+/* Screen 02 - How work - How work section - Items - First
+  ======================================================================== */
+
+            &.first {
+                top: 55px;
+                right: 35px;
+            }
+
+
+/* Screen 02 - How work - How work section - Items - Second
+  ======================================================================== */
+
+            &.second {
+                top: 253px;
+                right: 47px;
+            }
+
+
+/* Screen 02 - How work - How work section - Items - Third
+  ======================================================================== */
+
+            &.third {
+                top: 451px;
+                right: 75px;
+            }
+
+
+/* Screen 02 - How work - How work section - Items - Four
+  ======================================================================== */
+
+            &.four {
+                bottom: -29px;
+                right: 300px;
+            }
+
+
+/* Screen 02 - How work - How work section - Items - Fifth
+  ======================================================================== */
+
+            &.fifth {
+                bottom: -29px;
+                right: 471px;
+            }
+
+
+/* Screen 02 - How work - How work section - Items - Extra
+  ======================================================================== */
+
+            &.extra {
+                right: 340px;
+                bottom: 237px;
+
+                .number { background-color: $blue-dark; }
+            }
+
+
+/* Screen 02 - How work - How work section - Items - Final
+  ======================================================================== */
+
+            &.final {
+                right: 780px;
+                bottom: -28px;
+
+                .number {
+                    top: calc( 50% - 62px );
+                    right: -50px;
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
+
+
+/* Screen 02 < 1140
+  ======================================================================== */
+
+@media screen and ( max-width: 1140px ) {
+    .homepage--second-screen {
+        padding: 0 40px 107px;
 
 
 /* Screen 02 - How work - Text section
   ======================================================================== */
 
         .text-section {
-            position: absolute;
-              top: 0;
-              left: 0;
-            width: 550px;
+            position: relative;
+            width: 100%;
 
-            .title-box,
-            .text-box p { padding-bottom: 30px; }
+            br { display: none; }
+        }
+
+
+/* Screen 02 - How work - How work section
+  ======================================================================== */
+
+        .how-work-section {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 40px auto 0;
+            width: 100%;
+            max-width: 720px;
+            height: auto;
+
+            .bg { display: none; }
+
+
+/* Screen 02 - How work - How work section - Items
+  ======================================================================== */
+
+            .how-work-item {
+                position: initial;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .ill {
+                    &:hover + .drop-info { visibility: hidden; }
+                }
+
+                .img { text-align: center; }
+
+                .drop-info { display: none; }
+
+
+                &.start,
+                &.first,
+                &.second,
+                &.third,
+                &.four,
+                &.fifth {
+                    top: auto;
+                    left: auto;
+                    right: auto;
+                    width: 30%;
+                    margin-bottom: 40px;
+
+                    .number {
+                        position: relative;
+                          top: auto;
+                          left: auto;
+                          bottom: auto;
+                        margin-top: 16px;
+                    }
+                }
+
+
+/* Screen 02 - How work - How work section - Items - Start
+  ======================================================================== */
+
+                &.start,
+                &.third,
+                &.extra,
+                &.final {
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        display: block;
+                    }
+                }
+
+                &.start,
+                &.third,
+                &.final {
+                    &:before {
+                        height: 2px;
+                        background-color: $orange-main;
+                    }
+                }
+
+
+                &.start {
+                    &:before {
+                        top: 183px;
+                        left: 123px;
+                        width: calc( 100vw - ( 50% - 360px ) );
+                    }
+                }
+
+
+/* Screen 02 - How work - How work section - Items - Third
+  ======================================================================== */
+
+                &.third {
+                    &:before {
+                        top: 423px;
+                        left: calc( 360px - 50vw );
+                        width: 100vw;
+                    }
+                }
+
+
+/* Screen 02 - How work - How work section - Items - Extra
+  ======================================================================== */
+
+                &.extra {
+                    position: absolute;
+                      right: 48px;
+                      bottom: 0;
+
+                    &:before {
+                        top: -170px;
+                        width: 2px;
+                        height: 140px;
+                        z-index: -1;
+                        background-color: $blue-main;
+                    }
+
+                    .number {
+                        top: -40px;
+                        left: calc( 50% - 16px );
+                    }
+                }
+
+
+/* Screen 02 - How work - How work section - Items - Final
+  ======================================================================== */
+
+                &.final {
+                    position: relative;
+                    left: 128px;
+                    right: 0px;
+                    bottom: 0px;
+
+                    &:before {
+                        top: 197px;
+                        left: calc( 230px - 50vw );
+                        width: calc( 50vw - 230px );
+                    }
+
+                    .number {
+                        top: 178px;
+                        left: -40px;
+                        right: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Screen 02 < 800
+  ======================================================================== */
+
+@media screen and ( max-width: 800px ) {
+    .homepage--second-screen {
+        padding: 0 40px 107px;
+
+
+/* Screen 02 - How work - How work section
+  ======================================================================== */
+
+        .how-work-section {
+            .how-work-item {
+
+
+/* Screen 02 - How work - How work section - Items - Start
+  ======================================================================== */
+
+                &.start {
+                    &:before { left: -40px ; }
+                }
+
+
+/* Screen 02 - How work - How work section - Items - Third
+  ======================================================================== */
+
+                &.third {
+                    &:before { left: -40px; }
+                }
+
+
+/* Screen 02 - How work - How work section - Items - Extra
+  ======================================================================== */
+
+                &.extra { right: 5.8%; }
+
+
+/* Screen 02 - How work - How work section - Items - Final
+  ======================================================================== */
+
+                &.final {
+                    left: 17.8%;
+
+                    &:before {
+                        left: calc( 180px - 50vw );
+                        width: calc( 50vw - 200px );
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Screen 02 < 640
+  ======================================================================== */
+
+@media screen and ( max-width: 640px ) {
+    .homepage--second-screen {
+        padding: 0 16px 60px !important;
+
+
+/* Screen 02 - How work - How work section
+  ======================================================================== */
+
+        .how-work-section {
+            margin: 30px auto 0;
+
+
+/* Screen 02 - How work - How work section - Items
+  ======================================================================== */
+
+            .how-work-item {
+                .img img {
+                    width: 80px;
+                    height: 80px;
+                }
+
+                &.start,
+                &.first,
+                &.second,
+                &.third,
+                &.four,
+                &.fifth {
+                    width: 50%;
+                }
+
+
+/* Screen 02 - How work - How work section - Items - Start
+  ======================================================================== */
+
+                &.start {
+                    &:before {
+                        top: 137px;
+                        left: 25%;
+                        z-index: -1;
+                    }
+                }
+
+
+/* Screen 02 - How work - How work section - Items - Third
+  ======================================================================== */
+
+                &.third {
+                    &:before {
+                        top: 331px;
+                        left: -16px;
+                        z-index: -1;
+                    }
+                }
+
+
+/* Screen 02 - How work - How work section - Items - Four
+  ======================================================================== */
+
+                &.four {
+                    &:before {
+                        content: '';
+                        position: absolute;
+                          top: 525px;
+                          left: -16px;
+                        display: block;
+                        width: 100vw;
+                        height: 2px;
+                        background-color: $orange-main;
+                    }
+                }
+
+
+/* Screen 02 - How work - How work section - Items - Extra
+  ======================================================================== */
+
+                &.extra { display: none; }
+
+
+/* Screen 02 - How work - How work section - Items - Final
+  ======================================================================== */
+
+                &.final {
+                    position: relative;
+                      left: 27%;
+                      right: 0px;
+                      bottom: 0px;
+
+                    .img img {
+                        width: 200px;
+                        height: 140px;
+                    }
+
+                    &:before {
+                        top: 153px;
+                        left: -54vw;
+                        width: 52vw;
+                    }
+
+                    .number {
+                        top: 134px;
+                        left: -40px;
+                        right: auto;
+                    }
+                }
+            }
         }
     }
 }
@@ -133,7 +660,7 @@
   ======================================================================== */
 
 .homepage--three-screen {
-    padding: 80px 0;
+    padding: 50px 0 80px;
     border-top: $border-grey;
 
     .wrapper {
@@ -343,9 +870,7 @@
   ======================================================================== */
 
 @media screen and ( max-width: 1140px ) {
-    .homepage--three-screen {
-        padding: 80px 40px;
-    }
+    .homepage--second-screen { padding: 0 40px 107px; }
 }
 
 
