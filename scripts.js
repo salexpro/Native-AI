@@ -6,20 +6,26 @@ jQuery(document).ready( function($) {
         $(this).toggleClass('open');
         $('.header--mobile-box').toggleClass('show');
         $('.header--filter').toggleClass('show');
+        $('body').toggleClass('fix');
     });
 
     $('.header--filter, .mobile-box--close-btn').click( function() {
         $('.header--mobile-box').removeClass('show');
         $('.header--filter').removeClass('show');
         $('.header--nav-toggle').removeClass('open');
+        $('body').removeClass('fix');
     });
 
 
     // Autohide header
 
     var mainHeader = $('header'),
+        secondaryNavigation = $('.cd-secondary-nav'),
+        //this applies only if secondary nav is below intro section
+        belowNavHeroContent = $('.sub-nav-hero'),
         headerHeight = mainHeader.height();
 
+    //set scrolling variables
     var scrolling = false,
         previousTop = 0,
         currentTop = 0,

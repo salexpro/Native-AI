@@ -17,7 +17,11 @@ body {
 }
 
 @media screen and ( max-width: 640px ) {
-    body { padding-top: 56px; }
+    body {
+        padding-top: 56px;
+
+        &.fix { overflow: hidden; }
+    }
 }
 
 .wrapper {
@@ -243,7 +247,7 @@ input { font-family: $font; }
   ======================================================================== */
 
     &.mobile-icon {
-        background: url(assets/image/arrow-right-white.svg) 20px 14px no-repeat;
+        background: url(assets/images/arrow-right-white.svg) 20px 14px no-repeat;
     }
 
 
@@ -620,7 +624,7 @@ header {
         flex-direction: column;
         z-index: 920;
         width: 280px;
-        height: 100vh;
+        height: 100%;
         overflow-y: auto;
 
         @include box-shadow( 0 0 12px rgba(0, 0, 0, .24) );
