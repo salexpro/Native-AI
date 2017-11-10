@@ -931,6 +931,8 @@ button, input, select, textarea {
   .homepage--six-screen .items-wrapper {
     display: flex; }
     .homepage--six-screen .items-wrapper .item-box {
+      display: flex;
+      flex-direction: column;
       width: calc( 50% - 10px );
       /* Screen 06 - Card image box
         ======================================================================== */
@@ -951,10 +953,10 @@ button, input, select, textarea {
         .homepage--six-screen .items-wrapper .item-box .img-section.blue-line {
           border-color: #4C6EF5; }
       .homepage--six-screen .items-wrapper .item-box .content-section {
+        flex: 1;
         display: flex;
         flex-direction: column;
-        padding: 20px 20px 32px;
-        height: calc( 100% - 230px ); }
+        padding: 20px 20px 32px; }
         .homepage--six-screen .items-wrapper .item-box .content-section .text-box {
           flex: 1;
           padding-bottom: 24px; }
