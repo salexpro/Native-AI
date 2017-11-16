@@ -1,0 +1,444 @@
+.adv--first-screen .button-box { padding-bottom: 10px !important; }
+
+
+
+/* Second screen
+  ======================================================================== */
+
+.adv--second-screen {
+    padding-bottom: 75px;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    p { width: calc(50% - 10px); }
+}
+
+
+/* Second screen < 1140px
+  ======================================================================== */
+
+@media screen and ( max-width: 1140px ) {
+    .adv--second-screen {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+
+/* Second screen < 800px
+  ======================================================================== */
+
+@media screen and ( max-width: 800px ) {
+    .adv--second-screen {
+        padding-bottom: 51px;
+
+        .wrapper { flex-direction: column; }
+
+        p {
+            width: 100%;
+            padding-bottom: 24px;
+        }
+    }
+}
+
+
+/* Second screen < 480px
+  ======================================================================== */
+
+@media screen and ( max-width: 480px ) {
+    .adv--second-screen {
+        padding: 0 16px 28px;
+
+        p { padding-bottom: 20px; }
+    }
+}
+
+
+
+/* Third screen
+  ======================================================================== */
+
+.adv--third-screen {
+    .graph-box {
+        overflow: hidden;
+        margin: 0 auto 40px;
+        width: 100%; // remove this
+        max-width: 940px; // remove this
+        height: 360px; // remove this
+
+        @include border-radius( 4px );
+        background-color: #eee;
+    }
+
+    .text-box {
+        padding-bottom: 20px;
+        text-align: center;
+    }
+}
+
+
+/* Third screen < 480
+  ======================================================================== */
+
+@media screen and (max-width: 480px) {
+    .adv--third-screen {
+        .graph-box { height: 240px; } // remove this
+        .text-box {
+            padding-bottom: 32px;
+            text-align: left;
+        }
+    }
+}
+
+
+
+/* Four screen
+  ======================================================================== */
+
+.adv--four-screen {
+    padding: 68px 0 70px;
+    overflow: hidden;
+
+    .wrapper {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .text-section {
+        width: 460px;
+
+        .title { padding-bottom: 28px; }
+        .subtitle { padding-bottom: 40px; }
+    }
+
+    .ill-section {
+        width: calc( 100% - 460px );
+        padding-left: 30px;
+    }
+}
+
+
+/* Four screen < 1140
+  ======================================================================== */
+
+@media screen and ( max-width: 1140px ) {
+    .adv--four-screen {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+
+/* Four screen < 960
+  ======================================================================== */
+
+@media screen and ( max-width: 960px ) {
+    .adv--four-screen {
+        .wrapper { position: relative; }
+
+        .text-section {
+            width: 100%;
+        }
+
+        .ill-section {
+            position: absolute;
+             top: 20px;
+             right: -100px;
+            width: 600px;
+            padding: 0;
+            z-index: -1;
+            opacity: .16;
+        }
+    }
+}
+
+
+/* Four screen < 480
+  ======================================================================== */
+
+@media screen and ( max-width: 480px ) {
+    .adv--four-screen {
+        padding: 26px 16px 40px;
+
+        .ill-section {
+            top: auto;
+            bottom: 40px;
+            right: -80px;
+            width: 400px;
+        }
+    }
+}
+
+
+
+/* Fifth screen
+  ======================================================================== */
+
+.adv--fifth-screen {
+    padding-bottom: 56px;
+
+    hr {
+        display: block;
+        margin: 20px 0;
+        width: 150px;
+        height: 2px;
+
+        border: none;
+        background-color: $orange-main;
+    }
+
+    p { padding-bottom: 24px; }
+}
+
+
+
+/* Fifth screen
+  ======================================================================== */
+
+@media screen and ( max-width: 480px ) {
+    .adv--fifth-screen { padding-bottom: 16px; }
+}
+
+
+/* Sixth screen
+  ======================================================================== */
+
+.adv--sixth-screen {
+    img { margin-bottom: 30px; }
+}
+
+
+
+/* Seventh screen
+  ======================================================================== */
+
+.adv--seventh-screen {
+    .title { padding-bottom: 70px !important; }
+}
+
+
+
+/* Nineth screen
+  ======================================================================== */
+
+.adv--nineth-screen {
+    padding: 65px 0 80px;
+    border-top: $border-grey;
+    border-bottom: $border-grey;
+
+    .title, .subtitle, .button-box { text-align: center; }
+
+    .title { padding-bottom: 30px; }
+    .subtitle { padding-bottom: 72px; }
+
+    .how-to-section {
+        position: relative;
+        margin: 0 auto 35px;
+        width: 100%;
+        max-width: 930px;
+        height: 412px;
+        background: url(assets/images/adv-get-started-bg.svg) center top no-repeat;
+    }
+
+    .how-to-item {
+        position: absolute;
+
+        .number {
+            position: absolute;
+            width: 32px;
+            height: 32px;
+
+            @include border-radius( 50% );
+            background-color: $blue-dark;
+
+            color: #fff;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        .title-box {
+            padding-bottom: 18px;
+
+            h3 { line-height: 35px; }
+        }
+
+        &.first {
+            top: 41px;
+            left: 24px;
+
+            .number {
+                top: -56px;
+                left: -34px;
+            }
+        }
+
+        &.second {
+            top: 66px;
+            right: 76px;
+            text-align: right;
+
+            .number {
+                top: 64px;
+                right: -66px;
+            }
+        }
+
+        &.third {
+            left: 124px;
+            bottom: 72px;
+
+            .number {
+                left: -37px;
+                bottom: -57px;
+            }
+        }
+    }
+}
+
+
+/* Nineth screen < 999
+  ======================================================================== */
+
+@media screen and ( max-width: 999px ) {
+    .adv--nineth-screen {
+        padding-left: 40px;
+        padding-right: 40px;
+
+        .subtitle { padding-bottom: 72px; }
+
+        .how-to-section {
+            height: auto;
+            background: none;
+        }
+
+        .how-to-item {
+            position: relative;
+              top: 0 !important;
+              left: 0 !important;
+              right: 0 !important;
+              bottom: 0 !important;
+            margin-bottom: 40px;
+            text-align: center !important;
+
+            .number {
+                position: relative;
+                  top: 0 !important;
+                  left: 0 !important;
+                  right: 0 !important;
+                  bottom: 0 !important;
+                margin: 0 auto 24px;
+            }
+        }
+    }
+}
+
+
+/* Nineth screen < 480
+  ======================================================================== */
+
+@media screen and ( max-width: 480px ) {
+    .adv--nineth-screen {
+        padding: 48px 16px 52px;
+
+        .subtitle { padding-bottom: 52px; }
+    }
+}
+
+
+/* Ten screen
+  ======================================================================== */
+
+.adv--tenth-screen {
+    overflow: hidden;
+    padding: 66px 0 72px;
+    border-bottom: $border-grey;
+
+    .title, .subtitle { text-align: center;}
+
+    .title { padding-bottom: 30px; }
+    .subtitle { padding-bottom: 55px; }
+
+    .main-content {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            width: 400px;
+        }
+    }
+}
+
+
+/* Ten screen < 1140
+  ======================================================================== */
+
+@media screen and ( max-width: 1140px ) {
+    .adv--tenth-screen {
+        padding-left: 40px;
+        padding-right: 40px;
+
+        .img-box {
+            position: absolute;
+              top: -22px;
+              right: -30px;
+            opacity: .3;
+        }
+    }
+}
+
+
+/* Ten screen < 840
+  ======================================================================== */
+
+@media screen and ( max-width: 840px ) {
+    .adv--tenth-screen {
+        .img-box { right: -120px; }
+    }
+}
+
+
+/* Ten screen < 700
+  ======================================================================== */
+
+@media screen and ( max-width: 700px ) {
+    .adv--tenth-screen {
+        .img-box {
+            position: absolute;
+              top: -16px;
+              right: -190px;
+            opacity: .2;
+
+            img { width: 320px; }
+        }
+    }
+}
+
+
+/* Ten screen < 480
+  ======================================================================== */
+
+@media screen and ( max-width: 480px ) {
+    .adv--tenth-screen {
+        padding: 40px 16px 42px;
+
+        .title, .subtitle { text-align: left;}
+
+        .subtitle { padding-bottom: 32px; }
+
+        .img-box {
+            position: absolute;
+              top: -16px;
+              right: -190px;
+            opacity: .2;
+
+            img { width: 320px; }
+        }
+    }
+}

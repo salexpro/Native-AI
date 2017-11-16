@@ -201,36 +201,6 @@
   ======================================================================== */
 
 .publisher--seven-screen {
-    padding: 56px 0 48px;
-    border-top: $border-grey;
-    border-bottom: $border-grey;
-
-    .title-box {
-        padding-bottom: 28px;
-        text-align: center;
-    }
-
-    .subtitle-links-box {
-        width: 100%;
-        padding-bottom: 54px;
-
-        color: #DEE2E6;
-        font-size: 25px;
-        text-align: center;
-
-
-        a {
-            text-decoration: none;
-
-            h3 {
-                display: inline;
-                color: $blue-main;
-            }
-
-            &:hover { text-decoration: underline; }
-        }
-    }
-
     .main-content {
         display: flex;
         justify-content: space-between;
@@ -251,48 +221,15 @@
 }
 
 
-/* Seven screen < 1140
-  ======================================================================== */
-
-@media screen and ( max-width: 1140px ) {
-    .publisher--seven-screen {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-}
-
-
 /* Seven screen < 920
   ======================================================================== */
 
 @media screen and ( max-width: 920px ) {
     .publisher--seven-screen {
-        .subtitle-links-box {
-            font-size: 20px;
-
-            .links {
-                margin: auto;
-                width: 610px;
-            }
-
-            a {
-                h3 { font-size: 20px !important; }
-            }
-        }
-
         .main-content {
+            .text-box { padding-right: 0; }
             .img-box { display: none; }
         }
-    }
-}
-
-
-/* Seven screen < 720
-  ======================================================================== */
-
-@media screen and ( max-width: 720px ) {
-    .publisher--seven-screen {
-        .subtitle-links-box { display: none; }
     }
 }
 
