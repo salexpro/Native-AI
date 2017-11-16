@@ -1,0 +1,388 @@
+
+/* Second screen
+  ======================================================================== */
+
+.publisher--second-screen {
+    padding-bottom: 70px;
+
+    .title { padding-bottom: 32px; }
+}
+
+
+/* Second screen < 480
+  ======================================================================== */
+
+@media screen and ( max-width: 480px ) {
+    .publisher--second-screen {
+        padding-bottom: 42px;
+
+        .title { padding-bottom: 26px; }
+    }
+}
+
+
+
+/* Third screen
+  ======================================================================== */
+
+.publisher--third-screen {
+    padding: 72px 0 8px;
+    border-top: $border-grey;
+    border-bottom: $border-grey;
+
+    .item {
+        display: flex;
+        padding-bottom: 72px;
+
+        > div { width: 50%; }
+
+        .img-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                display: block;
+                width: 400px; // Delete whis
+                height: 200px; // Delete this
+
+                @include border-radius( 4px );
+                background-color: #eee;
+            }
+        }
+
+        .title-box { padding-bottom: 26px; }
+
+        hr {
+            display: block;
+            margin: 0 0 26px;
+            width: 150px;
+            height: 2px;
+            border: none;
+
+            &.blue { background-color: $blue-main; }
+            &.orange { background-color: $orange-main; }
+        }
+    }
+}
+
+
+/* Third screen < 1140
+  ======================================================================== */
+
+@media screen and ( max-width: 1140px ) {
+    .publisher--third-screen {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+
+/* Third screen < 1024
+  ======================================================================== */
+
+@media screen and ( max-width: 1023px ) {
+    .publisher--third-screen {
+        .item {
+            &.img-left {
+                .img-section { justify-content: flex-start; }
+            }
+            &.img-right {
+                .img-section { justify-content: flex-end; }
+            }
+        }
+    }
+}
+
+
+
+/* Third screen < 960
+  ======================================================================== */
+
+@media screen and ( max-width: 959px ) {
+    .publisher--third-screen {
+        .item {
+            flex-direction: column;
+            padding-bottom: 72px;
+
+            &.img-left {
+                .img-section { order: 2; }
+            }
+
+            > div { width: 100%; }
+
+            .img-section { justify-content: center !important; }
+
+            .text-section { padding-bottom: 45px; }
+        }
+    }
+}
+
+
+/* Third screen < 480
+  ======================================================================== */
+
+@media screen and ( max-width: 480px ) {
+    .publisher--third-screen {
+        padding: 40px 16px 10px;
+
+        .item {
+            padding-bottom: 40px;
+
+            .img-section {
+                img {
+                    width: 100%;
+                    height: 200px; // Delete this
+                }
+            }
+
+            .text-section { padding-bottom: 30px; }
+
+            .title-box { padding-bottom: 29px; }
+        }
+    }
+}
+
+
+
+/* Six screen - Tools CTA
+  ======================================================================== */
+
+.publisher--six-screen {
+    padding: 80px 0;
+
+    .tools-cta-frame {
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+
+        @include border-radius( 4px );
+        background-color: #eee;
+    }
+}
+
+
+
+/* Six screen - Tools CTA < 1140
+  ======================================================================== */
+
+@media screen and ( max-width: 1140px ) {
+    .publisher--six-screen {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+
+
+/* Six screen - Tools CTA < 840
+  ======================================================================== */
+
+@media screen and ( max-width: 840px ) {
+    .publisher--six-screen {
+        .tools-cta-frame {
+            height: 380px;
+        }
+    }
+}
+
+
+
+/* Six screen - Tools CTA < 720
+  ======================================================================== */
+
+@media screen and ( max-width: 720px ) {
+    .publisher--six-screen { display: none; }
+}
+
+
+
+/* Seven screen
+  ======================================================================== */
+
+.publisher--seven-screen {
+    padding: 56px 0 48px;
+    border-top: $border-grey;
+    border-bottom: $border-grey;
+
+    .title-box {
+        padding-bottom: 28px;
+        text-align: center;
+    }
+
+    .subtitle-links-box {
+        width: 100%;
+        padding-bottom: 54px;
+
+        color: #DEE2E6;
+        font-size: 25px;
+        text-align: center;
+
+
+        a {
+            text-decoration: none;
+
+            h3 {
+                display: inline;
+                color: $blue-main;
+            }
+
+            &:hover { text-decoration: underline; }
+        }
+    }
+
+    .main-content {
+        display: flex;
+        justify-content: space-between;
+
+        .text-box { padding-right: 20px; }
+
+        p { padding-bottom: 28px; }
+
+        .img-box {
+            padding-top: 10px;
+
+            img {
+                width: 360px;
+                height: 196px;
+            }
+        }
+    }
+}
+
+
+/* Seven screen < 1140
+  ======================================================================== */
+
+@media screen and ( max-width: 1140px ) {
+    .publisher--seven-screen {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+
+/* Seven screen < 920
+  ======================================================================== */
+
+@media screen and ( max-width: 920px ) {
+    .publisher--seven-screen {
+        .subtitle-links-box {
+            font-size: 20px;
+
+            .links {
+                margin: auto;
+                width: 610px;
+            }
+
+            a {
+                h3 { font-size: 20px !important; }
+            }
+        }
+
+        .main-content {
+            .img-box { display: none; }
+        }
+    }
+}
+
+
+/* Seven screen < 720
+  ======================================================================== */
+
+@media screen and ( max-width: 720px ) {
+    .publisher--seven-screen {
+        .subtitle-links-box { display: none; }
+    }
+}
+
+
+/* Seven screen < 480
+  ======================================================================== */
+
+@media screen and ( max-width: 480px ) {
+    .publisher--seven-screen {
+        padding: 40px 16px 12px;
+
+        .title-box {
+            padding-bottom: 25px;
+            text-align: left;
+        }
+    }
+}
+
+
+
+/* Eight screen
+  ======================================================================== */
+
+.publisher--eight-screen {
+    padding: 70px 0 80px;
+    overflow: hidden;
+
+    .wrapper { position: relative; }
+
+    .title-box { padding-bottom: 26px; }
+    .text-box { padding-bottom: 24px; }
+
+    .ill-section {
+        position: absolute;
+          top: 20px;
+          right: -50px;
+        width: 680px;
+        z-index: -1;
+
+        img { width: 100%; }
+    }
+}
+
+
+/* Eight screen < 1140
+  ======================================================================== */
+
+@media screen and ( max-width: 1140px ) {
+    .publisher--eight-screen {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+
+/* Eight screen < 1080
+  ======================================================================== */
+
+@media screen and ( max-width: 1080px ) {
+    .publisher--eight-screen {
+        .ill-section { right: -100px; }
+    }
+}
+
+
+/* Eight screen < 960
+  ======================================================================== */
+
+@media screen and ( max-width: 960px ) {
+    .publisher--eight-screen {
+        .ill-section {
+            right: -200px;
+            opacity: .16;
+        }
+    }
+}
+
+
+/* Eight screen < 480
+  ======================================================================== */
+
+@media screen and ( max-width: 480px ) {
+    .publisher--eight-screen {
+        padding: 40px 16px 50px;
+
+        .title-box { padding-bottom: 22px; }
+        .text-box { padding-bottom: 30px; }
+        .ill-section {
+            top: 100px;
+            width: 400px;
+        }
+    }
+}

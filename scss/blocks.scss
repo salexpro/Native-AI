@@ -220,3 +220,321 @@
         }
     }
 }
+
+
+
+/* LP - First screen
+  ======================================================================== */
+
+.lp-first-screen {
+    padding: 98px 0;
+    overflow: hidden;
+
+    .wrapper { position: relative; }
+
+    .titles-section {
+        position: relative;
+        z-index: 20;
+    }
+
+    .main-title { padding-bottom: 32px; }
+    .descr { padding-bottom: 47px; }
+    .button-box { padding-bottom: 72px; }
+
+    .ill-section {
+        position: absolute;
+          top: -20px;
+          right: -40px;
+        width: 774px;
+        height: 281px;
+        z-index: 10;
+
+        img { width: 100%; }
+    }
+}
+
+
+/* LP - First screen < 1140
+  ======================================================================== */
+
+@media screen and ( max-width: 1140px ) {
+    .lp-first-screen {
+        padding: 98px 40px;
+    }
+}
+
+
+/* LP - First screen < 1024
+  ======================================================================== */
+
+@media screen and ( max-width: 1023px ) {
+    .lp-first-screen {
+        .ill-section {
+            top: 70px;
+            right: -10px;
+            width: 512px;
+            height: 186px;
+        }
+    }
+}
+
+
+/* LP - First screen < 840
+  ======================================================================== */
+
+@media screen and ( max-width: 840px ) {
+    .lp-first-screen {
+        .ill-section { right: -40px; }
+    }
+}
+
+
+/* LP - First screen < 700
+  ======================================================================== */
+
+@media screen and ( max-width: 699px ) {
+    .lp-first-screen {
+        .ill-section {
+            top: 0;
+            right: -200px;
+            opacity: .16;
+        }
+    }
+}
+
+
+/* LP - First screen < 480
+  ======================================================================== */
+
+@media screen and ( max-width: 480px ) {
+    .lp-first-screen {
+        padding: 77px 16px;
+
+        .main-title { padding-bottom: 20px; }
+        .descr { padding-bottom: 40px; }
+        .button-box {
+            padding-bottom: 47px;
+
+            .button {
+                width: 100%;
+                padding-left: 16px;
+                text-align: left;
+            }
+        }
+
+        .ill-section { top: -30px; }
+    }
+}
+
+
+
+/* 3 cols screen
+  ======================================================================== */
+
+.three-cols-screen {
+    .cols3-section {
+        display: flex;
+        justify-content: space-between;
+
+        .col { width: calc((100% - 40px) / 3); }
+    }
+}
+
+
+/* 3 cols screen < 1140
+  ======================================================================== */
+
+@media screen and ( max-width: 1140px ) {
+    .three-cols-screen {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+
+/* 3 cols screen < 960
+  ======================================================================== */
+
+@media screen and ( max-width: 959px ) {
+    .three-cols-screen {
+        .cols3-section {
+            flex-direction: column;
+
+            .col {
+                width: 100%;
+                margin-bottom: 28px;
+
+                &:last-child { margin-bottom: 0; }
+            }
+        }
+    }
+}
+
+
+/* 3 cols screen < 480
+  ======================================================================== */
+
+@media screen and ( max-width: 480px ) {
+    .three-cols-screen {
+        padding-left: 16px;
+        padding-right: 16px;
+
+        .cols3-section {
+            .col { margin-bottom: 24px; }
+        }
+    }
+}
+
+
+
+/* 2 cols screen (how it works)
+  ======================================================================== */
+
+.ill-2-cols {
+    padding: 65px 0 25px;
+
+    .title,
+    .subtitle { text-align: center; }
+
+    .title { padding-bottom: 35px }
+
+    .subtitle { padding-bottom: 70px; }
+
+    .how-it-works-section {
+        display: flex;
+        justify-content: space-between;
+
+        .ill-box {
+            img { width: 520px; }
+        }
+
+        .items-box {
+            margin-left: 50px;
+        }
+
+        .item {
+            position: relative;
+            padding-bottom: 50px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                  top: 43px;
+                  left: 15px;
+                  bottom: -5px;
+                width: 2px;
+
+                background-color: #FFC093;
+            }
+
+            &:last-child:before { display: none; }
+
+            .number {
+                position: absolute;
+                  top: 8px;
+                  left: 0;
+                width: 32px;
+                height: 32px;
+
+                @include border-radius( 50% );
+                border: 2px solid #FFC093;
+                background-color: #fff;
+
+                color: #FFC093;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 26px;
+                text-align: center;
+            }
+
+            .title-box { padding: 0 0 16px 52px; }
+
+            hr {
+                margin: 0 0 16px 52px;
+                width: 240px;
+                height: 1px;
+
+                border: none;
+                background-color: $grey-border;
+            }
+
+            .text-box { padding-left: 52px; }
+        }
+    }
+}
+
+
+/* 2 cols screen (how it works) < 1140
+  ======================================================================== */
+
+@media screen and ( max-width: 1140px ) {
+    .ill-2-cols {
+        padding-left: 40px;
+        padding-right: 40px;
+
+        .how-it-works-section {
+            .items-box { margin-left: 10px; }
+        }
+    }
+}
+
+
+/* 2 cols screen (how it works) < 960
+  ======================================================================== */
+
+@media screen and ( max-width: 959px ) {
+    .ill-2-cols {
+        .how-it-works-section {
+            justify-content: center;
+
+            .ill-box { display: none; }
+
+            .item {
+                width: 100%;
+                max-width: 632px;
+            }
+        }
+    }
+}
+
+
+/* 2 cols screen (how it works) < 480
+  ======================================================================== */
+
+@media screen and ( max-width: 480px ) {
+    .ill-2-cols {
+        padding: 40px 16px 25px;
+
+        .how-it-works-section {
+            .items-box { margin-left: 10px; }
+        }
+
+        .title,
+        .subtitle { text-align: left; }
+
+        .title { padding-bottom: 22px }
+
+        .subtitle { padding-bottom: 40px; }
+
+        .how-it-works-section {
+            .items-box { margin-left: 0; }
+
+            .item {
+                padding-bottom: 36px;
+
+                &:before {
+                    top: 36px;
+                    bottom: 4px;
+                }
+
+                .number { top: 0; }
+
+                .title-box { padding: 0 0 24px 48px; }
+
+                hr { margin: 0 0 20px 48px; }
+
+                .text-box { padding-left: 48px; }
+            }
+        }
+    }
+}
