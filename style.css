@@ -504,7 +504,7 @@ h1 {
   font-weight: 700;
   line-height: 65px; }
 
-h2 {
+h2, h1.small-title {
   color: #343A40;
   font-size: 35px;
   font-weight: 700;
@@ -562,7 +562,7 @@ blockquote {
     font-size: 32px;
     line-height: 42px; }
 
-  h2 {
+  h2, h1.small-title {
     font-size: 22px;
     line-height: 30px; }
 
@@ -688,6 +688,11 @@ input {
     .button.icon i {
       display: flex;
       align-items: center; }
+  .button.width-icon {
+    width: 100%;
+    padding-left: 16px;
+    background: #F2751C url(assets/images/arrow-right-white.svg) calc( 100% - 16px ) 16px no-repeat;
+    text-align: left; }
 
 @media screen and (max-width: 480px) {
   .button.mobile-icon {
@@ -2480,5 +2485,162 @@ footer {
       opacity: .2; }
       .adv--tenth-screen .img-box img {
         width: 320px; } }
+/* =========================================================================
+    Lead magnet page
+   ========================================================================= */
+.content-wrapper.lead-magnet {
+  /* Illustration
+  ======================================================================== */
+  /* Page title
+  ======================================================================== */
+  /* Text Section
+  ======================================================================== */
+  /* Contact form
+  ======================================================================== */ }
+  .content-wrapper.lead-magnet .wrapper {
+    position: relative;
+    padding: 65px 0 80px;
+    overflow: hidden; }
+  .content-wrapper.lead-magnet .ill-section {
+    position: absolute;
+    top: 127px;
+    right: -24px;
+    width: 600px;
+    z-index: -1; }
+    .content-wrapper.lead-magnet .ill-section img {
+      width: 100%; }
+  .content-wrapper.lead-magnet .page-title {
+    padding-bottom: 56px; }
+  .content-wrapper.lead-magnet .text-section {
+    padding-bottom: 28px; }
+    .content-wrapper.lead-magnet .text-section p {
+      padding-bottom: 24px; }
+  .content-wrapper.lead-magnet .section-title {
+    padding-bottom: 8px; }
+  .content-wrapper.lead-magnet .list-section {
+    max-width: 380px; }
+  .content-wrapper.lead-magnet .contact-form-col {
+    display: flex;
+    justify-content: center;
+    padding-top: 210px; }
+  .content-wrapper.lead-magnet .contact-form-section {
+    width: 100%;
+    max-width: 480px;
+    padding: 40px 80px 50px; }
+    .content-wrapper.lead-magnet .contact-form-section .strong-text {
+      padding-bottom: 40px;
+      color: #4263EB;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 30px;
+      text-align: center; }
+    .content-wrapper.lead-magnet .contact-form-section .promo-field {
+      width: 100%;
+      margin-bottom: 20px; }
+
+/* Two cols section
+======================================================================== */
+.two-cols-section {
+  display: flex; }
+  .two-cols-section .col {
+    width: calc(50% - 10px); }
+    .two-cols-section .col:first-child {
+      margin-right: 20px; }
+
+/* List
+======================================================================== */
+.list-section li {
+  position: relative;
+  margin-left: 53px;
+  padding: 18px 0 22px 0;
+  border-bottom: 1px solid #DEE2E6; }
+  .list-section li:last-child {
+    border-bottom: none; }
+.list-section li:before {
+  content: '';
+  position: absolute;
+  top: 18px;
+  left: -53px;
+  width: 28px;
+  height: 28px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid #FFC093;
+  background-color: #fff;
+  background-image: url(assets/images/check-orange.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #9FB0F4;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: center; }
+
+/* Lead magnet page < 1140
+  ======================================================================== */
+@media screen and (max-width: 1140px) {
+  .content-wrapper.lead-magnet .wrapper {
+    padding: 65px 40px 80px; } }
+/* Lead magnet page < 980
+  ======================================================================== */
+@media screen and (max-width: 979px) {
+  .content-wrapper.lead-magnet {
+    /* Illustration
+    ======================================================================== */
+    /* Two cols section
+    ======================================================================== */
+    /* Contact form
+    ======================================================================== */ }
+    .content-wrapper.lead-magnet .ill-section {
+      top: 47px;
+      right: -144px;
+      opacity: .16; }
+    .content-wrapper.lead-magnet .two-cols-section {
+      flex-direction: column; }
+      .content-wrapper.lead-magnet .two-cols-section .col {
+        width: 100%; }
+        .content-wrapper.lead-magnet .two-cols-section .col:first-child {
+          margin-right: 0; }
+    .content-wrapper.lead-magnet .contact-form-col {
+      padding-top: 44px; } }
+/* Lead magnet page < 480
+  ======================================================================== */
+@media screen and (max-width: 480px) {
+  .content-wrapper.lead-magnet {
+    /* Illustration
+    ======================================================================== */
+    /* Page title
+    ======================================================================== */
+    /* Text Section
+    ======================================================================== */
+    /* Contact form
+    ======================================================================== */ }
+    .content-wrapper.lead-magnet .wrapper {
+      padding: 40px 16px 50px; }
+    .content-wrapper.lead-magnet .ill-section {
+      top: 47px;
+      right: -124px;
+      width: 350px; }
+    .content-wrapper.lead-magnet .page-title {
+      padding-bottom: 40px; }
+    .content-wrapper.lead-magnet .text-section {
+      padding-bottom: 8px; }
+    .content-wrapper.lead-magnet .list-section {
+      max-width: 100%; }
+    .content-wrapper.lead-magnet .contact-form-col {
+      padding-top: 28px; }
+    .content-wrapper.lead-magnet .contact-form-section {
+      padding: 30px 16px 40px; }
+
+  /* List
+  ======================================================================== */
+  .list-section li {
+    margin-left: 49px; }
+  .list-section li:before {
+    top: 16px;
+    left: -49px; } }
 
 /*# sourceMappingURL=style.css.map */
