@@ -2485,22 +2485,43 @@ footer {
       opacity: .2; }
       .adv--tenth-screen .img-box img {
         width: 320px; } }
+.content-wrapper.lead-magnet,
+.content-wrapper.thank-you {
+  /* Page title
+  ======================================================================== */
+  /* Text Section
+  ======================================================================== */ }
+  .content-wrapper.lead-magnet .wrapper,
+  .content-wrapper.thank-you .wrapper {
+    position: relative;
+    overflow: hidden; }
+  .content-wrapper.lead-magnet .page-title,
+  .content-wrapper.thank-you .page-title {
+    padding-bottom: 56px; }
+  .content-wrapper.lead-magnet .section-title,
+  .content-wrapper.thank-you .section-title {
+    padding-bottom: 28px; }
+  .content-wrapper.lead-magnet .text-section,
+  .content-wrapper.thank-you .text-section {
+    padding-bottom: 28px; }
+    .content-wrapper.lead-magnet .text-section p,
+    .content-wrapper.thank-you .text-section p {
+      padding-bottom: 24px; }
+  .content-wrapper.lead-magnet .promo-field,
+  .content-wrapper.thank-you .promo-field {
+    width: 100%;
+    margin-bottom: 20px; }
+
 /* =========================================================================
     Lead magnet page
    ========================================================================= */
 .content-wrapper.lead-magnet {
   /* Illustration
   ======================================================================== */
-  /* Page title
-  ======================================================================== */
-  /* Text Section
-  ======================================================================== */
   /* Contact form
   ======================================================================== */ }
   .content-wrapper.lead-magnet .wrapper {
-    position: relative;
-    padding: 65px 0 80px;
-    overflow: hidden; }
+    padding: 65px 0 80px; }
   .content-wrapper.lead-magnet .ill-section {
     position: absolute;
     top: 127px;
@@ -2509,12 +2530,6 @@ footer {
     z-index: -1; }
     .content-wrapper.lead-magnet .ill-section img {
       width: 100%; }
-  .content-wrapper.lead-magnet .page-title {
-    padding-bottom: 56px; }
-  .content-wrapper.lead-magnet .text-section {
-    padding-bottom: 28px; }
-    .content-wrapper.lead-magnet .text-section p {
-      padding-bottom: 24px; }
   .content-wrapper.lead-magnet .section-title {
     padding-bottom: 8px; }
   .content-wrapper.lead-magnet .list-section {
@@ -2534,9 +2549,23 @@ footer {
       font-weight: 500;
       line-height: 30px;
       text-align: center; }
-    .content-wrapper.lead-magnet .contact-form-section .promo-field {
-      width: 100%;
-      margin-bottom: 20px; }
+
+/* =========================================================================
+    Thank you page
+   ========================================================================= */
+.content-wrapper.thank-you .wrapper {
+  padding: 65px 0 42px; }
+.content-wrapper.thank-you .subtitle-text {
+  padding-bottom: 52px; }
+.content-wrapper.thank-you .contact-form-section {
+  max-width: 320px; }
+.content-wrapper.thank-you .ill-col {
+  display: flex;
+  justify-content: flex-end;
+  margin: -70px 0 0; }
+  .content-wrapper.thank-you .ill-col img {
+    width: 100%;
+    max-width: 520px; }
 
 /* Two cols section
 ======================================================================== */
@@ -2579,11 +2608,13 @@ footer {
   line-height: 26px;
   text-align: center; }
 
-/* Lead magnet page < 1140
+/* Lead magnet, Thank you page < 1140
   ======================================================================== */
 @media screen and (max-width: 1140px) {
-  .content-wrapper.lead-magnet .wrapper {
-    padding: 65px 40px 80px; } }
+  .content-wrapper.lead-magnet .wrapper,
+  .content-wrapper.thank-you .wrapper {
+    padding-left: 40px;
+    padding-right: 40px; } }
 /* Lead magnet page < 980
   ======================================================================== */
 @media screen and (max-width: 979px) {
@@ -2606,34 +2637,76 @@ footer {
           margin-right: 0; }
     .content-wrapper.lead-magnet .contact-form-col {
       padding-top: 44px; } }
+/* Thank you page < 920
+  ======================================================================== */
+@media screen and (max-width: 920px) {
+  .content-wrapper.thank-you {
+    /* Two cols section
+    ======================================================================== */ }
+    .content-wrapper.thank-you .wrapper {
+      padding-bottom: 80px; }
+    .content-wrapper.thank-you .subtitle-text br {
+      display: none; }
+    .content-wrapper.thank-you .contact-form-section {
+      margin: auto; }
+    .content-wrapper.thank-you .ill-col {
+      position: absolute;
+      top: 10px;
+      right: -50px;
+      margin: 0;
+      opacity: .16; }
+      .content-wrapper.thank-you .ill-col img {
+        max-width: 300px; }
+    .content-wrapper.thank-you .two-cols-section {
+      flex-direction: column; }
+      .content-wrapper.thank-you .two-cols-section .col {
+        width: 100%; }
+        .content-wrapper.thank-you .two-cols-section .col:first-child {
+          margin-right: 0; } }
 /* Lead magnet page < 480
   ======================================================================== */
 @media screen and (max-width: 480px) {
-  .content-wrapper.lead-magnet {
-    /* Illustration
-    ======================================================================== */
+  .content-wrapper.lead-magnet,
+  .content-wrapper.thank-you {
     /* Page title
     ======================================================================== */
     /* Text Section
+    ======================================================================== */ }
+    .content-wrapper.lead-magnet .wrapper,
+    .content-wrapper.thank-you .wrapper {
+      padding: 40px 16px 50px; }
+    .content-wrapper.lead-magnet .page-title,
+    .content-wrapper.thank-you .page-title {
+      padding-bottom: 32px; }
+    .content-wrapper.lead-magnet .subtitle-text,
+    .content-wrapper.thank-you .subtitle-text {
+      padding-bottom: 32px; }
+    .content-wrapper.lead-magnet .text-section,
+    .content-wrapper.thank-you .text-section {
+      padding-bottom: 8px; }
+
+  .content-wrapper.lead-magnet {
+    /* Illustration
     ======================================================================== */
     /* Contact form
     ======================================================================== */ }
-    .content-wrapper.lead-magnet .wrapper {
-      padding: 40px 16px 50px; }
     .content-wrapper.lead-magnet .ill-section {
       top: 47px;
       right: -124px;
       width: 350px; }
-    .content-wrapper.lead-magnet .page-title {
-      padding-bottom: 40px; }
-    .content-wrapper.lead-magnet .text-section {
-      padding-bottom: 8px; }
     .content-wrapper.lead-magnet .list-section {
       max-width: 100%; }
     .content-wrapper.lead-magnet .contact-form-col {
       padding-top: 28px; }
     .content-wrapper.lead-magnet .contact-form-section {
       padding: 30px 16px 40px; }
+
+  .content-wrapper.thank-you .section-title {
+    padding-bottom: 24px; }
+  .content-wrapper.thank-you .ill-col {
+    display: none; }
+  .content-wrapper.thank-you .contact-form-section {
+    max-width: 375px; }
 
   /* List
   ======================================================================== */
