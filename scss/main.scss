@@ -177,6 +177,7 @@ input { font-family: $font; }
     display: inline-block;
     min-width: 180px;
     height: 45px;
+    padding: 0 20px;
 
     @include border-radius( 4px );
     @include transition( border-color .3s, background-color .3s, color .3s, fill .3s );
@@ -963,3 +964,4 @@ footer {
 @import "publishers.scss";
 @import "advertising.scss";
 @import "page.scss";
+@import "adv-c.scss";

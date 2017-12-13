@@ -617,6 +617,7 @@ input {
   display: inline-block;
   min-width: 180px;
   height: 45px;
+  padding: 0 20px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -2554,7 +2555,7 @@ footer {
     Thank you page
    ========================================================================= */
 .content-wrapper.thank-you .wrapper {
-  padding: 65px 0 42px; }
+  padding: 65px 0 62px; }
 .content-wrapper.thank-you .subtitle-text {
   padding-bottom: 52px; }
 .content-wrapper.thank-you .contact-form-section {
@@ -2715,5 +2716,320 @@ footer {
   .list-section li:before {
     top: 16px;
     left: -49px; } }
+/* =========================================================================
+    First screen
+   ========================================================================= */
+.adv-c--first-screen {
+  padding-bottom: 36px; }
+
+/* =========================================================================
+    Second screen
+   ========================================================================= */
+.adv-c--second-screen {
+  padding-bottom: 80px; }
+  .adv-c--second-screen .section-title h2 {
+    padding-bottom: 30px; }
+  .adv-c--second-screen .section-title h3 {
+    padding-bottom: 22px; }
+  .adv-c--second-screen p {
+    padding-bottom: 31px; }
+  .adv-c--second-screen .ill-box {
+    margin-top: -97px; }
+    .adv-c--second-screen .ill-box img {
+      margin-top: 18px;
+      width: 100%;
+      max-width: 520px; }
+  .adv-c--second-screen .col .section-title {
+    padding-top: 20px; }
+
+.cols2-section {
+  display: flex;
+  flex-wrap: wrap; }
+  .cols2-section .col {
+    width: calc( 50% - 10px ); }
+    .cols2-section .col:nth-child(odd) {
+      margin-right: 20px; }
+  .cols2-section.pin-grid {
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start; }
+  .cols2-section.col-big-video {
+    align-items: center; }
+    .cols2-section.col-big-video .col {
+      flex: 1; }
+    .cols2-section.col-big-video .video-col {
+      width: auto; }
+  .cols2-section.col-list .col {
+    width: auto;
+    flex: 1; }
+  .cols2-section.col-list .list-col {
+    width: 360px;
+    flex: inherit; }
+
+/* =========================================================================
+    Third screen
+   ========================================================================= */
+.adv-c--third-screen hr,
+.adv-c--four-screen hr {
+  width: 150px;
+  height: 2px;
+  border: none; }
+
+.adv-c--third-screen {
+  padding: 64px 0 0;
+  border-top: 1px solid #DEE2E6;
+  border-bottom: 1px solid #DEE2E6; }
+  .adv-c--third-screen .center {
+    text-align: center; }
+  .adv-c--third-screen .section-title {
+    padding-bottom: 32px; }
+  .adv-c--third-screen .section-subtitle {
+    padding-bottom: 56px; }
+  .adv-c--third-screen .pin-grid {
+    height: 1330px; }
+  .adv-c--third-screen .benefits-list hr {
+    margin: 18px 0;
+    background-color: #4C6EF5; }
+  .adv-c--third-screen .benefits-list p {
+    padding-bottom: 31px; }
+  .adv-c--third-screen .benefits-list .col {
+    padding-bottom: 20px; }
+  .adv-c--third-screen .benefits-list .ben-2 {
+    order: 5; }
+  .adv-c--third-screen .benefits-list .ben-3 {
+    order: 2; }
+  .adv-c--third-screen .benefits-list .ben-4 {
+    order: 6; }
+  .adv-c--third-screen .benefits-list .ben-5 {
+    order: 3; }
+  .adv-c--third-screen .benefits-list .ben-6 {
+    order: 7; }
+  .adv-c--third-screen .benefits-list .ben-7 {
+    order: 4; }
+  .adv-c--third-screen .benefits-list .ben-ill {
+    order: 8;
+    margin-top: -32px; }
+
+/* =========================================================================
+    Four screen
+   ========================================================================= */
+.adv-c--four-screen {
+  padding: 64px 0; }
+  .adv-c--four-screen .section-title {
+    padding-bottom: 30px; }
+  .adv-c--four-screen p {
+    padding-bottom: 31px; }
+  .adv-c--four-screen .brand-item {
+    margin-top: 40px;
+    padding: 40px; }
+    .adv-c--four-screen .brand-item .top-section {
+      display: flex;
+      align-items: center;
+      padding-bottom: 40px; }
+      .adv-c--four-screen .brand-item .top-section .logo-box {
+        width: 80px;
+        height: 80px; }
+        .adv-c--four-screen .brand-item .top-section .logo-box img {
+          width: 100%; }
+      .adv-c--four-screen .brand-item .top-section .name-box {
+        flex: 1;
+        padding-left: 40px; }
+        .adv-c--four-screen .brand-item .top-section .name-box hr {
+          margin: 6px 0 10px; }
+          .adv-c--four-screen .brand-item .top-section .name-box hr.orange {
+            background-color: #FF832A; }
+          .adv-c--four-screen .brand-item .top-section .name-box hr.blue {
+            background-color: #4C6EF5; }
+      .adv-c--four-screen .brand-item .top-section .counter-box {
+        padding-bottom: 14px; }
+        .adv-c--four-screen .brand-item .top-section .counter-box h3 {
+          color: #8F979F; }
+          .adv-c--four-screen .brand-item .top-section .counter-box h3 .orange {
+            color: #FF832A; }
+          .adv-c--four-screen .brand-item .top-section .counter-box h3 .blue {
+            color: #4C6EF5; }
+    .adv-c--four-screen .brand-item .video-box {
+      width: 570px;
+      height: 330px;
+      margin-bottom: 40px;
+      overflow: hidden;
+      border-radius: 4px;
+      background-color: #eee; }
+    .adv-c--four-screen .brand-item .bottom-section {
+      padding: 20px 0 40px;
+      text-align: center; }
+
+/* =========================================================================
+    Fifth screen
+   ========================================================================= */
+.adv-c--fifth-screen {
+  padding: 0 0 40px; }
+  .adv-c--fifth-screen .section-title {
+    padding-bottom: 30px; }
+  .adv-c--fifth-screen p {
+    padding-bottom: 31px; }
+  .adv-c--fifth-screen blockquote {
+    margin: 0 20px 31px 0; }
+
+.adv-c--tools-cta {
+  padding: 0; }
+
+/* =========================================================================
+    Sixth screen
+   ========================================================================= */
+.adv-c--sixth-screen {
+  padding: 68px 0 80px; }
+  .adv-c--sixth-screen .section-title h2 {
+    padding-bottom: 30px; }
+  .adv-c--sixth-screen .section-title h3 {
+    padding: 22px 0; }
+  .adv-c--sixth-screen .list-col {
+    margin-top: -16px; }
+  .adv-c--sixth-screen .button-section {
+    padding-top: 30px;
+    text-align: center; }
+
+/* =========================================================================
+    < 1140
+   ========================================================================= */
+@media screen and (max-width: 1140px) {
+  .adv-c--second-screen .wrapper,
+  .adv-c--third-screen .wrapper,
+  .adv-c--four-screen .wrapper,
+  .adv-c--fifth-screen .wrapper,
+  .adv-c--sixth-screen .wrapper {
+    padding-left: 40px;
+    padding-right: 40px; }
+
+  .adv-c--third-screen .pin-grid {
+    height: 1710px; }
+
+  .adv-c--four-screen .brand-item .bottom-section {
+    padding: 20px 0; } }
+/* =========================================================================
+    < 900
+   ========================================================================= */
+@media screen and (max-width: 899px) {
+  .adv-c--second-screen .ill-box {
+    margin-top: -18px;
+    text-align: center; }
+  .adv-c--second-screen .tab-hide, .adv-c--second-screen .section-title h2 br {
+    display: none; }
+
+  .cols2-section {
+    flex-direction: column; }
+    .cols2-section .col {
+      width: 100%; }
+      .cols2-section .col:first-child {
+        margin-right: 0; }
+    .cols2-section.pin-grid {
+      flex-flow: column;
+      height: auto; }
+    .cols2-section.col-big-video .video-col {
+      width: 100%; }
+    .cols2-section.col-list {
+      align-items: center; }
+      .cols2-section.col-list .col {
+        width: 100%; }
+      .cols2-section.col-list .list-col {
+        order: 2; }
+
+  .adv-c--third-screen {
+    padding-bottom: 24px; }
+    .adv-c--third-screen .benefits-list .ben-2, .adv-c--third-screen .benefits-list .ben-3, .adv-c--third-screen .benefits-list .ben-4,
+    .adv-c--third-screen .benefits-list .ben-5, .adv-c--third-screen .benefits-list .ben-6, .adv-c--third-screen .benefits-list .ben-7 {
+      order: 1; }
+    .adv-c--third-screen .benefits-list .ben-ill {
+      display: none; }
+
+  .adv-c--sixth-screen .col > p {
+    padding-bottom: 31px; }
+  .adv-c--sixth-screen .section-title h3 {
+    padding-top: 10px; } }
+/* =========================================================================
+    < 740
+   ========================================================================= */
+@media screen and (max-width: 739px) {
+  .adv-c--four-screen .brand-item .video-box {
+    width: 100%;
+    height: 400px; } }
+/* =========================================================================
+    < 720
+   ========================================================================= */
+@media screen and (max-width: 739px) {
+  .adv-c--sixth-screen {
+    padding-top: 0; } }
+/* =========================================================================
+    < 480
+   ========================================================================= */
+@media screen and (max-width: 480px) {
+  .adv-c--second-screen .wrapper,
+  .adv-c--third-screen .wrapper,
+  .adv-c--four-screen .wrapper,
+  .adv-c--fifth-screen .wrapper,
+  .adv-c--sixth-screen .wrapper {
+    padding-left: 16px;
+    padding-right: 16px; }
+
+  .adv-c--second-screen {
+    padding-bottom: 50px; }
+    .adv-c--second-screen .section-title h3 {
+      padding-top: 20px; }
+    .adv-c--second-screen p {
+      padding-bottom: 20px; }
+
+  .adv-c--third-screen {
+    padding: 40px 0 6px; }
+    .adv-c--third-screen .center {
+      text-align: left; }
+    .adv-c--third-screen .section-title {
+      padding-bottom: 20px; }
+    .adv-c--third-screen .section-subtitle {
+      padding-bottom: 36px; }
+    .adv-c--third-screen .benefits-list p {
+      padding-bottom: 20px; }
+
+  .adv-c--four-screen {
+    padding: 40px 0; }
+    .adv-c--four-screen p {
+      padding-bottom: 20px; }
+    .adv-c--four-screen .brand-item {
+      margin-top: 16px;
+      padding: 32px 16px; }
+      .adv-c--four-screen .brand-item .top-section {
+        padding-bottom: 24px; }
+        .adv-c--four-screen .brand-item .top-section .logo-box {
+          width: 40px;
+          height: 40px; }
+        .adv-c--four-screen .brand-item .top-section .name-box {
+          padding-left: 24px; }
+      .adv-c--four-screen .brand-item .video-box {
+        margin-bottom: 10px;
+        width: 100%;
+        height: 250px; }
+      .adv-c--four-screen .brand-item .bottom-section {
+        padding: 12px 0 8px; }
+        .adv-c--four-screen .brand-item .bottom-section .button {
+          width: 100%; }
+
+  .adv-c--fifth-screen {
+    padding: 0 0 20px; }
+    .adv-c--fifth-screen .section-title {
+      padding-bottom: 20px; }
+    .adv-c--fifth-screen p {
+      padding-bottom: 20px; }
+    .adv-c--fifth-screen blockquote {
+      margin: 0 0 20px 0; }
+
+  .adv-c--sixth-screen {
+    padding: 0 0 60px; }
+    .adv-c--sixth-screen .col > p {
+      padding-bottom: 20px; }
+    .adv-c--sixth-screen .section-title h2 {
+      padding-bottom: 20px; }
+    .adv-c--sixth-screen .list-col {
+      margin-top: 0; }
+    .adv-c--sixth-screen .button-section {
+      padding-top: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
