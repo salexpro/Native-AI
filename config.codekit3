@@ -5,6 +5,14 @@
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
 		"uuidString": "4FBD196E-1776-40E9-8ADA-3C00B025DB9B"
+		},
+	{
+		"name": "Demo mode with Github Pages",
+		"scriptSourceString": "rm -rf docs\/\ncp -rf build\/ docs\/\ncat docs\/js\/components\/fastnav.min.js >> docs\/js\/app.min.js\nzip -r build.zip build\/",
+		"scriptType": 1,
+		"scriptUUIDString": "2ACAD006-D322-4B47-93EE-F79F7CB01B13",
+		"stepType": 2,
+		"uuidString": "DEBFEEF4-B418-4FB2-BBCE-ACA737088705"
 		}
 	],
 "creatorBuild": "26680",
@@ -34,6 +42,19 @@
 		"ft": 65536,
 		"oA": 1,
 		"oAP": "\/build\/build",
+		"oF": 0
+		},
+	"\/build.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/build\/build.zip",
+		"oF": 1
+		},
+	"\/docs": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/build\/docs",
 		"oF": 0
 		},
 	"\/src\/advertising.html": {
@@ -355,7 +376,7 @@
 		"oAP": "\/build\/assets\/images\/brands\/fatherly.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -366,7 +387,7 @@
 		"oAP": "\/build\/assets\/images\/brands\/fatherly@2x.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -987,6 +1008,26 @@
 		"oAP": "\/build\/index.html",
 		"oF": 0
 		},
+	"\/src\/js\/app.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/js\/app.min.js",
+		"oF": 2,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/js\/components\/fastnav.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/js\/components\/fastnav.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"\/src\/lead-magnet.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -1124,16 +1165,6 @@
 		"oAP": "\/build\/_power.html",
 		"oF": 0,
 		"oS": 0
-		},
-	"\/src\/scripts.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/build\/scripts.js",
-		"oF": 2,
-		"sC": 3,
-		"tS": 0
 		},
 	"\/src\/scss\/adv-c.scss": {
 		"aP": 0,
@@ -1283,7 +1314,7 @@
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "\/src\/assets\/favicon\/apple-touch-icon-120x120.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 548555561
+	"lastBuiltDate": 548693671
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -3265,7 +3296,7 @@
 		],
 	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
-	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, \/storage\/framework\/sessions",
+	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, \/storage\/framework\/sessions, docs",
 	"sourceFolderName": "src",
 	"susyVersion": 3,
 	"uglifyDefinesString": "",
