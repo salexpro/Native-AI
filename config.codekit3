@@ -8,7 +8,7 @@
 		},
 	{
 		"name": "Demo mode with Github Pages",
-		"scriptSourceString": "rm -rf docs\/\ncp -rf build\/ docs\/\ncat docs\/js\/components\/fastnav.min.js >> docs\/js\/app.min.js\nzip -r build.zip build\/",
+		"scriptSourceString": "rm -rf docs\/\ncp -rf build\/ docs\/\nrm -f build\/CNAME\ncat docs\/js\/components\/fastnav.min.js >> docs\/js\/app.min.js\nzip -r build.zip build\/",
 		"scriptType": 1,
 		"scriptUUIDString": "2ACAD006-D322-4B47-93EE-F79F7CB01B13",
 		"stepType": 2,
@@ -44,6 +44,12 @@
 		"oA": 1,
 		"oAP": "\/build\/.gitignore",
 		"oF": 1
+		},
+	"\/build": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/build\/build",
+		"oF": 0
 		},
 	"\/build.zip": {
 		"cB": 0,
@@ -1046,6 +1052,13 @@
 		"plM": 553513902079,
 		"prP": 0
 		},
+	"\/src\/CNAME": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/CNAME",
+		"oF": 1
+		},
 	"\/src\/js\/app.js": {
 		"ft": 64,
 		"ma": 0,
@@ -1159,6 +1172,15 @@
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/build\/_analytics.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/src\/pug\/sections\/_blog_feature.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_blog_feature.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -1382,6 +1404,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/src\/scss\/sections\/_blog_feature.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/scss\/sections\/_blog_feature.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/src\/scss\/sections\/_how.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1420,13 +1455,6 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
-		},
-	"\/src\/thank-you.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/thank-you.html",
-		"oF": 0
 		}
 	},
 "hooks": [
@@ -1439,7 +1467,7 @@
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "\/src\/assets\/favicon\/apple-touch-icon-120x120.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 549037195
+	"lastBuiltDate": 549052716
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
