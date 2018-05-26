@@ -1,0 +1,43 @@
+extends ../layout
+block const
+    -
+        const title = 'Lead Magnet - NativeAI - Publisher Analytics & Monetization Platform'
+        const description = 'NativeAI is an advertising and analytics platform for news publishers on web and mobile. It uses advanced personalization algorithms to help content creators understand their audience and predict which content would do well, as well as use those insights to target native advertising and monetize their properties more effectively.'
+        const keywords = 'native advertising, native content, native marketing, content advertising, publisher content, promo content'
+block content
+    // Content box
+    .content-wrapper.lead-magnet
+        .wrapper
+            .page-title
+                h1.small-title Lorem ipsum dolor sit amet, consectetuer
+            .ill-section
+                img(src='assets/images/case.svg')
+            .two-cols-section
+                .col.main-col
+                    .text-section
+                        p
+                            | Publishers and Native Advertisers face similar challenges of understanding how to increase engagement and grow their audience. Having the right tools can make a huge difference in driving results and exceeding key performance metrics.
+                        p
+                            | This guide examines the top tools publishers and native advertisers should consider adding to their toolbox. While it’s not expected you will use every tool in this guide, it’s wise to evaluate them all and find the tools that are the best fit to help you meet, and exceed, your goals.
+                    .section-title
+                        h3 This Guide Includes 2018’s Top:
+                    .list-section
+                        ul
+                            li
+                                p Native Advertising Platforms
+                            li
+                                p Audience Intelligence Tools
+                            li
+                                p Content Optimization & Analytics Tools
+                .col.contact-form-col
+                    .contact-form-section.card
+                        .strong-text
+                            span
+                                | Complete the form to access
+                                br
+                                | the instant download
+                        form.contact-form(action='')
+                            input.promo-field(type='text', placeholder='First Name')
+                            input.promo-field(type='text', placeholder='Last Name')
+                            input.promo-field(type='email', placeholder='Email')
+                            input.button.orange.width-icon(type='submit', value='Download Book')

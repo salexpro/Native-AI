@@ -1,0 +1,16 @@
+block const
+    -
+        const title = 'Title'
+        const description = 'Description'
+        const keywords = 'keyword'
+
+doctype html
+html(lang='en')
+    head
+        include sections/_head
+    body
+        include sections/_header
+        block content
+        include sections/_footer
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+        script(src='js/app.min.js')

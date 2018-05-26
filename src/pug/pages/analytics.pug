@@ -1,0 +1,236 @@
+extends ../layout
+block const
+    -
+        const title = 'NativeAI - Publisher Analytics & Monetization Platform'
+        const description = 'NativeAI is an advertising and analytics platform for news publishers on web and mobile. It uses advanced personalization algorithms to help content creators understand their audience and predict which content would do well, as well as use those insights to target native advertising and monetize their properties more effectively.'
+        const keywords = 'native advertising, native content, native marketing, content advertising, publisher content, promo content'
+block content
+    // First screen =====================================================================
+    .publisher--first-screen.lp-first-screen
+        .wrapper
+            .ill-section
+                img(src='assets/images/illustrations/home-publishers.svg')
+            .titles-section
+                .main-title
+                    h1 Publisher Analytics
+                .descr
+                    p Actionable Insights To Put Editors Ahead of the Game
+                .button-box
+                    a.button.orange.mobile-icon(href='#')
+                        span Get a Demo
+            .text-section
+                p
+                    | Publishing highly engaging content doesn’t have to be a guessing game. When you possess deep, actionable intelligence about your readers, what kind of content they like and why, you don’t just get a competitive advantage, you change the game entirely.
+    
+    // 3 cols screen =====================================================================
+    .publisher--second-screen.three-cols-screen
+        .wrapper
+            .title
+                h2 The Unfair Advantage
+            .cols3-section
+                .col
+                    p
+                        | NativeAI is built on a mixture of Natural Language Processing (NLP), Semantic Analysis, and Machine Learning algorithms, developed by the News360 team from the ground up, and implemented and advanced over the last seven years.
+                .col
+                    p
+                        | The platform automatically cleans and parses each piece of your content; headlines, authors, tags, media, and more are detected and cataloged; and all named entities are detected from an ever-growing interconnected ontology.
+                .col
+                    p
+                        | Topics across both broad and niche categories as recognized, and advanced clusterization functionality crawls all news content on the web, and measures your stories against the same news stories from other publishers.
+   
+    // Third screen =====================================================================
+    .publisher--third-screen
+        .wrapper
+            .item.img-left
+                .img-section
+                    img(src='')
+                .text-section
+                    .title-box
+                        h2 Audience Interest Analysis
+                    hr.blue
+                    .text-box
+                        p
+                            | The NativeAI platform features advanced algorithms that recognize more than 
+                            i one million distinct
+                            |  audience interests. Artificial intelligence creates interest graphs that map the behavior of individual users as well as entire audience segments.
+            .item.img-right
+                .text-section
+                    .title-box
+                        h2 Real-Time Dashboard
+                    hr.orange
+                    .text-box
+                        p
+                            | Keep track of what is happening on your site right now. Instantly compare performance against the typical performance averages. The dashboard features goes deeper than visits with the Engagement Quality (EQ) graph, revealing audience engagement metrics in real-time.
+                .img-section
+                    img(src='')
+            .item.img-left
+                .img-section
+                    img(src='')
+                .text-section
+                    .title-box
+                        h2 Interest Intelligence
+                    hr.blue
+                    .text-box
+                        p
+                            | Drill down into the performance metrics of interest segments across your entire content platform. See what stories are performing the best, which writers drive the most engagement, and the hot topics your audience is engaging with the most.
+            .item.img-right
+                .text-section
+                    .title-box
+                        h2 Daily Digests
+                    hr.orange
+                    .text-box
+                        p
+                            | Daily snapshots of content performance and engagement metrics sent directly to your inbox. Get a high-level view of the most important performance insights you can understand at a glance.
+                .img-section
+                    img(src='')
+            .item.img-left
+                .img-section
+                    img(src='')
+                .text-section
+                    .title-box
+                        h2 Engagement Quality Intelligence
+                    hr.blue
+                    .text-box
+                        p
+                            | Engagement Quality (EQ) is a special metric developed by NativeAI that combines time spent, scroll depth, user actions, and story length, and more. These metrics are combined into a single score to gauge the engagement value of each piece of content.
+    
+    // How It Works =====================================================================
+    .publisher--five-screen.ill-2-cols
+        .wrapper
+            .title
+                h2 How It Works
+            .subtitle
+                p For a tool as powerful as this is, using it is surprisingly simple:
+            .how-it-works-section
+                .ill-box
+                    img(src='assets/images/illustrations/pub-1.svg')
+                .items-box
+                    .item
+                        .number 1
+                        .title-box
+                            h3 Add a simple tag to your tag manager
+                        hr
+                        .text-box
+                            p
+                                | The NativeAI tag is very efficient, and loads asynchronously, so site performance is unaffected. (Estimated time to complete: 2-Minutes)
+                    .item
+                        .number 2
+                        .title-box
+                            h3 Wait for Data
+                        hr
+                        .text-box
+                            p
+                                | Wait three-to-four weeks while NativeAI compiles data and extracts actionable data.
+                    .item
+                        .number 3
+                        .title-box
+                            h3 Unleash your super power
+                        hr
+                        .text-box
+                            p
+                                | Change the game with your ability to publish content that drives audience engagement.
+    
+    // Top Brands Rely on NativeAI =====================================================================
+    .homepage--four-screen
+        .wrapper
+            .title
+                h2 Top Brands Rely on NativeAI
+            .subtitle
+                p
+                    | NativeAI’s sponsored content network provides quality, branded, editorial,
+                    br
+                    | and corporate blog posts and thought leadership papers from today's top brands
+            .brands-section
+                .brand-item
+                    img(src='assets/images/brands/thomson.png')
+                .brand-item
+                    img(src='assets/images/brands/billboard.png')
+                .brand-item
+                    img(src='assets/images/brands/realclear.png')
+                .brand-item
+                    img(src='assets/images/brands/ozy.png')
+                .brand-item
+                    img(src='assets/images/brands/rollcall.png')
+                .brand-item
+                    img(src='assets/images/brands/euronews.png')
+            .testimonials-section
+                .testimonial-item.card
+                    .user-info-box
+                        .avatar-box
+                            img(src='assets/images/testimonials/user-01.png')
+                        .name-box
+                            .name
+                                h3 Rachel Decker
+                            .company
+                                span.text.size-16.grey HubSpot, inc.
+                    .quote-box
+                        p.italic
+                            | "Never underestimate the power of a great testimonial. A few words of praise from a happy customer can work wonders. A big, friendly smile never hurts, either."
+                .testimonial-item.card
+                    .user-info-box
+                        .avatar-box
+                            img(src='assets/images/testimonials/user-01.png')
+                        .name-box
+                            .name
+                                h3 Rachel Decker
+                            .company
+                                span.text.size-16.grey HubSpot, inc.
+                    .quote-box
+                        p.italic
+                            | "Never underestimate the power of a great testimonial. A few words of praise from a happy customer can work wonders. A big, friendly smile never hurts, either."
+                .testimonial-item.card
+                    .user-info-box
+                        .avatar-box
+                            img(src='assets/images/testimonials/user-01.png')
+                        .name-box
+                            .name
+                                h3 Rachel Decker
+                            .company
+                                span.text.size-16.grey HubSpot, inc.
+                    .quote-box
+                        p.italic
+                            | "Never underestimate the power of a great testimonial. A few words of praise from a happy customer can work wonders. A big, friendly smile never hurts, either."
+    
+    // Tools CTA =====================================================================
+    .publisher--six-screen
+        .wrapper
+            .tools-cta-frame
+    
+    // Seven screen =====================================================================
+    .publisher--seven-screen.blue-line-text-box.grey-bg
+        .wrapper
+            .title-box
+                h2 Get a Grip on Performance
+            .subtitle-links-box
+                .links
+                    h3 Increase Retention
+                    h3 Boost Engagement
+                    h3 Beat the Competition
+            .main-content
+                .text-box
+                    p
+                        | NativeAI helps you identify opportunities for growth, and the building blocks to increase engagement and grow your audience. This platform gives you the intelligence you need to increase the performance of your content, grow your audience, and drastically increase your audience engagement.
+                    p
+                        | On average, our 
+                        strong users report 20X increases in engagement and CTR
+                        |  over their previous content amplification platforms.
+                .img-box
+                    img(src='assets/images/illustrations/pub-2.svg')
+    
+    // Eight screen =====================================================================
+    .publisher--eight-screen
+        .wrapper
+            .text-section
+                .title-box
+                    h3.bold Let Us Show You How to Get an Unfair Advantage
+                .text-box
+                    p
+                        | Get a quick demo to see how NativeAI can help you increase engagement 
+                        br
+                        | on-demand and win market share. We'll show you 5 incredible 
+                        br
+                        | audience insights in as little 15 Minutes.
+                .button-box
+                    a.button.orange(href='#') I Want a Demo
+            .ill-section
+                img(src='assets/images/illustrations/home-publishers.svg')

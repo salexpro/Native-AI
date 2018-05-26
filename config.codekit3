@@ -45,12 +45,6 @@
 		"oAP": "\/build\/.gitignore",
 		"oF": 1
 		},
-	"\/build": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/build\/build",
-		"oF": 0
-		},
 	"\/build.zip": {
 		"cB": 0,
 		"ft": 8192,
@@ -62,13 +56,6 @@
 		"ft": 65536,
 		"oA": 1,
 		"oAP": "\/build\/docs",
-		"oF": 0
-		},
-	"\/src\/advertising.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/advertising.html",
 		"oF": 0
 		},
 	"\/src\/assets\/favicon\/android-chrome-192x192.png": {
@@ -1064,7 +1051,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/build\/src\/js\/app.min.js",
+		"oAP": "\/build\/js\/app.min.js",
 		"oF": 2,
 		"sC": 0,
 		"tS": 0
@@ -1079,36 +1066,15 @@
 		"sC": 3,
 		"tS": 1
 		},
-	"\/src\/lead-magnet.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/lead-magnet.html",
-		"oF": 0
-		},
 	"\/src\/mail": {
 		"ft": 65536,
 		"oA": 1,
 		"oAP": "\/build\/mail",
 		"oF": 0
 		},
-	"\/src\/native-advertising-content.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/native-advertising-content.html",
-		"oF": 0
-		},
-	"\/src\/publisher.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/publisher.html",
-		"oF": 0
-		},
 	"\/src\/pug\/components\/_treemap.pug": {
-		"cB": 0,
-		"cOD": 1,
+		"cB": 1,
+		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/build\/_treemap.html",
@@ -1116,35 +1082,80 @@
 		"oS": 0
 		},
 	"\/src\/pug\/layout.pug": {
-		"cB": 0,
-		"cOD": 1,
+		"cB": 1,
+		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/build\/layout.html",
-		"oF": 1,
+		"oF": 0,
+		"oS": 0
+		},
+	"\/src\/pug\/pages\/advertising.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/advertising.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/src\/pug\/pages\/analytics.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/analytics.html",
+		"oF": 0,
 		"oS": 0
 		},
 	"\/src\/pug\/pages\/index.pug": {
-		"cB": 0,
-		"cOD": 1,
+		"cB": 1,
+		"cOD": 0,
 		"ft": 512,
 		"oA": 0,
 		"oAP": "\/build\/index.html",
 		"oF": 0,
 		"oS": 0
 		},
+	"\/src\/pug\/pages\/lead_magnet.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/lead_magnet.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/src\/pug\/pages\/native_advertising_content.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/native_advertising_content.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/src\/pug\/pages\/new.pug": {
 		"cB": 1,
-		"cOD": 1,
+		"cOD": 0,
 		"ft": 512,
 		"oA": 0,
 		"oAP": "\/build\/new.html",
 		"oF": 0,
 		"oS": 0
 		},
+	"\/src\/pug\/pages\/thank_you.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/thank_you.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/src\/pug\/sections\/_analytics.pug": {
-		"cB": 0,
-		"cOD": 1,
+		"cB": 1,
+		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/build\/_analytics.html",
@@ -1152,8 +1163,8 @@
 		"oS": 0
 		},
 	"\/src\/pug\/sections\/_brands.pug": {
-		"cB": 0,
-		"cOD": 1,
+		"cB": 1,
+		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/build\/_brands.html",
@@ -1161,8 +1172,8 @@
 		"oS": 0
 		},
 	"\/src\/pug\/sections\/_case_study.pug": {
-		"cB": 0,
-		"cOD": 1,
+		"cB": 1,
+		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/build\/_case_study.html",
@@ -1170,8 +1181,8 @@
 		"oS": 0
 		},
 	"\/src\/pug\/sections\/_first.pug": {
-		"cB": 0,
-		"cOD": 1,
+		"cB": 1,
+		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/build\/_first.html",
@@ -1179,8 +1190,8 @@
 		"oS": 0
 		},
 	"\/src\/pug\/sections\/_footer.pug": {
-		"cB": 0,
-		"cOD": 1,
+		"cB": 1,
+		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/build\/_footer.html",
@@ -1188,8 +1199,8 @@
 		"oS": 0
 		},
 	"\/src\/pug\/sections\/_head.pug": {
-		"cB": 0,
-		"cOD": 1,
+		"cB": 1,
+		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/build\/_head.html",
@@ -1197,8 +1208,8 @@
 		"oS": 0
 		},
 	"\/src\/pug\/sections\/_header.pug": {
-		"cB": 0,
-		"cOD": 1,
+		"cB": 1,
+		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/build\/_header.html",
@@ -1206,8 +1217,8 @@
 		"oS": 0
 		},
 	"\/src\/pug\/sections\/_how.pug": {
-		"cB": 0,
-		"cOD": 1,
+		"cB": 1,
+		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/build\/_how.html",
@@ -1215,8 +1226,8 @@
 		"oS": 0
 		},
 	"\/src\/pug\/sections\/_interests.pug": {
-		"cB": 0,
-		"cOD": 1,
+		"cB": 1,
+		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/build\/_interests.html",
@@ -1224,8 +1235,8 @@
 		"oS": 0
 		},
 	"\/src\/pug\/sections\/_power.pug": {
-		"cB": 0,
-		"cOD": 1,
+		"cB": 1,
+		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/build\/_power.html",
@@ -1233,8 +1244,8 @@
 		"oS": 0
 		},
 	"\/src\/pug\/sections\/_start.pug": {
-		"cB": 0,
-		"cOD": 1,
+		"cB": 1,
+		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/build\/_start.html",
@@ -1428,7 +1439,7 @@
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "\/src\/assets\/favicon\/apple-touch-icon-120x120.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 548992583
+	"lastBuiltDate": 549037195
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -3330,9 +3341,9 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 1,
-		"compileDebug": 1,
+		"compileDebug": 0,
 		"outputStyle": 0,
-		"shouldRunCacheBuster": 0
+		"shouldRunCacheBuster": 1
 		},
 	"languageDefaultsSASS": {
 		"autoOutputAction": 0,
