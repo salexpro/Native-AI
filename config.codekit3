@@ -1148,15 +1148,6 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/src\/pug\/pages\/new.pug": {
-		"cB": 1,
-		"cOD": 0,
-		"ft": 512,
-		"oA": 0,
-		"oAP": "\/build\/new.html",
-		"oF": 0,
-		"oS": 0
-		},
 	"\/src\/pug\/pages\/thank_you.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -1190,6 +1181,15 @@
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/build\/_brands.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/src\/pug\/sections\/_brands_old.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_brands_old.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -1262,6 +1262,15 @@
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/build\/_power.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/src\/pug\/sections\/_six.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_six.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -1467,7 +1476,7 @@
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "\/src\/assets\/favicon\/apple-touch-icon-120x120.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 549052716
+	"lastBuiltDate": 549070246
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
