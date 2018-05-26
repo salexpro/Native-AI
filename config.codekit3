@@ -1086,86 +1086,11 @@
 		"oAP": "\/build\/lead-magnet.html",
 		"oF": 0
 		},
-	"\/src\/mail\/free-guide.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/mail\/free-guide.html",
+	"\/src\/mail": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/build\/mail",
 		"oF": 0
-		},
-	"\/src\/mail\/images\/butt-demo.png": {
-		"ft": 32768,
-		"iS": 1195,
-		"oA": 0,
-		"oAP": "\/build\/mail\/images\/butt-demo.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/src\/mail\/images\/butt-download.png": {
-		"ft": 32768,
-		"iS": 1172,
-		"oA": 0,
-		"oAP": "\/build\/mail\/images\/butt-download.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/src\/mail\/images\/ill-01.png": {
-		"ft": 32768,
-		"iS": 12431,
-		"oA": 0,
-		"oAP": "\/build\/mail\/images\/ill-01.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/src\/mail\/images\/ill-02.png": {
-		"ft": 32768,
-		"iS": 14540,
-		"oA": 0,
-		"oAP": "\/build\/mail\/images\/ill-02.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/src\/mail\/images\/logo-full.png": {
-		"ft": 32768,
-		"iS": 4453,
-		"oA": 0,
-		"oAP": "\/build\/mail\/images\/logo-full.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/src\/mail\/images\/logo-mini.png": {
-		"ft": 32768,
-		"iS": 3065,
-		"oA": 0,
-		"oAP": "\/build\/mail\/images\/logo-mini.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/src\/mail\/images\/space.gif": {
-		"ft": 4194304,
-		"iS": 1095,
-		"oA": 0,
-		"oAP": "\/build\/mail\/images\/space.gif",
-		"oF": 0,
-		"opt": 1
 		},
 	"\/src\/native-advertising-content.html": {
 		"cB": 0,
@@ -1188,6 +1113,15 @@
 		"oA": 1,
 		"oAP": "\/build\/_treemap.html",
 		"oF": 0,
+		"oS": 0
+		},
+	"\/src\/pug\/layout.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/layout.html",
+		"oF": 1,
 		"oS": 0
 		},
 	"\/src\/pug\/pages\/index.pug": {
@@ -1250,6 +1184,15 @@
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/build\/_footer.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/src\/pug\/sections\/_head.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_head.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -1485,7 +1428,7 @@
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "\/src\/assets\/favicon\/apple-touch-icon-120x120.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 548992048
+	"lastBuiltDate": 548992583
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -3467,7 +3410,7 @@
 		],
 	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
-	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, \/storage\/framework\/sessions, docs",
+	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, \/storage\/framework\/sessions, docs, mail",
 	"sourceFolderName": "src",
 	"susyVersion": 3,
 	"uglifyDefinesString": "",
