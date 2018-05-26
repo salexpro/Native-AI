@@ -1,0 +1,20 @@
+mixin step(img, title)
+    .started_step
+        .started_step_img
+            img(src="assets/images/illustrations/step_" + img +".svg", alt=title)
+        .started_step_num
+        p.started_step_title
+            =title
+
+
+// ===== How to Get Started =====
+section.started
+    .wrapper
+        h2.started_header
+            | How to Get Started
+        .started_steps
+            +step(1, 'Signup for NativeAI')
+            +step(2, 'Add a simple tag to your Tag Manager')
+            +step(3, 'You\'re good to go!')
+        a.button.orange(href="#")
+            | I want a demo

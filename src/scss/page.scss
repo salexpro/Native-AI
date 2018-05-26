@@ -133,9 +133,9 @@
         height: 28px;
 
         @include border-radius( 50% );
-        border: 2px solid #FFC093;
-        background-color: #fff;
-        background-image: url(assets/images/check-orange.svg);
+        border: 2px solid $orange-light;
+        background-color: $white;
+        background-image: url(https://cdn2.hubspot.net/hubfs/3048376/assets/images/check-orange.svg);
         background-repeat: no-repeat;
         background-position: center;
 

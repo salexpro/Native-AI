@@ -1,0 +1,88 @@
+.mainhow{
+    padding: 65px 40px 80px;
+    @media screen and (max-width: 480px) {
+        padding: 36px 16px 16px;
+    }
+    .title {
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    &_top{
+        text-align: center;
+        margin-bottom: 30px;
+        @media screen and (max-width: 990px) {
+            margin-bottom: 60px;
+        }
+        @media screen and (max-width: 480px) {
+            margin-bottom: 30px;
+        }
+    }
+    &_items{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 60px;
+        @media screen and (max-width: 990px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+        @media screen and (max-width: 480px) {
+            margin-bottom: 20px;
+        }
+    }
+    &_item{
+        @media screen and (max-width: 990px) {
+            flex: 0 0 40%;
+            margin-bottom: 20px;
+        }
+        @media screen and (max-width: 480px) {
+            flex: 0 0 50%;
+        }
+        &_img{
+            margin-bottom: 20px;
+            img{
+                @media screen and (max-width: 480px) {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+        }
+        &_title{
+            font-weight: 700;
+            br{
+                display: block;
+            }
+        }
+    }
+    &_bottom{
+        display: flex;
+        align-items: center;
+        &_img{
+            flex: 0 0 50%;
+            margin-right: 10px;
+            @media screen and (max-width: 767px) {
+                display: none;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+    &_link{
+        font-weight: 500;
+        color: $orange-dark;
+        text-decoration: none;
+        margin-top: 25px;
+        display: table;
+        @media screen and (max-width: 840px) {
+            max-width: 300px;
+        }
+        &:hover, &:focus{
+            text-decoration: underline;
+        }
+        svg{
+            fill: $orange-dark;
+            margin-left: 8px;
+        }
+    }
+}

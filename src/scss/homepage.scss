@@ -1,3 +1,82 @@
+/* Header
+============================================================================= */
+
+.mobile{
+    &-box--nav-box .navigation-button-header-mobile {
+        transition: border-color 0.2s;
+        height: 40px;
+        margin-top: 15px;
+    }
+    &-menu-subitems {
+        color: #343A40;
+        ul {
+            display: block;
+        }
+        li{
+            &:hover {
+                border: none;
+            }
+            a {
+                margin-top: -10px;
+                font-size: 14px;
+                line-height: 28px;
+                height: 40px;
+                padding-left: 75px;
+                &:hover {
+                    transition: color 0.2s;
+                    color: #ff832a;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+
+.navigation-button-header {
+    transition: border-color 0.2s;
+    border-bottom: 3px solid transparent;
+    height: 70px;
+    padding: 25px 10px 0;
+    margin: 0 7px;
+}
+
+.header-dropdown{
+    &-div {
+        position: absolute;
+        background-color: #FFFFFF;
+        box-shadow: 0 5px 20px 0 #F4DBC9;
+        color: #343A40;
+        padding: 8px 20px 8px 16px;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        display: none;
+        ul {
+            display: block;
+            li{
+                &:hover {
+                    border-bottom: none;
+                }
+                a {
+                    font-size: 14px;
+                    line-height: 28px;
+                    height: 28px;
+                    &:hover {
+                        transition: color 0.2s;
+                        color: #ff832a;
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.email-submit-message {
+    line-height: 30px;
+}
+
+
 /* Screen 01
   ======================================================================== */
 
@@ -113,11 +192,33 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 550px;
+        width: 570px;
         .title-box,
         .text-box p,
         .paragraph {
             padding-bottom: 30px;
+        }
+    }
+    ul {
+        margin-top: 22px;
+        margin-bottom: 5px;
+        li {
+            +li {
+                margin-top: 12px;
+            }
+            &::before {
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                width: 22px;
+                height: 22px;
+                border: 2px solid #7089ea;
+                margin-right: 16px;
+                border-radius: 50%;
+                background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTMiIGhlaWdodD0iOSIgdmlld0JveD0iMCAwIDEzIDkiPjxkZWZzPjxwYXRoIGlkPSI3OHpzYSIgZD0iTTg3LjUgOTQ2LjA3bDQuMyA0LjMgNi44Ny02Ljg3Ii8+PC9kZWZzPjxnPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC04NyAtOTQzKSI+PHVzZSBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAiIHN0cm9rZT0iIzcwODllYSIgc3Ryb2tlLW1pdGVybGltaXQ9IjUwIiBzdHJva2Utd2lkdGg9IjIiIHhsaW5rOmhyZWY9IiM3OHpzYSIvPjwvZz48L2c+PC9zdmc+); // background-size: 12px;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
         }
     }
     /* Screen 02 - How work - How work section
@@ -130,7 +231,7 @@
             right: 197px;
             width: 552px;
             height: 581px;
-            background: url(assets/images/how-it-work/lines-desktop.svg) no-repeat;
+            background: url(https://www.native.ai/hubfs/3048376/assets/images/how-it-work/lines-test.svg) no-repeat;
         }
         /* Screen 02 - How work - How work section - Items
   ======================================================================== */
@@ -145,7 +246,7 @@
                 height: 32px;
                 background-color: $orange-dark;
                 @include border-radius( 50%);
-                color: #fff;
+                color: $white;
                 font-size: 20px;
                 font-weight: 700;
                 line-height: 32px;
@@ -153,7 +254,7 @@
             .ill {
                 display: flex;
                 flex-direction: column;
-                &:hover+.drop-info {
+                &:hover ~ .drop-info {
                     visibility: visible;
                     opacity: .93;
                     @include transform( translateX( 0));
@@ -171,7 +272,7 @@
                 opacity: 0;
                 @include transform( translateX( 100px));
                 @include transition( transform .4s, opacity .3s, visibility .4s);
-                color: #fff;
+                color: $white;
                 z-index: 40;
             }
             &.start,
@@ -192,7 +293,8 @@
                     left: calc( 50% - 16px);
                 }
                 .drop-info {
-                    left: -272px;
+                    left: -350px;
+                    width: 300px;
                 }
             }
             &.first,
@@ -380,11 +482,12 @@
                 &.extra {
                     position: absolute;
                     right: 48px;
+                    top: auto;
                     bottom: 0;
                     &:before {
-                        top: -170px;
+                        top: -190px;
                         width: 2px;
-                        height: 140px;
+                        height: 150px;
                         z-index: -1;
                         background-color: $blue-main;
                     }
@@ -609,7 +712,7 @@
                     height: 28px;
                     @include border-radius( 50%);
                     border: 2px solid transparent;
-                    background-color: #fff;
+                    background-color: $white;
                     background-repeat: no-repeat;
                     background-position: center;
                 }
@@ -652,7 +755,7 @@
             li:before {
                 content: counter(how-to-get);
                 counter-increment: how-to-get;
-                background: #fff !important;
+                background: $white !important;
                 font-size: 18px;
                 font-weight: 500;
                 line-height: 26px;
@@ -686,12 +789,12 @@
             .list-section,
             .how-to-get-section {
                 &:before {
-                    background-color: #FFC093;
+                    background-color: $orange-light;
                 }
                 li:before {
-                    color: #FFC093;
-                    border-color: #FFC093;
-                    background-image: url(assets/images/check-orange.svg);
+                    color: $orange-light;
+                    border-color: $orange-light;
+                    background-image: url(https://cdn2.hubspot.net/hubfs/3048376/assets/images/check-orange.svg);
                 }
                 a {
                     color: $orange-dark;
@@ -702,7 +805,7 @@
             }
             .button-box {
                 &:before {
-                    background: url(assets/images/power-for-orange.svg) no-repeat;
+                    background: url(https://cdn2.hubspot.net/hubfs/3048376/assets/images/power-for-orange.svg) no-repeat;
                 }
             }
         }
@@ -717,7 +820,7 @@
                 li:before {
                     color: #9FB0F4;
                     border-color: #9FB0F4;
-                    background-image: url(assets/images/check-blue.svg);
+                    background-image: url(https://cdn2.hubspot.net/hubfs/3048376/assets/images/check-blue.svg);
                 }
                 a {
                     color: $blue-dark;
@@ -728,7 +831,7 @@
             }
             .button-box {
                 &:before {
-                    background: url(assets/images/power-for-blue.svg) no-repeat;
+                    background: url(https://cdn2.hubspot.net/hubfs/3048376/assets/images/power-for-blue.svg) no-repeat;
                 }
             }
         }
@@ -813,10 +916,10 @@
         text-align: center;
     }
     .brands{
-        &-section {
+        &-outer{
             padding-bottom: 25px;
         }
-        &-row{
+        &-section {
             padding-bottom: 25px;
         }
     }
@@ -864,28 +967,184 @@
   ======================================================================== */
 
 .homepage--five-screen {
-    padding: 66px 0 44px;
+    padding: 66px 0 50px;
+    border-bottom: $border-grey;
+    overflow: hidden;
     /* Screen 05 - Interests box
   ======================================================================== */
     .interests-box-wrapper {
         float: right;
-        width: 570px;
-        height: 370px;
-        padding: 0 0 20px 50px;
+        width: 560px;
+        height: 390px;
+        padding: 0 0 40px 40px;
         background-color: $grey-bg;
-        .int-box {
-            width: 520px;
-            height: 350px;
+        position: relative;
+        @media screen and (max-width: 1199px) {
+            margin-left: 50px;
+        }
+        >img {
+            width: 145%;
+            margin-left: -24%;
+            max-width: none;
+        }
+        .screen-box {
             overflow: hidden;
-            @include border-radius( 4px);
-            background-color: #eee;
+            position: absolute;
+            top: 28px;
+            left: 42px;
+            right: 23px;
+            bottom: 53px;
+            z-index: 100;
+            background-color: #fff;
         }
     }
+
+    .report-treemap {
+        background: #e3e4e6;
+        font-weight: 300;
+        &-navigation {
+            padding: 6px 10px 4px;
+            font-size: 12px;
+            line-height: 17px;
+            white-space: nowrap;
+            a {
+                color: #4c87cd;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            span {
+                &::after {
+                    content: " >> ";
+                }
+                &:last-child::after {
+                    content: "";
+                }
+            }
+        }
+    }
+
+    .treemap-container {
+        position: absolute;
+        top: 27px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 -20px;
+        padding: 0 20px;
+        overflow-y: hidden;
+        overflow-x: auto;
+        svg {
+            overflow: hidden;
+            background: #e3e4e6;
+        }
+        &.touch g:hover>rect.foreground {
+            fill-opacity: 0;
+        }
+    }
+
+    g {
+        &.root {
+            shape-rendering: crispEdges;
+            &.animation {
+                shape-rendering: optimizeSpeed;
+            }
+        }
+        &:hover>rect {
+            &.foreground {
+                fill-opacity: 0.2;
+                fill: black;
+            }
+            &.show-parent-topic+rect.foreground {
+                fill-opacity: 0;
+            }
+        }
+    }
+
+    rect {
+        fill: none;
+        stroke-width: 1px;
+        stroke: #fff;
+        &.border-stroke {
+            stroke-width: 2px;
+        }
+    }
+
+    .children {
+        cursor: pointer;
+        &.show-parent-topic {
+            cursor: default;
+        }
+        rect {
+            &.parent {
+                stroke-width: 2px;
+            }
+            &.child {
+                stroke-opacity: 0.3;
+            }
+            &.show-parent-topic {
+                fill: #dbdbdb;
+            }
+        }
+    }
+
+    text {
+        font-size: 1.8em;
+        fill: #fff;
+        pointer-events: none;
+    }
+
+    @keyframes wiggle {
+        0% {
+            transform: rotate(0deg);
+        }
+        25% {
+            transform: rotate(3deg);
+        }
+        75% {
+            transform: rotate(-3deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+    .treemap-hint {
+        position: absolute;
+        background-image: url(https://www.native.ai/hubfs/assets/images/hint_baloon.png?t=1526875186821);
+        background-repeat: no-repeat;
+        background-position: center;
+        left: calc(50% - 198px);
+        top: 15%;
+        z-index: 101;
+        width: 396px;
+        height: 188px;
+        cursor: pointer;
+        transition: opacity 0.2s ease-out, transform 1s ease-out;
+        &.wiggle {
+            animation: wiggle .33s 3;
+        }
+        &.hidden {
+            opacity: 0;
+            transform: scale(0);
+        }
+        &-text {
+            position: absolute;
+            line-height: 31px;
+            text-align: center;
+            font-size: 20px;
+            color: #656565;
+            left: 48px;
+            top: 49px;
+            width: 300px;
+        }
+    }
+
     blockquote {
         display: block;
         margin-bottom: 25px;
     }
-    p {
+
+    p{
         padding-bottom: 30px;
     }
     /* Screen 05 - Title
@@ -893,6 +1152,43 @@
     .title,
     blockquote {
         padding-bottom: 25px;
+    }
+
+    .interests{
+        display: flex;
+        align-items: flex-end;
+        padding-top: 45px;
+        @media screen and (max-width: 1023px){
+            padding-top: 130px;
+        }
+        @media screen and ( max-width: 640px) {
+            padding-top: 0;
+        }
+        &_img{
+            margin-right: 44px;
+            flex: 0 0 47%;
+            @media screen and (max-width: 1023px) {
+                flex: 1 1 auto;
+                margin: auto;
+            }
+            img{
+                max-width: 100%;
+                @media screen and ( max-width: 640px) {
+                    display: none;
+                }
+            }
+        }
+        &_content{
+            h3, h4{
+                font-weight: 700;
+            }
+            h3{
+                margin-bottom: 30px;
+            }
+            .paragraph{
+                padding-bottom: 25px;
+            }
+        }
     }
 }
 
@@ -920,11 +1216,17 @@
             order: 2;
             float: none;
             width: 100%;
-            height: 460px;
             padding: 30px 0;
-            .int-box {
+            margin: 0;
+            >img {
                 width: 100%;
-                height: 100%;
+                margin-left: 0;
+            }
+            .screen-box {
+                top: calc(6vw + 4px);
+                right: 15vw;
+                left: 15vw;
+                height: 38vw;
             }
         }
     }

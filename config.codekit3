@@ -17,26 +17,33 @@
 	],
 "creatorBuild": "26680",
 "files": {
+	"\/.babelrc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/build\/.babelrc",
+		"oF": 1
+		},
 	"\/.eslintrc": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/build\/.eslintrc",
-		"oF": 0
+		"oF": 1
 		},
 	"\/.gitattributes": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/build\/.gitattributes",
-		"oF": 0
+		"oF": 1
 		},
 	"\/.gitignore": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/build\/.gitignore",
-		"oF": 0
+		"oF": 1
 		},
 	"\/build": {
 		"ft": 65536,
@@ -858,6 +865,16 @@
 		"plM": 553513902079,
 		"prP": 0
 		},
+	"\/src\/assets\/images\/illustrations\/interests.svg": {
+		"ft": 2097152,
+		"miP": 1,
+		"oA": 2,
+		"oAP": "\/build\/assets\/images\/illustrations\/interests.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 553513902079,
+		"prP": 0
+		},
 	"\/src\/assets\/images\/illustrations\/pub-1.svg": {
 		"ft": 2097152,
 		"miP": 1,
@@ -873,6 +890,36 @@
 		"miP": 1,
 		"oA": 2,
 		"oAP": "\/build\/assets\/images\/illustrations\/pub-2.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 553513902079,
+		"prP": 0
+		},
+	"\/src\/assets\/images\/illustrations\/step_1.svg": {
+		"ft": 2097152,
+		"miP": 1,
+		"oA": 2,
+		"oAP": "\/build\/assets\/images\/illustrations\/step_1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 553513902079,
+		"prP": 0
+		},
+	"\/src\/assets\/images\/illustrations\/step_2.svg": {
+		"ft": 2097152,
+		"miP": 1,
+		"oA": 2,
+		"oAP": "\/build\/assets\/images\/illustrations\/step_2.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 553513902079,
+		"prP": 0
+		},
+	"\/src\/assets\/images\/illustrations\/step_3.svg": {
+		"ft": 2097152,
+		"miP": 1,
+		"oA": 2,
+		"oAP": "\/build\/assets\/images\/illustrations\/step_3.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
@@ -894,6 +941,17 @@
 		"iS": 19968,
 		"oA": 0,
 		"oAP": "\/build\/assets\/images\/logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/src\/assets\/images\/macbook.png": {
+		"ft": 32768,
+		"iS": 44762,
+		"oA": 0,
+		"oAP": "\/build\/assets\/images\/macbook.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -1001,21 +1059,14 @@
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"\/src\/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/index.html",
-		"oF": 0
-		},
 	"\/src\/js\/app.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/build\/js\/app.min.js",
+		"oAP": "\/build\/src\/js\/app.min.js",
 		"oF": 2,
-		"sC": 3,
+		"sC": 0,
 		"tS": 0
 		},
 	"\/src\/js\/components\/fastnav.js": {
@@ -1130,6 +1181,24 @@
 		"oAP": "\/build\/publisher.html",
 		"oF": 0
 		},
+	"\/src\/pug\/components\/_treemap.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_treemap.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/src\/pug\/pages\/index.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/index.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/src\/pug\/pages\/new.pug": {
 		"cB": 1,
 		"cOD": 1,
@@ -1157,12 +1226,75 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/src\/pug\/sections\/_case_study.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_case_study.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/src\/pug\/sections\/_first.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_first.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/src\/pug\/sections\/_footer.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_footer.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/src\/pug\/sections\/_header.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_header.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/src\/pug\/sections\/_how.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_how.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/src\/pug\/sections\/_interests.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_interests.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/src\/pug\/sections\/_power.pug": {
 		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/build\/_power.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/src\/pug\/sections\/_start.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_start.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -1188,6 +1320,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/build\/scss\/advertising.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/base.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/scss\/base.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1283,6 +1428,32 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/src\/scss\/sections\/_how.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/scss\/sections\/_how.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/sections\/_start.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/scss\/sections\/_start.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/src\/scss\/vars.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1314,7 +1485,7 @@
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "\/src\/assets\/favicon\/apple-touch-icon-120x120.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 548693671
+	"lastBuiltDate": 548992048
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -1325,7 +1496,7 @@
 	"autoprefixerEnableIEGrid": 0,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
-	"babelConfigFileHandlingType": 0,
+	"babelConfigFileHandlingType": 2,
 	"babelCustomPluginsList": "",
 	"babelCustomPresetsList": "",
 	"babelInsertModuleIDs": 0,
@@ -2710,7 +2881,7 @@
 		},
 	"esLintSourceType": 0,
 	"externalServerAddress": "http:\/\/localhost:8888",
-	"gitIgnoreBuildFolder": 1,
+	"gitIgnoreBuildFolder": 0,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",
 	"jsHintFlags2": {
@@ -3226,7 +3397,7 @@
 		"autoOutputPathRelativePath": "..\/css",
 		"autoOutputPathReplace1": "sass",
 		"autoOutputPathReplace2": "css",
-		"autoOutputPathStyle": 3,
+		"autoOutputPathStyle": 0,
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
@@ -3271,7 +3442,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
-		"pluginMask": 553513902079
+		"pluginMask": 3758088159
 		},
 	"languageDefaultsTS": {
 		"autoOutputAction": 0,

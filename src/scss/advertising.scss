@@ -240,7 +240,7 @@
         width: 100%;
         max-width: 930px;
         height: 412px;
-        background: url(assets/images/adv-get-started-bg.svg) center top no-repeat;
+        background: url(https://cdn2.hubspot.net/hubfs/3048376/assets/images/adv-get-started-bg.svg) center top no-repeat;
     }
 
     .how-to-item {
@@ -254,7 +254,7 @@
             @include border-radius( 50% );
             background-color: $blue-dark;
 
-            color: #fff;
+            color: $white;
             font-size: 20px;
             font-weight: 500;
             line-height: 30px;

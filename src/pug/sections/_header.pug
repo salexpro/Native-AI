@@ -1,0 +1,104 @@
+// Header =====================================================================
+header
+    .wrapper
+        .header--nav-toggle
+            .icon-box
+                span
+                span
+                span
+        .header--logo-box
+            a(href='/', alt='NativeAI', title='NativeAI')
+        .header--nav-box
+            nav
+                ul
+                    li
+                        a.dropdown-button.navigation-button-header(href='/') Solutions
+                        .header-dropdown-div
+                            ul
+                                li
+                                    a(href='/analytics') Publisher Analytics
+                                li
+                                    a(href='/advertising') Native Advertising
+                    li
+                        a.dropdown-button.dropdown-button.navigation-button-header(href='/') Blogs
+                        .header-dropdown-div
+                            ul
+                                li
+                                    a(href='/blog') Blog
+                                li
+                                    a(href='/all-stars') Content Marketing All-Stars
+                    li
+                        a.dropdown-button.dropdown-button.navigation-button-header(href='/') About
+                        .header-dropdown-div
+                            ul
+                                li
+                                    a(href='https://news360.com/team', target='_blank') Team
+                                li
+                                    a(href='https://news360.com/careers', target='_blank') Careers
+                                li
+                                    a(href='/privacy') Privacy Policy
+                                li
+                                    a(href='/terms') Terms of Use
+        .header--sign-in-box
+            a.button.slim.border.orange(href='https://app.native.ai/signin')
+                span Sign In
+// Mobile drawer =====================================================================
+.header--mobile-box
+    .mobile-box--top-bar
+        .mobile-box--logo-box
+            a(href='#', alt='NativeAI', title='NativeAI')
+        .mobile-box--close-btn
+            svg(xmlns='http://www.w3.org/2000/svg', viewbox='-997.778 34.293 15.556 15.556', width='16', heigth='16')
+                g(style='stroke:#343a40; stroke-width:2px;', transform='translate(-1339 14.071)')
+                    line(x1='20', transform='translate(341.929 20.929) rotate(45)')
+                    line(x1='20', transform='translate(341.929 35.071) rotate(-45)')
+    .mobile-box--nav-box
+        nav
+            ul
+                li
+                    a.navigation-button-header-mobile(href='#')
+                        i
+                            img(src='https://cdn2.hubspot.net/hubfs/3048376/assets/images/nav-solutions.svg')
+                        span Solutions
+                    .mobile-menu-subitems
+                        ul
+                            li
+                                a(href='/analytics') Publisher Analytics
+                            li
+                                a(href='/advertising') Native Advertising
+                li
+                    a.navigation-button-header-mobile(href='#')
+                        i
+                            img(src='https://cdn2.hubspot.net/hubfs/3048376/assets/images/nav-blog.svg')
+                        span Blogs
+                    .mobile-menu-subitems
+                        ul
+                            li
+                                a(href='/blog') Blog
+                            li
+                                a(href='/all-stars') Content Marketing All-Stars
+                li
+                    a.navigation-button-header-mobile(href='#')
+                        i
+                            img(src='https://cdn2.hubspot.net/hubfs/3048376/assets/images/nav-how-to.svg')
+                        span About
+                    .mobile-menu-subitems
+                        ul
+                            li
+                                a(href='https://news360.com/team', target='_blank') Team
+                            li
+                                a(href='https://news360.com/careers', target='_blank') Careers
+                            li
+                                a(href='/privacy') Privacy Policy
+                            li
+                                a(href='/terms') Terms of Use
+    .mobile-box--sign-in-box
+        a.button.border.icon.orange(href='/dashboard/signin')
+            span Sign In
+            i
+                svg(xmlns='http://www.w3.org/2000/svg', viewbox='-1000 612 17.322 12', width='17', height='12')
+                    g(transform='translate(-1313 163.071)')
+                        rect(width='1.697', height='8.485', rx='0.849', transform='translate(329.122 453.729) rotate(45)')
+                        rect(width='16.971', height='1.697', rx='0.849', transform='translate(313 454.08)')
+                        rect(width='8.485', height='1.697', rx='0.849', transform='translate(324.322 448.929) rotate(45)')
+.header--filter
