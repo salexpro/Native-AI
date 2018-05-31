@@ -1,28 +1,29 @@
-section.homepage--five-screen.grey-bg
-    .wrapper
-        include ../components/_treemap
-        .title
-            h2
-                | Content Intelligence that lets you take data-informed decisions
-        .text-section
-            blockquote
-                | Blindly creating and promoting content without understanding what engages your audience isn’t marketing, it’s guessing.
-            p
-                | Content Analytics tools are plenty, Data is everywhere, but how much of it are you able to use immediately?  The problem has traditionally been a lack of actionable, understandable intelligence and insight.
-    .wrapper.interests
-        .interests_img
-            img(src="assets/images/illustrations/interests.svg", alt="")
-        .interests_content
-            h3 How NativeAI solves Data Overload
-            .paragraph
-                h4 Content Analytics
-                | NativeAI gives you all the common metrics you need to measure the effectiveness of your content
-            .paragraph
-                h4 Engagement Volume & Quality
-                | Measure Performance in terms of Quantity (number of readers) as well as Quality (time spent reading and scroll depth)
-            .paragraph
-                h4 Real-time Content Intelligence
-                | Know how your content is performing, as it picks up steam across channels and various audience segments
-            .paragraph
-                h4 Actionable Content Insights
-                | Give your Editorial & Distribution teams the power they need to proactively increase engagement, and crush their KPIs.
+mixin interests(second, header, text, mod)
+    section.homepage--five-screen(class=mod)
+        .wrapper
+            include ../components/_treemap
+            .title
+                h2= header
+            .text-section
+                if text === 'list'
+                    +list(['Understands content', 'Groups similar articles', 'Maps Audience behavior to Grouped & Individual Interests', 'Allows you to deep dive and identify insightsby Topic Affinities & Audience profiles'])
+                else
+                    !=text
+        if second
+            .wrapper.interests
+                .interests_img
+                    img(src="assets/images/illustrations/interests.svg", alt="")
+                .interests_content
+                    h3 How NativeAI solves Data Overload
+                    .paragraph
+                        h4 Content Analytics
+                        | NativeAI gives you all the common metrics you need to measure the effectiveness of your content
+                    .paragraph
+                        h4 Engagement Volume & Quality
+                        | Measure Performance in terms of Quantity (number of readers) as well as Quality (time spent reading and scroll depth)
+                    .paragraph
+                        h4 Real-time Content Intelligence
+                        | Know how your content is performing, as it picks up steam across channels and various audience segments
+                    .paragraph
+                        h4 Actionable Content Insights
+                        | Give your Editorial & Distribution teams the power they need to proactively increase engagement, and crush their KPIs.

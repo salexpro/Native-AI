@@ -1,0 +1,15 @@
+// Eight screen =====================================================================
+mixin eight(header, text, color, button, img)
+    .publisher--eight-screen
+        .wrapper
+            .text-section
+                .title-box
+                    h3.bold= header
+                .text-box
+                    p
+                        !=text
+                .button-box
+                    a.button(href='#' class=color)
+                        =button
+            .ill-section
+                img(src='assets/images/illustrations/' + img +'.svg')

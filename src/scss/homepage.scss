@@ -199,28 +199,6 @@
             padding-bottom: 30px;
         }
     }
-    ul {
-        margin-top: 22px;
-        margin-bottom: 5px;
-        li {
-            +li {
-                margin-top: 12px;
-            }
-            &::before {
-                content: '';
-                display: inline-block;
-                vertical-align: middle;
-                width: 22px;
-                height: 22px;
-                border: 2px solid #7089ea;
-                margin-right: 16px;
-                border-radius: 50%;
-                background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTMiIGhlaWdodD0iOSIgdmlld0JveD0iMCAwIDEzIDkiPjxkZWZzPjxwYXRoIGlkPSI3OHpzYSIgZD0iTTg3LjUgOTQ2LjA3bDQuMyA0LjMgNi44Ny02Ljg3Ii8+PC9kZWZzPjxnPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC04NyAtOTQzKSI+PHVzZSBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAiIHN0cm9rZT0iIzcwODllYSIgc3Ryb2tlLW1pdGVybGltaXQ9IjUwIiBzdHJva2Utd2lkdGg9IjIiIHhsaW5rOmhyZWY9IiM3OHpzYSIvPjwvZz48L2c+PC9zdmc+); // background-size: 12px;
-                background-position: center;
-                background-repeat: no-repeat;
-            }
-        }
-    }
     /* Screen 02 - How work - How work section
   ======================================================================== */
     .how-work-section {

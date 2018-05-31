@@ -6,23 +6,8 @@ block const
         const keywords = 'native advertising, native content, native marketing, content advertising, publisher content, promo content'
 
 block content
-    // First screen =====================================================================
-    .adv--first-screen.lp-first-screen
-        .wrapper
-            .ill-section
-                img(src='assets/images/illustrations/home-advertising.svg')
-            .titles-section
-                .main-title
-                    h1 Native Advertising
-                .descr
-                    p
-                        | Engage the 
-                        strong Right
-                        |  Audience and Deliver Performance
-                .button-box
-                    a.button.blue.mobile-icon(href='#')
-                        span Get a Quick Demo
-    
+    include ../sections/_first_adv
+    +first_adv('home-advertising', 'Native Advertising', 'Engage the <strong>Right</strong> Audience and Deliver Performance', 'Get a Quick Demo')
     // Second screen =====================================================================
     .adv--second-screen
         .wrapper
@@ -88,20 +73,7 @@ block content
                         | As you learn your audience’s preferences, what kind of ads perform the best, and which segment responds to what content, you don’t just get ahead of the game - you change the game.
     
     include ../sections/_case_study
-    
-    // Case study box =====================================================================
-    .case-study-box
-        .wrapper
-            .case-study--img
-                img(src='assets/images/case.svg')
-            .case-study--text
-                .title
-                    h3 Case Study: See How X Drove a X% Increase in ROI/CTR/ENGAGEMENT
-                .text-button
-                    .text
-                        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit...
-                    .button-box
-                        a.button.border.blue(href='#') Download Now
+    +case_study('See How X Drove a X% Increase in ROI/CTR/ENGAGEMENT', 'blue')
     
     // How It Works =====================================================================
     .adv--sixth-screen.ill-2-cols
@@ -259,19 +231,5 @@ block content
                         | change the native advertising game and crush your competition.
                 .img-box
                     img(src='assets/images/illustrations/adv-5.svg')
-    
-    // Eight screen =====================================================================
-    .publisher--eight-screen
-        .wrapper
-            .text-section
-                .title-box
-                    h3.bold Get an Audience Match Demo Now
-                .text-box
-                    p
-                        | Get a quick demo on the power of the NativeAI platform. We'll show you five
-                        br
-                        | audience insights, and how they apply to your campaigns within 15 minutes.
-                .button-box
-                    a.button.blue(href='#') I Want a Demo
-            .ill-section
-                img(src='assets/images/illustrations/home-advertising.svg')
+    include ../sections/_eight
+    +eight('Get an Audience Match Demo Now', 'Get a quick demo on the power of the NativeAI platform. We\'ll show you five<br>audience insights, and how they apply to your campaigns within 15 minutes.', 'blue', 'I Want a Demo', 'home-advertising')

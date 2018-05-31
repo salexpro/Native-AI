@@ -1,0 +1,18 @@
+.behavior{
+    padding-top: 65px;
+    padding-bottom: 40px;
+    &_header{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    &_descr{
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    &_content{
+        .button{
+            margin-left: 42px;
+            margin-top: 25px;
+        }
+    }
+}

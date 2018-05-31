@@ -45,12 +45,6 @@
 		"oAP": "\/build\/.gitignore",
 		"oF": 1
 		},
-	"\/build": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/build\/build",
-		"oF": 0
-		},
 	"\/build.zip": {
 		"cB": 0,
 		"ft": 8192,
@@ -828,6 +822,24 @@
 		"plM": 553513902079,
 		"prP": 0
 		},
+	"\/src\/assets\/images\/illustrations\/anim.gif": {
+		"ft": 4194304,
+		"iS": 5762603,
+		"oA": 0,
+		"oAP": "\/build\/assets\/images\/illustrations\/anim.gif",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/src\/assets\/images\/illustrations\/home-01-gray.svg": {
+		"ft": 2097152,
+		"miP": 1,
+		"oA": 2,
+		"oAP": "\/build\/assets\/images\/illustrations\/home-01-gray.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/src\/assets\/images\/illustrations\/home-01.svg": {
 		"ft": 2097152,
 		"miP": 1,
@@ -856,6 +868,16 @@
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
+		"prP": 0
+		},
+	"\/src\/assets\/images\/illustrations\/how-works.svg": {
+		"ft": 2097152,
+		"miP": 1,
+		"oA": 2,
+		"oAP": "\/build\/assets\/images\/illustrations\/how-works.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
 		"prP": 0
 		},
 	"\/src\/assets\/images\/illustrations\/interests.svg": {
@@ -888,6 +910,16 @@
 		"plM": 553513902079,
 		"prP": 0
 		},
+	"\/src\/assets\/images\/illustrations\/script.svg": {
+		"ft": 2097152,
+		"miP": 1,
+		"oA": 2,
+		"oAP": "\/build\/assets\/images\/illustrations\/script.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/src\/assets\/images\/illustrations\/step_1.svg": {
 		"ft": 2097152,
 		"miP": 1,
@@ -916,6 +948,47 @@
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
+		"prP": 0
+		},
+	"\/src\/assets\/images\/infographic\/engagement.png": {
+		"ft": 32768,
+		"iS": 54615,
+		"oA": 0,
+		"oAP": "\/build\/assets\/images\/infographic\/engagement.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/src\/assets\/images\/language\/classification.svg": {
+		"ft": 2097152,
+		"miP": 1,
+		"oA": 2,
+		"oAP": "\/build\/assets\/images\/language\/classification.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/assets\/images\/language\/interests.svg": {
+		"ft": 2097152,
+		"miP": 1,
+		"oA": 2,
+		"oAP": "\/build\/assets\/images\/language\/interests.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/assets\/images\/language\/ontology.svg": {
+		"ft": 2097152,
+		"miP": 1,
+		"oA": 2,
+		"oAP": "\/build\/assets\/images\/language\/ontology.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
 		"prP": 0
 		},
 	"\/src\/assets\/images\/logo-mini.png": {
@@ -1085,6 +1158,15 @@
 		"oAP": "\/build\/mail",
 		"oF": 0
 		},
+	"\/src\/pug\/components\/_list.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_list.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/src\/pug\/components\/_treemap.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -1118,6 +1200,15 @@
 		"ft": 512,
 		"oA": 0,
 		"oAP": "\/build\/analytics.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/src\/pug\/pages\/how.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/how.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -1166,6 +1257,24 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/src\/pug\/sections\/_anim.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_anim.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/src\/pug\/sections\/_behavior.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_behavior.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/src\/pug\/sections\/_blog_feature.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -1202,12 +1311,48 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/src\/pug\/sections\/_dashboard.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_dashboard.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/src\/pug\/sections\/_eight.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_eight.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/src\/pug\/sections\/_faq.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_faq.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/src\/pug\/sections\/_first.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/build\/_first.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/src\/pug\/sections\/_first_adv.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_first_adv.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -1256,12 +1401,30 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/src\/pug\/sections\/_language.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_language.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/src\/pug\/sections\/_power.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/build\/_power.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/src\/pug\/sections\/_script.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_script.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -1331,6 +1494,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/build\/scss\/blocks.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/components\/_list.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/scss\/components\/_list.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1413,6 +1589,45 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/src\/scss\/sections\/_anim.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/scss\/sections\/_anim.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/sections\/_audience.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/scss\/sections\/_audience.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/sections\/_behavior.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/scss\/sections\/_behavior.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/src\/scss\/sections\/_blog_feature.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1426,6 +1641,32 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/src\/scss\/sections\/_dashboard.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/scss\/sections\/_dashboard.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/sections\/_faq.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/scss\/sections\/_faq.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/src\/scss\/sections\/_how.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1435,6 +1676,32 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/build\/scss\/sections\/_how.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/sections\/_language.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/scss\/sections\/_language.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/sections\/_script.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/scss\/sections\/_script.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1476,7 +1743,7 @@
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "\/src\/assets\/favicon\/apple-touch-icon-120x120.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 549070246
+	"lastBuiltDate": 549502308
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

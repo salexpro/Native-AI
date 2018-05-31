@@ -1175,7 +1175,17 @@ footer {
 @import "page.scss";
 @import "adv-c.scss";
 
+// Components
+@import 'components/list';
+
 // Sections
 @import 'sections/start';
 @import 'sections/how';
 @import 'sections/blog_feature';
+@import 'sections/anim';
+@import 'sections/language';
+@import 'sections/audience';
+@import 'sections/behavior';
+@import 'sections/script';
+@import 'sections/dashboard';
+@import 'sections/faq';

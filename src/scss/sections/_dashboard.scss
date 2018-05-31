@@ -1,0 +1,22 @@
+.dashboard{
+    padding-top: 67px;
+    padding-bottom: 75px;
+    &_img{
+        max-width: 488px;
+        box-shadow: 0 5px 16px rgba(222, 226, 230, 0.5);
+        border-radius: 4px;
+        border: $border-grey;
+        overflow: hidden;
+        img{
+            display: block;
+        }
+    }
+    &_header{
+        margin-bottom: 40px;
+        margin-top: -12px;
+    }
+    .mainhow_link{
+        margin-top: 35px;
+        margin-left: 42px;
+    }
+}

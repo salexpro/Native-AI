@@ -1,0 +1,15 @@
+// First screen =====================================================================
+mixin first_adv(img, header, descr, button, mod)
+    .adv--first-screen.lp-first-screen
+        .wrapper
+            .ill-section
+                img(src='assets/images/illustrations/' + img + '.svg')
+            .titles-section
+                .main-title
+                    h1= header
+                .descr
+                    p
+                        !=descr
+                .button-box
+                    a.button.blue.mobile-icon(href='#')
+                        span= button

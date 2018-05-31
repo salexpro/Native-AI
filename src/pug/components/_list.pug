@@ -1,0 +1,9 @@
+mixin list(data, mod)
+    ul.list(class=mod)
+        each item in data
+            li.list_item
+                .list_circle
+                    svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='13', height='9', viewbox='0 0 13 9')
+                        path(transform='translate(-87 -817)', d='M87.5 820.07l4.3 4.3 6.87-6.87')
+                p.list_content
+                    != item

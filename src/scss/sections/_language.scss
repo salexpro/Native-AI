@@ -1,0 +1,22 @@
+.language{
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 70px;
+    border-bottom: $border-grey;
+    &_header{
+        margin-bottom: 20px;
+    }
+    &_descr{
+        margin-bottom: 50px;
+    }
+    &_item{
+        &_img{
+            width: 170px;
+            margin: auto;
+            margin-bottom: 15px;
+        }
+        &_title{
+            font-weight: 700;
+        }
+    }
+}

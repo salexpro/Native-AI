@@ -217,20 +217,5 @@ block content
                 .img-box
                     img(src='assets/images/illustrations/pub-2.svg')
     
-    // Eight screen =====================================================================
-    .publisher--eight-screen
-        .wrapper
-            .text-section
-                .title-box
-                    h3.bold Let Us Show You How to Get an Unfair Advantage
-                .text-box
-                    p
-                        | Get a quick demo to see how NativeAI can help you increase engagement 
-                        br
-                        | on-demand and win market share. We'll show you 5 incredible 
-                        br
-                        | audience insights in as little 15 Minutes.
-                .button-box
-                    a.button.orange(href='#') I Want a Demo
-            .ill-section
-                img(src='assets/images/illustrations/home-publishers.svg')
+    include ../sections/_eight
+    +eight('Let Us Show You How to Get an Unfair Advantage', 'Get a quick demo to see how NativeAI can help you increase engagement<br>on-demand and win market share. We\'ll show you 5 incredible<br>audience insights in as little 15 Minutes.', 'orange', 'I Want a Demo', 'home-publishers')
