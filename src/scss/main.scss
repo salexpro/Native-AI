@@ -436,7 +436,7 @@ header {
 
 .header--mobile-box {
     position: fixed;
-    display: none;
+    display: none !important;
     width: 100%;
 
     background-color: $white;
@@ -744,10 +744,12 @@ header {
         height: 70px;
         border-bottom: 1px solid #DEE2E6;
         transform: translateY(-140px);
+        display: flex !important;
     }
 
     .header--mobile-box.show {
         transform: translateY(0);
+        display: flex !important;
     }
 
     /* Header - Mobile box - Top bar - Close button
@@ -843,9 +845,10 @@ header {
 
     .mobile-box--nav-box {
         display: flex;
-        flex: 1;
+        flex: 1 0 auto;
         align-items: center;
-        margin: 20px 0;
+        margin: 15px 0;
+        margin-top: 5px;
         min-height: 360px;
 
 
