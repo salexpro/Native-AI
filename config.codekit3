@@ -70,6 +70,28 @@
 		"oAP": "\/build\/mail",
 		"oF": 0
 		},
+	"\/node_modules": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/build\/node_modules",
+		"oF": 1
+		},
+	"\/package-lock.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/build\/package-lock-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/build\/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"\/src\/assets\/favicon\/android-chrome-192x192.png": {
 		"ft": 32768,
 		"iS": 2989,
@@ -962,11 +984,55 @@
 		"plM": 553513902079,
 		"prP": 0
 		},
+	"\/src\/assets\/images\/infographic\/channels.png": {
+		"ft": 32768,
+		"iS": 33525,
+		"oA": 0,
+		"oAP": "\/build\/assets\/images\/infographic\/channels.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/src\/assets\/images\/infographic\/channels@2x.png": {
+		"ft": 32768,
+		"iS": 84282,
+		"oA": 0,
+		"oAP": "\/build\/assets\/images\/infographic\/channels@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/src\/assets\/images\/infographic\/engagement.png": {
 		"ft": 32768,
 		"iS": 54615,
 		"oA": 0,
 		"oAP": "\/build\/assets\/images\/infographic\/engagement.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/src\/assets\/images\/infographic\/increased.png": {
+		"ft": 32768,
+		"iS": 9548,
+		"oA": 0,
+		"oAP": "\/build\/assets\/images\/infographic\/increased.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/src\/assets\/images\/infographic\/increased@2x.png": {
+		"ft": 32768,
+		"iS": 24001,
+		"oA": 0,
+		"oAP": "\/build\/assets\/images\/infographic\/increased@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -1209,6 +1275,15 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/src\/pug\/pages\/dashboard.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/dashboard.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/src\/pug\/pages\/how.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -1251,6 +1326,15 @@
 		"ft": 512,
 		"oA": 0,
 		"oAP": "\/build\/thank_you.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/src\/pug\/sections\/_3col.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_3col.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -1595,6 +1679,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/src\/scss\/sections\/_analysis.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/scss\/sections\/_analysis.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/src\/scss\/sections\/_anim.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1725,6 +1822,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/src\/scss\/sections\/_unfair.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/scss\/sections\/_unfair.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/src\/scss\/vars.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1749,7 +1859,7 @@
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "\/src\/assets\/favicon\/apple-touch-icon-120x120.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 549511863
+	"lastBuiltDate": 549516667
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -3731,7 +3841,7 @@
 		],
 	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
-	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, \/storage\/framework\/sessions, docs, mail",
+	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, \/storage\/framework\/sessions, docs, mail, node_modules",
 	"sourceFolderName": "src",
 	"susyVersion": 3,
 	"uglifyDefinesString": "",

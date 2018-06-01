@@ -1,38 +1,30 @@
 extends ../layout
 block const
     -
-        const title = 'NativeAI - Publisher Analytics & Monetization Platform'
+        const title = 'NativeAI - Dashboard & Metrics'
         const description = 'NativeAI is an advertising and analytics platform for news publishers on web and mobile. It uses advanced personalization algorithms to help content creators understand their audience and predict which content would do well, as well as use those insights to target native advertising and monetize their properties more effectively.'
         const keywords = 'native advertising, native content, native marketing, content advertising, publisher content, promo content'
+
 block content
     // Components
+    include ../components/_list
+    include ../sections/_first_adv
     include ../sections/_3col
+    include ../sections/_brands
+    include ../sections/_eight
 
-    // First screen =====================================================================
-    .publisher--first-screen.lp-first-screen
-        .wrapper
-            .ill-section
-                img(src='assets/images/illustrations/home-publishers.svg')
-            .titles-section
-                .main-title
-                    h1 Publisher Analytics
-                .descr
-                    p Actionable Insights To Put Editors Ahead of the Game
-                .button-box
-                    a.button.orange.mobile-icon(href='#')
-                        span Get a Demo
-            .text-section
-                p
-                    | Publishing highly engaging content doesn’t have to be a guessing game. When you possess deep, actionable intelligence about your readers, what kind of content they like and why, you don’t just get a competitive advantage, you change the game entirely.
-    
-    +3col('publisher--second-screen')
-    
+    // Sections
+    +first_adv('how-works', 'Dashboard & Metrics', 'Learn how we deliver actionable insights', 'Talk to us')
+    include ../sections/_anim
+    include ../sections/_language
+    include ../sections/_script
+    +3col('publisher--second-screen unfair')
+
     // Third screen =====================================================================
-    .publisher--third-screen
+    .publisher--third-screen.homepage--five-screen.analysis
         .wrapper
-            .item.img-left
-                .img-section
-                    img(src='')
+            .item.img-left.analysis_treemap
+                include ../components/_treemap
                 .text-section
                     .title-box
                         h2 Audience Interest Analysis
@@ -51,10 +43,10 @@ block content
                         p
                             | Keep track of what is happening on your site right now. Instantly compare performance against the typical performance averages. The dashboard features goes deeper than visits with the Engagement Quality (EQ) graph, revealing audience engagement metrics in real-time.
                 .img-section
-                    img(src='')
+                    img(src='assets/images/infographic/engagement.png' alt="Real-Time Dashboard")
             .item.img-left
                 .img-section
-                    img(src='')
+                    img(src='assets/images/infographic/channels.png' alt="Interest Intelligence")
                 .text-section
                     .title-box
                         h2 Interest Intelligence
@@ -70,19 +62,19 @@ block content
                     .text-box
                         p
                             | Daily snapshots of content performance and engagement metrics sent directly to your inbox. Get a high-level view of the most important performance insights you can understand at a glance.
-                .img-section
-                    img(src='')
-            .item.img-left
-                .img-section
-                    img(src='')
-                .text-section
+                    
                     .title-box
                         h2 Engagement Quality Intelligence
                     hr.blue
                     .text-box
                         p
                             | Engagement Quality (EQ) is a special metric developed by NativeAI that combines time spent, scroll depth, user actions, and story length, and more. These metrics are combined into a single score to gauge the engagement value of each piece of content.
-    
+                .img-section
+                    h3.bold News.com Daily Digest
+                    img(src='assets/images/infographic/increased.png' alt="Engagement Quality Intelligence")
+                    img(src='assets/images/infographic/engagement.png' alt="Engagement Quality Intelligence")
+
+
     // How It Works =====================================================================
     .publisher--five-screen.ill-2-cols
         .wrapper
@@ -119,72 +111,8 @@ block content
                             p
                                 | Change the game with your ability to publish content that drives audience engagement.
     
-    // Top Brands Rely on NativeAI =====================================================================
-    .homepage--four-screen
-        .wrapper
-            .title
-                h2 Top Brands Rely on NativeAI
-            .subtitle
-                p
-                    | NativeAI’s sponsored content network provides quality, branded, editorial,
-                    br
-                    | and corporate blog posts and thought leadership papers from today's top brands
-            .brands-section
-                .brand-item
-                    img(src='assets/images/brands/thomson.png')
-                .brand-item
-                    img(src='assets/images/brands/billboard.png')
-                .brand-item
-                    img(src='assets/images/brands/realclear.png')
-                .brand-item
-                    img(src='assets/images/brands/ozy.png')
-                .brand-item
-                    img(src='assets/images/brands/rollcall.png')
-                .brand-item
-                    img(src='assets/images/brands/euronews.png')
-            .testimonials-section
-                .testimonial-item.card
-                    .user-info-box
-                        .avatar-box
-                            img(src='assets/images/testimonials/user-01.png')
-                        .name-box
-                            .name
-                                h3 Rachel Decker
-                            .company
-                                span.text.size-16.grey HubSpot, inc.
-                    .quote-box
-                        p.italic
-                            | "Never underestimate the power of a great testimonial. A few words of praise from a happy customer can work wonders. A big, friendly smile never hurts, either."
-                .testimonial-item.card
-                    .user-info-box
-                        .avatar-box
-                            img(src='assets/images/testimonials/user-01.png')
-                        .name-box
-                            .name
-                                h3 Rachel Decker
-                            .company
-                                span.text.size-16.grey HubSpot, inc.
-                    .quote-box
-                        p.italic
-                            | "Never underestimate the power of a great testimonial. A few words of praise from a happy customer can work wonders. A big, friendly smile never hurts, either."
-                .testimonial-item.card
-                    .user-info-box
-                        .avatar-box
-                            img(src='assets/images/testimonials/user-01.png')
-                        .name-box
-                            .name
-                                h3 Rachel Decker
-                            .company
-                                span.text.size-16.grey HubSpot, inc.
-                    .quote-box
-                        p.italic
-                            | "Never underestimate the power of a great testimonial. A few words of praise from a happy customer can work wonders. A big, friendly smile never hurts, either."
-    
-    // Tools CTA =====================================================================
-    .publisher--six-screen
-        .wrapper
-            .tools-cta-frame
-    
+    +brands('h3', 'Top Publishers and Brands Rely on NativeAI', 'Download Case Study')
+
     // Seven screen =====================================================================
     .publisher--seven-screen.blue-line-text-box.grey-bg
         .wrapper
@@ -199,12 +127,7 @@ block content
                 .text-box
                     p
                         | NativeAI helps you identify opportunities for growth, and the building blocks to increase engagement and grow your audience. This platform gives you the intelligence you need to increase the performance of your content, grow your audience, and drastically increase your audience engagement.
-                    p
-                        | On average, our 
-                        strong users report 20X increases in engagement and CTR
-                        |  over their previous content amplification platforms.
                 .img-box
                     img(src='assets/images/illustrations/pub-2.svg')
     
-    include ../sections/_eight
-    +eight('Let Us Show You How to Get an Unfair Advantage', 'Get a quick demo to see how NativeAI can help you increase engagement<br>on-demand and win market share. We\'ll show you 5 incredible<br>audience insights in as little 15 Minutes.', 'orange', 'I Want a Demo', 'home-publishers')
+    +eight('Get an Unfair Advantage', 'Get a quick demo to see how NativeAI can help you increase engagement<br>on-demand and win market share. We\'ll show you 5 incredible<br>audience insights in as little 15 Minutes.', 'orange', 'I Want a Demo', 'home-publishers')
