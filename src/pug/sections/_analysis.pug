@@ -1,0 +1,59 @@
+// Third screen =====================================================================
+mixin analysis(treemap)
+    .homepage--five-screen.analysis
+        .wrapper
+            .item.img-left(class=treemap?"analysis_treemap":"")
+                if treemap
+                    include ../components/_treemap
+                else
+                    .img-section
+                        img(src="assets/images/infographic/interests.png", alt="Audience Interest Analysis")
+                .text-section
+                    .title-box
+                        h2 Audience Interest Analysis
+                    hr.blue
+                    .text-box
+                        p
+                            | The NativeAI platform features advanced algorithms that recognize more than 
+                            i one million distinct
+                            |  audience interests. Artificial intelligence creates interest graphs that map the behavior of individual users as well as entire audience segments.
+            .item.img-right
+                .text-section
+                    .title-box
+                        h2 Real-Time Dashboard
+                    hr.orange
+                    .text-box
+                        p
+                            | Keep track of what is happening on your site right now. Instantly compare performance against the typical performance averages. The dashboard features goes deeper than visits with the Engagement Quality (EQ) graph, revealing audience engagement metrics in real-time.
+                .img-section
+                    img(src='assets/images/infographic/engagement.png' alt="Real-Time Dashboard")
+            .item.img-left
+                .img-section
+                    img(src='assets/images/infographic/channels.png' alt="Interest Intelligence")
+                .text-section
+                    .title-box
+                        h2 Interest Intelligence
+                    hr.blue
+                    .text-box
+                        p
+                            | Drill down into the performance metrics of interest segments across your entire content platform. See what stories are performing the best, which writers drive the most engagement, and the hot topics your audience is engaging with the most.
+            .item.img-right
+                .text-section
+                    .title-box
+                        h2 Daily Digests
+                    hr.orange
+                    .text-box
+                        p
+                            | Daily snapshots of content performance and engagement metrics sent directly to your inbox. Get a high-level view of the most important performance insights you can understand at a glance.
+                    
+                    .title-box
+                        h2 Engagement Quality Intelligence
+                    hr.blue
+                    .text-box
+                        p
+                            | Engagement Quality (EQ) is a special metric developed by NativeAI that combines time spent, scroll depth, user actions, and story length, and more. These metrics are combined into a single score to gauge the engagement value of each piece of content.
+                .img-section
+                    h3.bold News.com Daily Digest
+                    img(src='assets/images/infographic/increased.png' alt="Engagement Quality Intelligence")
+                    img(src='assets/images/infographic/engagement.png' alt="Engagement Quality Intelligence")
+

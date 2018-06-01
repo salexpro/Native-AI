@@ -12,6 +12,7 @@ block content
     include ../sections/_3col
     include ../sections/_brands
     include ../sections/_eight
+    include ../sections/_analysis
 
     // Sections
     +first_adv('how-works', 'Dashboard & Metrics', 'Learn how we deliver actionable insights', 'Talk to us')
@@ -19,62 +20,8 @@ block content
     include ../sections/_language
     include ../sections/_script
     +3col('publisher--second-screen unfair')
-
-    // Third screen =====================================================================
-    .publisher--third-screen.homepage--five-screen.analysis
-        .wrapper
-            .item.img-left.analysis_treemap
-                include ../components/_treemap
-                .text-section
-                    .title-box
-                        h2 Audience Interest Analysis
-                    hr.blue
-                    .text-box
-                        p
-                            | The NativeAI platform features advanced algorithms that recognize more than 
-                            i one million distinct
-                            |  audience interests. Artificial intelligence creates interest graphs that map the behavior of individual users as well as entire audience segments.
-            .item.img-right
-                .text-section
-                    .title-box
-                        h2 Real-Time Dashboard
-                    hr.orange
-                    .text-box
-                        p
-                            | Keep track of what is happening on your site right now. Instantly compare performance against the typical performance averages. The dashboard features goes deeper than visits with the Engagement Quality (EQ) graph, revealing audience engagement metrics in real-time.
-                .img-section
-                    img(src='assets/images/infographic/engagement.png' alt="Real-Time Dashboard")
-            .item.img-left
-                .img-section
-                    img(src='assets/images/infographic/channels.png' alt="Interest Intelligence")
-                .text-section
-                    .title-box
-                        h2 Interest Intelligence
-                    hr.blue
-                    .text-box
-                        p
-                            | Drill down into the performance metrics of interest segments across your entire content platform. See what stories are performing the best, which writers drive the most engagement, and the hot topics your audience is engaging with the most.
-            .item.img-right
-                .text-section
-                    .title-box
-                        h2 Daily Digests
-                    hr.orange
-                    .text-box
-                        p
-                            | Daily snapshots of content performance and engagement metrics sent directly to your inbox. Get a high-level view of the most important performance insights you can understand at a glance.
-                    
-                    .title-box
-                        h2 Engagement Quality Intelligence
-                    hr.blue
-                    .text-box
-                        p
-                            | Engagement Quality (EQ) is a special metric developed by NativeAI that combines time spent, scroll depth, user actions, and story length, and more. These metrics are combined into a single score to gauge the engagement value of each piece of content.
-                .img-section
-                    h3.bold News.com Daily Digest
-                    img(src='assets/images/infographic/increased.png' alt="Engagement Quality Intelligence")
-                    img(src='assets/images/infographic/engagement.png' alt="Engagement Quality Intelligence")
-
-
+    +analysis(true)
+    
     // How It Works =====================================================================
     .publisher--five-screen.ill-2-cols
         .wrapper
@@ -112,22 +59,5 @@ block content
                                 | Change the game with your ability to publish content that drives audience engagement.
     
     +brands('h3', 'Top Publishers and Brands Rely on NativeAI', 'Download Case Study')
-
-    // Seven screen =====================================================================
-    .publisher--seven-screen.blue-line-text-box.grey-bg
-        .wrapper
-            .title-box
-                h2 Get a Grip on Performance
-            .subtitle-links-box
-                .links
-                    h3 Increase Retention
-                    h3 Boost Engagement
-                    h3 Beat the Competition
-            .main-content
-                .text-box
-                    p
-                        | NativeAI helps you identify opportunities for growth, and the building blocks to increase engagement and grow your audience. This platform gives you the intelligence you need to increase the performance of your content, grow your audience, and drastically increase your audience engagement.
-                .img-box
-                    img(src='assets/images/illustrations/pub-2.svg')
-    
+    include ../sections/_grip    
     +eight('Get an Unfair Advantage', 'Get a quick demo to see how NativeAI can help you increase engagement<br>on-demand and win market share. We\'ll show you 5 incredible<br>audience insights in as little 15 Minutes.', 'orange', 'I Want a Demo', 'home-publishers')

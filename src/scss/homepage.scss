@@ -948,6 +948,13 @@
     padding: 66px 0 50px;
     border-bottom: $border-grey;
     overflow: hidden;
+    .wrapper{
+        &::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    }
     /* Screen 05 - Interests box
   ======================================================================== */
     .interests-box-wrapper {
