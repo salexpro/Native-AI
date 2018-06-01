@@ -66,5 +66,8 @@
     &_content{
         padding: 0 !important;
         color: $black;
+        br{
+            display: inline;
+        }
     }
 }

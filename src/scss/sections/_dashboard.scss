@@ -1,19 +1,33 @@
 .dashboard{
-    padding-top: 67px;
-    padding-bottom: 75px;
+    padding: 67px 40px 75px;
+    @media screen and (max-width: 640px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    @media screen and (max-width: 479px) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
     &_img{
         max-width: 488px;
         box-shadow: 0 5px 16px rgba(222, 226, 230, 0.5);
         border-radius: 4px;
         border: $border-grey;
         overflow: hidden;
+        @media screen and (max-width: 991px) {
+            margin: auto;
+        }
         img{
             display: block;
+            max-width: 100%;
         }
     }
     &_header{
         margin-bottom: 40px;
         margin-top: -12px;
+        @media screen and (max-width: 991px) {
+            margin-top: 40px;
+        }
     }
     .mainhow_link{
         margin-top: 35px;

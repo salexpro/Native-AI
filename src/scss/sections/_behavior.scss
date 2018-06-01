@@ -1,6 +1,15 @@
 .behavior{
-    padding-top: 65px;
-    padding-bottom: 40px;
+    padding: 65px 40px 40px;
+    @media screen and (max-width: 640px) {
+        padding-top: 40px;
+    }
+    @media screen and (max-width: 479px) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    &_inner{
+        overflow: hidden;
+    }
     &_header{
         text-align: center;
         margin-bottom: 20px;
@@ -8,6 +17,11 @@
     &_descr{
         text-align: center;
         margin-bottom: 24px;
+    }
+    &_img{
+        @media screen and (max-width: 640px) {
+            display: none;
+        }
     }
     &_content{
         .button{

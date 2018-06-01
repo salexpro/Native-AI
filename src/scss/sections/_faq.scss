@@ -1,5 +1,13 @@
 .faq{
+    padding: 0 40px;
     padding-top: 70px;
+    @media screen and (max-width: 640px) {
+        padding-top: 40px;
+    }
+    @media screen and (max-width: 479px) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
     &_header{
         text-align: center;
         margin-bottom: 42px;
@@ -9,6 +17,9 @@
         &:checked{
             + .faq_item {
                 max-height: 500px;
+                @media screen and (max-width: 640px) {
+                    max-height: 700px;   
+                }
                 .faq_item_title {
                     &::after {
                         transform: rotate(180deg);
@@ -26,9 +37,6 @@
         transition: 500ms;
         margin-bottom: 10px;
         background-color: $white;
-        &:hover{
-            
-        }
         &_title{
             display: flex;
             align-items: center;
@@ -40,6 +48,8 @@
             cursor: pointer;
             user-select: none;
             position: relative;
+            padding-right: 25px;
+            line-height: normal;
             &::after {
                 content: '';
                 position: absolute;
@@ -56,7 +66,10 @@
             }
         }
         &_content{
-            padding: 35px 110px;
+            padding: 35px 10%;
+            @media screen and (max-width: 640px) {
+                padding: 20px;
+            }
         }
     }
 }

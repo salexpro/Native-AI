@@ -1167,6 +1167,16 @@ footer {
     .footer--soc-links { display: none; }
 }
 
+// Styled scrollbar
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $orange-main;
+    border-radius: 5px;
+}
 
 
 @import "homepage.scss";

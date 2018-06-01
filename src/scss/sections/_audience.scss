@@ -1,9 +1,26 @@
 .audience{
     padding-top: 80px;
+    @media screen and (max-width: 1140px){
+        padding-top: 66px;
+    }
+    @media screen and (max-width: 640px) {
+        padding-top: 40px;
+    }
     .interests-box-wrapper{
         background: none;
+        @media screen and (max-width: 1023px) {
+            height: auto;
+            padding-bottom: 0;
+            margin-bottom: -10%;
+        }
     }
     .title{
         padding-top: 50px;
+        @media screen and (max-width: 1140px) {
+            padding-top: 0;
+        }
+        @media screen and (max-width: 640px) {
+            padding-bottom: 0;
+        }
     }
 }
