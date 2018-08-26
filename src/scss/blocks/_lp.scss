@@ -1,0 +1,71 @@
+/* LP - First screen
+  ======================================================================== */
+
+.lp-first-screen {
+    padding: 98px 0;
+    overflow: hidden;
+    @media screen and ( max-width: 1140px) {
+        padding: 98px 40px;
+    }
+    @media screen and ( max-width: 480px) {
+        padding: 77px 16px;
+    }
+    .wrapper {
+        position: relative;
+    }
+    .titles-section {
+        position: relative;
+        z-index: 20;
+    }
+    .main-title {
+        padding-bottom: 32px;
+        @media screen and ( max-width: 480px) {
+            padding-bottom: 20px;
+        }
+    }
+    .descr {
+        padding-bottom: 47px;
+        @media screen and ( max-width: 480px) {
+            padding-bottom: 40px;
+        }
+    }
+    .button-box {
+        padding-bottom: 72px;
+        @media screen and ( max-width: 480px) {
+            padding-bottom: 47px;
+            .button {
+                width: 100%;
+                padding-left: 16px;
+                text-align: left;
+            }
+        }
+    }
+    .ill-section {
+        position: absolute;
+        top: -20px;
+        right: -40px;
+        width: 774px;
+        height: 281px;
+        z-index: 10;
+        @media screen and ( max-width: 1023px) {
+            top: 70px;
+            right: -10px;
+            width: 512px;
+            height: 186px;
+        }
+        @media screen and ( max-width: 840px) {
+            right: -40px;
+        }
+        @media screen and ( max-width: 699px) {
+            top: 0;
+            right: -200px;
+            opacity: .16;
+        }
+        @media screen and ( max-width: 480px) {
+            top: -30px;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,328 @@
+.adv--first-screen .button-box { padding-bottom: 10px !important; }
+
+/* Second screen  ======================================================================== */
+
+.adv--second-screen {
+    padding-bottom: 75px;
+    @media screen and ( max-width: 1140px) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    @media screen and ( max-width: 800px) {
+        padding-bottom: 51px;
+    }
+    @media screen and ( max-width: 480px) {
+        padding: 0 16px 28px;
+    }
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        @media screen and ( max-width: 800px) {
+            flex-direction: column;
+        }
+    }
+
+    p { 
+        width: calc(50% - 10px);
+        @media screen and ( max-width: 800px) {
+            width: 100%;
+            padding-bottom: 24px;
+        }
+        @media screen and ( max-width: 480px) {
+            padding-bottom: 20px;
+        }
+    }
+}
+
+/* Third screen  ======================================================================== */
+
+.adv--third-screen {
+    .graph-box {
+        overflow: hidden;
+        margin: 0 auto 40px;
+        width: 100%; // remove this
+        max-width: 940px; // remove this
+        height: 360px; // remove this
+        border-radius: 4px ;
+        background-color: #eee;
+        @media screen and (max-width: 480px) {
+            height: 240px;
+        }
+    }
+
+    .text-box {
+        padding-bottom: 20px;
+        text-align: center;
+        @media screen and (max-width: 480px) {
+            padding-bottom: 32px;
+            text-align: left;
+        }
+    }
+}
+
+
+/* Four screen  ======================================================================== */
+
+.adv--four-screen {
+    padding: 68px 0 70px;
+    overflow: hidden;
+    @media screen and ( max-width: 1140px) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    @media screen and ( max-width: 480px) {
+        padding: 26px 16px 40px;
+    }
+    .wrapper {
+        display: flex;
+        align-items: flex-end;
+        @media screen and ( max-width: 960px) {
+            position: relative;
+        }
+    }
+
+    .text-section {
+        width: 460px;
+        @media screen and ( max-width: 960px) {
+            width: 100%;
+        }
+        .title { padding-bottom: 28px; }
+        .subtitle { padding-bottom: 40px; }
+    }
+
+    .ill-section {
+        width: calc( 100% - 460px );
+        padding-left: 30px;
+        @media screen and ( max-width: 960px) {
+            position: absolute;
+            top: 20px;
+            right: -100px;
+            width: 600px;
+            padding: 0;
+            z-index: -1;
+            opacity: .16;
+        }
+        @media screen and ( max-width: 480px) {
+            top: auto;
+            bottom: 40px;
+            right: -80px;
+            width: 400px;
+        }
+    }
+}
+
+
+/* Fifth screen  ======================================================================== */
+
+.adv--fifth-screen {
+    padding-bottom: 56px;
+    @media screen and ( max-width: 480px) {
+        padding-bottom: 16px;
+    }
+    hr {
+        display: block;
+        margin: 20px 0;
+        width: 150px;
+        height: 2px;
+
+        border: none;
+        background-color: $orange-main;
+    }
+
+    p { padding-bottom: 24px; }
+}
+
+
+/* Sixth screen  ======================================================================== */
+
+.adv--sixth-screen {
+    img { margin-bottom: 30px; }
+}
+
+
+
+/* Seventh screen  ======================================================================== */
+
+.adv--seventh-screen {
+    .title { padding-bottom: 70px !important; }
+}
+
+
+
+/* Nineth screen  ======================================================================== */
+
+.adv--nineth-screen {
+    padding: 65px 0 80px;
+    border-top: $border-grey;
+    border-bottom: $border-grey;
+    @media screen and ( max-width: 999px) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    @media screen and ( max-width: 480px) {
+        padding: 48px 16px 52px;
+    }
+    .title, .subtitle, .button-box { text-align: center; }
+
+    .title { padding-bottom: 30px; }
+    .subtitle { 
+        padding-bottom: 72px; 
+        @media screen and ( max-width: 999px) {
+            padding-bottom: 72px;
+        }
+        @media screen and ( max-width: 480px) {
+            padding-bottom: 52px;
+        }
+    }
+
+    .how-to-section {
+        position: relative;
+        margin: 0 auto 35px;
+        width: 100%;
+        max-width: 930px;
+        height: 412px;
+        background: url(https://www.native.ai/hubfs/assets/images/a-get-started-bg.svg) center top no-repeat;
+        @media screen and ( max-width: 999px) {
+            height: auto;
+            background: none;
+        }
+    }
+
+    .how-to-item {
+        position: absolute;
+        @media screen and ( max-width: 999px) {
+            position: relative;
+            top: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+            bottom: 0 !important;
+            margin-bottom: 40px;
+            text-align: center !important;
+        }
+        .number {
+            position: absolute;
+            width: 32px;
+            height: 32px;
+
+            border-radius: 50% ;
+            background-color: $blue-dark;
+
+            color: $white;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+            text-align: center;
+            @media screen and ( max-width: 999px) {
+                position: relative;
+                top: 0 !important;
+                left: 0 !important;
+                right: 0 !important;
+                bottom: 0 !important;
+                margin: 0 auto 24px;
+            }
+        }
+
+        .title-box {
+            padding-bottom: 18px;
+
+            h3 { line-height: 35px; }
+        }
+
+        &.first {
+            top: 41px;
+            left: 24px;
+
+            .number {
+                top: -56px;
+                left: -34px;
+            }
+        }
+
+        &.second {
+            top: 66px;
+            right: 76px;
+            text-align: right;
+
+            .number {
+                top: 64px;
+                right: -66px;
+            }
+        }
+
+        &.third {
+            left: 124px;
+            bottom: 72px;
+
+            .number {
+                left: -37px;
+                bottom: -57px;
+            }
+        }
+    }
+}
+
+/* Ten screen  ======================================================================== */
+
+.adv--tenth-screen {
+    overflow: hidden;
+    padding: 66px 0 72px;
+    border-bottom: $border-grey;
+    @media screen and ( max-width: 1140px) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    @media screen and ( max-width: 480px) {
+        padding: 40px 16px 42px;
+    }
+    .title, .subtitle { 
+        text-align: center;
+        @media screen and ( max-width: 480px) {
+            text-align: left;
+        }
+    }
+
+    .title { padding-bottom: 30px; }
+    .subtitle { 
+        padding-bottom: 55px; 
+        @media screen and ( max-width: 480px) {
+            padding-bottom: 32px;
+        }
+    }
+
+    .main-content {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            width: 400px;
+        }
+    }
+    .img-box {
+        @media screen and ( max-width: 1140px) {
+            position: absolute;
+            top: -22px;
+            right: -30px;
+            opacity: .3;
+        }
+        @media screen and ( max-width: 840px) {
+            right: -120px;
+        }
+        @media screen and ( max-width: 700px) {
+            position: absolute;
+            top: -16px;
+            right: -190px;
+            opacity: .2;
+            img {
+                width: 320px;
+            }
+        }
+        @media screen and ( max-width: 480px) {
+            position: absolute;
+            top: -16px;
+            right: -190px;
+            opacity: .2;
+        }
+    }
+}

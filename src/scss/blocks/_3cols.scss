@@ -1,0 +1,30 @@
+.three-cols-screen {
+    @media screen and ( max-width: 1140px) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    @media screen and ( max-width: 480px) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .cols3-section {
+        display: flex;
+        justify-content: space-between;
+        @media screen and ( max-width: 960px) {
+            flex-direction: column;
+        }
+        .col {
+            width: calc((100% - 40px) / 3);
+            @media screen and ( max-width: 960px) {
+                width: 100%;
+                margin-bottom: 28px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            @media screen and ( max-width: 480px) {
+                margin-bottom: 24px;
+            }
+        }
+    }
+}

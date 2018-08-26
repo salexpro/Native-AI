@@ -1,122 +1,27 @@
-/* Header
-============================================================================= */
-
-.mobile{
-    &-box--nav-box .navigation-button-header-mobile {
-        transition: border-color 0.2s;
-        height: 40px;
-        margin-top: 15px;
-    }
-    &-menu-subitems {
-        color: #343A40;
-        ul {
-            display: block;
-        }
-        li{
-            &:hover {
-                border: none;
-            }
-            a {
-                margin-top: -10px;
-                font-size: 14px;
-                line-height: 28px;
-                height: 40px;
-                padding-left: 75px;
-                &:hover {
-                    transition: color 0.2s;
-                    color: #ff832a;
-                    border: none;
-                }
-            }
-        }
-    }
-}
-
-
-.navigation-button-header {
-    transition: border-color 0.2s;
-    border-bottom: 3px solid transparent;
-    height: 70px;
-    padding: 25px 10px 0;
-    margin: 0 7px;
-}
-
-.header-dropdown{
-    &-div {
-        position: absolute;
-        background-color: #FFFFFF;
-        box-shadow: 0 5px 20px 0 #F4DBC9;
-        color: #343A40;
-        padding: 8px 20px 8px 16px;
-        border-bottom-left-radius: 3px;
-        border-bottom-right-radius: 3px;
-        display: none;
-        ul {
-            display: block;
-            li{
-                &:hover {
-                    border-bottom: none;
-                }
-                a {
-                    font-size: 14px;
-                    line-height: 28px;
-                    height: 28px;
-                    &:hover {
-                        transition: color 0.2s;
-                        color: #ff832a;
-                        border-bottom: none;
-                    }
-                }
-            }
-        }
-    }
-}
-
-.email-submit-message {
-    line-height: 30px;
-}
-
-
-/* Screen 01
-  ======================================================================== */
+/* Screen 01 ======================================================================== */
 
 .homepage--first-screen {
     overflow: hidden;
     padding: 100px 40px;
+    @media screen and ( max-width: 1140px) {
+        padding: 100px 40px;
+    }
+    @media screen and ( max-width: 480px) {
+        padding: 77px 16px;
+    }
     .wrapper {
         display: flex;
+        @media screen and ( max-width: 1140px) {
+            position: relative;
+            display: block;
+        }
         &>div {
             flex: 1;
         }
     }
     .ill-section {
         padding-top: 20px;
-    }
-    .main-title {
-        padding-bottom: 32px;
-    }
-    .descr {
-        padding-bottom: 44px;
-    }
-    .contact-form {
-        padding-bottom: 13px;
-        form {
-            display: flex;
-        }
-    }
-}
-
-/* Screen 01 < 1140
-  ======================================================================== */
-
-@media screen and ( max-width: 1140px) {
-    .homepage--first-screen {
-        padding: 100px 40px;
-        .wrapper {
-            position: relative;
-            display: block;
-        }
-        .ill-section {
+        @media screen and ( max-width: 1140px) {
             position: absolute;
             top: -55px;
             left: 50%;
@@ -126,59 +31,55 @@
                 width: 373px;
             }
         }
-        .text-section {
-            position: relative;
-            z-index: 20;
-            br {
-                display: none;
-            }
-        }
     }
-}
-
-/* Screen 01 < 640
-  ======================================================================== */
-
-@media screen and ( max-width: 640px) {
-    .homepage--first-screen {
-        .main-title {
+    .main-title {
+        padding-bottom: 32px;
+        @media screen and ( max-width: 640px) {
             padding-bottom: 12px;
         }
-        .descr {
-            padding-bottom: 47px;
-        }
-        .contact-form {
-            padding-bottom: 14px;
-        }
     }
-}
-
-/* Screen 01 < 480
-  ======================================================================== */
-
-@media screen and ( max-width: 480px) {
-    .homepage--first-screen {
-        padding: 77px 16px;
-        .text-section {
-            br {
-                display: block;
-            }
+    .descr {
+        padding-bottom: 44px;
+        @media screen and ( max-width: 640px) {
+            padding-bottom: 47px;
         }
     }
     .contact-form {
         padding-bottom: 13px;
+        @media screen and ( max-width: 640px) {
+            padding-bottom: 14px;
+        }
+        @media screen and ( max-width: 480px) {
+            padding-bottom: 13px;
+        }
         form {
-            flex-direction: column;
-            .promo-field {
-                margin: 0 0 16px;
-                width: 100%;
+            display: flex;
+            @media screen and ( max-width: 480px) {
+                flex-direction: column;
+                .promo-field {
+                    margin: 0 0 16px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .text-section {
+        @media screen and ( max-width: 1140px) {
+            position: relative;
+            z-index: 20;
+        }
+        br {
+            @media screen and ( max-width: 1140px) {
+                display: none;
+            }
+            @media screen and ( max-width: 480px) {
+                display: block;
             }
         }
     }
 }
 
-/* Screen 02 - How work
-  ======================================================================== */
+/* Screen 02 - How work ======================================================================== */
 
 .homepage--second-screen {
     overflow: hidden;
@@ -186,8 +87,7 @@
     .wrapper {
         position: relative;
     }
-    /* Screen 02 - How work - Text section
-  ======================================================================== */
+    /* Screen 02 - How work - Text section ======================================================================== */
     .text-section {
         position: absolute;
         top: 0;
@@ -199,8 +99,7 @@
             padding-bottom: 30px;
         }
     }
-    /* Screen 02 - How work - How work section
-  ======================================================================== */
+    /* Screen 02 - How work - How work section ======================================================================== */
     .how-work-section {
         height: 848px;
         .bg {
@@ -211,8 +110,7 @@
             height: 581px;
             background: url(https://cdn2.hubspot.net/hubfs/3048376/assets/images/how-it-work/lines-test.svg) no-repeat;
         }
-        /* Screen 02 - How work - How work section - Items
-  ======================================================================== */
+        /* Screen 02 - How work - How work section - Items ======================================================================== */
         .how-work-item {
             position: absolute;
             .number {
@@ -223,7 +121,7 @@
                 width: 32px;
                 height: 32px;
                 background-color: $orange-dark;
-                @include border-radius( 50%);
+                border-radius: 50%;
                 color: $white;
                 font-size: 20px;
                 font-weight: 700;
@@ -232,10 +130,10 @@
             .ill {
                 display: flex;
                 flex-direction: column;
-                &:hover ~ .drop-info {
+                &:hover~.drop-info {
                     visibility: visible;
                     opacity: .93;
-                    @include transform( translateX( 0));
+                    transform: translateX( 0);
                 }
             }
             .drop-info {
@@ -244,12 +142,12 @@
                 visibility: hidden;
                 width: 250px;
                 padding: 18px 20px;
-                @include box-shadow( 0 4px 12px $shadow-color);
-                @include border-radius( 8px);
+                box-shadow: 0 4px 12px $shadow-color;
+                border-radius: 8px;
                 background-color: $blue-dark;
                 opacity: 0;
-                @include transform( translateX( 100px));
-                @include transition( transform .4s, opacity .3s, visibility .4s);
+                transform: translateX( 100px);
+                transition: transform .4s, opacity .3s, visibility .4s;
                 color: $white;
                 z-index: 40;
             }
@@ -292,43 +190,36 @@
                     left: -42px;
                 }
             }
-            /* Screen 02 - How work - How work section - Items - Start
-  ======================================================================== */
+            /* Screen 02 - How work - How work section - Items - Start ======================================================================== */
             &.start {
                 top: 117px;
                 right: 336px;
             }
-            /* Screen 02 - How work - How work section - Items - First
-  ======================================================================== */
+            /* Screen 02 - How work - How work section - Items - First ======================================================================== */
             &.first {
                 top: 105px;
             }
-            /* Screen 02 - How work - How work section - Items - Second
-  ======================================================================== */
+            /* Screen 02 - How work - How work section - Items - Second ======================================================================== */
             &.second {
                 top: 305px;
                 right: 25px;
             }
-            /* Screen 02 - How work - How work section - Items - Third
-  ======================================================================== */
+            /* Screen 02 - How work - How work section - Items - Third ======================================================================== */
             &.third {
                 top: 502px;
                 right: 52px;
             }
-            /* Screen 02 - How work - How work section - Items - Four
-  ======================================================================== */
+            /* Screen 02 - How work - How work section - Items - Four ======================================================================== */
             &.four {
                 bottom: 0;
                 right: 227px;
             }
-            /* Screen 02 - How work - How work section - Items - Fifth
-  ======================================================================== */
+            /* Screen 02 - How work - How work section - Items - Fifth ======================================================================== */
             &.fifth {
                 bottom: 0;
                 right: 402px;
             }
-            /* Screen 02 - How work - How work section - Items - Extra
-  ======================================================================== */
+            /* Screen 02 - How work - How work section - Items - Extra ======================================================================== */
             &.extra {
                 right: 336px;
                 top: 372px;
@@ -337,8 +228,7 @@
                     left: -46px;
                 }
             }
-            /* Screen 02 - How work - How work section - Items - Final
-  ======================================================================== */
+            /* Screen 02 - How work - How work section - Items - Final ======================================================================== */
             &.final {
                 left: -35px;
                 bottom: 0;
@@ -353,14 +243,12 @@
     }
 }
 
-/* Screen 02 < 1140
-  ======================================================================== */
+/* Screen 02 < 1140 ======================================================================== */
 
 @media screen and ( max-width: 1140px) {
     .homepage--second-screen {
         padding: 0 40px 107px;
-        /* Screen 02 - How work - Text section
-  ======================================================================== */
+        /* Screen 02 - How work - Text section ======================================================================== */
         .text-section {
             position: relative;
             width: 100%;
@@ -368,8 +256,7 @@
                 display: none;
             }
         }
-        /* Screen 02 - How work - How work section
-  ======================================================================== */
+        /* Screen 02 - How work - How work section ======================================================================== */
         .how-work-section {
             position: relative;
             display: flex;
@@ -382,8 +269,7 @@
             .bg {
                 display: none;
             }
-            /* Screen 02 - How work - How work section - Items
-  ======================================================================== */
+            /* Screen 02 - How work - How work section - Items ======================================================================== */
             .how-work-item {
                 position: initial;
                 display: flex;
@@ -419,8 +305,7 @@
                         margin-top: 16px;
                     }
                 }
-                /* Screen 02 - How work - How work section - Items - Start
-  ======================================================================== */
+                /* Screen 02 - How work - How work section - Items - Start ======================================================================== */
                 &.start,
                 &.third,
                 &.extra,
@@ -446,8 +331,7 @@
                         width: calc( 100vw - ( 50% - 360px));
                     }
                 }
-                /* Screen 02 - How work - How work section - Items - Third
-  ======================================================================== */
+                /* Screen 02 - How work - How work section - Items - Third ======================================================================== */
                 &.third {
                     &:before {
                         top: 423px;
@@ -455,8 +339,7 @@
                         width: 100vw;
                     }
                 }
-                /* Screen 02 - How work - How work section - Items - Extra
-  ======================================================================== */
+                /* Screen 02 - How work - How work section - Items - Extra ======================================================================== */
                 &.extra {
                     position: absolute;
                     right: 48px;
@@ -474,8 +357,7 @@
                         left: calc( 50% - 16px);
                     }
                 }
-                /* Screen 02 - How work - How work section - Items - Final
-  ======================================================================== */
+                /* Screen 02 - How work - How work section - Items - Final ======================================================================== */
                 &.final {
                     position: relative;
                     left: 128px;
@@ -497,37 +379,31 @@
     }
 }
 
-/* Screen 02 < 800
-  ======================================================================== */
+/* Screen 02 < 800 ======================================================================== */
 
 @media screen and ( max-width: 800px) {
     .homepage--second-screen {
         padding: 0 40px 107px;
-        /* Screen 02 - How work - How work section
-  ======================================================================== */
+        /* Screen 02 - How work - How work section ======================================================================== */
         .how-work-section {
             .how-work-item {
-                /* Screen 02 - How work - How work section - Items - Start
-  ======================================================================== */
+                /* Screen 02 - How work - How work section - Items - Start ======================================================================== */
                 &.start {
                     &:before {
                         left: -40px;
                     }
                 }
-                /* Screen 02 - How work - How work section - Items - Third
-  ======================================================================== */
+                /* Screen 02 - How work - How work section - Items - Third ======================================================================== */
                 &.third {
                     &:before {
                         left: -40px;
                     }
                 }
-                /* Screen 02 - How work - How work section - Items - Extra
-  ======================================================================== */
+                /* Screen 02 - How work - How work section - Items - Extra ======================================================================== */
                 &.extra {
                     right: 5.8%;
                 }
-                /* Screen 02 - How work - How work section - Items - Final
-  ======================================================================== */
+                /* Screen 02 - How work - How work section - Items - Final ======================================================================== */
                 &.final {
                     left: 17.8%;
                     &:before {
@@ -540,18 +416,15 @@
     }
 }
 
-/* Screen 02 < 640
-  ======================================================================== */
+/* Screen 02 < 640 ======================================================================== */
 
 @media screen and ( max-width: 640px) {
     .homepage--second-screen {
         padding: 0 16px 60px !important;
-        /* Screen 02 - How work - How work section
-  ======================================================================== */
+        /* Screen 02 - How work - How work section ======================================================================== */
         .how-work-section {
             margin: 30px auto 0;
-            /* Screen 02 - How work - How work section - Items
-  ======================================================================== */
+            /* Screen 02 - How work - How work section - Items ======================================================================== */
             .how-work-item {
                 .img img {
                     width: 80px;
@@ -565,8 +438,7 @@
                 &.fifth {
                     width: 50%;
                 }
-                /* Screen 02 - How work - How work section - Items - Start
-  ======================================================================== */
+                /* Screen 02 - How work - How work section - Items - Start ======================================================================== */
                 &.start {
                     &:before {
                         top: 137px;
@@ -574,8 +446,7 @@
                         z-index: -1;
                     }
                 }
-                /* Screen 02 - How work - How work section - Items - Third
-  ======================================================================== */
+                /* Screen 02 - How work - How work section - Items - Third ======================================================================== */
                 &.third {
                     &:before {
                         top: 331px;
@@ -583,8 +454,7 @@
                         z-index: -1;
                     }
                 }
-                /* Screen 02 - How work - How work section - Items - Four
-  ======================================================================== */
+                /* Screen 02 - How work - How work section - Items - Four ======================================================================== */
                 &.four {
                     &:before {
                         content: '';
@@ -597,13 +467,11 @@
                         background-color: $orange-main;
                     }
                 }
-                /* Screen 02 - How work - How work section - Items - Extra
-  ======================================================================== */
+                /* Screen 02 - How work - How work section - Items - Extra ======================================================================== */
                 &.extra {
                     display: none;
                 }
-                /* Screen 02 - How work - How work section - Items - Final
-  ======================================================================== */
+                /* Screen 02 - How work - How work section - Items - Final ======================================================================== */
                 &.final {
                     position: relative;
                     left: 27%;
@@ -629,8 +497,7 @@
     }
 }
 
-/* Screen 03 - Power for
-  ======================================================================== */
+/* Screen 03 - Power for ======================================================================== */
 
 .homepage--three-screen {
     padding: 50px 0 80px;
@@ -646,8 +513,7 @@
         &:last-child {
             margin-left: 60px;
         }
-        /* Screen 03 - Image section
-  ======================================================================== */
+        /* Screen 03 - Image section ======================================================================== */
         .img-section {
             border-bottom: 2px solid transparent;
             text-align: center;
@@ -688,7 +554,7 @@
                     left: -53px;
                     width: 28px;
                     height: 28px;
-                    @include border-radius( 50%);
+                    border-radius: 50%;
                     border: 2px solid transparent;
                     background-color: $white;
                     background-repeat: no-repeat;
@@ -696,8 +562,7 @@
                 }
             }
         }
-        /* Screen 03 - List section
-  ======================================================================== */
+        /* Screen 03 - List section ======================================================================== */
         .list-section {
             padding-bottom: 32px;
             &:before {
@@ -719,8 +584,7 @@
                 }
             }
         }
-        /* Screen 03 - How to get started
-  ======================================================================== */
+        /* Screen 03 - How to get started ======================================================================== */
         .how-to-get-section {
             flex: 1;
             padding-bottom: 50px;
@@ -744,8 +608,7 @@
                 border-bottom: $border-grey;
             }
         }
-        /* Screen 03 - Button box
-  ======================================================================== */
+        /* Screen 03 - Button box ======================================================================== */
         .button-box {
             position: relative;
             display: flex;
@@ -761,8 +624,7 @@
                 z-index: -1;
             }
         }
-        /* Screen 03 - for orange
-  ======================================================================== */
+        /* Screen 03 - for orange ======================================================================== */
         &.orange {
             .list-section,
             .how-to-get-section {
@@ -787,8 +649,7 @@
                 }
             }
         }
-        /* Screen 03 - for blue
-  ======================================================================== */
+        /* Screen 03 - for blue ======================================================================== */
         &.blue {
             .list-section,
             .how-to-get-section {
@@ -816,8 +677,7 @@
     }
 }
 
-/* Screen 03 < 1140
-  ======================================================================== */
+/* Screen 03 < 1140 ======================================================================== */
 
 @media screen and ( max-width: 1140px) {
     .homepage--second-screen {
@@ -825,8 +685,7 @@
     }
 }
 
-/* Screen 03 < 860
-  ======================================================================== */
+/* Screen 03 < 860 ======================================================================== */
 
 @media screen and ( max-width: 860px) {
     .homepage--three-screen {
@@ -846,8 +705,7 @@
     }
 }
 
-/* Screen 03 < 640
-  ======================================================================== */
+/* Screen 03 < 640 ======================================================================== */
 
 @media screen and ( max-width: 640px) {
     .homepage--three-screen {
@@ -865,8 +723,7 @@
                     }
                 }
             }
-            /* Screen 03 - List section
-  ======================================================================== */
+            /* Screen 03 - List section ======================================================================== */
             .list-section {
                 a {
                     font-size: 15px;
@@ -877,8 +734,7 @@
     }
 }
 
-/* Screen 04
-  ======================================================================== */
+/* Screen 04 ======================================================================== */
 
 .homepage--four-screen {
     padding: 65px 0 80px;
@@ -893,8 +749,8 @@
         padding-bottom: 50px;
         text-align: center;
     }
-    .brands{
-        &-outer{
+    .brands {
+        &-outer {
             padding-bottom: 25px;
         }
         &-section {
@@ -903,8 +759,7 @@
     }
 }
 
-/* Screen 04 < 1140
-  ======================================================================== */
+/* Screen 04 < 1140 ======================================================================== */
 
 @media screen and ( max-width: 1140px) {
     .homepage--four-screen {
@@ -912,8 +767,7 @@
     }
 }
 
-/* Screen 04 < 760
-  ======================================================================== */
+/* Screen 04 < 760 ======================================================================== */
 
 @media screen and ( max-width: 760px) {
     br {
@@ -921,8 +775,7 @@
     }
 }
 
-/* Screen 04 < 480
-  ======================================================================== */
+/* Screen 04 < 480 ======================================================================== */
 
 @media screen and ( max-width: 480px) {
     .homepage--four-screen {
@@ -941,22 +794,20 @@
     }
 }
 
-/* Screen 05
-  ======================================================================== */
+/* Screen 05 ======================================================================== */
 
 .homepage--five-screen {
     padding: 66px 0 50px;
     border-bottom: $border-grey;
     overflow: hidden;
-    .wrapper{
+    .wrapper {
         &::after {
             content: '';
             display: block;
             clear: both;
         }
     }
-    /* Screen 05 - Interests box
-  ======================================================================== */
+    /* Screen 05 - Interests box ======================================================================== */
     .interests-box-wrapper {
         float: right;
         width: 560px;
@@ -983,7 +834,6 @@
             background-color: #fff;
         }
     }
-
     .report-treemap {
         background: #e3e4e6;
         font-weight: 300;
@@ -1007,7 +857,6 @@
             }
         }
     }
-
     .treemap-container {
         position: absolute;
         top: 27px;
@@ -1026,7 +875,6 @@
             fill-opacity: 0;
         }
     }
-
     g {
         &.root {
             shape-rendering: crispEdges;
@@ -1044,7 +892,6 @@
             }
         }
     }
-
     rect {
         fill: none;
         stroke-width: 1px;
@@ -1053,7 +900,6 @@
             stroke-width: 2px;
         }
     }
-
     .children {
         cursor: pointer;
         &.show-parent-topic {
@@ -1071,13 +917,11 @@
             }
         }
     }
-
     text {
         font-size: 1.8em;
         fill: #fff;
         pointer-events: none;
     }
-
     @keyframes wiggle {
         0% {
             transform: rotate(0deg);
@@ -1092,7 +936,6 @@
             transform: rotate(0deg);
         }
     }
-
     .treemap-hint {
         position: absolute;
         background-image: url(https://cdn2.hubspot.net/hubfs/3048376/assets/images/hint_baloon.png?t=1526875186821);
@@ -1123,62 +966,58 @@
             width: 300px;
         }
     }
-
     blockquote {
         display: block;
         margin-bottom: 25px;
     }
-
-    p{
+    p {
         padding-bottom: 30px;
     }
-    /* Screen 05 - Title
-  ======================================================================== */
+    /* Screen 05 - Title ======================================================================== */
     .title,
     blockquote {
         padding-bottom: 25px;
     }
-
-    .interests{
+    .interests {
         display: flex;
         align-items: flex-end;
         padding-top: 45px;
-        @media screen and (max-width: 1023px){
+        @media screen and (max-width: 1023px) {
             padding-top: 130px;
         }
         @media screen and ( max-width: 640px) {
             padding-top: 0;
         }
-        &_img{
+        &_img {
             margin-right: 44px;
             flex: 0 0 47%;
             @media screen and (max-width: 1023px) {
                 flex: 1 1 auto;
                 margin: auto;
             }
-            img{
+            img {
                 max-width: 100%;
                 @media screen and ( max-width: 640px) {
                     display: none;
                 }
             }
         }
-        &_content{
-            h3, h4{
+        &_content {
+            h3,
+            h4 {
                 font-weight: 700;
             }
-            h3{
+            h3 {
                 margin-bottom: 30px;
             }
-            .paragraph{
+            .paragraph {
                 padding-bottom: 25px;
             }
         }
     }
 }
 
-/* Screen 05 < 1140
-  ======================================================================== */
+/* Screen 05 < 1140 ======================================================================== */
 
 @media screen and ( max-width: 1140px) {
     .homepage--five-screen {
@@ -1186,8 +1025,7 @@
     }
 }
 
-/* Header < 1024
-  ======================================================================== */
+/* Header < 1024 ======================================================================== */
 
 @media screen and ( max-width: 1023px) {
     .homepage--five-screen {
@@ -1195,8 +1033,7 @@
             display: flex;
             flex-direction: column;
         }
-        /* Screen 05 - Interests box
-  ======================================================================== */
+        /* Screen 05 - Interests box ======================================================================== */
         .interests-box-wrapper {
             order: 2;
             float: none;
@@ -1217,8 +1054,7 @@
     }
 }
 
-/* Header < 640
-  ======================================================================== */
+/* Header < 640 ======================================================================== */
 
 @media screen and ( max-width: 640px) {
     .homepage--five-screen {
@@ -1228,8 +1064,7 @@
     }
 }
 
-/* Header < 480
-  ======================================================================== */
+/* Header < 480 ======================================================================== */
 
 @media screen and ( max-width: 480px) {
     .homepage--five-screen {
@@ -1240,8 +1075,7 @@
     }
 }
 
-/* Screen 06
-  ======================================================================== */
+/* Screen 06 ======================================================================== */
 
 .homepage--six-screen {
     padding: 65px 0 80px;
@@ -1258,8 +1092,7 @@
             &:nth-child(even) {
                 margin-left: 20px;
             }
-            /* Screen 06 - Card image box
-  ======================================================================== */
+            /* Screen 06 - Card image box ======================================================================== */
             .img-section {
                 border-bottom: 2px solid transparent;
                 text-align: center;
@@ -1277,8 +1110,7 @@
                     border-color: $blue-main;
                 }
             }
-            /* Screen 06 - Text box
-  ======================================================================== */
+            /* Screen 06 - Text box ======================================================================== */
             .content-section {
                 flex: 1;
                 display: flex;
@@ -1296,8 +1128,7 @@
     }
 }
 
-/* Screen 06 < 1140
-  ======================================================================== */
+/* Screen 06 < 1140 ======================================================================== */
 
 @media screen and ( max-width: 1140px) {
     .homepage--six-screen {
@@ -1305,8 +1136,7 @@
     }
 }
 
-/* Screen 06 < 800
-  ======================================================================== */
+/* Screen 06 < 800 ======================================================================== */
 
 @media screen and ( max-width: 800px) {
     .homepage--six-screen {
@@ -1320,8 +1150,7 @@
                 &:nth-child(even) {
                     margin: 20px 0 0 0;
                 }
-                /* Screen 06 - Text box
-  ======================================================================== */
+                /* Screen 06 - Text box ======================================================================== */
                 .content-section {
                     height: auto;
                 }
@@ -1330,8 +1159,7 @@
     }
 }
 
-/* Screen 06 < 480
-  ======================================================================== */
+/* Screen 06 < 480 ======================================================================== */
 
 @media screen and ( max-width: 480px) {
     .homepage--six-screen {
@@ -1341,8 +1169,7 @@
         }
         .items-wrapper {
             .item-box {
-                /* Screen 06 - Text box
-  ======================================================================== */
+                /* Screen 06 - Text box ======================================================================== */
                 .content-section {
                     padding: 20px 16px 32px;
                 }

@@ -1,0 +1,52 @@
+/* Grey box width blue line text ======================================================================== */
+
+.blue-line-text-box {
+    padding: 56px 0 48px;
+    border-top: $border-grey;
+    border-bottom: $border-grey;
+    @media screen and ( max-width: 1140px) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    @media screen and ( max-width: 480px) {
+        padding: 40px 16px 12px;
+    }
+    .title-box {
+        padding-bottom: 28px;
+        text-align: center;
+    }
+    .subtitle-links-box {
+        width: 100%;
+        padding-bottom: 54px;
+        color: #DEE2E6;
+        font-size: 25px;
+        text-align: center;
+        @media screen and ( max-width: 480px) {
+            padding-bottom: 24px;
+            text-align: left;
+        }
+        .links {
+            display: flex;
+            justify-content: center;
+            @media screen and ( max-width: 480px) {
+                flex-direction: column;
+            }
+        }
+        h3 {
+            padding: 0 20px;
+            border-right: 2px solid #DEE2E6;
+            color: $blue-main;
+            @media screen and ( max-width: 920px) {
+                font-size: 20px !important;
+                line-height: 32px !important;
+            }
+            @media screen and ( max-width: 480px) {
+                padding: 0 0 12px;
+                border-right: none;
+            }
+            &:last-child {
+                border: none;
+            }
+        }
+    }
+}

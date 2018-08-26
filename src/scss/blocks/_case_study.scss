@@ -1,0 +1,67 @@
+.case-study-box {
+    padding: 33px 0 45px;
+    overflow: hidden;
+    border-top: $border-grey;
+    border-bottom: $border-grey;
+    @media screen and ( max-width: 1140px) {
+        padding: 33px 40px 45px;
+    }
+    @media screen and ( max-width: 640px) {
+        padding: 33px 16px 45px;
+    }
+    .wrapper {
+        position: relative;
+    }
+    .case-study--img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        @media screen and ( max-width: 1100px) {
+            top: -12px;
+            left: auto;
+            right: -80px;
+            opacity: .18;
+        }
+        @media screen and ( max-width: 640px) {
+            top: 42px;
+            right: -120px;
+        }
+    }
+    .case-study--text {
+        position: relative;
+        text-align: right;
+        z-index: 20;
+        @media screen and ( max-width: 1100px) {
+            text-align: left;
+        }
+        .title {
+            padding-bottom: 16px;
+            @media screen and ( max-width: 1100px) {
+                width: 80%;
+            }
+            @media screen and ( max-width: 760px) {
+                width: 100%;
+            }
+        }
+        .text-button {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            @media screen and ( max-width: 1100px) {
+                justify-content: space-between;
+            }
+            .button-box {
+                margin-left: 20px;
+                @media screen and ( max-width: 640px) {
+                    margin: 10px 0 0;
+                }
+            }
+            .text {
+                @media screen and ( max-width: 760px) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

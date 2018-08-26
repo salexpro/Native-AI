@@ -1,9 +1,15 @@
 // Footer =====================================================================
-footer
+footer.footer
     .footer--first-box
         .wrapper
             .footer--logo-box
-                a(href='https://www.native.ai', alt='NativeAI Content Analytics for Publishers', title='NativeAI Logo')
+                a.footer--logo-box_logo(href='https://www.native.ai', alt='NativeAI Content Analytics for Publishers', title='NativeAI Logo')
+                    img(src="https://cdn2.hubspot.net/hubfs/3048376/assets/images/logo.png", alt="NativeAI")
+                .footer--logo-box_bottom
+                    a.button.slim.border.orange(href="https://app.native.ai/signin")
+                        | Sign In
+                    a.footer--logo-box_link(href="#")
+                        | Get a Demo
             .footer--nav-box
                 nav
                     ul
@@ -15,9 +21,7 @@ footer
                                 li
                                     a(href='/advertising.html') Native Advertising
                                 li
-                                    a(href='/demo-registration') Get a Demo
-                                li
-                                    a(href='https://app.native.ai/signin') Sign In
+                                    a(href='/dashboard.html') Analytics Dashboard
                         li
                             span.bold Analytics Tips & Insights
                             ul
@@ -32,18 +36,14 @@ footer
                                     a(href='https://news360.com/team', target='_blank') Team
                                 li
                                     a(href='https://news360.com/careers', target='_blank') Careers
-                                li
-                                    a(href='/privacy') Privacy Policy
-                                li
-                                    a(href='/terms') Terms of Service
     .footer--second-box
         .wrapper
             .footer--copyright-box
                 span © 2018 NativeAI
-                //- span
-                    a.underline(href='/privacy', target='_blank') Privacy
-                    |  & 
-                    a.underline(href='/terms', target='_blank') Terms
+                span
+                    a(href='/privacy', target='_blank') Privacy Policy
+                span
+                    a(href='/terms', target='_blank') Terms of Use
             .footer--soc-links
                 a(href='https://www.facebook.com/nativeai', target='_blank')
                     img(src='https://cdn2.hubspot.net/hubfs/3048376/assets/images/facebook.svg')

@@ -1,0 +1,36 @@
+// Styled scrollbar
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $orange-main;
+    border-radius: 5px;
+}
+
+body {
+    padding-top: 70px;
+    font-family: $font;
+    color: $black;
+    @media screen and ( max-width: 640px) {
+        padding-top: 56px;
+    }
+    &.fix {
+        overflow: hidden;
+    }
+}
+
+.wrapper {
+    margin: auto;
+    width: 100%;
+    max-width: 1120px;
+}
+
+.grey-bg {
+    background-color: $grey-bg;
+}
+
+input {
+    font-family: $font;
+}

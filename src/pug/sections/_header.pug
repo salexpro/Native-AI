@@ -1,5 +1,5 @@
 // Header =====================================================================
-header
+header.header
     .wrapper
         .header--nav-toggle
             .icon-box
@@ -12,13 +12,9 @@ header
             nav
                 ul
                     li
-                        a.dropdown-button.navigation-button-header(href='/') Solutions
-                        .header-dropdown-div
-                            ul
-                                li
-                                    a(href='/analytics.html') Publisher Analytics
-                                li
-                                    a(href='/advertising.html') Native Advertising
+                        a.navigation-button-header(href='/analytics.html') Publisher Analytics
+                    li
+                        a.navigation-button-header(href='/how.html') How it works
                     li
                         a.dropdown-button.dropdown-button.navigation-button-header(href='/') Blogs
                         .header-dropdown-div
@@ -39,9 +35,13 @@ header
                                     a(href='/privacy') Privacy Policy
                                 li
                                     a(href='/terms') Terms of Use
+                ul
+                    li
+                        a.navigation-button-header.non_highlighted(href='https://app.native.ai/signin') Sign In
         .header--sign-in-box
-            a.button.slim.border.orange(href='https://app.native.ai/signin')
-                span Sign In
+            a.button.slim.border.orange(href='/demo-registration')
+                span Get Started
+
 // Mobile drawer =====================================================================
 .header--mobile-box
     .mobile-box--top-bar

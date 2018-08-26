@@ -1,0 +1,122 @@
+/* 2 cols screen (how it works) ======================================================================== */
+
+.ill-2-cols {
+    padding: 65px 0 25px;
+    @media screen and ( max-width: 1140px) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    @media screen and ( max-width: 480px) {
+        padding: 40px 16px 25px;
+    }
+    .title,
+    .subtitle {
+        text-align: center;
+        @media screen and ( max-width: 480px) {
+            text-align: left;
+        }
+    }
+    .title {
+        padding-bottom: 35px;
+        @media screen and ( max-width: 480px) {
+            padding-bottom: 22px
+        }
+    }
+    .subtitle {
+        padding-bottom: 70px;
+        @media screen and ( max-width: 480px) {
+            padding-bottom: 40px;
+        }
+    }
+    .how-it-works-section {
+        display: flex;
+        justify-content: space-between;
+        @media screen and ( max-width: 960px) {
+            justify-content: center;
+        }
+        .ill-box {
+            @media screen and ( max-width: 960px) {
+                display: none;
+            }
+            img {
+                width: 520px;
+            }
+        }
+        .items-box {
+            margin-left: 50px;
+            @media screen and ( max-width: 1140px) {
+                margin-left: 10px;
+            }
+            @media screen and ( max-width: 480px) {
+                margin-left: 0;
+            }
+        }
+        .item {
+            position: relative;
+            padding-bottom: 50px;
+            @media screen and ( max-width: 960px) {
+                width: 100%;
+                max-width: 632px;
+            }
+            @media screen and ( max-width: 480px) {
+                padding-bottom: 36px;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                top: 43px;
+                left: 15px;
+                bottom: -5px;
+                width: 2px;
+                background-color: $orange-light;
+                @media screen and ( max-width: 480px) {
+                    top: 36px;
+                    bottom: 4px;
+                }
+            }
+            &:last-child:before {
+                display: none;
+            }
+            .number {
+                position: absolute;
+                top: 8px;
+                left: 0;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                border: 2px solid $orange-light;
+                background-color: $white;
+                color: $orange-light;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 26px;
+                text-align: center;
+                @media screen and ( max-width: 480px) {
+                    top: 0;
+                }
+            }
+            .title-box {
+                padding: 0 0 16px 52px;
+                @media screen and ( max-width: 480px) {
+                    padding: 0 0 24px 48px;
+                }
+            }
+            hr {
+                margin: 0 0 16px 52px;
+                width: 240px;
+                height: 1px;
+                border: none;
+                background-color: $grey-border;
+                @media screen and ( max-width: 480px) {
+                    margin: 0 0 20px 48px;
+                }
+            }
+            .text-box {
+                padding-left: 52px;
+                @media screen and ( max-width: 480px) {
+                    padding-left: 48px;
+                }
+            }
+        }
+    }
+}

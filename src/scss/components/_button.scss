@@ -1,0 +1,106 @@
+.button {
+    display: inline-block;
+    min-width: 180px;
+    height: 45px;
+    padding: 0 20px;
+    border-radius: 4px;
+    transition: border-color .3s, background-color .3s, color .3s, fill .3s;
+    cursor: pointer;
+    font: 16px/42px $font;
+    text-decoration: none;
+    text-align: center;
+    text-decoration: none !important;
+    /* Buttons - border  ======================================================================== */
+    &.border {
+        line-height: 40px;
+        &.orange,
+        &.blue {
+            border: 2px solid transparent;
+            background-color: transparent;
+            font-weight: 400;
+        }
+        &.orange {
+            color: $orange-dark;
+            border-color: $orange-main;
+            svg {
+                fill: $orange-dark;
+            }
+        }
+        &.blue {
+            color: $blue-dark;
+            border-color: $blue-main;
+            svg {
+                fill: $blue-dark;
+            }
+        }
+        &:hover {
+            &.orange {
+                color: $white;
+                background-color: $orange-main;
+                svg {
+                    fill: $white;
+                }
+            }
+            &.blue {
+                color: $white;
+                background-color: $blue-main;
+                svg {
+                    fill: $white;
+                }
+            }
+        }
+    }
+    /* Buttons - slim  ======================================================================== */
+    &.slim {
+        height: 35px;
+        line-height: 30px;
+    }
+    /* Buttons - colors  ======================================================================== */
+    &.orange,
+    &.blue {
+        color: $white;
+        border: none;
+        font-weight: 700;
+    }
+    &.orange {
+        background-color: $orange-dark;
+    }
+    &.blue {
+        background-color: $blue-dark;
+    }
+    &:hover {
+        &.orange {
+            background-color: $orange-main;
+        }
+        &.blue {
+            background-color: $blue-main;
+        }
+    }
+    /* Buttons - icon  ======================================================================== */
+    &.icon {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15px;
+        text-align: left;
+        i {
+            display: flex;
+            align-items: center;
+        }
+    }
+    &.width-icon {
+        width: 100%;
+        padding-left: 16px;
+        background-image: url(https://cdn2.hubspot.net/hubfs/3048376/assets/images/arrow-right-white.svg);
+        background-position: calc( 100% - 16px) 16px;
+        background-repeat: no-repeat;
+        text-align: left;
+        background-size: 20px;
+        max-width: 250px;
+    }
+}
+
+@media screen and ( max-width: 480px) {
+    .button.mobile-icon {
+        background: $orange-dark url(https://cdn2.hubspot.net/hubfs/3048376/assets/images/arrow-right-white.svg) calc( 100% - 16px) 16px no-repeat;
+    }
+}

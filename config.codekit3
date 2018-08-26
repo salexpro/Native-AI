@@ -76,16 +76,6 @@
 		"oAP": "\/build\/node_modules",
 		"oF": 1
 		},
-	"\/node_modules\/jquery\/dist\/jquery.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/build\/node_modules\/jquery\/dist\/jquery.min.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"\/node_modules\/jquery\/dist\/jquery.slim.min.js": {
 		"ft": 64,
 		"ma": 0,
@@ -888,7 +878,7 @@
 		},
 	"\/src\/assets\/images\/illustrations\/anim.gif": {
 		"ft": 4194304,
-		"iS": 5762603,
+		"iS": 6172734,
 		"oA": 0,
 		"oAP": "\/build\/assets\/images\/illustrations\/anim.gif",
 		"oF": 0,
@@ -1616,32 +1606,6 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/src\/scss\/adv-c.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/build\/scss\/adv-c.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/src\/scss\/advertising.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/build\/scss\/advertising.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/src\/scss\/base.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1655,7 +1619,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/src\/scss\/blocks.scss": {
+	"\/src\/scss\/blocks\/_2cols.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1663,7 +1627,137 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/blocks.css",
+		"oAP": "\/build\/scss\/blocks\/_2cols.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/blocks\/_3cols.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/scss\/blocks\/_3cols.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/blocks\/_blueline.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/scss\/blocks\/_blueline.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/blocks\/_brands.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/scss\/blocks\/_brands.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/blocks\/_case_study.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/scss\/blocks\/_case_study.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/blocks\/_contact_form.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/scss\/blocks\/_contact_form.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/blocks\/_lp.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/scss\/blocks\/_lp.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/blocks\/_testimonials.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/scss\/blocks\/_testimonials.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/components\/_base.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/scss\/components\/_base.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/components\/_button.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/scss\/components\/_button.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/components\/_card.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/scss\/components\/_card.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1681,7 +1775,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/src\/scss\/homepage.scss": {
+	"\/src\/scss\/components\/_typographic.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1689,7 +1783,20 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/homepage.css",
+		"oAP": "\/build\/scss\/components\/_typographic.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/components\/_vars.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/scss\/components\/_vars.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1707,7 +1814,7 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"\/src\/scss\/mixins.scss": {
+	"\/src\/scss\/pages\/adv-c.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1715,12 +1822,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/mixins.css",
+		"oAP": "\/build\/scss\/pages\/adv-c.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/src\/scss\/page.scss": {
+	"\/src\/scss\/pages\/advertising.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1728,12 +1835,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/page.css",
+		"oAP": "\/build\/scss\/pages\/advertising.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/src\/scss\/publishers.scss": {
+	"\/src\/scss\/pages\/homepage.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1741,7 +1848,33 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/publishers.css",
+		"oAP": "\/build\/scss\/pages\/homepage.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/pages\/page.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/scss\/pages\/page.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/pages\/publishers.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/scss\/pages\/publishers.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1850,6 +1983,32 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/src\/scss\/sections\/_footer.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/scss\/sections\/_footer.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/sections\/_header.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/scss\/sections\/_header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/src\/scss\/sections\/_how.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1914,19 +2073,6 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
-		},
-	"\/src\/scss\/vars.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/build\/scss\/vars.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
 		}
 	},
 "hooks": [
@@ -1936,10 +2082,10 @@
 "projectAttributes": {
 	"creationDate": 548555221,
 	"displayValue": "Native-AI",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "\/src\/assets\/favicon\/apple-touch-icon-120x120.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 549546034
+	"lastBuiltDate": 549594173
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

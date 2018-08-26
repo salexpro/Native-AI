@@ -1,0 +1,44 @@
+/* Testimonials  ======================================================================== */
+
+.testimonials-section {
+    display: flex;
+    justify-content: space-between;
+    @media screen and ( max-width: 1023px) {
+        justify-content: auto;
+        flex-direction: column;
+    }
+    .testimonial-item {
+        width: calc( (100% - 40px) / 3);
+        @media screen and ( max-width: 1023px) {
+            margin: 0 auto 20px;
+            width: 100%;
+            max-width: 700px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    /* Testimonials - User info box  ======================================================================== */
+    .user-info-box {
+        display: flex;
+        align-items: center;
+        padding: 32px 20px 20px;
+        .avatar-box {
+            margin-right: 20px;
+            width: 60px;
+            height: 60px;
+            overflow: hidden;
+            border-radius: 50%;
+            img {
+                width: 100%;
+            }
+        }
+        .company {
+            margin-top: -9px;
+        }
+    }
+    /* Testimonials - Quote box  ======================================================================== */
+    .quote-box {
+        padding: 0 20px 24px;
+    }
+}
