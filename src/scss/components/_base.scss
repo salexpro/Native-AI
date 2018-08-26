@@ -16,9 +16,9 @@ body {
     @media screen and ( max-width: 640px) {
         padding-top: 56px;
     }
-    &.fix {
-        overflow: hidden;
-    }
+}
+.fix {
+    overflow: hidden;
 }
 
 .wrapper {

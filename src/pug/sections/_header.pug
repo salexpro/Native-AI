@@ -7,7 +7,8 @@ header.header
                 span
                 span
         .header--logo-box
-            a(href='/', alt='NativeAI', title='NativeAI')
+            a(href='/', title='NativeAI')
+                img(src="/assets/images/logo.svg", alt="NativeAI")
         .header--nav-box
             nav
                 ul
@@ -46,7 +47,7 @@ header.header
 .header--mobile-box
     .mobile-box--top-bar
         .mobile-box--logo-box
-            a(href='#', alt='NativeAI', title='NativeAI')
+            img(src="/assets/images/logo.svg", alt="NativeAI")
         .mobile-box--close-btn
             svg(xmlns='http://www.w3.org/2000/svg', viewbox='-997.778 34.293 15.556 15.556', width='16', heigth='16')
                 g(style='stroke:#343a40; stroke-width:2px;', transform='translate(-1339 14.071)')
@@ -56,20 +57,19 @@ header.header
         nav
             ul
                 li
-                    a.navigation-button-header-mobile(href='#')
+                    a.navigation-button-header-mobile(href='/analytics.html')
                         i
-                            img(src='https://cdn2.hubspot.net/hubfs/3048376/assets/images/nav-solutions.svg')
-                        span Solutions
-                    .mobile-menu-subitems
-                        ul
-                            li
-                                a(href='/analytics.html') Publisher Analytics
-                            li
-                                a(href='/advertising.html') Native Advertising
+                            +icon('nav_publ', [20, 20], '#4c6ef5')
+                        span Publisher Analytics
+                li
+                    a.navigation-button-header-mobile(href='/how.html')
+                        i
+                            +icon('nav_how', [20, 20], '#4c6ef5')
+                        span How it works
                 li
                     a.navigation-button-header-mobile(href='#')
                         i
-                            img(src='https://cdn2.hubspot.net/hubfs/3048376/assets/images/nav-blog.svg')
+                            +icon('nav_blog', [20, 20], '#4c6ef5')
                         span Blogs
                     .mobile-menu-subitems
                         ul
@@ -78,9 +78,9 @@ header.header
                             li
                                 a(href='/all-stars') Content Marketing All-Stars
                 li
-                    a.navigation-button-header-mobile(href='#')
+                    .navigation-button-header-mobile
                         i
-                            img(src='https://cdn2.hubspot.net/hubfs/3048376/assets/images/nav-how-to.svg')
+                            +icon('nav_about', [20, 20], '#4c6ef5')
                         span About
                     .mobile-menu-subitems
                         ul
@@ -92,13 +92,14 @@ header.header
                                 a(href='/privacy') Privacy Policy
                             li
                                 a(href='/terms') Terms of Use
+                li
+                    a.navigation-button-header-mobile(href='/dashboard/signin')
+                        i
+                            +icon('nav_sign', [20, 16], '#4c6ef5')
+                        span Sign In
     .mobile-box--sign-in-box
-        a.button.border.icon.orange(href='/dashboard/signin')
-            span Sign In
+        a.button.orange.glow(href='/dashboard/signin')
+            span Get Started
             i
-                svg(xmlns='http://www.w3.org/2000/svg', viewbox='-1000 612 17.322 12', width='17', height='12')
-                    g(transform='translate(-1313 163.071)')
-                        rect(width='1.697', height='8.485', rx='0.849', transform='translate(329.122 453.729) rotate(45)')
-                        rect(width='16.971', height='1.697', rx='0.849', transform='translate(313 454.08)')
-                        rect(width='8.485', height='1.697', rx='0.849', transform='translate(324.322 448.929) rotate(45)')
+                +icon('arrow', [20, 14], '#fff')
 .header--filter

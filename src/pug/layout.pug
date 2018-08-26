@@ -4,6 +4,11 @@ block const
         const description = 'Description'
         const keywords = 'keyword'
 
+mixin icon(name, size, color, viewbox)
+    - viewbox = viewbox || size
+    svg(xmlns='http://www.w3.org/2000/svg' width=size[0] height=size[1] viewbox=viewbox ? "0 0 " + viewbox[0] + " " + viewbox[1] : "")
+        use(fill=color, xlink:href='#' + name)
+
 doctype html
 html(lang='en')
     head
@@ -12,5 +17,6 @@ html(lang='en')
         include sections/_header
         block content
         include sections/_footer
+        include components/_icons
         script(src='js/app.min.js')
         block js

@@ -52,6 +52,7 @@
     }
     /* Buttons - slim  ======================================================================== */
     &.slim {
+        min-width: 170px;
         height: 35px;
         line-height: 30px;
     }
@@ -96,6 +97,14 @@
         text-align: left;
         background-size: 20px;
         max-width: 250px;
+    }
+    &.glow{
+        box-shadow: 0 6px 20px rgba($orange-main, 0.42);
+        width: 100%;
+        i{
+            margin-left: 15px;
+            vertical-align: middle;
+        }
     }
 }
 
