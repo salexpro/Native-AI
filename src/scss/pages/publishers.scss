@@ -14,35 +14,263 @@
     }
 }
 
-/* Six screen - Tools CTA  ======================================================================== */
+/* Second screen < 480
+  ======================================================================== */
 
-.publisher--six-screen {
-    padding: 80px 0;
-    @media screen and ( max-width: 1140px) {
+@media screen and (max-width: 480px) {
+    .publisher--second-screen {
+        padding-bottom: 42px;
+    }
+    .publisher--second-screen .title {
+        padding-bottom: 26px;
+    }
+    .publisher--third-screen .wrapper .img-left .text-section {
+        margin-left: 0;
+    }
+    .lp-first-screen .button-box {
+        padding-bottom: 0;
+    }
+}
+
+#audience-interest-analysis-image {
+    background-image: url("https://cdn2.hubspot.net/hubfs/3048376/assets/images/publishers-screenshots/audience_interest_analysis.jpg");
+    height: 250px;
+    width: 524px;
+}
+
+#real-time-dashboard-image {
+    background-image: url("https://cdn2.hubspot.net/hubfs/3048376/assets/images/publishers-screenshots/real_time_dashboard.jpg");
+    height: 448px;
+    width: 524px;
+}
+
+#interest-intelligence-image {
+    background-image: url("https://cdn2.hubspot.net/hubfs/3048376/assets/images/publishers-screenshots/interest_intelligence.jpg");
+    height: 348px;
+    width: 524px;
+}
+
+#daily-digest-image {
+    background-image: url("https://cdn2.hubspot.net/hubfs/3048376/assets/images/publishers-screenshots/daily_digest.jpg");
+    height: 594px;
+    width: 524px;
+}
+
+#engagement-quality-intelligence-image {
+    background-image: url("https://cdn2.hubspot.net/hubfs/3048376/assets/images/publishers-screenshots/engagement_quality_intelligence.jpg");
+    height: 348px;
+    width: 524px;
+}
+
+  
+/* Third screen
+  ======================================================================== */
+
+.publisher--third-screen {
+    padding: 72px 0 8px;
+    border-top: 1px solid #DEE2E6;
+    border-bottom: 1px solid #DEE2E6;
+}
+
+.publisher--third-screen .img-left .text-section {
+    margin-left: 40px;
+}
+
+.publisher--third-screen .img-right .text-section {
+    margin-right: 40px;
+}
+
+.publisher--third-screen .item {
+    display: flex;
+    padding-bottom: 72px;
+}
+
+.publisher--third-screen .item .img-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.publisher--third-screen .item .img-section div {
+    background-size: contain;
+    display: block;
+    margin: auto;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #eee;
+}
+
+.publisher--third-screen .item .title-box {
+    padding-bottom: 26px;
+}
+
+.publisher--third-screen .item hr {
+    display: block;
+    margin: 0 0 26px;
+    width: 150px;
+    height: 2px;
+    border: none;
+}
+
+.publisher--third-screen .item hr.blue {
+    background-color: #4C6EF5;
+}
+
+.publisher--third-screen .item hr.orange {
+    background-color: #FF832A;
+}
+
+/* Third screen < 1140
+  ======================================================================== */
+
+@media screen and (max-width: 1140px) {
+    .publisher--third-screen {
         padding-left: 40px;
         padding-right: 40px;
     }
-    @media screen and ( max-width: 720px ) {
-        display: none;
-    }
-    .tools-cta-frame {
-        width: 100%;
-        height: 500px;
-        overflow: hidden;
+}
 
-        border-radius: 4px ;
-        background-color: #eee;
-        @media screen and ( max-width: 840px ) {
-            height: 380px;
-        }
+/* Third screen < 1024
+  ======================================================================== */
+
+@media screen and (max-width: 1023px) {
+    .publisher--third-screen .item.img-left .img-section {
+        justify-content: flex-start;
+    }
+    .publisher--third-screen .item.img-right .img-section {
+        justify-content: flex-end;
     }
 }
+
+/* Third screen < 960
+  ======================================================================== */
+
+@media screen and (max-width: 959px) {
+    .publisher--third-screen .item {
+        flex-direction: column;
+        padding-bottom: 72px;
+    }
+    .publisher--third-screen .item.img-left .img-section {
+        order: 2;
+    }
+    .publisher--third-screen .item>div {
+        width: 100%;
+    }
+    .publisher--third-screen .item .img-section {
+        justify-content: center !important;
+    }
+    .publisher--third-screen .item .text-section {
+        padding-bottom: 45px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #audience-interest-analysis-image {
+        height: 187px;
+        width: 391px;
+    }
+    #real-time-dashboard-image {
+        height: 336px;
+        width: 391px;
+    }
+    #interest-intelligence-image {
+        height: 261px;
+        width: 391px;
+    }
+    #daily-digest-image {
+        height: 445px;
+        width: 391px;
+    }
+    #engagement-quality-intelligence-image {
+        height: 261px;
+        width: 391px;
+    }
+}
+
+/* Third screen < 480
+  ======================================================================== */
+
+@media screen and (max-width: 480px) {
+    #audience-interest-analysis-image {
+        height: 125px;
+        width: 262px;
+    }
+    #real-time-dashboard-image {
+        height: 224px;
+        width: 262px;
+    }
+    #interest-intelligence-image {
+        height: 174px;
+        width: 262px;
+    }
+    #daily-digest-image {
+        height: 297px;
+        width: 262px;
+    }
+    #engagement-quality-intelligence-image {
+        height: 174px;
+        width: 262px;
+    }
+    .publisher--third-screen {
+        padding: 40px 16px 10px;
+    }
+    .publisher--third-screen .item {
+        padding-bottom: 40px;
+    }
+    .publisher--third-screen .item .img-section img {
+        width: 100%;
+        height: 200px;
+    }
+    .publisher--third-screen .item .text-section {
+        padding-bottom: 30px;
+    }
+    .publisher--third-screen .item .title-box {
+        padding-bottom: 29px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .publisher--second-screen {
+        padding-bottom: 42px;
+    }
+}
+
+
+/* Six screen - Tools CTA  ======================================================================== */
+
+// .publisher--six-screen {
+//     padding: 80px 0;
+//     @media screen and ( max-width: 1140px) {
+//         padding-left: 40px;
+//         padding-right: 40px;
+//     }
+//     @media screen and ( max-width: 720px ) {
+//         display: none;
+//     }
+//     .tools-cta-frame {
+//         width: 100%;
+//         height: 500px;
+//         overflow: hidden;
+
+//         border-radius: 4px ;
+//         background-color: #eee;
+//         @media screen and ( max-width: 840px ) {
+//             height: 380px;
+//         }
+//     }
+// }
 
 /* Seven screen  ======================================================================== */
 
 .publisher--seven-screen {
     @media screen and ( max-width: 480px) {
         padding: 40px 16px 12px;
+    }
+    .wrapper{
+        max-width: 930px;
     }
     .title-box {
         @media screen and ( max-width: 480px) {
@@ -64,18 +292,20 @@
         p { padding-bottom: 28px; }
 
         .img-box {
-            padding-top: 10px;
+            margin-top: -27px;
             @media screen and ( max-width: 920px) {
                 display: none;
             }
             img {
-                width: 360px;
-                height: 196px;
+                width: 345px;
             }
         }
     }
+    .button-box{
+        margin-top: 22px;
+        text-align: center;
+    }
 }
-
 
 /* Eight screen  ======================================================================== */
 
@@ -122,5 +352,483 @@
             width: 400px;
         }
         img { width: 100%; }
+    }
+}
+
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    #audience-interest-analysis-image {
+        background-image: url("https://cdn2.hubspot.net/hubfs/3048376/assets/images/publishers-screenshots/audience_interest_analysis_retina.jpg");
+    }
+    #real-time-dashboard-image {
+        background-image: url("https://cdn2.hubspot.net/hubfs/3048376/assets/images/publishers-screenshots/real_time_dashboard_retina.jpg");
+    }
+    #interest-intelligence-image {
+        background-image: url("https://cdn2.hubspot.net/hubfs/3048376/assets/images/publishers-screenshots/interest_intelligence_retina.jpg");
+    }
+    #daily-digest-image {
+        background-image: url("https://cdn2.hubspot.net/hubfs/3048376/assets/images/publishers-screenshots/daily_digest_retina.jpg");
+    }
+    #engagement-quality-intelligence-image {
+        background-image: url("https://cdn2.hubspot.net/hubfs/3048376/assets/images/publishers-screenshots/engagement_quality_intelligence_retina.jpg");
+    }
+}
+
+.a--first-screen .button-box {
+    padding-bottom: 10px !important;
+}
+
+#promoted-content-image {
+    background: url("https://cdn2.hubspot.net/hubfs/3048376/assets/images/promoted_content_placed.jpg");
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Second screen
+  ======================================================================== */
+
+.a--second-screen {
+    padding-bottom: 75px;
+}
+
+.a--second-screen .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.a--second-screen p {
+    width: calc(50% - 10px);
+}
+
+/* Second screen < 1140px
+  ======================================================================== */
+
+@media screen and (max-width: 1140px) {
+    .a--second-screen {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+/* Second screen < 800px
+  ======================================================================== */
+
+@media screen and (max-width: 800px) {
+    .a--second-screen {
+        padding-bottom: 51px;
+    }
+    .a--second-screen .wrapper {
+        flex-direction: column;
+    }
+    .a--second-screen p {
+        width: 100%;
+        padding-bottom: 24px;
+    }
+}
+
+/* Second screen < 480px
+  ======================================================================== */
+
+@media screen and (max-width: 480px) {
+    .a--second-screen {
+        padding: 0 16px 28px;
+    }
+    .a--second-screen p {
+        padding-bottom: 20px;
+    }
+}
+
+/* Third screen
+  ======================================================================== */
+
+.a--third-screen .graph-box {
+    overflow: hidden;
+    margin: 0 auto 40px;
+    width: 100%;
+    max-width: 940px;
+    height: 360px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #eee;
+}
+
+.a--third-screen .text-box {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+/* Third screen < 480
+  ======================================================================== */
+
+@media screen and (max-width: 480px) {
+    .a--third-screen .graph-box {
+        height: 240px;
+    }
+    .a--third-screen .text-box {
+        padding-bottom: 32px;
+        text-align: left;
+    }
+    .lp-first-screen {
+        padding: 77px 16px 0 16px;
+    }
+}
+
+/* Four screen
+  ======================================================================== */
+
+.a--four-screen {
+    padding: 68px 0 70px;
+    overflow: hidden;
+}
+
+.a--four-screen .wrapper {
+    display: flex;
+    align-items: flex-end;
+}
+
+.a--four-screen .text-section {
+    width: 460px;
+}
+
+.a--four-screen .text-section .title {
+    padding-bottom: 28px;
+}
+
+.a--four-screen .text-section .subtitle {
+    padding-bottom: 40px;
+}
+
+.a--four-screen .ill-section {
+    width: calc( 100% - 460px);
+    padding-left: 30px;
+}
+
+/* Four screen < 1140
+  ======================================================================== */
+
+@media screen and (max-width: 1140px) {
+    .a--four-screen {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+/* Four screen < 960
+  ======================================================================== */
+
+@media screen and (max-width: 960px) {
+    .a--four-screen .wrapper {
+        position: relative;
+    }
+    .a--four-screen .text-section {
+        width: 100%;
+    }
+    .a--four-screen .ill-section {
+        position: absolute;
+        top: 20px;
+        right: -100px;
+        width: 600px;
+        padding: 0;
+        z-index: -1;
+        opacity: .16;
+    }
+}
+
+/* Four screen < 480
+  ======================================================================== */
+
+@media screen and (max-width: 480px) {
+    .a--four-screen {
+        padding: 26px 16px 40px;
+    }
+    .a--four-screen .ill-section {
+        top: auto;
+        bottom: 40px;
+        right: -80px;
+        width: 400px;
+    }
+}
+
+/* Fifth screen
+  ======================================================================== */
+
+.a--fifth-screen {
+    padding-bottom: 56px;
+}
+
+.a--fifth-screen hr {
+    display: block;
+    margin: 20px 0;
+    width: 150px;
+    height: 2px;
+    border: none;
+    background-color: #FF832A;
+}
+
+.a--fifth-screen p {
+    padding-bottom: 24px;
+}
+
+/* Fifth screen
+  ======================================================================== */
+
+@media screen and (max-width: 480px) {
+    .a--fifth-screen {
+        padding-bottom: 16px;
+    }
+}
+
+/* Sixth screen
+  ======================================================================== */
+
+.a--sixth-screen img {
+    margin-bottom: 30px;
+}
+
+/* Seventh screen
+  ======================================================================== */
+
+.a--seventh-screen .title {
+    padding-bottom: 70px !important;
+}
+
+/* Nineth screen
+  ======================================================================== */
+
+.a--nineth-screen {
+    padding: 65px 0 80px;
+    border-top: 1px solid #DEE2E6;
+    border-bottom: 1px solid #DEE2E6;
+}
+
+.a--nineth-screen .title,
+.a--nineth-screen .subtitle,
+.a--nineth-screen .button-box {
+    text-align: center;
+}
+
+.a--nineth-screen .title {
+    padding-bottom: 30px;
+}
+
+.a--nineth-screen .subtitle {
+    padding-bottom: 72px;
+}
+
+.a--nineth-screen .how-to-section {
+    position: relative;
+    margin: 0 auto 35px;
+    width: 100%;
+    max-width: 930px;
+    height: 412px;
+    background: url(https://cdn2.hubspot.net/hubfs/3048376/assets/images/a-get-started-bg.svg) center top no-repeat;
+}
+
+.a--nineth-screen .how-to-item {
+    position: absolute;
+}
+
+.a--nineth-screen .how-to-item .number {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #4263EB;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+}
+
+.a--nineth-screen .how-to-item .title-box {
+    padding-bottom: 18px;
+}
+
+.a--nineth-screen .how-to-item .title-box h3 {
+    line-height: 35px;
+}
+
+.a--nineth-screen .how-to-item.first {
+    top: 41px;
+    left: 24px;
+}
+
+.a--nineth-screen .how-to-item.first .number {
+    top: -56px;
+    left: -34px;
+}
+
+.a--nineth-screen .how-to-item.second {
+    top: 66px;
+    right: 76px;
+    text-align: right;
+}
+
+.a--nineth-screen .how-to-item.second .number {
+    top: 64px;
+    right: -66px;
+}
+
+.a--nineth-screen .how-to-item.third {
+    left: 124px;
+    bottom: 72px;
+}
+
+.a--nineth-screen .how-to-item.third .number {
+    left: -37px;
+    bottom: -57px;
+}
+
+/* Nineth screen < 999
+  ======================================================================== */
+
+@media screen and (max-width: 999px) {
+    .a--nineth-screen {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .a--nineth-screen .subtitle {
+        padding-bottom: 72px;
+    }
+    .a--nineth-screen .how-to-section {
+        height: auto;
+        background: none;
+    }
+    .a--nineth-screen .how-to-item {
+        position: relative;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        margin-bottom: 40px;
+        text-align: center !important;
+    }
+    .a--nineth-screen .how-to-item .number {
+        position: relative;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        margin: 0 auto 24px;
+    }
+}
+
+/* Nineth screen < 480
+  ======================================================================== */
+
+@media screen and (max-width: 480px) {
+    .a--nineth-screen {
+        padding: 48px 16px 52px;
+    }
+    .a--nineth-screen .subtitle {
+        padding-bottom: 52px;
+    }
+}
+
+/* Ten screen
+  ======================================================================== */
+
+.a--tenth-screen {
+    overflow: hidden;
+    padding: 66px 0 72px;
+    border-bottom: 1px solid #DEE2E6;
+}
+
+.a--tenth-screen .title,
+.a--tenth-screen .subtitle {
+    text-align: center;
+}
+
+.a--tenth-screen .title {
+    padding-bottom: 30px;
+}
+
+.a--tenth-screen .subtitle {
+    padding-bottom: 55px;
+}
+
+.a--tenth-screen .main-content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.a--tenth-screen .main-content img {
+    width: 400px;
+}
+
+/* Ten screen < 1140
+  ======================================================================== */
+
+@media screen and (max-width: 1140px) {
+    .a--tenth-screen {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .a--tenth-screen .img-box {
+        position: absolute;
+        top: -22px;
+        right: -30px;
+        opacity: .3;
+    }
+}
+
+/* Ten screen < 840
+  ======================================================================== */
+
+@media screen and (max-width: 840px) {
+    .a--tenth-screen .img-box {
+        right: -120px;
+    }
+}
+
+/* Ten screen < 700
+  ======================================================================== */
+
+@media screen and (max-width: 700px) {
+    .a--tenth-screen .img-box {
+        position: absolute;
+        top: -16px;
+        right: -190px;
+        opacity: .2;
+    }
+    .a--tenth-screen .img-box img {
+        width: 320px;
+    }
+}
+
+/* Ten screen < 480
+  ======================================================================== */
+
+@media screen and (max-width: 480px) {
+    .a--tenth-screen {
+        padding: 40px 16px 42px;
+    }
+    .a--tenth-screen .title,
+    .a--tenth-screen .subtitle {
+        text-align: left;
+    }
+    .a--tenth-screen .subtitle {
+        padding-bottom: 32px;
+    }
+    .a--tenth-screen .img-box {
+        position: absolute;
+        top: -16px;
+        right: -190px;
+        opacity: .2;
+    }
+    .a--tenth-screen .img-box img {
+        width: 320px;
     }
 }

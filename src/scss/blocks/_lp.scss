@@ -10,12 +10,35 @@
     @media screen and ( max-width: 480px) {
         padding: 77px 16px;
     }
+    &--dash{
+        padding-bottom: 120px;
+        .wrapper{
+            max-width: 930px;
+            .descr{
+                padding-bottom: 10px;
+            }
+            .ill-section{
+                top: -17px;
+                right: 0;
+            }
+        }
+        .titles-section {
+            min-height: 315px;
+            .button-box{
+                padding: 0;
+            }
+        }
+    }
     .wrapper {
         position: relative;
     }
     .titles-section {
         position: relative;
         z-index: 20;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     .main-title {
         padding-bottom: 32px;
@@ -65,7 +88,8 @@
             top: -30px;
         }
         img {
-            width: 100%;
+            // width: 100%;
+            float: right;
         }
     }
 }

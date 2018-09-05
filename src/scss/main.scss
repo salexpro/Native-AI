@@ -8,6 +8,9 @@
 @import 'components/button';
 @import 'components/list';
 @import 'components/card';
+@import '../../node_modules/slick-carousel/slick/slick.scss';
+$slick-loader-path: '../assets/images/';
+@import '../../node_modules/slick-carousel/slick/slick-theme.scss';
 
 // Blocks
 @import 'blocks/case_study';
@@ -40,4 +43,6 @@
 @import 'sections/faq';
 @import 'sections/unfair';
 @import 'sections/analysis';
+@import 'sections/carousel';
+@import 'sections/metrics';
 @import 'sections/footer';

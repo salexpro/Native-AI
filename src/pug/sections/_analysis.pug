@@ -1,59 +1,66 @@
-// Third screen =====================================================================
 mixin analysis(treemap)
     .homepage--five-screen.analysis
+        .analysis_wrapper
+            .wrapper
+                .item.img-left(class=treemap?"analysis_treemap":"")
+                    if treemap
+                        include ../components/_treemap
+                    else
+                        .img-section
+                            img(src="assets/images/infographic/interests.png", alt="Audience Interest Analysis")
+                    .text-section
+                        .title-box
+                            h2 Audience Interest Analysis
+                        hr.blue
+                        .text-box
+                            p
+                                | Segment your readers by the topics, news categories that most interest them using NativeAI's Audience Interest metrics and reports. Our advanced NLP algorithms allow you to view 'Content you Produced' as well as Content that your audience most engaged with, giving you insights to prioritize editorial calendars and optimize audience development and acquisition campaigns.
         .wrapper
-            .item.img-left(class=treemap?"analysis_treemap":"")
-                if treemap
-                    include ../components/_treemap
-                else
+            .analysis_slider
+                .item
+                    .text-section
+                        .title-box
+                            h2 Real-Time Analytics Dashboard
+                        hr.orange
+                        .text-box
+                            p
+                                | Stay on top of all the key performance metrics for your website with our low-latency realtime dashboard. Visits, Re-circulation, Top Stories, Engagement Quality, Sources of Traffic, Audience Interest tags - all of these are available and updated as the day plays out, with a handy comparison to an average day.
                     .img-section
-                        img(src="assets/images/infographic/interests.png", alt="Audience Interest Analysis")
-                .text-section
-                    .title-box
-                        h2 Audience Interest Analysis
-                    hr.blue
-                    .text-box
-                        p
-                            | The NativeAI platform features advanced algorithms that recognize more than 
-                            i one million distinct
-                            |  audience interests. Artificial intelligence creates interest graphs that map the behavior of individual users as well as entire audience segments.
-            .item.img-right
-                .text-section
-                    .title-box
-                        h2 Real-Time Dashboard
-                    hr.orange
-                    .text-box
-                        p
-                            | Keep track of what is happening on your site right now. Instantly compare performance against the typical performance averages. The dashboard features goes deeper than visits with the Engagement Quality (EQ) graph, revealing audience engagement metrics in real-time.
-                .img-section
-                    img(src='assets/images/infographic/engagement.png' alt="Real-Time Dashboard")
-            .item.img-left
-                .img-section
-                    img(src='assets/images/infographic/channels.png' alt="Interest Intelligence")
-                .text-section
-                    .title-box
-                        h2 Interest Intelligence
-                    hr.blue
-                    .text-box
-                        p
-                            | Drill down into the performance metrics of interest segments across your entire content platform. See what stories are performing the best, which writers drive the most engagement, and the hot topics your audience is engaging with the most.
-            .item.img-right
-                .text-section
-                    .title-box
-                        h2 Daily Digests
-                    hr.orange
-                    .text-box
-                        p
-                            | Daily snapshots of content performance and engagement metrics sent directly to your inbox. Get a high-level view of the most important performance insights you can understand at a glance.
-                    
-                    .title-box
-                        h2 Engagement Quality Intelligence
-                    hr.blue
-                    .text-box
-                        p
-                            | Engagement Quality (EQ) is a special metric developed by NativeAI that combines time spent, scroll depth, user actions, and story length, and more. These metrics are combined into a single score to gauge the engagement value of each piece of content.
-                .img-section
-                    h3.bold News.com Daily Digest
-                    img(src='assets/images/infographic/increased.png' alt="Engagement Quality Intelligence")
-                    img(src='assets/images/infographic/engagement.png' alt="Engagement Quality Intelligence")
+                        img(src='assets/images/infographic/engagement.svg' alt="Real-Time Dashboard")
+                .item.item--text
+                    .text-section
+                        .title-box
+                            h2 Audience Engagement Quality
+                        hr.orange
+                        .text-box
+                            p
+                                | Measure the level of Audience Attention that your stories earn, Quantify Engagement using EQ - Engagement Quality. EQ is our purpose-built metric that is calculated using Active Time on Page and Scroll
+                                br
+                                | Depth normalized for story length and format of the story. This allows you to objectively compare engagement    levels between stories accurately.
+                    .text-section
+                        +list(['Engagement Quality (EQ) ranges from 0 to 1, with 1 indicating maximum engagement', 'EQ is calculated for every reader and reported in aggregates', 'Objectively compare Articles, Authors, Topics by Engagement'], 'list--dots')
+                    .analysis_formula
+                        img(src="./assets/images/formula.svg", alt="Engagement Quality")
+                .item.item--last
+                    .text-section
+                        .title-box
+                            h2 Daily Digests
+                        hr.orange
+                        .text-box
+                            p
+                                | Daily snapshots of content performance and engagement metrics sent directly to your inbox. Get a high-level view of the most important performance insights you can understand at a glance.
+                        
+                        .title-box
+                            h2
+                                | Powerful & Easy Filters
+                                br
+                                | & Data Exports
+                        hr.blue
+                        .text-box
+                            p
+                                | Filter all your analytics reports by Author, Topic or Audience Interest, your custom Publisher Tags, Loyalty of reader, as well as the usual options such as reader location, device, traffic source etc. across date ranges. All reports can be exported inconvenient CSV files.
+                    .img-section
+                        h3.bold News.com Daily Digest
+                        img(src='assets/images/infographic/increased.svg' alt="Engagement Quality Intelligence")
+                        img(src='assets/images/infographic/engagement_volume.svg' alt="Engagement Quality Intelligence")
 

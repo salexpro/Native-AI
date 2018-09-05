@@ -91,7 +91,7 @@
     &.width-icon {
         width: 100%;
         padding-left: 16px;
-        background-image: url(https://cdn2.hubspot.net/hubfs/3048376/assets/images/arrow-right-white.svg);
+        background-image: url(../assets/images/arrow-right-white.svg);
         background-position: calc( 100% - 16px) 16px;
         background-repeat: no-repeat;
         text-align: left;
@@ -100,16 +100,19 @@
     }
     &.glow{
         box-shadow: 0 6px 20px rgba($orange-main, 0.42);
-        width: 100%;
+        min-width: 240px;
         i{
             margin-left: 15px;
             vertical-align: middle;
         }
     }
+    &.wide{
+        width: 100%;
+    }
 }
 
 @media screen and ( max-width: 480px) {
     .button.mobile-icon {
-        background: $orange-dark url(https://cdn2.hubspot.net/hubfs/3048376/assets/images/arrow-right-white.svg) calc( 100% - 16px) 16px no-repeat;
+        background: $orange-dark url(../assets/images/arrow-right-white.svg) calc( 100% - 16px) 16px no-repeat;
     }
 }

@@ -1,5 +1,7 @@
 .footer{
     border-top: $border-grey;
+    position: relative;
+    background: $white;
     &--first-box{
         .wrapper {
             display: flex;
@@ -69,7 +71,7 @@
                 @media screen and ( max-width: 640px) {
                     padding: 24px 0;
                     + li{
-                        border-top: 1px solid #e9ecef;
+                        border-top: $border-grey;
                     }
                 }
             }

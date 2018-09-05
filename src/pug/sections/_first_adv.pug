@@ -1,9 +1,10 @@
 // First screen =====================================================================
-mixin first_adv(img, header, descr, button, mod)
-    .adv--first-screen.lp-first-screen
+mixin first_adv(img, header, descr, button, color, mod)
+    section.adv--first-screen.lp-first-screen(class=mod?`lp-first-screen--${mod}`:'')
         .wrapper
             .ill-section
-                img(src='assets/images/illustrations/' + img + '.svg')
+                img(src=`assets/images/illustrations/${img}.svg`)
+                    
             .titles-section
                 .main-title
                     h1= header
@@ -11,5 +12,8 @@ mixin first_adv(img, header, descr, button, mod)
                     p
                         !=descr
                 .button-box
-                    a.button.blue.mobile-icon(href='#')
+                    a.button.mobile-icon(href='#' class=color)
                         span= button
+                        if mod === 'dash'
+                            i
+                                +icon('arrow', [20, 14], '#fff')

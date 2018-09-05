@@ -86,6 +86,42 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/node_modules\/slick-carousel\/slick\/slick-theme.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/slick-carousel\/slick\/slick-theme.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/node_modules\/slick-carousel\/slick\/slick.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/slick-carousel\/slick\/slick.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/node_modules\/slick-carousel\/slick\/slick.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/slick-carousel\/slick\/slick.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/node_modules\/wow.js\/dist\/wow.min.js": {
 		"ft": 64,
 		"ma": 0,
@@ -285,6 +321,14 @@
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
+		},
+	"\/src\/assets\/images\/ajax-loader.gif": {
+		"ft": 4194304,
+		"iS": 4178,
+		"oA": 0,
+		"oAP": "\/build\/assets\/images\/ajax-loader.gif",
+		"oF": 0,
+		"opt": 1
 		},
 	"\/src\/assets\/images\/arrow-right-white.svg": {
 		"ft": 2097152,
@@ -626,15 +670,16 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/src\/assets\/images\/case.svg": {
-		"ft": 2097152,
-		"miP": 1,
-		"oA": 2,
-		"oAP": "\/build\/assets\/images\/case.svg",
+	"\/src\/assets\/images\/carousel\/dash.jpg": {
+		"ft": 16384,
+		"iS": 105791,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/assets\/images\/carousel\/dash.jpg",
 		"oF": 0,
-		"opt": 0,
-		"plM": 553513902079,
-		"prP": 0
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
 		},
 	"\/src\/assets\/images\/check-blue.svg": {
 		"ft": 2097152,
@@ -656,14 +701,14 @@
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"\/src\/assets\/images\/facebook.svg": {
+	"\/src\/assets\/images\/formula.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "\/build\/assets\/images\/facebook.svg",
+		"oAP": "\/build\/assets\/images\/formula.svg",
 		"oF": 0,
 		"opt": 0,
-		"plM": 553513902079,
+		"plM": 3758088159,
 		"prP": 0
 		},
 	"\/src\/assets\/images\/how-it-work\/00.svg": {
@@ -884,6 +929,26 @@
 		"oF": 0,
 		"opt": 1
 		},
+	"\/src\/assets\/images\/illustrations\/case.svg": {
+		"ft": 2097152,
+		"miP": 1,
+		"oA": 2,
+		"oAP": "\/build\/assets\/images\/illustrations\/case.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/assets\/images\/illustrations\/dashboard.svg": {
+		"ft": 2097152,
+		"miP": 1,
+		"oA": 2,
+		"oAP": "\/build\/assets\/images\/illustrations\/dashboard.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/src\/assets\/images\/illustrations\/home-01-gray.svg": {
 		"ft": 2097152,
 		"miP": 1,
@@ -1004,60 +1069,35 @@
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"\/src\/assets\/images\/infographic\/channels.png": {
-		"ft": 32768,
-		"iS": 33525,
-		"oA": 0,
-		"oAP": "\/build\/assets\/images\/infographic\/channels.png",
+	"\/src\/assets\/images\/infographic\/engagement.svg": {
+		"ft": 2097152,
+		"miP": 1,
+		"oA": 2,
+		"oAP": "\/build\/assets\/images\/infographic\/engagement.svg",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
-	"\/src\/assets\/images\/infographic\/channels@2x.png": {
-		"ft": 32768,
-		"iS": 84282,
-		"oA": 0,
-		"oAP": "\/build\/assets\/images\/infographic\/channels@2x.png",
+	"\/src\/assets\/images\/infographic\/engagement_volume.svg": {
+		"ft": 2097152,
+		"miP": 1,
+		"oA": 2,
+		"oAP": "\/build\/assets\/images\/infographic\/engagement_volume.svg",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
-	"\/src\/assets\/images\/infographic\/engagement.png": {
-		"ft": 32768,
-		"iS": 54615,
-		"oA": 0,
-		"oAP": "\/build\/assets\/images\/infographic\/engagement.png",
+	"\/src\/assets\/images\/infographic\/increased.svg": {
+		"ft": 2097152,
+		"miP": 1,
+		"oA": 2,
+		"oAP": "\/build\/assets\/images\/infographic\/increased.svg",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/src\/assets\/images\/infographic\/increased.png": {
-		"ft": 32768,
-		"iS": 9548,
-		"oA": 0,
-		"oAP": "\/build\/assets\/images\/infographic\/increased.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/src\/assets\/images\/infographic\/increased@2x.png": {
-		"ft": 32768,
-		"iS": 24001,
-		"oA": 0,
-		"oAP": "\/build\/assets\/images\/infographic\/increased@2x.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/src\/assets\/images\/infographic\/interests.png": {
 		"ft": 32768,
@@ -1111,98 +1151,37 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/src\/assets\/images\/logo-mini.png": {
-		"ft": 32768,
-		"iS": 11760,
-		"oA": 0,
-		"oAP": "\/build\/assets\/images\/logo-mini.png",
+	"\/src\/assets\/images\/logo.svg": {
+		"ft": 2097152,
+		"miP": 1,
+		"oA": 2,
+		"oAP": "\/build\/assets\/images\/logo.svg",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/src\/assets\/images\/logo.png": {
-		"ft": 32768,
-		"iS": 19968,
-		"oA": 0,
-		"oAP": "\/build\/assets\/images\/logo.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/src\/assets\/images\/macbook.png": {
 		"ft": 32768,
-		"iS": 44762,
+		"iS": 33995,
 		"oA": 0,
 		"oAP": "\/build\/assets\/images\/macbook.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/src\/assets\/images\/nav-blog.svg": {
-		"ft": 2097152,
-		"miP": 1,
-		"oA": 2,
-		"oAP": "\/build\/assets\/images\/nav-blog.svg",
+	"\/src\/assets\/images\/macbook@2x.png": {
+		"ft": 32768,
+		"iS": 100448,
+		"oA": 0,
+		"oAP": "\/build\/assets\/images\/macbook@2x.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
-		"plM": 553513902079,
-		"prP": 0
-		},
-	"\/src\/assets\/images\/nav-case.svg": {
-		"ft": 2097152,
-		"miP": 1,
-		"oA": 2,
-		"oAP": "\/build\/assets\/images\/nav-case.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 553513902079,
-		"prP": 0
-		},
-	"\/src\/assets\/images\/nav-how-to.svg": {
-		"ft": 2097152,
-		"miP": 1,
-		"oA": 2,
-		"oAP": "\/build\/assets\/images\/nav-how-to.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 553513902079,
-		"prP": 0
-		},
-	"\/src\/assets\/images\/nav-method.svg": {
-		"ft": 2097152,
-		"miP": 1,
-		"oA": 2,
-		"oAP": "\/build\/assets\/images\/nav-method.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 553513902079,
-		"prP": 0
-		},
-	"\/src\/assets\/images\/nav-pricing.svg": {
-		"ft": 2097152,
-		"miP": 1,
-		"oA": 2,
-		"oAP": "\/build\/assets\/images\/nav-pricing.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 553513902079,
-		"prP": 0
-		},
-	"\/src\/assets\/images\/nav-solutions.svg": {
-		"ft": 2097152,
-		"miP": 1,
-		"oA": 2,
-		"oAP": "\/build\/assets\/images\/nav-solutions.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 553513902079,
-		"prP": 0
+		"oT": 1,
+		"q": 100
 		},
 	"\/src\/assets\/images\/power-for-blue.svg": {
 		"ft": 2097152,
@@ -1234,16 +1213,6 @@
 		"opt": 1,
 		"oT": 1,
 		"q": 100
-		},
-	"\/src\/assets\/images\/twitter.svg": {
-		"ft": 2097152,
-		"miP": 1,
-		"oA": 2,
-		"oAP": "\/build\/assets\/images\/twitter.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 553513902079,
-		"prP": 0
 		},
 	"\/src\/CNAME": {
 		"cB": 0,
@@ -1281,6 +1250,15 @@
 		"oF": 1,
 		"sC": 0,
 		"tS": 0
+		},
+	"\/src\/pug\/components\/_icons.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_icons.html",
+		"oF": 0,
+		"oS": 0
 		},
 	"\/src\/pug\/components\/_list.pug": {
 		"cB": 1,
@@ -1324,6 +1302,15 @@
 		"ft": 512,
 		"oA": 0,
 		"oAP": "\/build\/analytics.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/src\/pug\/pages\/blog.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/blog.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -1453,6 +1440,15 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/src\/pug\/sections\/_carousel.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_carousel.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/src\/pug\/sections\/_case_study.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -1570,12 +1566,12 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/src\/pug\/sections\/_power.pug": {
+	"\/src\/pug\/sections\/_power (old).pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/build\/_power.html",
+		"oAP": "\/build\/_power (old).html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -1614,7 +1610,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/base.css",
+		"oAP": "\/build\/css\/base.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1627,7 +1623,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/blocks\/_2cols.css",
+		"oAP": "\/build\/css\/blocks\/_2cols.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1640,7 +1636,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/blocks\/_3cols.css",
+		"oAP": "\/build\/css\/blocks\/_3cols.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1653,7 +1649,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/blocks\/_blueline.css",
+		"oAP": "\/build\/css\/blocks\/_blueline.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1666,7 +1662,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/blocks\/_brands.css",
+		"oAP": "\/build\/css\/blocks\/_brands.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1679,7 +1675,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/blocks\/_case_study.css",
+		"oAP": "\/build\/css\/blocks\/_case_study.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1692,7 +1688,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/blocks\/_contact_form.css",
+		"oAP": "\/build\/css\/blocks\/_contact_form.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1705,7 +1701,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/blocks\/_lp.css",
+		"oAP": "\/build\/css\/blocks\/_lp.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1718,9 +1714,22 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/blocks\/_testimonials.css",
+		"oAP": "\/build\/css\/blocks\/_testimonials.css",
 		"oF": 0,
 		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/blog.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/build\/css\/blog.css",
+		"oF": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"\/src\/scss\/components\/_base.scss": {
@@ -1731,7 +1740,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/components\/_base.css",
+		"oAP": "\/build\/css\/components\/_base.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1744,7 +1753,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/components\/_button.css",
+		"oAP": "\/build\/css\/components\/_button.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1757,7 +1766,20 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/components\/_card.css",
+		"oAP": "\/build\/css\/components\/_card.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/components\/_hopup.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/css\/components\/_hopup.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1770,7 +1792,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/components\/_list.css",
+		"oAP": "\/build\/css\/components\/_list.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1783,7 +1805,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/components\/_typographic.css",
+		"oAP": "\/build\/css\/components\/_typographic.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1796,7 +1818,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/components\/_vars.css",
+		"oAP": "\/build\/css\/components\/_vars.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1809,7 +1831,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "\/build\/style.css",
+		"oAP": "\/build\/css\/main.css",
 		"oF": 2,
 		"oS": 3,
 		"uL": 1
@@ -1822,7 +1844,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/pages\/adv-c.css",
+		"oAP": "\/build\/css\/pages\/adv-c.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1835,7 +1857,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/pages\/advertising.css",
+		"oAP": "\/build\/css\/pages\/advertising.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1848,7 +1870,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/pages\/homepage.css",
+		"oAP": "\/build\/css\/pages\/homepage.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1861,7 +1883,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/pages\/page.css",
+		"oAP": "\/build\/css\/pages\/page.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1874,7 +1896,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/pages\/publishers.css",
+		"oAP": "\/build\/css\/pages\/publishers.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1887,7 +1909,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/reset.css",
+		"oAP": "\/build\/css\/reset.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1900,7 +1922,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/sections\/_analysis.css",
+		"oAP": "\/build\/css\/sections\/_analysis.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1913,7 +1935,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/sections\/_anim.css",
+		"oAP": "\/build\/css\/sections\/_anim.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1926,7 +1948,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/sections\/_audience.css",
+		"oAP": "\/build\/css\/sections\/_audience.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1939,7 +1961,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/sections\/_behavior.css",
+		"oAP": "\/build\/css\/sections\/_behavior.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1952,7 +1974,20 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/sections\/_blog_feature.css",
+		"oAP": "\/build\/css\/sections\/_blog_feature.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/sections\/_carousel.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/css\/sections\/_carousel.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1965,7 +2000,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/sections\/_dashboard.css",
+		"oAP": "\/build\/css\/sections\/_dashboard.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1978,7 +2013,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/sections\/_faq.css",
+		"oAP": "\/build\/css\/sections\/_faq.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1991,7 +2026,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/sections\/_footer.css",
+		"oAP": "\/build\/css\/sections\/_footer.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -2004,7 +2039,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/sections\/_header.css",
+		"oAP": "\/build\/css\/sections\/_header.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -2017,7 +2052,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/sections\/_how.css",
+		"oAP": "\/build\/css\/sections\/_how.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -2030,7 +2065,20 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/sections\/_language.css",
+		"oAP": "\/build\/css\/sections\/_language.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/sections\/_metrics.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/css\/sections\/_metrics.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -2043,7 +2091,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/sections\/_script.css",
+		"oAP": "\/build\/css\/sections\/_script.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -2056,7 +2104,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/sections\/_start.css",
+		"oAP": "\/build\/css\/sections\/_start.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -2069,7 +2117,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/scss\/sections\/_unfair.css",
+		"oAP": "\/build\/css\/sections\/_unfair.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -2085,7 +2133,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "\/src\/assets\/favicon\/apple-touch-icon-120x120.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 549594173
+	"lastBuiltDate": 557268036
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -3995,9 +4043,9 @@
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.css",
 		"autoOutputPathRelativePath": "..\/css",
-		"autoOutputPathReplace1": "sass",
+		"autoOutputPathReplace1": "scss",
 		"autoOutputPathReplace2": "css",
-		"autoOutputPathStyle": 0,
+		"autoOutputPathStyle": 3,
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,

@@ -659,7 +659,7 @@
                 li:before {
                     color: #9FB0F4;
                     border-color: #9FB0F4;
-                    background-image: url(https://cdn2.hubspot.net/hubfs/3048376/assets/images/check-blue.svg);
+                    background-image: url(../assets/images/check-blue.svg);
                 }
                 a {
                     color: $blue-dark;
@@ -670,7 +670,7 @@
             }
             .button-box {
                 &:before {
-                    background: url(https://cdn2.hubspot.net/hubfs/3048376/assets/images/power-for-blue.svg) no-repeat;
+                    background: url(../assets/images/power-for-blue.svg) no-repeat;
                 }
             }
         }
@@ -837,6 +837,9 @@
     .report-treemap {
         background: #e3e4e6;
         font-weight: 300;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
         &-navigation {
             padding: 6px 10px 4px;
             font-size: 12px;
@@ -858,18 +861,10 @@
         }
     }
     .treemap-container {
-        position: absolute;
-        top: 27px;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: 0 -20px;
-        padding: 0 20px;
-        overflow-y: hidden;
-        overflow-x: auto;
+        flex: 1 1 100%;
         svg {
             overflow: hidden;
-            background: #e3e4e6;
+            // background: #e3e4e6;
         }
         &.touch g:hover>rect.foreground {
             fill-opacity: 0;
@@ -947,7 +942,9 @@
         width: 396px;
         height: 188px;
         cursor: pointer;
-        transition: opacity 0.2s ease-out, transform 1s ease-out;
+        transition: opacity 0.2s ease-out,
+        transform 1s ease-out,
+        margin 0.3s ease-out;
         &.wiggle {
             animation: wiggle .33s 3;
         }
@@ -971,7 +968,7 @@
         margin-bottom: 25px;
     }
     p {
-        padding-bottom: 30px;
+        // padding-bottom: 30px;
     }
     /* Screen 05 - Title ======================================================================== */
     .title,

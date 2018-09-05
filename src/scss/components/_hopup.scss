@@ -1,0 +1,314 @@
+.hopup-modal {
+    position: fixed;
+    z-index: 99999;
+    font-size: 14px;
+}
+
+.hopup-modal.text-white {
+    color: #fff;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .hopup-modal {
+        font-size: 13px;
+    }
+}
+
+.hopup-modal-inner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.6);
+    display: block;
+    opacity: 0;
+    margin-left: 0px;
+    margin-top: 0px;
+    border-radius: 0;
+    width: 100%;
+    overflow-y: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 75vh;
+}
+
+.hopup-modal-inner::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.hopup-modal-inner::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+.hopup-modal-inner::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #555;
+}
+
+.hopup-modal-inner .container {
+    padding-bottom: 3em;
+    height: 100%;
+}
+
+@media (max-width: 767px) {
+    .hopup-modal-inner .container {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.hopup-modal-inner img {
+    height: auto;
+    max-height: none;
+    display: block;
+}
+
+@media (max-width: 1366px) {
+    .hopup-modal-inner {
+        padding: 0 20px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .hopup-modal-inner {
+        height: 100vh;
+    }
+}
+
+.hopup-modal-overlay {
+    background: #000;
+    opacity: 0.2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 767px) {
+    .hopup-modal-col {
+        position: static !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .hopup-modal-buttons {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}
+
+.hopup-modal-open {
+    margin: 0;
+    padding: 1.2em;
+    line-height: 1;
+    display: block;
+}
+
+.hopup-modal-open a {
+    color: inherit;
+    font-size: 14px;
+    text-decoration: none !important;
+    font-weight: bold;
+    display: block;
+}
+
+.hopup-modal-open i:before {
+    width: 64px;
+    height: auto;
+}
+
+.hopup-modal-close {
+    line-height: 1;
+    margin-top: 1em;
+}
+
+.hopup-modal-close a {
+    color: inherit;
+    font-size: 13px;
+    text-decoration: none !important;
+    font-weight: bold;
+}
+
+/* Slide */
+@media (max-width: 767px) {
+    .hopup-modal.slide {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        opacity: 1;
+    }
+}
+
+.hopup-modal.slide .hopup-modal-inner {
+    position: fixed;
+    transform: none;
+    top: auto !important;
+    margin: 0px;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+    .hopup-modal.slide .hopup-modal-inner .hopup-modal.slide .hopup-modal-inner {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .hopup-modal.slide .hopup-modal-inner {
+        top: auto;
+        overflow-y: scroll;
+        box-sizing: border-box;
+        max-height: 100vh;
+    }
+}
+
+/* Timer */
+.hopup-modal.timer {
+    top: 0;
+}
+
+.hopup-modal .hopup-modal-header .hopup-modal-main-header span span {
+    color: #939498;
+}
+
+.hopup-modal .hs-form-field>label,
+.hopup-modal .hs-error-msgs label {
+    color: #fff;
+}
+
+/*  -------------------- Content  ------------------ */
+.tofu-content *,
+.mofu-content * {
+    color: inherit;
+    text-align: left;
+}
+
+@media (max-width: 767px) {
+
+    .hopup-modal,
+    .hopup-modal h2 {
+        text-align: center;
+    }
+}
+
+/*  -------------------- Form  ------------------ */
+.hopup-modal form {
+    margin-top: 20px;
+}
+
+.hopup-modal form .hs-form-field {
+    margin-bottom: 12px;
+}
+
+.hopup-modal form .hs-form-field>label,
+.hopup-modal form .hs-form-required {
+    display: none;
+}
+
+.hopup-modal form input,
+.hopup-modal form textarea,
+.hopup-modal form select {
+    font-size: 0.875em;
+    padding: 10px !important;
+    line-height: 1.2 !important;
+}
+
+.hopup-modal form input:not([type]),
+.hopup-modal form input[type=color],
+.hopup-modal form input[type=date],
+.hopup-modal form input[type=datetime-local],
+.hopup-modal form input[type=datetime],
+.hopup-modal form input[type=email],
+.hopup-modal form input[type=month],
+.hopup-modal form input[type=number],
+.hopup-modal form input[type=password],
+.hopup-modal form input[type=search],
+.hopup-modal form input[type=tel],
+.hopup-modal form input[type=text],
+.hopup-modal form input[type=time],
+.hopup-modal form input[type=url],
+.hopup-modal form input[type=week],
+.hopup-modal form select,
+.hopup-modal form textarea {
+    font-size: 18px;
+    padding: 15px 15px;
+    line-height: 1.2;
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.hopup-modal form select {
+    background-image: url(https://www.atlantech.net/hubfs/atlantech-docs/img/arrow.png);
+        background-repeat: no-repeat;
+    background-color: #fff;
+    background-position: 95% center;
+    background-size: 9px;
+}
+
+.hopup-modal form .actions {
+    margin-top: 0;
+    margin-left: 0;
+    position: relative;
+}
+
+.hopup-modal form input[type="submit"] {
+    margin-top: 0;
+    /*max-width: 200px;*/
+    padding: 1em !important;
+    width: 100%;
+    height: auto;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hopup-modal form .hs-error-msgs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: red;
+}
+
+.hopup-modal form .hs-error-msgs li {
+    margin-bottom: 0;
+    color: inherit;
+}
+
+.hopup-modal form .hs-error-msgs li label {
+    color: inherit;
+}
+
+.nextbtn {
+    cursor: pointer;
+}
+
+.hopup-button {
+    margin-top: 30px;
+}
+
+.step2 {
+    display: none;
+}
+
+.hopup-modal.image:not(.step2) .hopup-modal-inner {
+    padding: 0;
+}
+
+.hopup-modal.form .step2 {
+    display: block;
+}

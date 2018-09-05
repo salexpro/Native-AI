@@ -13,34 +13,34 @@ header.header
             nav
                 ul
                     li
-                        a.navigation-button-header(href='/analytics.html') Publisher Analytics
+                        a.navigation-button-header(href='./analytics.html') Publisher Analytics
                     li
-                        a.navigation-button-header(href='/how.html') How it works
+                        a.navigation-button-header(href='./how.html') How it works
                     li
-                        a.dropdown-button.dropdown-button.navigation-button-header(href='/') Blogs
+                        .dropdown-button.dropdown-button.navigation-button-header Blogs
                         .header-dropdown-div
                             ul
                                 li
-                                    a(href='/blog') Blog
+                                    a(href='./blog.html') Blog
                                 li
-                                    a(href='/all-stars') Content Marketing All-Stars
+                                    a(href='./blog.html') Content Marketing All-Stars
                     li
-                        a.dropdown-button.dropdown-button.navigation-button-header(href='/') About
+                        .dropdown-button.dropdown-button.navigation-button-header About
                         .header-dropdown-div
                             ul
                                 li
-                                    a(href='https://news360.com/team', target='_blank') Team
+                                    a(href='#', target='_blank') Team
                                 li
-                                    a(href='https://news360.com/careers', target='_blank') Careers
+                                    a(href='#', target='_blank') Careers
                                 li
-                                    a(href='/privacy') Privacy Policy
+                                    a(href='#') Privacy Policy
                                 li
-                                    a(href='/terms') Terms of Use
+                                    a(href='#') Terms of Use
                 ul
                     li
-                        a.navigation-button-header.non_highlighted(href='https://app.native.ai/signin') Sign In
+                        a.navigation-button-header.non_highlighted(href='#') Sign In
         .header--sign-in-box
-            a.button.slim.border.orange(href='/demo-registration')
+            a.button.slim.border.orange(href='#')
                 span Get Started
 
 // Mobile drawer =====================================================================
@@ -57,26 +57,26 @@ header.header
         nav
             ul
                 li
-                    a.navigation-button-header-mobile(href='/analytics.html')
+                    a.navigation-button-header-mobile(href='./analytics.html')
                         i
                             +icon('nav_publ', [20, 20], '#4c6ef5')
                         span Publisher Analytics
                 li
-                    a.navigation-button-header-mobile(href='/how.html')
+                    a.navigation-button-header-mobile(href='./how.html')
                         i
                             +icon('nav_how', [20, 20], '#4c6ef5')
                         span How it works
                 li
-                    a.navigation-button-header-mobile(href='#')
+                    .navigation-button-header-mobile
                         i
                             +icon('nav_blog', [20, 20], '#4c6ef5')
                         span Blogs
                     .mobile-menu-subitems
                         ul
                             li
-                                a(href='/blog') Blog
+                                a(href='./blog.html') Blog
                             li
-                                a(href='/all-stars') Content Marketing All-Stars
+                                a(href='./blog.html') Content Marketing All-Stars
                 li
                     .navigation-button-header-mobile
                         i
@@ -85,21 +85,23 @@ header.header
                     .mobile-menu-subitems
                         ul
                             li
-                                a(href='https://news360.com/team', target='_blank') Team
+                                a(href='#', target='_blank') Team
                             li
-                                a(href='https://news360.com/careers', target='_blank') Careers
+                                a(href='#', target='_blank') Careers
                             li
-                                a(href='/privacy') Privacy Policy
+                                a(href='#') Privacy Policy
                             li
-                                a(href='/terms') Terms of Use
+                                a(href='#') Terms of Use
                 li
-                    a.navigation-button-header-mobile(href='/dashboard/signin')
+                    a.navigation-button-header-mobile(href='#')
                         i
                             +icon('nav_sign', [20, 16], '#4c6ef5')
                         span Sign In
     .mobile-box--sign-in-box
-        a.button.orange.glow(href='/dashboard/signin')
+        a.button.orange.glow.wide(href='#')
             span Get Started
             i
                 +icon('arrow', [20, 14], '#fff')
 .header--filter
+
+// End Header =====================================================================

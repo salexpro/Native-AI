@@ -10,18 +10,38 @@ block content
     include ../components/_list
     include ../sections/_first_adv
     include ../sections/_3col
-    include ../sections/_brands
-    include ../sections/_eight
+    //- include ../sections/_brands
+    //- include ../sections/_eight
     include ../sections/_analysis
 
     // Sections
-    +first_adv('how-works', 'Dashboard & Metrics', 'Learn how we deliver actionable insights', 'Talk to us')
-    include ../sections/_anim
-    include ../sections/_language
-    include ../sections/_script
-    +3col('publisher--second-screen unfair')
+    +first_adv('dashboard', 'Dashboard & Metrics', 'Powerful Analytics Dashboard & custom Metrics designed for Publishers', 'Talk to us', 'orange glow', 'dash')
+    include ../sections/_carousel
+    //- include ../sections/_anim
+    //- include ../sections/_language
+    //- +3col('publisher--second-screen unfair')
+    section.three-cols-screen.metrics
+        .wrapper
+            .title
+                h2 Metrics that Matter
+            .cols3-section
+                .col
+                    h3.metrics_header Traffic Analysis
+                    p Measure the traffic volume, acquisition channels, behavior and interactions in realtime and compare with historical data with these popular metrics:
+                    +list(['Total Views', 'Page Views <span>(non-articles)</span>', 'Story Views <span>(only articles)</span>', 'Traffic channels', 'Recirculation', 'Users Online Now <span>(in real-time)'], 'list--dots')
+                .col
+                    h3.metrics_header Content & Editorial Analysis
+                    p Using our NLP algorithms, we provide you unique ways to measure performance of content: 
+                    +list(['Filter by page type <span>(story or generic listing page)</span>', 'Filter by Authors', 'Filter by Audience Interests <span>(topics & news categories)</span>', 'Filter by Publisher Tags <span>(your custom tags)</span>', 'Number of new stories published', 'Content Opportunity / Gap reports'], 'list--dots')
+                .col
+                    h3.metrics_header Audience Analysis
+                    p Know your Audience better than ever before with our custom metrics & powerful filters:
+                    +list(['Segment Audiences by their topics of interest', 'Measure Attention with Engagement Quality', 'Interactive treemap to drill down sub-topics with EQ', 'Filter by Reader Loyalty', 'Filter by Device & Location', 'Filter by Campaign, Source & Medium'], 'list--dots')
+            p.metrics_note
+                | EQ is a composite metric that is calculated using time spent on the article, scroll depth,type of content normalized for the length of the page
+
     +analysis(true)
-    
+
     // How It Works =====================================================================
     .publisher--five-screen.ill-2-cols
         .wrapper
@@ -58,9 +78,10 @@ block content
                             p
                                 | Change the game with your ability to publish content that drives audience engagement.
     
-    +brands('h3', 'Top Publishers and Brands Rely on NativeAI', 'Download Case Study')
+    include ../sections/_script
+    //- +brands('h3', 'Top Publishers and Brands Rely on NativeAI', 'Download Case Study')
     include ../sections/_grip
-    +eight('Get an Unfair Advantage', 'Get a quick demo to see how NativeAI can help you increase engagement<br>on-demand and win market share. We\'ll show you 5 incredible<br>audience insights in as little 15 Minutes.', 'orange', 'I Want a Demo', 'home-publishers')
+    //- +eight('Get an Unfair Advantage', 'Get a quick demo to see how NativeAI can help you increase engagement<br>on-demand and win market share. We\'ll show you 5 incredible<br>audience insights in as little 15 Minutes.', 'orange', 'I Want a Demo', 'home-publishers')
 
 block js
     script(src="js/treemap.min.js")
