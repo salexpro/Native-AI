@@ -6,8 +6,8 @@
         padding-left: 40px;
         padding-right: 40px;
     }
-    @media screen and ( max-width: 480px) {
-        padding: 40px 16px 25px;
+    @media screen and ( max-width: 640px) {
+        padding: 40px 16px 0;
     }
     .title,
     .subtitle {
@@ -47,7 +47,7 @@
             @media screen and ( max-width: 1140px) {
                 margin-left: 10px;
             }
-            @media screen and ( max-width: 480px) {
+            @media screen and ( max-width: 640px) {
                 margin-left: 0;
             }
         }
@@ -68,7 +68,7 @@
                 left: 15px;
                 bottom: -5px;
                 width: 2px;
-                background-color: $orange-light;
+                background-color: $orange-dark;
                 @media screen and ( max-width: 480px) {
                     top: 36px;
                     bottom: 4px;
@@ -84,9 +84,9 @@
                 width: 32px;
                 height: 32px;
                 border-radius: 50%;
-                border: 2px solid $orange-light;
+                border: 2px solid $orange-dark;
                 background-color: $white;
-                color: $orange-light;
+                color: $orange-dark;
                 font-size: 18px;
                 font-weight: 500;
                 line-height: 26px;

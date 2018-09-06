@@ -8,8 +8,8 @@
         padding-left: 40px;
         padding-right: 40px;
     }
-    @media screen and ( max-width: 480px) {
-        padding: 40px 16px 12px;
+    @media screen and ( max-width: 640px) {
+        padding: 50px 16px 62px;
     }
     .title-box {
         padding-bottom: 20px;
@@ -21,15 +21,22 @@
         color: #DEE2E6;
         font-size: 25px;
         text-align: center;
-        @media screen and ( max-width: 480px) {
+        @media screen and ( max-width: 640px) {
             padding-bottom: 24px;
             text-align: left;
+            padding-bottom: 10px;
         }
         .links {
             display: flex;
             justify-content: center;
-            @media screen and ( max-width: 480px) {
-                flex-direction: column;
+            -webkit-overflow-scrolling: touch;
+            @media screen and ( max-width: 640px) {
+                width: auto;
+                overflow: auto;
+                justify-content: flex-start;
+                margin: auto;
+                white-space: nowrap;
+                padding-bottom: 5px;
             }
         }
         h3 {
@@ -39,16 +46,38 @@
             font-size: 22px;
             line-height: 28px;
             @media screen and ( max-width: 920px) {
-                font-size: 20px !important;
-                line-height: 32px !important;
+                font-size: 20px;
             }
-            @media screen and ( max-width: 480px) {
-                padding: 0 0 12px;
-                border-right: none;
+            @media screen and ( max-width: 640px) {
+                font-size: 15px;
+                &:first-child{
+                    margin-left: auto;
+                    padding-left: 0;
+                }
+                &:last-child {
+                    margin-right: auto;
+                    padding-right: 0;
+                }
             }
             &:last-child {
                 border: none;
             }
         }
     }
+    .button-box {
+        margin-top: 22px;
+        text-align: center;
+        @media screen and (max-width: 920px) {
+            margin-top: 64px;
+        }
+        @media screen and (max-width: 640px) {
+            margin-top: 54px;
+        }
+    }
+    @media screen and (max-width: 920px) {
+        br {
+            display: none;
+        }
+    }
+    
 }

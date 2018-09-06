@@ -148,7 +148,7 @@
 /* Third screen < 960
   ======================================================================== */
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 960px) {
     .publisher--third-screen .item {
         flex-direction: column;
         padding-bottom: 72px;
@@ -164,6 +164,7 @@
     }
     .publisher--third-screen .item .text-section {
         padding-bottom: 45px;
+        margin: 0;
     }
 }
 
@@ -266,9 +267,6 @@
 /* Seven screen  ======================================================================== */
 
 .publisher--seven-screen {
-    @media screen and ( max-width: 480px) {
-        padding: 40px 16px 12px;
-    }
     .wrapper{
         max-width: 930px;
     }
@@ -289,8 +287,6 @@
             }
         }
 
-        p { padding-bottom: 28px; }
-
         .img-box {
             margin-top: -27px;
             @media screen and ( max-width: 920px) {
@@ -300,10 +296,6 @@
                 width: 345px;
             }
         }
-    }
-    .button-box{
-        margin-top: 22px;
-        text-align: center;
     }
 }
 

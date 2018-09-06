@@ -76,12 +76,12 @@
 		"oAP": "\/build\/node_modules",
 		"oF": 1
 		},
-	"\/node_modules\/jquery\/dist\/jquery.slim.min.js": {
+	"\/node_modules\/jquery\/dist\/jquery.min.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "\/build\/node_modules\/jquery\/dist\/jquery.slim.min.min.js",
+		"oAP": "\/build\/node_modules\/jquery\/dist\/jquery.min.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1069,35 +1069,93 @@
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"\/src\/assets\/images\/infographic\/engagement.svg": {
-		"ft": 2097152,
-		"miP": 1,
-		"oA": 2,
-		"oAP": "\/build\/assets\/images\/infographic\/engagement.svg",
+	"\/src\/assets\/images\/infographic\/engagement.png": {
+		"ft": 32768,
+		"iS": 44690,
+		"oA": 0,
+		"oAP": "\/build\/assets\/images\/infographic\/engagement.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
+		"oT": 1,
+		"q": 100
 		},
-	"\/src\/assets\/images\/infographic\/engagement_volume.svg": {
-		"ft": 2097152,
-		"miP": 1,
-		"oA": 2,
-		"oAP": "\/build\/assets\/images\/infographic\/engagement_volume.svg",
+	"\/src\/assets\/images\/infographic\/engagement@2x.png": {
+		"ft": 32768,
+		"iS": 100982,
+		"oA": 0,
+		"oAP": "\/build\/assets\/images\/infographic\/engagement@2x.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
+		"oT": 1,
+		"q": 100
 		},
-	"\/src\/assets\/images\/infographic\/increased.svg": {
-		"ft": 2097152,
-		"miP": 1,
-		"oA": 2,
-		"oAP": "\/build\/assets\/images\/infographic\/increased.svg",
+	"\/src\/assets\/images\/infographic\/engagement_volume.png": {
+		"ft": 32768,
+		"iS": 46287,
+		"oA": 0,
+		"oAP": "\/build\/assets\/images\/infographic\/engagement_volume.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
+		"oT": 1,
+		"q": 100
+		},
+	"\/src\/assets\/images\/infographic\/engagement_volume@2x.png": {
+		"ft": 32768,
+		"iS": 108635,
+		"oA": 0,
+		"oAP": "\/build\/assets\/images\/infographic\/engagement_volume@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/src\/assets\/images\/infographic\/formula.png": {
+		"ft": 32768,
+		"iS": 20847,
+		"oA": 0,
+		"oAP": "\/build\/assets\/images\/infographic\/formula.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/src\/assets\/images\/infographic\/formula@2x.png": {
+		"ft": 32768,
+		"iS": 50075,
+		"oA": 0,
+		"oAP": "\/build\/assets\/images\/infographic\/formula@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/src\/assets\/images\/infographic\/increased.png": {
+		"ft": 32768,
+		"iS": 8906,
+		"oA": 0,
+		"oAP": "\/build\/assets\/images\/infographic\/increased.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/src\/assets\/images\/infographic\/increased@2x.png": {
+		"ft": 32768,
+		"iS": 19560,
+		"oA": 0,
+		"oAP": "\/build\/assets\/images\/infographic\/increased@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/src\/assets\/images\/infographic\/interests.png": {
 		"ft": 32768,
@@ -1118,6 +1176,28 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/src\/assets\/images\/infographic\/traffic.png": {
+		"ft": 32768,
+		"iS": 29598,
+		"oA": 0,
+		"oAP": "\/build\/assets\/images\/infographic\/traffic.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/src\/assets\/images\/infographic\/traffic@2x.png": {
+		"ft": 32768,
+		"iS": 73966,
+		"oA": 0,
+		"oAP": "\/build\/assets\/images\/infographic\/traffic@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},

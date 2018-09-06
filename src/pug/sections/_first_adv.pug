@@ -7,13 +7,16 @@ mixin first_adv(img, header, descr, button, color, mod)
                     
             .titles-section
                 .main-title
-                    h1= header
+                    h1!= header
                 .descr
                     p
                         !=descr
                 .button-box
-                    a.button.mobile-icon(href='#' class=color)
-                        span= button
-                        if mod === 'dash'
+                    if mod === 'dash'
+                        a.button(href='#' class=color)
+                            span= button
                             i
                                 +icon('arrow', [20, 14], '#fff')
+                    else
+                        a.button.mobile-icon(href='#' class=color)
+                            span= button

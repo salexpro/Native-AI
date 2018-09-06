@@ -26,7 +26,7 @@ mixin analysis(treemap)
                             p
                                 | Stay on top of all the key performance metrics for your website with our low-latency realtime dashboard. Visits, Re-circulation, Top Stories, Engagement Quality, Sources of Traffic, Audience Interest tags - all of these are available and updated as the day plays out, with a handy comparison to an average day.
                     .img-section
-                        img(src='assets/images/infographic/engagement.svg' alt="Real-Time Dashboard")
+                        img(src=`assets/images/infographic/engagement.png` srcset=`assets/images/infographic/engagement.png 1x, assets/images/infographic/engagement@2x.png 2x` alt='Real-Time Dashboard')
                 .item.item--text
                     .text-section
                         .title-box
@@ -40,7 +40,16 @@ mixin analysis(treemap)
                     .text-section
                         +list(['Engagement Quality (EQ) ranges from 0 to 1, with 1 indicating maximum engagement', 'EQ is calculated for every reader and reported in aggregates', 'Objectively compare Articles, Authors, Topics by Engagement'], 'list--dots')
                     .analysis_formula
-                        img(src="./assets/images/formula.svg", alt="Engagement Quality")
+                        .analysis_formula_img
+                            img(src=`assets/images/infographic/formula.png` srcset=`assets/images/infographic/formula.png 1x, assets/images/infographic/formula@2x.png 2x` alt='Engagement Quality')
+                        .analysis_formula_text
+                            b.analysis_formula_equally
+                                | Engagement Quality
+                            | 
+                            i.analysis_formula_calc
+                                | = f (Time On Page, Scroll Depth) ± Normalization for page length
+                        .img-section.analysis_formula_ill
+                            img(src=`assets/images/infographic/traffic.png` srcset=`assets/images/infographic/traffic.png 1x, assets/images/infographic/traffic@2x.png 2x` alt='Traffic Channels')
                 .item.item--last
                     .text-section
                         .title-box
@@ -54,13 +63,13 @@ mixin analysis(treemap)
                             h2
                                 | Powerful & Easy Filters
                                 br
-                                | & Data Exports
+                                |  & Data Exports
                         hr.blue
                         .text-box
                             p
                                 | Filter all your analytics reports by Author, Topic or Audience Interest, your custom Publisher Tags, Loyalty of reader, as well as the usual options such as reader location, device, traffic source etc. across date ranges. All reports can be exported inconvenient CSV files.
                     .img-section
                         h3.bold News.com Daily Digest
-                        img(src='assets/images/infographic/increased.svg' alt="Engagement Quality Intelligence")
-                        img(src='assets/images/infographic/engagement_volume.svg' alt="Engagement Quality Intelligence")
+                        img(src=`assets/images/infographic/increased.png` srcset=`assets/images/infographic/increased.png 1x, assets/images/infographic/increased@2x.png 2x` alt='Engagement Quality Intelligence')
+                        img(src=`assets/images/infographic/engagement_volume.png` srcset=`assets/images/infographic/engagement_volume.png 1x, assets/images/infographic/engagement_volume@2x.png 2x` alt='Engagement Quality Intelligence')
 

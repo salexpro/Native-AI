@@ -2,20 +2,25 @@
     padding: 0;
     border-top: $border-grey;
     border-bottom: $border-grey;
-    @media screen and ( max-width: 1140px) {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-    @media screen and ( max-width: 480px) {
-        padding: 40px 16px 10px;
-    }
     &_wrapper{
-        padding: 80px 0 124px;
+        padding: 80px 40px 124px;
         border-bottom: $border-grey;
+        @media screen and (max-width: 1024px) {
+            padding: 65px 40px 100px;
+        }
+        @media screen and (max-width: 640px) {
+            padding: 50px 16px 0;
+            border: 0;
+        }
         .item{
             .text{
                 &-section {
                     width: 45.7%;
+                    margin-left: 50px;
+                    @media screen and (max-width: 1023px) {
+                        margin: 0;
+                        width: auto;
+                    }
                 }
             }
         }
@@ -23,14 +28,34 @@
     &_slider{
         max-width: 930px;
         margin: auto;
-        // padding: 100px 0 72px;
+        width: 100%;
+        @media screen and (max-width: 960px) {
+            padding: 90px 40px 30px;
+        }
+        @media screen and (max-width: 640px) {
+            padding: 85px 16px 10px;
+        }
         h2 {
             font-size: 25px;
             line-height: 1.4;
+            @media screen and (max-width: 640px) {
+                font-size: 22px;
+                line-height: normal;
+            }
         }
         .item{
             height: 600px;
             margin: 20px 0;
+            @media screen and (max-width: 960px) {
+                height: auto;
+                margin: 0;
+                padding-bottom: 10px;
+                margin-right: 40px;
+            }
+            @media screen and (max-width: 640px) {
+                margin: 0;
+                padding-bottom: 50px;
+            }
         }
         .text {
             &-box {
@@ -38,17 +63,69 @@
                     margin-top: 45px;
                 }
             }
+            &-section{
+                @media screen and (max-width: 960px) {
+                    max-width: 455px;
+                }
+                @media screen and (max-width: 640px) {
+                    max-width: none;
+                }
+            }
+        }
+        .list{
+            @media screen and (max-width: 960px) {
+                margin: 0;
+            }
+        }
+        .slick-track,
+        .slick-list {
+            @media screen and (max-width: 640px) {
+                height: auto !important;
+            }
         }
     }
     &_formula{
         margin: auto;
-        margin-top: 8px;
+        margin-top: 0;
+        &_img{
+            margin-top: 8px;
+            @media screen and (max-width: 960px) {
+                display: none;
+            }
+        }
+        &_text{
+            display: none;
+            max-width: 455px;
+            line-height: 1.67;
+            font-size: 18px;
+            margin-bottom: 22px;
+            @media screen and (max-width: 960px) {
+                display: block;
+            }
+            @media screen and (max-width: 640px) {
+                font-size: 15px;
+            }
+        }
+        &_equally {
+            color: $orange-dark;
+            font-weight: 700;
+        }
+        &_calc{
+            font-family: Georgia, serif;
+            font-style: italic;
+        }
+        &_ill{
+            display: none;
+            @media screen and (max-width: 960px) {
+                display: block;
+            }
+        }
     }
     .text-section {
         width: 48%;
-
         @media screen and (max-width: 960px) {
-            padding-bottom: 45px;
+            padding-bottom: 24px;
+            width: 100%;
         }
 
         @media screen and (max-width: 480px) {
@@ -61,10 +138,6 @@
         justify-content: space-between;
         @media screen and ( max-width: 960px) {
             flex-direction: column;
-            padding-bottom: 72px;
-        }
-        @media screen and ( max-width: 480px) {
-            padding-bottom: 40px;
         }
         &--text{
             flex-wrap: wrap;
@@ -72,6 +145,9 @@
         &--last{
             .text-box{
                 max-width: 434px;
+                @media screen and (max-width: 960px) {
+                    max-width: none;
+                }
             }
         }
         .img-section {
@@ -92,13 +168,15 @@
                 margin-bottom: 10px;
                 padding-left: 20px;
                 font-size: 23px;
+                @media screen and (max-width: 640px) {
+                    font-size: 16px;
+                    padding-left: 16px;
+                    margin-bottom: 8px;
+                }
             }
         }
         .title-box {
             padding-bottom: 24px;
-            @media screen and ( max-width: 480px) {
-                padding-bottom: 29px;
-            }
         }
         hr {
             display: block;
@@ -113,41 +191,50 @@
                 background-color: $orange-main;
             }
         }
-        .img-section {
-            @media screen and (min-width: 960px) {
-                justify-content: flex-end;
-                padding-left: 28px;
-            }
-        }
-        
     }
     &_treemap{
+        padding-bottom: 0 !important;
         @media screen and (max-width: 1023px) {
             flex-direction: column;
-            padding-bottom: 0 !important;
+            max-width: 680px;
+            margin: auto;
         }
     }
     .interests-box-wrapper {
         background: none;
         margin: 0;
         height: 0;
-        @media screen and (min-width: 1024px) {
-            padding: 0;
+        padding: 0;
+        @media screen and (min-width: 1140px) {
             padding-bottom: 32.5%;
         }
+        @media screen and (min-width: 1024px) and (max-width: 1140px) {
+            padding-bottom: 34.9%;
+        }
         @media screen and (max-width: 1023px) {
-            width: 100% !important;
-            height: auto;
-            padding-bottom: 0;
+            padding-bottom: 59%;
+            margin-top: 50px;
         }
         @media screen and (max-width: 960px) {
-            margin-top: -60px;
+
+        }
+        > img{
+            @media screen and (min-width: 1024px) and (max-width: 1140px) {
+                width: 147%;
+                margin-left: -25.5%;
+            }
+            @media screen and (max-width: 1023px) {
+                display: none;
+            }
         }
         .screen-box{
-            @media screen and (min-width: 1024px) {
-                left: 0;
-                bottom: 0;
-            }
+            left: 0;
+            bottom: 0;
+            @media screen and (max-width: 1023px) {
+                top: 0;
+                right: 0;
+                height: auto;
+            }                
         }
     }
 }

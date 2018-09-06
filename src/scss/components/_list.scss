@@ -32,10 +32,16 @@
         }
     }
     &--dots{
+        @media screen and (max-width: 640px) {
+            margin-left: 10px;
+        }
         .list{
             &_item{
                 +li{
                     margin-top: 2px;
+                    @media screen and (max-width: 960px) {
+                        margin-top: 8px;
+                    }
                 }
             }
             &_circle {
@@ -44,16 +50,34 @@
                 background-color: $orange-main;
                 flex: 0 0 10px;
                 border: 0;
-                margin-top: 10px;
+                margin-top: 11px;
                 border-radius: 4px;
+                @media screen and (max-width: 960px) {
+                    margin-top: 7px;
+                }   
+                @media screen and (max-width: 640px) {
+                    margin-top: 5px;
+                }
+            }
+            &_content{
+                @media screen and (max-width: 960px) {
+                    line-height: 1.33;
+                }
             }
         }
     }
     &--large{
+        @media screen and (max-width: 640px) {
+            margin: 0;
+        }
         h3{
             font-size: 22px;
             line-height: 1.36;
             margin-bottom: 5px;
+            @media screen and (max-width: 640px) {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
         }
         .list{
             &_item{
@@ -104,6 +128,9 @@
         font-size: 18px;
         line-height: 1.67;
         font-weight: 400;
+        @media screen and (max-width: 640px) {
+            font-size: 15px;
+        }
         br{
             display: inline;
         }
