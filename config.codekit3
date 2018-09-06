@@ -1076,7 +1076,7 @@
 		"oAP": "\/build\/assets\/images\/infographic\/engagement.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1087,7 +1087,7 @@
 		"oAP": "\/build\/assets\/images\/infographic\/engagement@2x.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1098,7 +1098,7 @@
 		"oAP": "\/build\/assets\/images\/infographic\/engagement_volume.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1109,7 +1109,7 @@
 		"oAP": "\/build\/assets\/images\/infographic\/engagement_volume@2x.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1120,7 +1120,7 @@
 		"oAP": "\/build\/assets\/images\/infographic\/formula.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1131,7 +1131,7 @@
 		"oAP": "\/build\/assets\/images\/infographic\/formula@2x.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1142,7 +1142,7 @@
 		"oAP": "\/build\/assets\/images\/infographic\/increased.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1153,7 +1153,7 @@
 		"oAP": "\/build\/assets\/images\/infographic\/increased@2x.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1186,7 +1186,7 @@
 		"oAP": "\/build\/assets\/images\/infographic\/traffic.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1197,7 +1197,7 @@
 		"oAP": "\/build\/assets\/images\/infographic\/traffic@2x.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1248,7 +1248,7 @@
 		"oAP": "\/build\/assets\/images\/macbook.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1259,7 +1259,7 @@
 		"oAP": "\/build\/assets\/images\/macbook@2x.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -2213,7 +2213,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "\/src\/assets\/favicon\/apple-touch-icon-120x120.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 557268036
+	"lastBuiltDate": 557963909
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
