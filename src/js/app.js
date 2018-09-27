@@ -1,3 +1,5 @@
+/* eslint no-unused-vars: ['off'] */
+/* global WOW, checkStickyNavigation */
 /* 
 @codekit-prepend quiet '../../node_modules/jquery/dist/jquery.min'
 @codekit-prepend quiet '../../node_modules/wow.js/dist/wow.min'
