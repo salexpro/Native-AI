@@ -120,13 +120,17 @@ $('.carousel_slider').slick({
     ]
 });
 
-$('.analysis_slider').slick({
+const analysis_slider = $('.analysis_slider');
+
+analysis_slider.slick({
     slidesToShow: 1,
     dots: true,
     arrows: false,
     vertical: true,
     verticalSwiping: true,
     adaptiveHeight: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
     responsive: [{
             breakpoint: 961,
             settings: {
@@ -141,9 +145,18 @@ $('.analysis_slider').slick({
             breakpoint: 641,
             settings: {
                 slidesToShow: 3,
-                variableWidth: false
+                variableWidth: false,
+                autoplay: false
             }
         }
     ]
 })
 
+analysis_slider.on('wheel', (function (e) {
+    e.preventDefault();
+    if (e.originalEvent.deltaY < 0) {
+        analysis_slider.slick('slickPrev');
+    } else {
+        analysis_slider.slick('slickNext');
+    }
+}));
