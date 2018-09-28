@@ -1,5 +1,5 @@
 {
-"AAInfo": "This is a CodeKit 3 project config file. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. Doing so will cause CodeKit to crash and/or corrupt your project. I know it looks like JSON, but it is *not*. Many numbers in this file are 64-bit long long bitFlags, which JSON does not support. These numbers *cannot* be treated as discrete values and if you attempt to parse this file as standard JSON with any public JSON parser, these values will be corrupted. This file is not backwards-compatible with CodeKit 1 or 2. For more information, see https://codekitapp.com/",
+"AAInfo": "This is a CodeKit 3 project config file. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. Doing so will cause CodeKit to crash and\/or corrupt your project. I know it looks like JSON, but it is *not*. Many numbers in this file are 64-bit long long bitFlags, which JSON does not support. These numbers *cannot* be treated as discrete values and if you attempt to parse this file as standard JSON with any public JSON parser, these values will be corrupted. This file is not backwards-compatible with CodeKit 1 or 2. For more information, see https:\/\/codekitapp.com\/",
 "buildSteps": [
 	{
 		"name": "Process All Remaining Files and Folders",
@@ -8,85 +8,83 @@
 		},
 	{
 		"name": "Demo mode with Github Pages",
-		"scriptSourceString": "rm -rf docs/\ncp -rf build/ docs/\nrm -f build/CNAME\ncat docs/js/components/fastnav.min.js >> docs/js/app.min.js\nzip -r build.zip build/",
+		"scriptSourceString": "rm -rf docs\/\ncp -rf build\/ docs\/\nrm -f build\/CNAME\ncat docs\/js\/components\/fastnav.min.js >> docs\/js\/app.min.js\nzip -r build.zip build\/",
 		"scriptType": 1,
 		"scriptUUIDString": "2ACAD006-D322-4B47-93EE-F79F7CB01B13",
 		"stepType": 2,
 		"uuidString": "DEBFEEF4-B418-4FB2-BBCE-ACA737088705"
 		}
 	],
-"creatorBuild": "28815",
+"creatorBuild": "26680",
 "files": {
-	"/.babelrc": {
+	"\/.babelrc": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
-		"oAP": "/build/.babelrc",
+		"oAP": "\/build\/.babelrc",
 		"oF": 1
 		},
-	"/.eslintrc": {
+	"\/.eslintrc": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
-		"oAP": "/build/.eslintrc",
+		"oAP": "\/build\/.eslintrc",
 		"oF": 1
 		},
-	"/.gitattributes": {
+	"\/.gitattributes": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
-		"oAP": "/build/.gitattributes",
+		"oAP": "\/build\/.gitattributes",
 		"oF": 1
 		},
-	"/.gitignore": {
+	"\/.gitignore": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
-		"oAP": "/build/.gitignore",
+		"oAP": "\/build\/.gitignore",
 		"oF": 1
 		},
-	"/build": {
-		"ft": 65536,
+	"\/.vscode\/settings.json": {
+		"ft": 524288,
 		"oA": 1,
-		"oAP": "/build/build",
-		"oF": 0
-		},
-	"/build.zip": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "/build/build.zip",
-		"oF": 1
-		},
-	"/docs": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "/build/docs",
-		"oF": 0
-		},
-	"/mail": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "/build/mail",
-		"oF": 0
-		},
-	"/node_modules": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "/build/node_modules",
-		"oF": 0
-		},
-	"/node_modules/jquery/dist/jquery.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/build/node_modules/jquery/dist/jquery.min.min.js",
+		"oAP": "\/build\/.vscode\/settings-min.json",
 		"oF": 0,
-		"sC": 3,
-		"tS": 0
+		"oO": 0,
+		"oS": 1
 		},
-	"/node_modules/slick-carousel/slick/slick-theme.scss": {
+	"\/build": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/build\/build",
+		"oF": 0
+		},
+	"\/build.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/build\/build.zip",
+		"oF": 1
+		},
+	"\/docs": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/build\/docs",
+		"oF": 0
+		},
+	"\/mail": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/build\/mail",
+		"oF": 0
+		},
+	"\/node_modules": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/build\/node_modules",
+		"oF": 0
+		},
+	"\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_grid.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -94,22 +92,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/node_modules/slick-carousel/slick/slick-theme.css",
+		"oAP": "\/build\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_grid.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/node_modules/slick-carousel/slick/slick.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/build/node_modules/slick-carousel/slick/slick.min.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/node_modules/slick-carousel/slick/slick.scss": {
+	"\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_mixins.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -117,1625 +105,2094 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/node_modules/slick-carousel/slick/slick.css",
+		"oAP": "\/build\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_mixins.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/node_modules/wow.js/dist/wow.min.js": {
+	"\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_variables.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/_variables.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_alerts.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_alerts.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_background-variant.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_background-variant.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_border-radius.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_border-radius.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_buttons.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_buttons.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_center-block.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_center-block.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_clearfix.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_clearfix.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_forms.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_forms.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_gradients.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_gradients.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_grid-framework.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_grid-framework.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_grid.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_grid.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_hide-text.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_hide-text.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_image.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_image.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_labels.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_labels.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_list-group.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_list-group.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_nav-divider.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_nav-divider.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_nav-vertical-align.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_nav-vertical-align.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_opacity.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_opacity.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_pagination.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_pagination.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_panels.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_panels.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_progress-bar.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_progress-bar.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_reset-filter.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_reset-filter.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_reset-text.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_reset-text.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_resize.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_resize.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_responsive-visibility.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_responsive-visibility.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_size.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_size.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_tab-focus.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_tab-focus.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_table-row.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_table-row.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_text-emphasis.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_text-emphasis.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_text-overflow.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_text-overflow.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_vendor-prefixes.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/bootstrap-sass\/assets\/stylesheets\/bootstrap\/mixins\/_vendor-prefixes.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/node_modules\/jquery\/dist\/jquery.min.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/build/node_modules/wow.js/dist/wow.min.min.js",
+		"oAP": "\/build\/node_modules\/jquery\/dist\/jquery.min.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
-	"/package-lock.json": {
+	"\/node_modules\/slick-carousel\/slick\/slick-theme.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/slick-carousel\/slick\/slick-theme.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/node_modules\/slick-carousel\/slick\/slick.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/slick-carousel\/slick\/slick.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/node_modules\/slick-carousel\/slick\/slick.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/slick-carousel\/slick\/slick.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/node_modules\/wow.js\/dist\/wow.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/wow.js\/dist\/wow.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/package-lock.json": {
 		"ft": 524288,
 		"oA": 1,
-		"oAP": "/build/package-lock-min.json",
+		"oAP": "\/build\/package-lock-min.json",
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
 		},
-	"/package.json": {
+	"\/package.json": {
 		"ft": 524288,
 		"oA": 1,
-		"oAP": "/build/package-min.json",
+		"oAP": "\/build\/package-min.json",
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
 		},
-	"/src/assets/favicon/android-chrome-192x192.png": {
+	"\/src\/assets\/favicon\/android-chrome-192x192.png": {
 		"ft": 32768,
 		"iS": 2989,
 		"oA": 0,
-		"oAP": "/build/assets/favicon/android-chrome-192x192.png",
+		"oAP": "\/build\/assets\/favicon\/android-chrome-192x192.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/favicon/apple-touch-icon-120x120.png": {
+	"\/src\/assets\/favicon\/apple-touch-icon-120x120.png": {
 		"ft": 32768,
 		"iS": 2660,
 		"oA": 0,
-		"oAP": "/build/assets/favicon/apple-touch-icon-120x120.png",
+		"oAP": "\/build\/assets\/favicon\/apple-touch-icon-120x120.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/favicon/apple-touch-icon-152x152.png": {
+	"\/src\/assets\/favicon\/apple-touch-icon-152x152.png": {
 		"ft": 32768,
 		"iS": 3696,
 		"oA": 0,
-		"oAP": "/build/assets/favicon/apple-touch-icon-152x152.png",
+		"oAP": "\/build\/assets\/favicon\/apple-touch-icon-152x152.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/favicon/apple-touch-icon-180x180.png": {
+	"\/src\/assets\/favicon\/apple-touch-icon-180x180.png": {
 		"ft": 32768,
 		"iS": 4433,
 		"oA": 0,
-		"oAP": "/build/assets/favicon/apple-touch-icon-180x180.png",
+		"oAP": "\/build\/assets\/favicon\/apple-touch-icon-180x180.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/favicon/apple-touch-icon-60x60.png": {
+	"\/src\/assets\/favicon\/apple-touch-icon-60x60.png": {
 		"ft": 32768,
 		"iS": 1022,
 		"oA": 0,
-		"oAP": "/build/assets/favicon/apple-touch-icon-60x60.png",
+		"oAP": "\/build\/assets\/favicon\/apple-touch-icon-60x60.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/favicon/apple-touch-icon-76x76.png": {
+	"\/src\/assets\/favicon\/apple-touch-icon-76x76.png": {
 		"ft": 32768,
 		"iS": 1451,
 		"oA": 0,
-		"oAP": "/build/assets/favicon/apple-touch-icon-76x76.png",
+		"oAP": "\/build\/assets\/favicon\/apple-touch-icon-76x76.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/favicon/apple-touch-icon.png": {
+	"\/src\/assets\/favicon\/apple-touch-icon.png": {
 		"ft": 32768,
 		"iS": 4433,
 		"oA": 0,
-		"oAP": "/build/assets/favicon/apple-touch-icon.png",
+		"oAP": "\/build\/assets\/favicon\/apple-touch-icon.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/favicon/browserconfig.xml": {
+	"\/src\/assets\/favicon\/browserconfig.xml": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/build/assets/favicon/browserconfig.xml",
+		"oAP": "\/build\/assets\/favicon\/browserconfig.xml",
 		"oF": 0
 		},
-	"/src/assets/favicon/favicon-16x16.png": {
+	"\/src\/assets\/favicon\/favicon-16x16.png": {
 		"ft": 32768,
 		"iS": 383,
 		"oA": 0,
-		"oAP": "/build/assets/favicon/favicon-16x16.png",
+		"oAP": "\/build\/assets\/favicon\/favicon-16x16.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/favicon/favicon-32x32.png": {
+	"\/src\/assets\/favicon\/favicon-32x32.png": {
 		"ft": 32768,
 		"iS": 709,
 		"oA": 0,
-		"oAP": "/build/assets/favicon/favicon-32x32.png",
+		"oAP": "\/build\/assets\/favicon\/favicon-32x32.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/favicon/favicon.ico": {
+	"\/src\/assets\/favicon\/favicon.ico": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/build/assets/favicon/favicon.ico",
+		"oAP": "\/build\/assets\/favicon\/favicon.ico",
 		"oF": 0
 		},
-	"/src/assets/favicon/manifest.json": {
+	"\/src\/assets\/favicon\/manifest.json": {
 		"ft": 524288,
 		"oA": 1,
-		"oAP": "/build/assets/favicon/manifest-min.json",
+		"oAP": "\/build\/assets\/favicon\/manifest-min.json",
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
 		},
-	"/src/assets/favicon/mstile-144x144.png": {
+	"\/src\/assets\/favicon\/mstile-144x144.png": {
 		"ft": 32768,
 		"iS": 3326,
 		"oA": 0,
-		"oAP": "/build/assets/favicon/mstile-144x144.png",
+		"oAP": "\/build\/assets\/favicon\/mstile-144x144.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/favicon/mstile-150x150.png": {
+	"\/src\/assets\/favicon\/mstile-150x150.png": {
 		"ft": 32768,
 		"iS": 2581,
 		"oA": 0,
-		"oAP": "/build/assets/favicon/mstile-150x150.png",
+		"oAP": "\/build\/assets\/favicon\/mstile-150x150.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/favicon/mstile-70x70.png": {
+	"\/src\/assets\/favicon\/mstile-70x70.png": {
 		"ft": 32768,
 		"iS": 1974,
 		"oA": 0,
-		"oAP": "/build/assets/favicon/mstile-70x70.png",
+		"oAP": "\/build\/assets\/favicon\/mstile-70x70.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/favicon/safari-pinned-tab.svg": {
+	"\/src\/assets\/favicon\/safari-pinned-tab.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/favicon/safari-pinned-tab.svg",
+		"oAP": "\/build\/assets\/favicon\/safari-pinned-tab.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/adv-get-started-bg.svg": {
+	"\/src\/assets\/images\/adv-get-started-bg.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/adv-get-started-bg.svg",
+		"oAP": "\/build\/assets\/images\/adv-get-started-bg.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/ajax-loader.gif": {
+	"\/src\/assets\/images\/ajax-loader.gif": {
 		"ft": 4194304,
 		"iS": 4178,
 		"oA": 0,
-		"oAP": "/build/assets/images/ajax-loader.gif",
+		"oAP": "\/build\/assets\/images\/ajax-loader.gif",
 		"oF": 0,
 		"opt": 1
 		},
-	"/src/assets/images/arrow-right-white.svg": {
+	"\/src\/assets\/images\/arrow-right-white.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/arrow-right-white.svg",
+		"oAP": "\/build\/assets\/images\/arrow-right-white.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/brands/afar.png": {
+	"\/src\/assets\/images\/bg_l_thank.png": {
+		"ft": 32768,
+		"iS": 26963,
+		"oA": 0,
+		"oAP": "\/build\/assets\/images\/bg_l_thank.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/src\/assets\/images\/brands\/afar.png": {
 		"ft": 32768,
 		"iS": 1218,
 		"oA": 0,
-		"oAP": "/build/assets/images/brands/afar.png",
+		"oAP": "\/build\/assets\/images\/brands\/afar.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/brands/afar@2x.png": {
+	"\/src\/assets\/images\/brands\/afar@2x.png": {
 		"ft": 32768,
 		"iS": 2999,
 		"oA": 0,
-		"oAP": "/build/assets/images/brands/afar@2x.png",
+		"oAP": "\/build\/assets\/images\/brands\/afar@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/brands/billboard.png": {
+	"\/src\/assets\/images\/brands\/billboard.png": {
 		"ft": 32768,
 		"iS": 6198,
 		"oA": 0,
-		"oAP": "/build/assets/images/brands/billboard.png",
+		"oAP": "\/build\/assets\/images\/brands\/billboard.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/brands/billboard@2x.png": {
+	"\/src\/assets\/images\/brands\/billboard@2x.png": {
 		"ft": 32768,
 		"iS": 8062,
 		"oA": 0,
-		"oAP": "/build/assets/images/brands/billboard@2x.png",
+		"oAP": "\/build\/assets\/images\/brands\/billboard@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/brands/bnb.jpg": {
+	"\/src\/assets\/images\/brands\/bnb.jpg": {
 		"ft": 16384,
 		"iS": 1391,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/assets/images/brands/bnb.jpg",
+		"oAP": "\/build\/assets\/images\/brands\/bnb.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"/src/assets/images/brands/cbs.png": {
+	"\/src\/assets\/images\/brands\/cbs.png": {
 		"ft": 32768,
 		"iS": 1396,
 		"oA": 0,
-		"oAP": "/build/assets/images/brands/cbs.png",
+		"oAP": "\/build\/assets\/images\/brands\/cbs.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/brands/cbs@2x.png": {
+	"\/src\/assets\/images\/brands\/cbs@2x.png": {
 		"ft": 32768,
 		"iS": 3385,
 		"oA": 0,
-		"oAP": "/build/assets/images/brands/cbs@2x.png",
+		"oAP": "\/build\/assets\/images\/brands\/cbs@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/brands/euronews.png": {
+	"\/src\/assets\/images\/brands\/euronews.png": {
 		"ft": 32768,
 		"iS": 9244,
 		"oA": 0,
-		"oAP": "/build/assets/images/brands/euronews.png",
+		"oAP": "\/build\/assets\/images\/brands\/euronews.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/brands/euronews@2x.png": {
+	"\/src\/assets\/images\/brands\/euronews@2x.png": {
 		"ft": 32768,
 		"iS": 12032,
 		"oA": 0,
-		"oAP": "/build/assets/images/brands/euronews@2x.png",
+		"oAP": "\/build\/assets\/images\/brands\/euronews@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/brands/faretly.png": {
+	"\/src\/assets\/images\/brands\/faretly.png": {
 		"ft": 32768,
 		"iS": 1370,
 		"oA": 0,
-		"oAP": "/build/assets/images/brands/faretly.png",
+		"oAP": "\/build\/assets\/images\/brands\/faretly.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/brands/faretly@2x.png": {
+	"\/src\/assets\/images\/brands\/faretly@2x.png": {
 		"ft": 32768,
 		"iS": 3316,
 		"oA": 0,
-		"oAP": "/build/assets/images/brands/faretly@2x.png",
+		"oAP": "\/build\/assets\/images\/brands\/faretly@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/brands/fatherly.png": {
+	"\/src\/assets\/images\/brands\/fatherly.png": {
 		"ft": 32768,
 		"iS": 3316,
 		"oA": 0,
-		"oAP": "/build/assets/images/brands/fatherly.png",
+		"oAP": "\/build\/assets\/images\/brands\/fatherly.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/brands/fatherly@2x.png": {
+	"\/src\/assets\/images\/brands\/fatherly@2x.png": {
 		"ft": 32768,
 		"iS": 7863,
 		"oA": 0,
-		"oAP": "/build/assets/images/brands/fatherly@2x.png",
+		"oAP": "\/build\/assets\/images\/brands\/fatherly@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/brands/gearpatrol.png": {
+	"\/src\/assets\/images\/brands\/gearpatrol.png": {
 		"ft": 32768,
 		"iS": 2251,
 		"oA": 0,
-		"oAP": "/build/assets/images/brands/gearpatrol.png",
+		"oAP": "\/build\/assets\/images\/brands\/gearpatrol.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/brands/gearpatrol@2x.png": {
+	"\/src\/assets\/images\/brands\/gearpatrol@2x.png": {
 		"ft": 32768,
 		"iS": 4512,
 		"oA": 0,
-		"oAP": "/build/assets/images/brands/gearpatrol@2x.png",
+		"oAP": "\/build\/assets\/images\/brands\/gearpatrol@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/brands/gm.jpg": {
+	"\/src\/assets\/images\/brands\/gm.jpg": {
 		"ft": 16384,
 		"iS": 1388,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/assets/images/brands/gm.jpg",
+		"oAP": "\/build\/assets\/images\/brands\/gm.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"/src/assets/images/brands/gopro.jpg": {
+	"\/src\/assets\/images\/brands\/gopro.jpg": {
 		"ft": 16384,
 		"iS": 1827,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/assets/images/brands/gopro.jpg",
+		"oAP": "\/build\/assets\/images\/brands\/gopro.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"/src/assets/images/brands/ozy.png": {
+	"\/src\/assets\/images\/brands\/ozy.png": {
 		"ft": 32768,
 		"iS": 17224,
 		"oA": 0,
-		"oAP": "/build/assets/images/brands/ozy.png",
+		"oAP": "\/build\/assets\/images\/brands\/ozy.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/brands/ozy@2x.png": {
+	"\/src\/assets\/images\/brands\/ozy@2x.png": {
 		"ft": 32768,
 		"iS": 17448,
 		"oA": 0,
-		"oAP": "/build/assets/images/brands/ozy@2x.png",
+		"oAP": "\/build\/assets\/images\/brands\/ozy@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/brands/rbull.jpg": {
+	"\/src\/assets\/images\/brands\/rbull.jpg": {
 		"ft": 16384,
 		"iS": 1797,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/assets/images/brands/rbull.jpg",
+		"oAP": "\/build\/assets\/images\/brands\/rbull.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"/src/assets/images/brands/realclear.png": {
+	"\/src\/assets\/images\/brands\/realclear.png": {
 		"ft": 32768,
 		"iS": 4609,
 		"oA": 0,
-		"oAP": "/build/assets/images/brands/realclear.png",
+		"oAP": "\/build\/assets\/images\/brands\/realclear.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/brands/realclear@2x.png": {
+	"\/src\/assets\/images\/brands\/realclear@2x.png": {
 		"ft": 32768,
 		"iS": 11249,
 		"oA": 0,
-		"oAP": "/build/assets/images/brands/realclear@2x.png",
+		"oAP": "\/build\/assets\/images\/brands\/realclear@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/brands/realclearpolitics.png": {
+	"\/src\/assets\/images\/brands\/realclearpolitics.png": {
 		"ft": 32768,
 		"iS": 35672,
 		"oA": 0,
-		"oAP": "/build/assets/images/brands/realclearpolitics.png",
+		"oAP": "\/build\/assets\/images\/brands\/realclearpolitics.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/brands/realclearpolitics@2x.png": {
+	"\/src\/assets\/images\/brands\/realclearpolitics@2x.png": {
 		"ft": 32768,
 		"iS": 4793,
 		"oA": 0,
-		"oAP": "/build/assets/images/brands/realclearpolitics@2x.png",
+		"oAP": "\/build\/assets\/images\/brands\/realclearpolitics@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/brands/rollcall.png": {
+	"\/src\/assets\/images\/brands\/rollcall.png": {
 		"ft": 32768,
 		"iS": 7249,
 		"oA": 0,
-		"oAP": "/build/assets/images/brands/rollcall.png",
+		"oAP": "\/build\/assets\/images\/brands\/rollcall.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/brands/rollcall@2x.png": {
+	"\/src\/assets\/images\/brands\/rollcall@2x.png": {
 		"ft": 32768,
 		"iS": 9629,
 		"oA": 0,
-		"oAP": "/build/assets/images/brands/rollcall@2x.png",
+		"oAP": "\/build\/assets\/images\/brands\/rollcall@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/brands/rollingstone.png": {
+	"\/src\/assets\/images\/brands\/rollingstone.png": {
 		"ft": 32768,
 		"iS": 6598,
 		"oA": 0,
-		"oAP": "/build/assets/images/brands/rollingstone.png",
+		"oAP": "\/build\/assets\/images\/brands\/rollingstone.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/brands/rollingstone@2x.png": {
+	"\/src\/assets\/images\/brands\/rollingstone@2x.png": {
 		"ft": 32768,
 		"iS": 8776,
 		"oA": 0,
-		"oAP": "/build/assets/images/brands/rollingstone@2x.png",
+		"oAP": "\/build\/assets\/images\/brands\/rollingstone@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/brands/thomson.png": {
+	"\/src\/assets\/images\/brands\/thomson.png": {
 		"ft": 32768,
 		"iS": 19536,
 		"oA": 0,
-		"oAP": "/build/assets/images/brands/thomson.png",
+		"oAP": "\/build\/assets\/images\/brands\/thomson.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/brands/thomson@2x.png": {
+	"\/src\/assets\/images\/brands\/thomson@2x.png": {
 		"ft": 32768,
 		"iS": 23641,
 		"oA": 0,
-		"oAP": "/build/assets/images/brands/thomson@2x.png",
+		"oAP": "\/build\/assets\/images\/brands\/thomson@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/carousel/01_real-time_dashboard.png": {
+	"\/src\/assets\/images\/carousel\/01_real-time_dashboard.png": {
 		"ft": 32768,
 		"iS": 82819,
 		"oA": 0,
-		"oAP": "/build/assets/images/carousel/01_real-time_dashboard.png",
+		"oAP": "\/build\/assets\/images\/carousel\/01_real-time_dashboard.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/carousel/02_activity_report.png": {
+	"\/src\/assets\/images\/carousel\/02_activity_report.png": {
 		"ft": 32768,
 		"iS": 87279,
 		"oA": 0,
-		"oAP": "/build/assets/images/carousel/02_activity_report.png",
+		"oAP": "\/build\/assets\/images\/carousel\/02_activity_report.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/carousel/03_audience_interests_report.png": {
+	"\/src\/assets\/images\/carousel\/03_audience_interests_report.png": {
 		"ft": 32768,
 		"iS": 93128,
 		"oA": 0,
-		"oAP": "/build/assets/images/carousel/03_audience_interests_report.png",
+		"oAP": "\/build\/assets\/images\/carousel\/03_audience_interests_report.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/carousel/04_story_report.png": {
+	"\/src\/assets\/images\/carousel\/04_story_report.png": {
 		"ft": 32768,
 		"iS": 69621,
 		"oA": 0,
-		"oAP": "/build/assets/images/carousel/04_story_report.png",
+		"oAP": "\/build\/assets\/images\/carousel\/04_story_report.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/carousel/05_author_report.png": {
+	"\/src\/assets\/images\/carousel\/05_author_report.png": {
 		"ft": 32768,
 		"iS": 69237,
 		"oA": 0,
-		"oAP": "/build/assets/images/carousel/05_author_report.png",
+		"oAP": "\/build\/assets\/images\/carousel\/05_author_report.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/check-blue.svg": {
+	"\/src\/assets\/images\/check-blue.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/check-blue.svg",
+		"oAP": "\/build\/assets\/images\/check-blue.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/check-orange.svg": {
+	"\/src\/assets\/images\/check-orange.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/check-orange.svg",
+		"oAP": "\/build\/assets\/images\/check-orange.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/formula.svg": {
+	"\/src\/assets\/images\/formula.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/formula.svg",
+		"oAP": "\/build\/assets\/images\/formula.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/src/assets/images/how-it-work/00.svg": {
+	"\/src\/assets\/images\/how-it-work\/00.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/how-it-work/00.svg",
+		"oAP": "\/build\/assets\/images\/how-it-work\/00.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/how-it-work/01.svg": {
+	"\/src\/assets\/images\/how-it-work\/01.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/how-it-work/01.svg",
+		"oAP": "\/build\/assets\/images\/how-it-work\/01.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/how-it-work/02.svg": {
+	"\/src\/assets\/images\/how-it-work\/02.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/how-it-work/02.svg",
+		"oAP": "\/build\/assets\/images\/how-it-work\/02.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/how-it-work/03.svg": {
+	"\/src\/assets\/images\/how-it-work\/03.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/how-it-work/03.svg",
+		"oAP": "\/build\/assets\/images\/how-it-work\/03.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/how-it-work/04.svg": {
+	"\/src\/assets\/images\/how-it-work\/04.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/how-it-work/04.svg",
+		"oAP": "\/build\/assets\/images\/how-it-work\/04.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/how-it-work/05.svg": {
+	"\/src\/assets\/images\/how-it-work\/05.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/how-it-work/05.svg",
+		"oAP": "\/build\/assets\/images\/how-it-work\/05.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/how-it-work/05s.svg": {
+	"\/src\/assets\/images\/how-it-work\/05s.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/how-it-work/05s.svg",
+		"oAP": "\/build\/assets\/images\/how-it-work\/05s.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/how-it-work/06.svg": {
+	"\/src\/assets\/images\/how-it-work\/06.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/how-it-work/06.svg",
+		"oAP": "\/build\/assets\/images\/how-it-work\/06.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/how-it-work/finish.svg": {
+	"\/src\/assets\/images\/how-it-work\/finish.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/how-it-work/finish.svg",
+		"oAP": "\/build\/assets\/images\/how-it-work\/finish.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/how-it-work/lines-desktop.svg": {
+	"\/src\/assets\/images\/how-it-work\/lines-desktop.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/how-it-work/lines-desktop.svg",
+		"oAP": "\/build\/assets\/images\/how-it-work\/lines-desktop.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/how-it-work/start.svg": {
+	"\/src\/assets\/images\/how-it-work\/start.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/how-it-work/start.svg",
+		"oAP": "\/build\/assets\/images\/how-it-work\/start.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/illustrations/adv-1.svg": {
+	"\/src\/assets\/images\/illustrations\/adv-1.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/illustrations/adv-1.svg",
+		"oAP": "\/build\/assets\/images\/illustrations\/adv-1.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/illustrations/adv-2.svg": {
+	"\/src\/assets\/images\/illustrations\/adv-2.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/illustrations/adv-2.svg",
+		"oAP": "\/build\/assets\/images\/illustrations\/adv-2.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/illustrations/adv-3.svg": {
+	"\/src\/assets\/images\/illustrations\/adv-3.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/illustrations/adv-3.svg",
+		"oAP": "\/build\/assets\/images\/illustrations\/adv-3.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/illustrations/adv-4.svg": {
+	"\/src\/assets\/images\/illustrations\/adv-4.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/illustrations/adv-4.svg",
+		"oAP": "\/build\/assets\/images\/illustrations\/adv-4.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/illustrations/adv-5.svg": {
+	"\/src\/assets\/images\/illustrations\/adv-5.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/illustrations/adv-5.svg",
+		"oAP": "\/build\/assets\/images\/illustrations\/adv-5.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/illustrations/adv-c-01.svg": {
+	"\/src\/assets\/images\/illustrations\/adv-c-01.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/illustrations/adv-c-01.svg",
+		"oAP": "\/build\/assets\/images\/illustrations\/adv-c-01.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/illustrations/adv-c-02.svg": {
+	"\/src\/assets\/images\/illustrations\/adv-c-02.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/illustrations/adv-c-02.svg",
+		"oAP": "\/build\/assets\/images\/illustrations\/adv-c-02.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/illustrations/adv-c-03.svg": {
+	"\/src\/assets\/images\/illustrations\/adv-c-03.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/illustrations/adv-c-03.svg",
+		"oAP": "\/build\/assets\/images\/illustrations\/adv-c-03.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/illustrations/adv-c-04.svg": {
+	"\/src\/assets\/images\/illustrations\/adv-c-04.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/illustrations/adv-c-04.svg",
+		"oAP": "\/build\/assets\/images\/illustrations\/adv-c-04.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/illustrations/advertising-content.svg": {
+	"\/src\/assets\/images\/illustrations\/advertising-content.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/illustrations/advertising-content.svg",
+		"oAP": "\/build\/assets\/images\/illustrations\/advertising-content.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/illustrations/anim.gif": {
+	"\/src\/assets\/images\/illustrations\/anim.gif": {
 		"ft": 4194304,
 		"iS": 6172734,
 		"oA": 0,
-		"oAP": "/build/assets/images/illustrations/anim.gif",
+		"oAP": "\/build\/assets\/images\/illustrations\/anim.gif",
 		"oF": 0,
 		"opt": 1
 		},
-	"/src/assets/images/illustrations/case.svg": {
+	"\/src\/assets\/images\/illustrations\/case.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/illustrations/case.svg",
+		"oAP": "\/build\/assets\/images\/illustrations\/case.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/src/assets/images/illustrations/dashboard.svg": {
+	"\/src\/assets\/images\/illustrations\/dashboard.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/illustrations/dashboard.svg",
+		"oAP": "\/build\/assets\/images\/illustrations\/dashboard.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/src/assets/images/illustrations/home-01-gray.svg": {
+	"\/src\/assets\/images\/illustrations\/home-01-gray.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/illustrations/home-01-gray.svg",
+		"oAP": "\/build\/assets\/images\/illustrations\/home-01-gray.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/src/assets/images/illustrations/home-01.svg": {
+	"\/src\/assets\/images\/illustrations\/home-01.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/illustrations/home-01.svg",
+		"oAP": "\/build\/assets\/images\/illustrations\/home-01.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/illustrations/home-advertising.svg": {
+	"\/src\/assets\/images\/illustrations\/home-advertising.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/illustrations/home-advertising.svg",
+		"oAP": "\/build\/assets\/images\/illustrations\/home-advertising.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/illustrations/home-publishers.svg": {
+	"\/src\/assets\/images\/illustrations\/home-publishers.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/illustrations/home-publishers.svg",
+		"oAP": "\/build\/assets\/images\/illustrations\/home-publishers.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/illustrations/how-works.svg": {
+	"\/src\/assets\/images\/illustrations\/how-works.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/illustrations/how-works.svg",
+		"oAP": "\/build\/assets\/images\/illustrations\/how-works.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/src/assets/images/illustrations/interests.svg": {
+	"\/src\/assets\/images\/illustrations\/interests.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/illustrations/interests.svg",
+		"oAP": "\/build\/assets\/images\/illustrations\/interests.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/illustrations/pub-1.svg": {
+	"\/src\/assets\/images\/illustrations\/pub-1.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/illustrations/pub-1.svg",
+		"oAP": "\/build\/assets\/images\/illustrations\/pub-1.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/illustrations/pub-2.svg": {
+	"\/src\/assets\/images\/illustrations\/pub-2.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/illustrations/pub-2.svg",
+		"oAP": "\/build\/assets\/images\/illustrations\/pub-2.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/illustrations/script.svg": {
+	"\/src\/assets\/images\/illustrations\/script.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/illustrations/script.svg",
+		"oAP": "\/build\/assets\/images\/illustrations\/script.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/src/assets/images/illustrations/step_1.svg": {
+	"\/src\/assets\/images\/illustrations\/step_1.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/illustrations/step_1.svg",
+		"oAP": "\/build\/assets\/images\/illustrations\/step_1.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/illustrations/step_2.svg": {
+	"\/src\/assets\/images\/illustrations\/step_2.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/illustrations/step_2.svg",
+		"oAP": "\/build\/assets\/images\/illustrations\/step_2.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/illustrations/step_3.svg": {
+	"\/src\/assets\/images\/illustrations\/step_3.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/illustrations/step_3.svg",
+		"oAP": "\/build\/assets\/images\/illustrations\/step_3.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/infographic/engagement.png": {
+	"\/src\/assets\/images\/infographic\/engagement.png": {
 		"ft": 32768,
 		"iS": 44690,
 		"oA": 0,
-		"oAP": "/build/assets/images/infographic/engagement.png",
+		"oAP": "\/build\/assets\/images\/infographic\/engagement.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/infographic/engagement@2x.png": {
+	"\/src\/assets\/images\/infographic\/engagement@2x.png": {
 		"ft": 32768,
 		"iS": 100982,
 		"oA": 0,
-		"oAP": "/build/assets/images/infographic/engagement@2x.png",
+		"oAP": "\/build\/assets\/images\/infographic\/engagement@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/infographic/engagement_volume.png": {
+	"\/src\/assets\/images\/infographic\/engagement_volume.png": {
 		"ft": 32768,
 		"iS": 46287,
 		"oA": 0,
-		"oAP": "/build/assets/images/infographic/engagement_volume.png",
+		"oAP": "\/build\/assets\/images\/infographic\/engagement_volume.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/infographic/engagement_volume@2x.png": {
+	"\/src\/assets\/images\/infographic\/engagement_volume@2x.png": {
 		"ft": 32768,
 		"iS": 108635,
 		"oA": 0,
-		"oAP": "/build/assets/images/infographic/engagement_volume@2x.png",
+		"oAP": "\/build\/assets\/images\/infographic\/engagement_volume@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/infographic/formula.png": {
+	"\/src\/assets\/images\/infographic\/formula.png": {
 		"ft": 32768,
 		"iS": 20847,
 		"oA": 0,
-		"oAP": "/build/assets/images/infographic/formula.png",
+		"oAP": "\/build\/assets\/images\/infographic\/formula.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/infographic/formula@2x.png": {
+	"\/src\/assets\/images\/infographic\/formula@2x.png": {
 		"ft": 32768,
 		"iS": 50075,
 		"oA": 0,
-		"oAP": "/build/assets/images/infographic/formula@2x.png",
+		"oAP": "\/build\/assets\/images\/infographic\/formula@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/infographic/increased.png": {
+	"\/src\/assets\/images\/infographic\/increased.png": {
 		"ft": 32768,
 		"iS": 8906,
 		"oA": 0,
-		"oAP": "/build/assets/images/infographic/increased.png",
+		"oAP": "\/build\/assets\/images\/infographic\/increased.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/infographic/increased@2x.png": {
+	"\/src\/assets\/images\/infographic\/increased@2x.png": {
 		"ft": 32768,
 		"iS": 19560,
 		"oA": 0,
-		"oAP": "/build/assets/images/infographic/increased@2x.png",
+		"oAP": "\/build\/assets\/images\/infographic\/increased@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/infographic/interests.png": {
+	"\/src\/assets\/images\/infographic\/interests.png": {
 		"ft": 32768,
 		"iS": 25465,
 		"oA": 0,
-		"oAP": "/build/assets/images/infographic/interests.png",
+		"oAP": "\/build\/assets\/images\/infographic\/interests.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/infographic/interests@2x.png": {
+	"\/src\/assets\/images\/infographic\/interests@2x.png": {
 		"ft": 32768,
 		"iS": 62915,
 		"oA": 0,
-		"oAP": "/build/assets/images/infographic/interests@2x.png",
+		"oAP": "\/build\/assets\/images\/infographic\/interests@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/infographic/traffic.png": {
+	"\/src\/assets\/images\/infographic\/traffic.png": {
 		"ft": 32768,
 		"iS": 29598,
 		"oA": 0,
-		"oAP": "/build/assets/images/infographic/traffic.png",
+		"oAP": "\/build\/assets\/images\/infographic\/traffic.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/infographic/traffic@2x.png": {
+	"\/src\/assets\/images\/infographic\/traffic@2x.png": {
 		"ft": 32768,
 		"iS": 73966,
 		"oA": 0,
-		"oAP": "/build/assets/images/infographic/traffic@2x.png",
+		"oAP": "\/build\/assets\/images\/infographic\/traffic@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/language/classification.svg": {
+	"\/src\/assets\/images\/language\/classification.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/language/classification.svg",
+		"oAP": "\/build\/assets\/images\/language\/classification.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/src/assets/images/language/interests.svg": {
+	"\/src\/assets\/images\/language\/interests.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/language/interests.svg",
+		"oAP": "\/build\/assets\/images\/language\/interests.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/src/assets/images/language/ontology.svg": {
+	"\/src\/assets\/images\/language\/ontology.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/language/ontology.svg",
+		"oAP": "\/build\/assets\/images\/language\/ontology.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/src/assets/images/logo.svg": {
+	"\/src\/assets\/images\/logo.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/logo.svg",
+		"oAP": "\/build\/assets\/images\/logo.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/src/assets/images/macbook.png": {
+	"\/src\/assets\/images\/macbook.png": {
 		"ft": 32768,
 		"iS": 33995,
 		"oA": 0,
-		"oAP": "/build/assets/images/macbook.png",
+		"oAP": "\/build\/assets\/images\/macbook.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/macbook@2x.png": {
+	"\/src\/assets\/images\/macbook@2x.png": {
 		"ft": 32768,
 		"iS": 100448,
 		"oA": 0,
-		"oAP": "/build/assets/images/macbook@2x.png",
+		"oAP": "\/build\/assets\/images\/macbook@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/images/power-for-blue.svg": {
+	"\/src\/assets\/images\/power-for-blue.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/power-for-blue.svg",
+		"oAP": "\/build\/assets\/images\/power-for-blue.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/power-for-orange.svg": {
+	"\/src\/assets\/images\/power-for-orange.svg": {
 		"ft": 2097152,
 		"miP": 1,
 		"oA": 2,
-		"oAP": "/build/assets/images/power-for-orange.svg",
+		"oAP": "\/build\/assets\/images\/power-for-orange.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
 		"prP": 0
 		},
-	"/src/assets/images/testimonials/user-01.png": {
+	"\/src\/assets\/images\/testimonials\/user-01.png": {
 		"ft": 32768,
 		"iS": 27369,
 		"oA": 0,
-		"oAP": "/build/assets/images/testimonials/user-01.png",
+		"oAP": "\/build\/assets\/images\/testimonials\/user-01.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/CNAME": {
+	"\/src\/CNAME": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "/build/CNAME",
+		"oAP": "\/build\/CNAME",
 		"oF": 1
 		},
-	"/src/js/app.js": {
+	"\/src\/js\/app.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/build/js/app.min.js",
+		"oAP": "\/build\/js\/app.min.js",
 		"oF": 2,
 		"sC": 3,
 		"tS": 1
 		},
-	"/src/js/components/fastnav.js": {
+	"\/src\/js\/components\/fastnav.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/build/js/components/fastnav.min.js",
+		"oAP": "\/build\/js\/components\/fastnav.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
 		},
-	"/src/js/treemap.js": {
+	"\/src\/js\/treemap.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/build/js/treemap.min.js",
+		"oAP": "\/build\/js\/treemap.min.js",
 		"oF": 1,
 		"sC": 0,
 		"tS": 0
 		},
-	"/src/pug/components/_icons.pug": {
+	"\/src\/pug\/components\/_icons.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_icons.html",
+		"oAP": "\/build\/_icons.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/components/_list.pug": {
+	"\/src\/pug\/components\/_list.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_list.html",
+		"oAP": "\/build\/_list.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/components/_treemap.pug": {
+	"\/src\/pug\/components\/_treemap.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_treemap.html",
+		"oAP": "\/build\/_treemap.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/layout.pug": {
+	"\/src\/pug\/layout.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/layout.html",
+		"oAP": "\/build\/layout.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/pages/advertising.pug": {
+	"\/src\/pug\/pages\/advertising.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "/build/advertising.html",
+		"oAP": "\/build\/advertising.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/pages/analytics.pug": {
+	"\/src\/pug\/pages\/analytics.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "/build/analytics.html",
+		"oAP": "\/build\/analytics.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/pages/blog.pug": {
+	"\/src\/pug\/pages\/blog.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "/build/blog.html",
+		"oAP": "\/build\/blog.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/pages/dashboard.pug": {
+	"\/src\/pug\/pages\/dashboard.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "/build/dashboard.html",
+		"oAP": "\/build\/dashboard.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/pages/how.pug": {
+	"\/src\/pug\/pages\/how.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "/build/how.html",
+		"oAP": "\/build\/how.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/pages/index.pug": {
+	"\/src\/pug\/pages\/index.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "/build/index.html",
+		"oAP": "\/build\/index.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/pages/lead_magnet.pug": {
+	"\/src\/pug\/pages\/lead_magnet.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "/build/lead_magnet.html",
+		"oAP": "\/build\/lead_magnet.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/pages/native_advertising_content.pug": {
+	"\/src\/pug\/pages\/native_advertising_content.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "/build/native_advertising_content.html",
+		"oAP": "\/build\/native_advertising_content.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/pages/register.pug": {
+	"\/src\/pug\/pages\/register.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "/build/register.html",
+		"oAP": "\/build\/register.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/pages/thank_you.pug": {
+	"\/src\/pug\/pages\/thank.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "/build/thank_you.html",
+		"oAP": "\/build\/thank.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_3col.pug": {
+	"\/src\/pug\/pages\/thank_you_old.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/thank_you_old.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/src\/pug\/sections\/_3col.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_3col.html",
+		"oAP": "\/build\/_3col.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_analysis.pug": {
+	"\/src\/pug\/sections\/_analysis.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_analysis.html",
+		"oAP": "\/build\/_analysis.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_analytics.pug": {
+	"\/src\/pug\/sections\/_analytics.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_analytics.html",
+		"oAP": "\/build\/_analytics.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_anim.pug": {
+	"\/src\/pug\/sections\/_anim.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_anim.html",
+		"oAP": "\/build\/_anim.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_behavior.pug": {
+	"\/src\/pug\/sections\/_behavior.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_behavior.html",
+		"oAP": "\/build\/_behavior.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_blog_feature.pug": {
+	"\/src\/pug\/sections\/_blog_feature.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_blog_feature.html",
+		"oAP": "\/build\/_blog_feature.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_brands.pug": {
+	"\/src\/pug\/sections\/_brands.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_brands.html",
+		"oAP": "\/build\/_brands.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_brands_old.pug": {
+	"\/src\/pug\/sections\/_brands_old.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_brands_old.html",
+		"oAP": "\/build\/_brands_old.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_carousel.pug": {
+	"\/src\/pug\/sections\/_carousel.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_carousel.html",
+		"oAP": "\/build\/_carousel.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_case_study.pug": {
+	"\/src\/pug\/sections\/_case_study.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_case_study.html",
+		"oAP": "\/build\/_case_study.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_dashboard.pug": {
+	"\/src\/pug\/sections\/_dashboard.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_dashboard.html",
+		"oAP": "\/build\/_dashboard.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_eight.pug": {
+	"\/src\/pug\/sections\/_eight.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_eight.html",
+		"oAP": "\/build\/_eight.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_faq.pug": {
+	"\/src\/pug\/sections\/_faq.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_faq.html",
+		"oAP": "\/build\/_faq.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_first.pug": {
+	"\/src\/pug\/sections\/_first.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_first.html",
+		"oAP": "\/build\/_first.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_first_adv.pug": {
+	"\/src\/pug\/sections\/_first_adv.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_first_adv.html",
+		"oAP": "\/build\/_first_adv.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_footer.pug": {
+	"\/src\/pug\/sections\/_footer.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_footer.html",
+		"oAP": "\/build\/_footer.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_grip.pug": {
+	"\/src\/pug\/sections\/_grip.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_grip.html",
+		"oAP": "\/build\/_grip.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_head.pug": {
+	"\/src\/pug\/sections\/_head.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_head.html",
+		"oAP": "\/build\/_head.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_header.pug": {
+	"\/src\/pug\/sections\/_header.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_header.html",
+		"oAP": "\/build\/_header.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_how.pug": {
+	"\/src\/pug\/sections\/_how.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_how.html",
+		"oAP": "\/build\/_how.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_interests.pug": {
+	"\/src\/pug\/sections\/_interests.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_interests.html",
+		"oAP": "\/build\/_interests.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_language.pug": {
+	"\/src\/pug\/sections\/_language.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_language.html",
+		"oAP": "\/build\/_language.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_power (old).pug": {
+	"\/src\/pug\/sections\/_power (old).pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_power (old).html",
+		"oAP": "\/build\/_power (old).html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_script.pug": {
+	"\/src\/pug\/sections\/_script.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_script.html",
+		"oAP": "\/build\/_script.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_six.pug": {
+	"\/src\/pug\/sections\/_six.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_six.html",
+		"oAP": "\/build\/_six.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_start.pug": {
+	"\/src\/pug\/sections\/_start.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_start.html",
+		"oAP": "\/build\/_start.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/scss/base.scss": {
+	"\/src\/scss\/base.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1743,12 +2200,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/base.css",
+		"oAP": "\/build\/css\/base.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/blocks/_2cols.scss": {
+	"\/src\/scss\/blocks\/_2cols.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1756,12 +2213,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/blocks/_2cols.css",
+		"oAP": "\/build\/css\/blocks\/_2cols.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/blocks/_3cols.scss": {
+	"\/src\/scss\/blocks\/_3cols.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1769,12 +2226,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/blocks/_3cols.css",
+		"oAP": "\/build\/css\/blocks\/_3cols.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/blocks/_blueline.scss": {
+	"\/src\/scss\/blocks\/_blueline.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1782,12 +2239,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/blocks/_blueline.css",
+		"oAP": "\/build\/css\/blocks\/_blueline.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/blocks/_brands.scss": {
+	"\/src\/scss\/blocks\/_brands.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1795,12 +2252,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/blocks/_brands.css",
+		"oAP": "\/build\/css\/blocks\/_brands.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/blocks/_case_study.scss": {
+	"\/src\/scss\/blocks\/_case_study.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1808,12 +2265,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/blocks/_case_study.css",
+		"oAP": "\/build\/css\/blocks\/_case_study.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/blocks/_contact_form.scss": {
+	"\/src\/scss\/blocks\/_contact_form.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1821,12 +2278,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/blocks/_contact_form.css",
+		"oAP": "\/build\/css\/blocks\/_contact_form.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/blocks/_lp.scss": {
+	"\/src\/scss\/blocks\/_lp.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1834,12 +2291,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/blocks/_lp.css",
+		"oAP": "\/build\/css\/blocks\/_lp.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/blocks/_testimonials.scss": {
+	"\/src\/scss\/blocks\/_testimonials.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1847,12 +2304,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/blocks/_testimonials.css",
+		"oAP": "\/build\/css\/blocks\/_testimonials.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/blog.scss": {
+	"\/src\/scss\/blog.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -1860,12 +2317,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "/build/css/blog.css",
+		"oAP": "\/build\/css\/blog.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
-	"/src/scss/components/_base.scss": {
+	"\/src\/scss\/components\/_base.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1873,12 +2330,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/components/_base.css",
+		"oAP": "\/build\/css\/components\/_base.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/components/_button.scss": {
+	"\/src\/scss\/components\/_button.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1886,12 +2343,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/components/_button.css",
+		"oAP": "\/build\/css\/components\/_button.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/components/_card.scss": {
+	"\/src\/scss\/components\/_card.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1899,12 +2356,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/components/_card.css",
+		"oAP": "\/build\/css\/components\/_card.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/components/_hopup.scss": {
+	"\/src\/scss\/components\/_checkbox.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1912,12 +2369,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/components/_hopup.css",
+		"oAP": "\/build\/css\/components\/_checkbox.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/components/_list.scss": {
+	"\/src\/scss\/components\/_fonts.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1925,12 +2382,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/components/_list.css",
+		"oAP": "\/build\/css\/components\/_fonts.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/components/_typographic.scss": {
+	"\/src\/scss\/components\/_form.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1938,12 +2395,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/components/_typographic.css",
+		"oAP": "\/build\/css\/components\/_form.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/components/_vars.scss": {
+	"\/src\/scss\/components\/_hopup.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1951,12 +2408,64 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/components/_vars.css",
+		"oAP": "\/build\/css\/components\/_hopup.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/main.scss": {
+	"\/src\/scss\/components\/_list.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/css\/components\/_list.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/components\/_select.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/css\/components\/_select.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/components\/_typographic.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/css\/components\/_typographic.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/components\/_vars.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/css\/components\/_vars.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/main.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -1964,12 +2473,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "/build/css/main.css",
+		"oAP": "\/build\/css\/main.css",
 		"oF": 2,
 		"oS": 3,
 		"uL": 1
 		},
-	"/src/scss/pages/adv-c.scss": {
+	"\/src\/scss\/pages\/adv-c.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1977,12 +2486,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/pages/adv-c.css",
+		"oAP": "\/build\/css\/pages\/adv-c.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/pages/advertising.scss": {
+	"\/src\/scss\/pages\/advertising.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1990,12 +2499,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/pages/advertising.css",
+		"oAP": "\/build\/css\/pages\/advertising.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/pages/homepage.scss": {
+	"\/src\/scss\/pages\/homepage.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2003,12 +2512,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/pages/homepage.css",
+		"oAP": "\/build\/css\/pages\/homepage.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/pages/page.scss": {
+	"\/src\/scss\/pages\/page.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2016,12 +2525,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/pages/page.css",
+		"oAP": "\/build\/css\/pages\/page.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/pages/publishers.scss": {
+	"\/src\/scss\/pages\/publishers.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2029,12 +2538,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/pages/publishers.css",
+		"oAP": "\/build\/css\/pages\/publishers.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/reset.scss": {
+	"\/src\/scss\/reset.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2042,12 +2551,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/reset.css",
+		"oAP": "\/build\/css\/reset.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/sections/_analysis.scss": {
+	"\/src\/scss\/sections\/_analysis.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2055,12 +2564,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/sections/_analysis.css",
+		"oAP": "\/build\/css\/sections\/_analysis.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/sections/_anim.scss": {
+	"\/src\/scss\/sections\/_anim.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2068,12 +2577,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/sections/_anim.css",
+		"oAP": "\/build\/css\/sections\/_anim.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/sections/_audience.scss": {
+	"\/src\/scss\/sections\/_audience.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2081,12 +2590,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/sections/_audience.css",
+		"oAP": "\/build\/css\/sections\/_audience.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/sections/_behavior.scss": {
+	"\/src\/scss\/sections\/_behavior.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2094,12 +2603,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/sections/_behavior.css",
+		"oAP": "\/build\/css\/sections\/_behavior.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/sections/_blog_feature.scss": {
+	"\/src\/scss\/sections\/_blog_feature.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2107,12 +2616,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/sections/_blog_feature.css",
+		"oAP": "\/build\/css\/sections\/_blog_feature.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/sections/_carousel.scss": {
+	"\/src\/scss\/sections\/_carousel.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2120,12 +2629,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/sections/_carousel.css",
+		"oAP": "\/build\/css\/sections\/_carousel.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/sections/_dashboard.scss": {
+	"\/src\/scss\/sections\/_dashboard.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2133,12 +2642,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/sections/_dashboard.css",
+		"oAP": "\/build\/css\/sections\/_dashboard.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/sections/_faq.scss": {
+	"\/src\/scss\/sections\/_faq.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2146,12 +2655,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/sections/_faq.css",
+		"oAP": "\/build\/css\/sections\/_faq.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/sections/_footer.scss": {
+	"\/src\/scss\/sections\/_footer.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2159,12 +2668,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/sections/_footer.css",
+		"oAP": "\/build\/css\/sections\/_footer.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/sections/_header.scss": {
+	"\/src\/scss\/sections\/_header.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2172,12 +2681,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/sections/_header.css",
+		"oAP": "\/build\/css\/sections\/_header.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/sections/_how.scss": {
+	"\/src\/scss\/sections\/_how.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2185,12 +2694,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/sections/_how.css",
+		"oAP": "\/build\/css\/sections\/_how.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/sections/_language.scss": {
+	"\/src\/scss\/sections\/_language.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2198,12 +2707,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/sections/_language.css",
+		"oAP": "\/build\/css\/sections\/_language.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/sections/_metrics.scss": {
+	"\/src\/scss\/sections\/_metrics.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2211,12 +2720,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/sections/_metrics.css",
+		"oAP": "\/build\/css\/sections\/_metrics.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/sections/_script.scss": {
+	"\/src\/scss\/sections\/_script.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2224,12 +2733,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/sections/_script.css",
+		"oAP": "\/build\/css\/sections\/_script.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/sections/_start.scss": {
+	"\/src\/scss\/sections\/_start.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2237,12 +2746,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/sections/_start.css",
+		"oAP": "\/build\/css\/sections\/_start.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/sections/_unfair.scss": {
+	"\/src\/scss\/sections\/_thank.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2250,7 +2759,33 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/build/css/sections/_unfair.css",
+		"oAP": "\/build\/css\/sections\/_thank.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/sections\/_unfair.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/css\/sections\/_unfair.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/scss\/sections\/register.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/css\/sections\/register.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -2264,7 +2799,7 @@
 	"creationDate": 548555221,
 	"displayValue": "Native-AI",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "/src/assets/favicon/apple-touch-icon-120x120.png",
+	"iconImageName": "\/src\/assets\/favicon\/apple-touch-icon-120x120.png",
 	"iconImageWasSetByUser": 0,
 	"lastBuiltDate": 557963909
 	},
@@ -2273,12 +2808,11 @@
 	"alwaysUseExternalServer": 0,
 	"animateCSSInjections": 0,
 	"autoBuildNewItems": 1,
+	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
 	"autoprefixerEnableIEGrid": 0,
-	"babel7PresetType": 0,
-	"babelAllowRCFiles": 0,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
-	"babelConfigType": 2,
+	"babelConfigFileHandlingType": 2,
 	"babelCustomPluginsList": "",
 	"babelCustomPresetsList": "",
 	"babelInsertModuleIDs": 0,
@@ -2286,7 +2820,7 @@
 	"babelNoComments": 1,
 	"babelPlugins": {
 		"arrow-functions": {
-			"active": 0
+			"active": false
 			},
 		"async-generator-functions": {
 			"active": 0
@@ -2295,43 +2829,43 @@
 			"active": 0
 			},
 		"block-scoped-functions": {
-			"active": 0
+			"active": false
 			},
 		"block-scoping": {
-			"active": 0
+			"active": false
 			},
 		"class-properties": {
 			"active": 0
 			},
 		"classes": {
-			"active": 0
+			"active": false
 			},
 		"computed-properties": {
-			"active": 0
+			"active": false
 			},
 		"decorators": {
 			"active": 0
 			},
 		"destructuring": {
-			"active": 0
+			"active": false
 			},
 		"do-expressions": {
 			"active": 0
 			},
 		"dotall-regex": {
-			"active": 0
+			"active": false
 			},
 		"duplicate-keys": {
-			"active": 0
+			"active": false
 			},
 		"exponentiation-operator": {
 			"active": 0
 			},
 		"export-default-from": {
-			"active": 0
+			"active": false
 			},
 		"export-namespace-from": {
-			"active": 0
+			"active": false
 			},
 		"external-helpers": {
 			"active": 0
@@ -2340,28 +2874,28 @@
 			"active": 0
 			},
 		"for-of": {
-			"active": 0
+			"active": false
 			},
 		"function-bind": {
 			"active": 0
 			},
 		"function-name": {
-			"active": 0
+			"active": false
 			},
 		"function-sent": {
-			"active": 0
+			"active": false
 			},
 		"instanceof": {
-			"active": 0
+			"active": false
 			},
 		"jscript": {
 			"active": 0
 			},
 		"literals": {
-			"active": 0
+			"active": false
 			},
 		"logical-assignment-operators": {
-			"active": 0
+			"active": false
 			},
 		"member-expression-literals": {
 			"active": 0
@@ -2373,28 +2907,28 @@
 			"active": 0
 			},
 		"modules-amd": {
-			"active": 0
+			"active": false
 			},
 		"modules-commonjs": {
-			"active": 0
+			"active": false
 			},
 		"modules-systemjs": {
-			"active": 0
+			"active": false
 			},
 		"modules-umd": {
-			"active": 0
+			"active": false
 			},
 		"new-target": {
-			"active": 0
+			"active": false
 			},
 		"node-env-inline": {
 			"active": 0
 			},
 		"nullish-coalescing-operator": {
-			"active": 0
+			"active": false
 			},
 		"numeric-separator": {
-			"active": 0
+			"active": false
 			},
 		"object-assign": {
 			"active": 0
@@ -2406,25 +2940,25 @@
 			"active": 0
 			},
 		"object-super": {
-			"active": 0
+			"active": false
 			},
 		"optional-catch-binding": {
-			"active": 0
+			"active": false
 			},
 		"optional-chaining": {
-			"active": 0
+			"active": false
 			},
 		"parameters": {
-			"active": 0
+			"active": false
 			},
 		"pipeline-operator": {
-			"active": 0
+			"active": false
 			},
 		"property-literals": {
 			"active": 0
 			},
 		"property-mutators": {
-			"active": 0
+			"active": false
 			},
 		"proto-to-assign": {
 			"active": 0
@@ -2460,45 +2994,46 @@
 			"active": 0
 			},
 		"reserved-words": {
-			"active": 0
+			"active": false
 			},
 		"runtime": {
 			"active": 0
 			},
 		"shorthand-properties": {
-			"active": 0
+			"active": false
 			},
 		"simplify-comparison-operators": {
 			"active": 0
 			},
 		"spread": {
-			"active": 0
+			"active": false
 			},
 		"sticky-regex": {
-			"active": 0
+			"active": false
 			},
 		"strict-mode": {
 			"active": 0
 			},
 		"template-literals": {
-			"active": 0
+			"active": false
 			},
 		"throw-expressions": {
-			"active": 0
+			"active": false
 			},
 		"typeof-symbol": {
-			"active": 0
+			"active": false
 			},
 		"undefined-to-void": {
 			"active": 0
 			},
 		"unicode-property-regex": {
-			"active": 0
+			"active": false
 			},
 		"unicode-regex": {
-			"active": 0
+			"active": false
 			}
 		},
+	"babelPresetType": 193,
 	"babelRetainLines": 0,
 	"bowerAbbreviatedPath": "bower_components",
 	"bowerAutoCreateInfoFile": 1,
@@ -2507,7 +3042,6 @@
 	"bowerSaveDevDependencies": 0,
 	"bowerUseExactVersion": 0,
 	"browserRefreshDelay": 0,
-	"browserslistString": ">0.2%, last 2 versions, Firefox ESR, not dead",
 	"buildFolderActive": 1,
 	"buildFolderName": "build",
 	"cleanBuild": 1,
@@ -2865,10 +3399,6 @@
 			"active": 0,
 			"optionString": "'always', {exceptAfterSingleLine: false}"
 			},
-		"max-classes-per-file": {
-			"active": 0,
-			"optionString": "1"
-			},
 		"max-depth": {
 			"active": 0,
 			"optionString": "{'max': 4}"
@@ -2880,10 +3410,6 @@
 		"max-lines": {
 			"active": 0,
 			"optionString": "{'max': 300, 'skipBlankLines': true, 'skipComments': true}"
-			},
-		"max-lines-per-function": {
-			"active": 0,
-			"optionString": "{'max': 50, 'skipBlankLines': true, 'skipComments': true, 'IIFEs': false}"
 			},
 		"max-nested-callbacks": {
 			"active": 0,
@@ -2929,10 +3455,6 @@
 			"active": 0,
 			"optionString": ""
 			},
-		"no-async-promise-executor": {
-			"active": 0,
-			"optionString": ""
-			},
 		"no-await-in-loop": {
 			"active": 0,
 			"optionString": ""
@@ -2951,6 +3473,10 @@
 			},
 		"no-case-declarations": {
 			"active": 1,
+			"optionString": ""
+			},
+		"no-catch-shadow": {
+			"active": 0,
 			"optionString": ""
 			},
 		"no-class-assign": {
@@ -3149,13 +3675,9 @@
 			"active": 0,
 			"optionString": "{'ignore': [], 'ignoreArrayIndexes': true, 'enforceConst': false, 'detectObjects': false}"
 			},
-		"no-misleading-character-class": {
-			"active": 0,
-			"optionString": ""
-			},
 		"no-mixed-operators": {
 			"active": 0,
-			"optionString": "{'groups': [['+', '-', '*', '/', '%', '**'], ['&', '|', '^', '~', '<<', '>>', '>>>'], ['==', '!=', '===', '!==', '>', '>=', '<', '<='], ['&&', '||'], ['in', 'instanceof']], 'allowSamePrecedence': true}"
+			"optionString": "{'groups': [['+', '-', '*', '\/', '%', '**'], ['&', '|', '^', '~', '<<', '>>', '>>>'], ['==', '!=', '===', '!==', '>', '>=', '<', '<='], ['&&', '||'], ['in', 'instanceof']], 'allowSamePrecedence': true}"
 			},
 		"no-mixed-requires": {
 			"active": 0,
@@ -3509,10 +4031,6 @@
 			"active": 0,
 			"optionString": ""
 			},
-		"prefer-object-spread": {
-			"active": 0,
-			"optionString": ""
-			},
 		"prefer-promise-reject-errors": {
 			"active": 0,
 			"optionString": "{'allowEmptyReject': false}"
@@ -3541,10 +4059,6 @@
 			"active": 0,
 			"optionString": "'always'"
 			},
-		"require-atomic-updates": {
-			"active": 0,
-			"optionString": ""
-			},
 		"require-await": {
 			"active": 0,
 			"optionString": ""
@@ -3552,10 +4066,6 @@
 		"require-jsdoc": {
 			"active": 0,
 			"optionString": "{'require': {'FunctionDeclaration': true, 'MethodDefinition': false, 'ClassDeclaration': false, 'ArrowFunctionExpression': false}}"
-			},
-		"require-unicode-regexp": {
-			"active": 0,
-			"optionString": ""
 			},
 		"require-yield": {
 			"active": 1,
@@ -3611,7 +4121,7 @@
 			},
 		"spaced-comment": {
 			"active": 0,
-			"optionString": "'always', {'line': {'markers': ['/'], 'exceptions': ['-', '+']}, 'block': {'markers': ['!'], 'exceptions': ['*'], 'balanced': false}}"
+			"optionString": "'always', {'line': {'markers': ['\/'], 'exceptions': ['-', '+']}, 'block': {'markers': ['!'], 'exceptions': ['*'], 'balanced': false}}"
 			},
 		"strict": {
 			"active": 0,
@@ -3671,7 +4181,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "http://localhost:8888",
+	"externalServerAddress": "http:\/\/localhost:8888",
 	"gitIgnoreBuildFolder": 0,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",
@@ -4066,6 +4576,7 @@
 		"escapeHTMLCharacters": 0,
 		"noEscapeInAttributes": 0,
 		"outputFormat": 2,
+		"outputStyle": 0,
 		"shouldRunCacheBuster": 0,
 		"useCDATA": 0,
 		"useDoubleQuotes": 0,
@@ -4084,7 +4595,7 @@
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.min.js",
-		"autoOutputPathRelativePath": "/min",
+		"autoOutputPathRelativePath": "\/min",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
@@ -4116,19 +4627,19 @@
 		"allowInsecureImports": 0,
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.css",
-		"autoOutputPathRelativePath": "../css",
+		"autoOutputPathRelativePath": "..\/css",
 		"autoOutputPathReplace1": "less",
 		"autoOutputPathReplace2": "css",
 		"autoOutputPathStyle": 0,
 		"createSourceMap": 1,
-		"enableJavascript": 0,
+		"disableJavascript": 0,
 		"ieCompatibility": 1,
-		"mathStyle": 0,
 		"outputStyle": 0,
-		"rewriteURLStyle": 0,
+		"relativeURLS": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"strictImports": 0,
+		"strictMath": 0,
 		"strictUnits": 0
 		},
 	"languageDefaultsMARKDOWN": {
@@ -4184,7 +4695,7 @@
 	"languageDefaultsSASS": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.css",
-		"autoOutputPathRelativePath": "../css",
+		"autoOutputPathRelativePath": "..\/css",
 		"autoOutputPathReplace1": "scss",
 		"autoOutputPathReplace2": "css",
 		"autoOutputPathStyle": 3,
@@ -4213,7 +4724,7 @@
 	"languageDefaultsSTYLUS": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.css",
-		"autoOutputPathRelativePath": "../css",
+		"autoOutputPathRelativePath": "..\/css",
 		"autoOutputPathReplace1": "stylus",
 		"autoOutputPathReplace2": "css",
 		"autoOutputPathStyle": 0,
@@ -4237,70 +4748,36 @@
 	"languageDefaultsTS": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.js",
-		"autoOutputPathRelativePath": "/js",
+		"autoOutputPathRelativePath": "\/js",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
 		"createDeclarationFile": 0,
 		"createSourceMap": 0,
+		"jsxMode": 0,
 		"minifyOutput": 0,
 		"moduleResolutionType": 0,
 		"moduleType": 2,
+		"noImplicitAny": 0,
+		"preserveConstEnums": 0,
 		"removeComments": 0,
+		"suppressImplicitAnyIndexErrors": 0,
 		"targetECMAVersion": 0
 		},
 	"languageDefaultsUserDefined": [
 		],
 	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
-	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, /storage/framework/sessions, docs, mail, node_modules",
+	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, \/storage\/framework\/sessions, docs, mail, node_modules",
 	"sourceFolderName": "src",
 	"susyVersion": 3,
-	"tsAllowSyntheticDefaultImports": 0,
-	"tsAllowUnreachableCode": 0,
-	"tsAllowUnusedLabels": 0,
-	"tsAlwaysStrict": 0,
-	"tsDownlevelIteration": 0,
-	"tsEmitBOM": 0,
-	"tsEmitDecoratorMetadata": 0,
-	"tsESModuleInterop": 0,
-	"tsForceConsistentCasingInFileNames": 0,
-	"tsImportHelpers": 0,
-	"tsIsolatedModules": 0,
-	"tsJSXFactory": "React.createElement",
-	"tsKeyofStringsOnly": 0,
-	"tsNoEmitHelpers": 0,
-	"tsNoFallthroughCasesInSwitch": 0,
-	"tsNoImplicitAny": 0,
-	"tsNoImplicitReturns": 0,
-	"tsNoImplicitThis": 0,
-	"tsNoImplicitUseStrict": 0,
-	"tsNoLib": 0,
-	"tsNoResolve": 0,
-	"tsNoStrictGenericChecks": 0,
-	"tsNoUnusedLocals": 0,
-	"tsNoUnusedParameters": 0,
-	"tsPreserveConstEnums": 0,
-	"tsPreserveSymlinks": 0,
-	"tsResolveJsonModule": 0,
-	"tsSkipLibCheck": 0,
-	"tsStrictFunctionTypes": 0,
-	"tsStrictNullChecks": 0,
-	"tsStrictPropertyInitialization": 0,
-	"tsStripInternal": 0,
-	"tsSuppressExcessPropertyErrors": 0,
-	"tsSuppressImplicitAnyIndexErrors": 0,
 	"uglifyDefinesString": "",
 	"uglifyFlags2": {
-		"arguments": {
-			"active": 1,
-			"flagValue": -1
-			},
-		"ascii_only": {
+		"ascii-only": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"bare_returns": {
+		"bare-returns": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -4308,11 +4785,11 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"braces": {
+		"bracketize": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"collapse_vars": {
+		"cascade": {
 			"active": 1,
 			"flagValue": -1
 			},
@@ -4336,10 +4813,6 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"directives": {
-			"active": 1,
-			"flagValue": -1
-			},
 		"drop_console": {
 			"active": 0,
 			"flagValue": -1
@@ -4356,15 +4829,7 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"expression": {
-			"active": 0,
-			"flagValue": -1
-			},
 		"hoist_funs": {
-			"active": 1,
-			"flagValue": -1
-			},
-		"hoist_props": {
 			"active": 1,
 			"flagValue": -1
 			},
@@ -4372,32 +4837,20 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"html5_comments": {
-			"active": 1,
-			"flagValue": -1
-			},
-		"ie8": {
-			"active": 0,
-			"flagValue": -1
-			},
 		"if_return": {
 			"active": 1,
 			"flagValue": -1
+			},
+		"indent-level": {
+			"active": 0,
+			"flagValue": 4
 			},
 		"indent-start": {
 			"active": 0,
 			"flagValue": 0
 			},
-		"indent_level": {
+		"inline-script": {
 			"active": 0,
-			"flagValue": 4
-			},
-		"inline": {
-			"active": 1,
-			"flagValue": 3
-			},
-		"inline_script": {
-			"active": 1,
 			"flagValue": -1
 			},
 		"join_vars": {
@@ -4412,14 +4865,6 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"keep_infinity": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"keep_quoted_props": {
-			"active": 0,
-			"flagValue": -1
-			},
 		"loops": {
 			"active": 1,
 			"flagValue": -1
@@ -4428,20 +4873,12 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"max_line_len": {
+		"max-line-len": {
 			"active": 1,
 			"flagValue": 32000
 			},
 		"negate_iife": {
 			"active": 1,
-			"flagValue": -1
-			},
-		"passes": {
-			"active": 1,
-			"flagValue": 1
-			},
-		"preserve_line": {
-			"active": 0,
 			"flagValue": -1
 			},
 		"properties": {
@@ -4452,19 +4889,11 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"quote_keys": {
+		"quote-keys": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"quote_style": {
-			"active": 1,
-			"flagValue": 0
-			},
-		"reduce_funcs": {
-			"active": 1,
-			"flagValue": -1
-			},
-		"reduce_vars": {
+		"screw-ie8": {
 			"active": 1,
 			"flagValue": -1
 			},
@@ -4476,51 +4905,23 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"shebang": {
+		"sort": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"space-colon": {
 			"active": 1,
 			"flagValue": -1
 			},
-		"side_effects": {
-			"active": 1,
-			"flagValue": -1
-			},
-		"switches": {
-			"active": 1,
+		"support-ie8": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"toplevel": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"typeofs": {
-			"active": 1,
-			"flagValue": -1
-			},
 		"unsafe": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"unsafe_comps": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"unsafe_Function": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"unsafe_math": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"unsafe_proto": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"unsafe_regexp": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"unsafe_undefined": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -4532,21 +4933,13 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"webkit": {
-			"active": 0,
-			"flagValue": -1
-			},
 		"width": {
 			"active": 1,
 			"flagValue": 80
-			},
-		"wrap_iife": {
-			"active": 0,
-			"flagValue": -1
 			}
 		},
 	"uglifyReservedNamesString": "$",
-	"websiteRelativeRoot": "/build"
+	"websiteRelativeRoot": "\/build"
 	},
 "settingsFileVersion": "3"
 }

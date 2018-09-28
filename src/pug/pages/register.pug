@@ -1,0 +1,67 @@
+extends ../layout
+block const
+    -
+        const title = 'Register for Demo | NativeAI Publisher Analytics'
+        const description = 'Want to try the NativeAI Content Analytics platform? Register for a demo account and we will be in touch with next steps. Get advanced analytics, engagement quality reports and more with NativeAI.'
+    
+block content
+    section.register
+        .wrapper
+            .register_row
+                .register_content
+                    h2 Free trial offer
+                    p.register_text
+                        | Register today to get a free trial of the NativeAI editorial analytics platform, built for publishers.
+                        br
+                        | With built-in artificial intelligence, the NativeAI analytics platform tracks engagement quality, and gives publisher deep insight into their content and audience, with machine learning identifying and tracking more than one million distinct audience interests.
+                    .register_img
+                        img(src="/assets/images/illustrations/adv-c-04.svg", alt="")
+                .register_form
+                    form.form(action="")
+                        .form_steps
+                            .form_step
+                                h3.form_header
+                                    | Contact Details
+                                .form_input
+                                    input(type="text" placeholder="Your name" required)
+                                .form_input.form_input--completed
+                                    input(type="text" placeholder="Email" value="example@mail.com" readonly required)
+                                    i
+                                        +icon('check', [16, 11], '#ff832a')
+                                .form_input
+                                    input(type="tel" placeholder="Phone number" required)
+                                button.button.orange.glow(type="button" onclick="$(this).closest('.form_steps').slick('slickNext')")
+                                    span
+                                        | Next step
+                                    i
+                                        +icon('arrow', [20, 14], '#fff')
+                            .form_step
+                                h3.form_header
+                                    | About your Publication
+                                .form_input
+                                    input(type="url" placeholder="Website URL")
+                                .form_input
+                                    .select
+                                        select
+                                            option(disabled selected) Monthly Visitors
+                                            option Variant
+                                            option Variant
+                                            option Variant
+                                .form_input
+                                    .select
+                                        select
+                                            option(disabled selected) Your Role
+                                            option Variant
+                                            option Variant
+                                            option Variant
+                                .form_input
+                                    .checkbox
+                                        input(type="checkbox" id="policy" name="policy" required)
+                                        label(for="policy")
+                                            | I have read and accept the
+                                            | 
+                                            a(href="#") privacy policy
+                                button.button.orange.glow.baseline(type="submit")
+                                    span Submit
+                                    i
+                                        +icon('check', [16, 11], '#fff')

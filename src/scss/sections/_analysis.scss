@@ -83,6 +83,18 @@
                 height: auto !important;
             }
         }
+        .slick-dots{
+            position: absolute;
+            width: auto;
+            right: -2.6vw;
+            bottom: 50%;
+            transform: translateY(50%);
+            flex-direction: column;
+            margin: 0;
+            li{
+                margin: 5px 0;
+            }
+        }
     }
     &_formula{
         margin: auto;

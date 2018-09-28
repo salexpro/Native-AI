@@ -146,15 +146,14 @@
         }
     }
     &-dots{
-        width: auto;
-        right: -2.6vw;
-        bottom: 50%;
-        transform: translateY(50%);
+        position: static;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
         li{
-            display: block;
             width: auto;
             height: auto;
-            margin: 10px 0;
+            
             &.slick-active{
                 button{
                     background-color: $orange-main;

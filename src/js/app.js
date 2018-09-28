@@ -162,3 +162,12 @@ analysis_slider.on('wheel', (function (e) {
         analysis_slider.slick('slickNext');
     }
 }));
+
+$('.form_steps').slick({
+    slidesToShow: 1,
+    dots: true,
+    arrows: false,
+    swipe: false,
+    adaptiveHeight: true,
+    infinite: false
+});

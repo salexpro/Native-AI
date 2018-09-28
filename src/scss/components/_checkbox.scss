@@ -1,0 +1,35 @@
+.checkbox{
+    position: relative;
+    input{
+        position: absolute;
+        margin: 0;
+        z-index: -1;
+        width: 24px;
+        height: 24px;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        &:checked+label {
+            &::before {
+                background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDE2IDEyIiB3aWR0aD0iMTYiIGhlaWdodD0iMTIiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48cGF0aCBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgZmlsbC1vcGFjaXR5PSIwIiB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwxLC04MDQsLTQ3NSkiIGQ9Ik0gODA0LjkgNDc5LjYgbCA1LjMgNS4zIGwgOC45IC04LjkiLz48L3N2Zz4=);
+            }
+        }
+    }
+    label{
+        line-height: 1.38;
+        overflow: hidden;
+        cursor: pointer;
+        &::before {
+            content: '';
+            float: left;
+            margin-right: 12px;
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            background-color: $orange-main;
+            background-size: 16px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+}

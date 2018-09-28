@@ -8,6 +8,9 @@
 @import 'components/button';
 @import 'components/list';
 @import 'components/card';
+@import 'components/form';
+@import 'components/checkbox';
+@import 'components/select';
 @import '../../node_modules/slick-carousel/slick/slick.scss';
 $slick-loader-path: '../assets/images/';
 @import '../../node_modules/slick-carousel/slick/slick-theme.scss';
@@ -45,4 +48,6 @@ $slick-loader-path: '../assets/images/';
 @import 'sections/analysis';
 @import 'sections/carousel';
 @import 'sections/metrics';
+@import 'sections/register';
+@import 'sections/thank';
 @import 'sections/footer';

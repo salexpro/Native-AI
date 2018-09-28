@@ -109,6 +109,11 @@
     &.wide{
         width: 100%;
     }
+    &.baseline{
+        i{
+            vertical-align: baseline;
+        }
+    }
 }
 
 @media screen and ( max-width: 480px) {

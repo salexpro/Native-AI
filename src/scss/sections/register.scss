@@ -1,0 +1,21 @@
+.register{
+    .wrapper{
+        max-width: 1010px;
+        padding: 0 40px;
+    }
+    &_row{
+        padding: 65px 0 70px;
+        display: flex;
+        align-items: center;
+    }
+    &_content{
+        margin-right: 30px;
+    }
+    &_form{
+        flex: 0 0 345px;
+        max-width: 345px;
+    }
+    &_text{
+        margin: 45px 0;
+    }
+}
