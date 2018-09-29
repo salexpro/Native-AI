@@ -11,4 +11,4 @@ const pageWidget = pages => {
     });
 }
 
-pageWidget(['index', 'how', 'dashboard', 'analytics', 'advertising', 'blog', 'lead_magnet', 'native_advertising_content', 'thank_you']);
+pageWidget(['index', 'how', 'dashboard', 'analytics', 'advertising', 'register', 'thank', 'blog', 'lead_magnet', 'native_advertising_content']);

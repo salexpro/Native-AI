@@ -13,10 +13,10 @@ mixin first_adv(img, header, descr, button, color, mod)
                         !=descr
                 .button-box
                     if mod === 'dash'
-                        a.button(href='#' class=color)
+                        a.button(href='./register.html' class=color)
                             span= button
                             i
                                 +icon('arrow', [20, 14], '#fff')
                     else
-                        a.button.mobile-icon(href='#' class=color)
+                        a.button.mobile-icon(href='./register.html' class=color)
                             span= button
