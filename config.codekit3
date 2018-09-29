@@ -45,14 +45,6 @@
 		"oAP": "\/build\/.gitignore",
 		"oF": 1
 		},
-	"\/.vscode\/settings.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/build\/.vscode\/settings-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
 	"\/build": {
 		"ft": 65536,
 		"oA": 1,
@@ -782,6 +774,61 @@
 		"iS": 26963,
 		"oA": 0,
 		"oAP": "\/build\/assets\/images\/bg_l_thank.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/src\/assets\/images\/bg_l_thank@2x.png": {
+		"ft": 32768,
+		"iS": 100744,
+		"oA": 0,
+		"oAP": "\/build\/assets\/images\/bg_l_thank@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/src\/assets\/images\/bg_m_thank.png": {
+		"ft": 32768,
+		"iS": 36435,
+		"oA": 0,
+		"oAP": "\/build\/assets\/images\/bg_m_thank.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/src\/assets\/images\/bg_m_thank@2x.png": {
+		"ft": 32768,
+		"iS": 80875,
+		"oA": 0,
+		"oAP": "\/build\/assets\/images\/bg_m_thank@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/src\/assets\/images\/bg_s_thank.png": {
+		"ft": 32768,
+		"iS": 13107,
+		"oA": 0,
+		"oAP": "\/build\/assets\/images\/bg_s_thank.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/src\/assets\/images\/bg_s_thank@2x.png": {
+		"ft": 32768,
+		"iS": 41623,
+		"oA": 0,
+		"oAP": "\/build\/assets\/images\/bg_s_thank@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,

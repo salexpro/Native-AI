@@ -5,10 +5,29 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(../assets/images/bg_l_thank.png);
+    background-image: url(../assets/images/bg_l_thank@2x.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 1805px auto;
+    @media screen and (max-width: 1023px) {
+        min-height: 550px;
+        background-image: url(../assets/images/bg_m_thank@2x.png);
+        background-size: auto 550px;
+    }
+    @media screen and (max-width: 640px) {
+        min-height: 396px;
+        background-image: url(../assets/images/bg_s_thank@2x.png);
+        background-size: auto 396px;
+    }
     &_header{
         margin-bottom: 20px;
+        @media screen and (max-width: 640px) {
+            font-size: 35px;
+        }
+    }
+    &_descr{
+        @media screen and (max-width: 640px) {
+            max-width: 260px;
+        }
     }
 }

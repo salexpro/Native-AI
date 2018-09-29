@@ -4,6 +4,9 @@
     border: $border-grey;
     background-color: $white;
     padding: 30px 40px;
+    @media screen and (max-width: 640px) {
+        padding: 30px 24px;   
+    }
     &_steps {
         margin: 0 -10px;
     }
@@ -14,6 +17,10 @@
     &_header{
         text-align: center;
         margin-bottom: 22px;
+        @media screen and (max-width: 640px) {
+            font-size: 18px;
+            font-weight: 500;
+        }
     }
     &_input{
         margin-bottom: 16px;
