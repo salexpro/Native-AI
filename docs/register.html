@@ -7,12 +7,12 @@
     <meta name="keywords">
     <meta name="google-site-verification" content="im692VYYIe_XKs3WVlA9BgsbX6-EWc20R6Sps-bDAM0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png?ckcachebust=559872662">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png?ckcachebust=115a2530f42149d39b2a2a888546a54b">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png?ckcachebust=5f613590bff00539822049ed7862d2dc">
-    <link rel="manifest" href="assets/favicon/manifest.json?ckcachebust=559872662">
-    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg?ckcachebust=74299f5ab9b7c95b676dc245ba925f58" color="#ff892a">
-    <link rel="shortcut icon" href="assets/favicon/favicon.ico?ckcachebust=629942e7627d4b993a8758a6fafc9d78">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png?ckcachebust=560040612">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png?ckcachebust=269b9d8fb74bd2346b318a7fdf93960a">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png?ckcachebust=bb37e2aea553d8be803bfc08b736cf7d">
+    <link rel="manifest" href="assets/favicon/manifest.json?ckcachebust=560040612">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg?ckcachebust=ba7a41a02ea889fccd763792ab7f07c7" color="#ff892a">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico?ckcachebust=e353422134a3e969eacb35a091a5bdfc">
     <meta name="apple-mobile-web-app-title" content="NativeAI">
     <meta name="application-name" content="NativeAI">
     <meta name="msapplication-TileColor" content="#da532c">
@@ -20,8 +20,8 @@
     <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ff892a">
     <title>Register for Demo | NativeAI Publisher Analytics</title>
-    <link rel="canonical" href="https://native.ai/?ckcachebust=559872662">
-    <link rel="stylesheet" href="css/main.css?ckcachebust=5016a88dac66f3c5bd4d30b41b348b2d">
+    <link rel="canonical" href="https://native.ai/?ckcachebust=560040612">
+    <link rel="stylesheet" href="css/main.css?ckcachebust=f97bbd6e8c8d55f848f5d7a9819d6c94">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,700" rel="stylesheet">
   </head>
   <body>
@@ -139,55 +139,58 @@
             <div class="register_img"><img src="/assets/images/illustrations/adv-c-04.svg" alt=""></div>
           </div>
           <div class="register_form">
-            <form class="form" action="">
+            <div class="form">
               <div class="form_steps">
-                <div class="form_step">
+                <form class="form_step" action="step1">
                   <h3 class="form_header">Contact Details</h3>
                   <div class="form_input">
-                    <input type="text" placeholder="Your name" required>
-                  </div>
-                  <div class="form_input form_input--completed">
-                    <input type="text" placeholder="Email" value="example@mail.com" readonly required><i>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="11" viewbox="0 0 16 11">
-                        <use fill="#ff832a" xlink:href="#check"></use>
-                      </svg></i>
+                    <input type="text" placeholder="Your name" name="firstname" required>
                   </div>
                   <div class="form_input">
-                    <input type="tel" placeholder="Phone number" required>
+                    <input type="text" placeholder="Email" name="email" pattern="^([\w]+[\.]{0,1})+@([\w-]+\.)+[\w]{2,4}$" title="Please enter a valid email address" required>
                   </div>
-                  <button class="button orange glow" type="button" onclick="$(this).closest('.form_steps').slick('slickNext')"><span>Next step</span><i>
+                  <div class="form_input">
+                    <input type="tel" placeholder="Phone number" name="phone" minlength="7" maxlength="20" required>
+                  </div>
+                  <button class="button orange glow" type="submit"><span>Next step</span><i>
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewbox="0 0 20 14">
                         <use fill="#fff" xlink:href="#arrow"></use>
                       </svg></i></button>
-                </div>
-                <div class="form_step">
+                </form>
+                <form class="form_step" action="step2">
                   <h3 class="form_header">About your Publication</h3>
                   <div class="form_input">
-                    <input type="url" placeholder="Website URL">
+                    <input type="url" placeholder="Website URL" name="website" required>
                   </div>
                   <div class="form_input">
                     <div class="select">
-                      <select>
-                        <option disabled selected>Monthly Visitors</option>
-                        <option>Variant</option>
-                        <option>Variant</option>
-                        <option>Variant</option>
+                      <select name="monthly_traffic_volume" required>
+                        <option disabled selected value="">Monthly Visitors</option>
+                        <option value="Less Than 500,000">Less Than 500,000</option>
+                        <option value="500k - 1 Million">500k - 1 Million</option>
+                        <option value="500k - 1 Million">500k - 1 Million</option>
+                        <option value="3 Million - 10 Million">3 Million - 10 Million</option>
+                        <option value="10 Million - 25 Million">10 Million - 25 Million</option>
+                        <option value="25 Million - 50 Million">25 Million - 50 Million</option>
+                        <option value="More Than 50 Million">More Than 50 Million</option>
                       </select>
                     </div>
                   </div>
                   <div class="form_input">
                     <div class="select">
-                      <select>
-                        <option disabled selected>Your Role</option>
-                        <option>Variant</option>
-                        <option>Variant</option>
-                        <option>Variant</option>
+                      <select name="jobtitle" required>
+                        <option disabled selected value="">Your Role</option>
+                        <option value="Editorial">Editorial</option>
+                        <option value="Audience Development">Audience Development</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Product">Product</option>
+                        <option value="Writing">Writing</option>
                       </select>
                     </div>
                   </div>
                   <div class="form_input">
                     <div class="checkbox">
-                      <input type="checkbox" id="policy" name="policy" required>
+                      <input type="checkbox" id="policy" checked required>
                       <label for="policy">
                         I have read and accept the
                          <a href="#">privacy policy</a>
@@ -198,9 +201,10 @@
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="11" viewbox="0 0 16 11">
                         <use fill="#fff" xlink:href="#check"></use>
                       </svg></i></button>
-                </div>
+                </form>
               </div>
-            </form>
+              <div class="form_message"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -272,6 +276,6 @@
         </g>
       </defs>
     </svg>
-    <script src="js/app.min.js?ckcachebust=e09233c2e7a8d3a3e9a693fb90910302"></script>
+    <script src="js/app.min.js?ckcachebust=03b8d7caabb816928fdcd349923113dc"></script>
   </body>
 </html>

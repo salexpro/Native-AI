@@ -58,4 +58,14 @@ select, {
     padding: 10px 16px;
     font-weight: 300;
     font-size: 16px;
+    transition: border 300ms,
+                box-shadow 500ms;
+    &:hover{
+        border-color: $orange-dark;
+    }
+    &:focus{
+        border-color: $orange-dark;
+        box-shadow: 0 6px 16px rgba(255, 131, 42, 0.16);
+        // box-shadow: 0 3px 20px rgba(255, 131, 142, .3);
+    }
 }

@@ -4,7 +4,6 @@ mixin list(data, mod = '')
             li.list_item
                 .list_circle
                     if !(mod.includes('--digits') || mod.includes('--dots'))
-                        svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='13', height='9', viewbox='0 0 13 9')
-                            path(transform='translate(-87 -817)', d='M87.5 820.07l4.3 4.3 6.87-6.87')
+                        +icon('check', [13, 9], '#000', [16, 11])
                 .list_content
                     != item

@@ -115,11 +115,8 @@
         background-repeat: no-repeat;
         margin-top: 2px;
         font-size: 15px;
-        path{
-            stroke: currentColor;
-            stroke-width: 2;
-            stroke-miterlimit: 50;
-            fill: transparent;
+        use{
+            fill: currentColor;
         }
     }
     &_content{

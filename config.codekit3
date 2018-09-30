@@ -45,12 +45,6 @@
 		"oAP": "\/build\/.gitignore",
 		"oF": 1
 		},
-	"\/build": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/build\/build",
-		"oF": 0
-		},
 	"\/build.zip": {
 		"cB": 0,
 		"ft": 8192,
@@ -504,6 +498,26 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/node_modules\/cookies-js\/dist\/cookies.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/cookies-js\/dist\/cookies.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/node_modules\/d3\/d3.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/d3\/d3.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"\/node_modules\/jquery\/dist\/jquery.min.js": {
 		"ft": 64,
@@ -1220,16 +1234,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/src\/assets\/images\/check-blue.svg": {
-		"ft": 2097152,
-		"miP": 1,
-		"oA": 2,
-		"oAP": "\/build\/assets\/images\/check-blue.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 553513902079,
-		"prP": 0
-		},
 	"\/src\/assets\/images\/check-orange.svg": {
 		"ft": 2097152,
 		"miP": 1,
@@ -1802,26 +1806,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/src\/assets\/images\/power-for-blue.svg": {
-		"ft": 2097152,
-		"miP": 1,
-		"oA": 2,
-		"oAP": "\/build\/assets\/images\/power-for-blue.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 553513902079,
-		"prP": 0
-		},
-	"\/src\/assets\/images\/power-for-orange.svg": {
-		"ft": 2097152,
-		"miP": 1,
-		"oA": 2,
-		"oAP": "\/build\/assets\/images\/power-for-orange.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 553513902079,
-		"prP": 0
-		},
 	"\/src\/assets\/images\/testimonials\/user-01.png": {
 		"ft": 32768,
 		"iS": 27369,
@@ -1850,6 +1834,46 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"\/src\/js\/components\/_carousel.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/js\/components\/_carousel.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/js\/components\/_forms.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/js\/components\/_forms.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/js\/components\/_header.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/js\/components\/_header.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/js\/components\/_utils.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/js\/components\/_utils.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/src\/js\/components\/fastnav.js": {
 		"ft": 64,
 		"ma": 0,
@@ -1867,8 +1891,8 @@
 		"oA": 0,
 		"oAP": "\/build\/js\/treemap.min.js",
 		"oF": 1,
-		"sC": 0,
-		"tS": 0
+		"sC": 3,
+		"tS": 1
 		},
 	"\/src\/pug\/components\/_icons.pug": {
 		"cB": 1,
@@ -2313,19 +2337,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/build\/css\/blocks\/_case_study.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/src\/scss\/blocks\/_contact_form.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/build\/css\/blocks\/_contact_form.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -2848,7 +2859,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "\/src\/assets\/favicon\/apple-touch-icon-120x120.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 559872670
+	"lastBuiltDate": 560040620
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

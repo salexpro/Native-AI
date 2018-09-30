@@ -169,13 +169,12 @@
                         border-bottom: none;
                     }
                     a {
+                        display: block;
                         font-size: 14px;
                         line-height: 28px;
-                        height: 28px;
                         text-decoration: none;
                         color: #343A40;
                         &:hover {
-                            transition: color 0.2s;
                             color: $orange-main;
                             border-bottom: none;
                         }

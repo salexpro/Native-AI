@@ -55,6 +55,7 @@ p,
 a {
     color: $blue-dark;
     text-decoration: underline;
+    transition: color 200ms;
 }
 
 i {

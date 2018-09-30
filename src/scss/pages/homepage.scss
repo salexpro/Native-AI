@@ -44,25 +44,6 @@
             padding-bottom: 47px;
         }
     }
-    .contact-form {
-        padding-bottom: 13px;
-        @media screen and ( max-width: 640px) {
-            padding-bottom: 14px;
-        }
-        @media screen and ( max-width: 480px) {
-            padding-bottom: 13px;
-        }
-        form {
-            display: flex;
-            @media screen and ( max-width: 480px) {
-                flex-direction: column;
-                .promo-field {
-                    margin: 0 0 16px;
-                    width: 100%;
-                }
-            }
-        }
-    }
     .text-section {
         @media screen and ( max-width: 1140px) {
             position: relative;
@@ -499,183 +480,183 @@
 
 /* Screen 03 - Power for ======================================================================== */
 
-.homepage--three-screen {
-    padding: 50px 0 80px;
-    border-top: $border-grey;
-    .wrapper {
-        display: flex;
-        justify-content: space-between;
-    }
-    .power-item {
-        display: flex;
-        flex-direction: column;
-        width: calc( 50% - 30px);
-        &:last-child {
-            margin-left: 60px;
-        }
-        /* Screen 03 - Image section ======================================================================== */
-        .img-section {
-            border-bottom: 2px solid transparent;
-            text-align: center;
-            img {
-                width: 100%;
-            }
-            .title-box {
-                position: relative;
-                top: 20px;
-            }
-            &.orange-line {
-                border-color: $orange-main;
-            }
-            &.blue-line {
-                border-color: $blue-main;
-            }
-        }
-        .list-section,
-        .how-to-get-section {
-            position: relative;
-            padding-left: 72px;
-            &:before {
-                content: '';
-                position: absolute;
-                left: 34px;
-                bottom: 0;
-                display: block;
-                width: 2px;
-            }
-            li {
-                position: relative;
-                padding: 20px 0 22px;
-                border-bottom: $border-grey;
-                &:before {
-                    content: '';
-                    position: absolute;
-                    top: 20px;
-                    left: -53px;
-                    width: 28px;
-                    height: 28px;
-                    border-radius: 50%;
-                    border: 2px solid transparent;
-                    background-color: $white;
-                    background-repeat: no-repeat;
-                    background-position: center;
-                }
-            }
-        }
-        /* Screen 03 - List section ======================================================================== */
-        .list-section {
-            padding-bottom: 32px;
-            &:before {
-                top: 34px;
-            }
-            a {
-                display: block;
-                padding: 22px 0;
-                font-size: 18px;
-                font-weight: 500;
-                line-height: 26px;
-                text-decoration: none;
-                &:hover {
-                    text-decoration: underline;
-                }
-                svg {
-                    position: relative;
-                    left: 6px;
-                }
-            }
-        }
-        /* Screen 03 - How to get started ======================================================================== */
-        .how-to-get-section {
-            flex: 1;
-            padding-bottom: 50px;
-            &:before {
-                top: 0;
-            }
-            ul {
-                counter-reset: how-to-get;
-            }
-            li:before {
-                content: counter(how-to-get);
-                counter-increment: how-to-get;
-                background: $white !important;
-                font-size: 18px;
-                font-weight: 500;
-                line-height: 26px;
-                text-align: center;
-            }
-            .title-box {
-                padding-bottom: 12px;
-                border-bottom: $border-grey;
-            }
-        }
-        /* Screen 03 - Button box ======================================================================== */
-        .button-box {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            &:before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 34px;
-                display: block;
-                width: 137px;
-                height: 25px;
-                z-index: -1;
-            }
-        }
-        /* Screen 03 - for orange ======================================================================== */
-        &.orange {
-            .list-section,
-            .how-to-get-section {
-                &:before {
-                    background-color: $orange-light;
-                }
-                li:before {
-                    color: $orange-light;
-                    border-color: $orange-light;
-                    background-image: url(https://cdn2.hubspot.net/hubfs/3048376/assets/images/check-orange.svg);
-                }
-                a {
-                    color: $orange-dark;
-                    svg {
-                        fill: $orange-dark;
-                    }
-                }
-            }
-            .button-box {
-                &:before {
-                    background: url(https://cdn2.hubspot.net/hubfs/3048376/assets/images/power-for-orange.svg) no-repeat;
-                }
-            }
-        }
-        /* Screen 03 - for blue ======================================================================== */
-        &.blue {
-            .list-section,
-            .how-to-get-section {
-                &:before {
-                    background-color: #9FB0F4;
-                }
-                li:before {
-                    color: #9FB0F4;
-                    border-color: #9FB0F4;
-                    background-image: url(../assets/images/check-blue.svg);
-                }
-                a {
-                    color: $blue-dark;
-                    svg {
-                        fill: $blue-dark;
-                    }
-                }
-            }
-            .button-box {
-                &:before {
-                    background: url(../assets/images/power-for-blue.svg) no-repeat;
-                }
-            }
-        }
-    }
-}
+// .homepage--three-screen {
+//     padding: 50px 0 80px;
+//     border-top: $border-grey;
+//     .wrapper {
+//         display: flex;
+//         justify-content: space-between;
+//     }
+//     .power-item {
+//         display: flex;
+//         flex-direction: column;
+//         width: calc( 50% - 30px);
+//         &:last-child {
+//             margin-left: 60px;
+//         }
+//         /* Screen 03 - Image section ======================================================================== */
+//         .img-section {
+//             border-bottom: 2px solid transparent;
+//             text-align: center;
+//             img {
+//                 width: 100%;
+//             }
+//             .title-box {
+//                 position: relative;
+//                 top: 20px;
+//             }
+//             &.orange-line {
+//                 border-color: $orange-main;
+//             }
+//             &.blue-line {
+//                 border-color: $blue-main;
+//             }
+//         }
+//         .list-section,
+//         .how-to-get-section {
+//             position: relative;
+//             padding-left: 72px;
+//             &:before {
+//                 content: '';
+//                 position: absolute;
+//                 left: 34px;
+//                 bottom: 0;
+//                 display: block;
+//                 width: 2px;
+//             }
+//             li {
+//                 position: relative;
+//                 padding: 20px 0 22px;
+//                 border-bottom: $border-grey;
+//                 &:before {
+//                     content: '';
+//                     position: absolute;
+//                     top: 20px;
+//                     left: -53px;
+//                     width: 28px;
+//                     height: 28px;
+//                     border-radius: 50%;
+//                     border: 2px solid transparent;
+//                     background-color: $white;
+//                     background-repeat: no-repeat;
+//                     background-position: center;
+//                 }
+//             }
+//         }
+//         /* Screen 03 - List section ======================================================================== */
+//         .list-section {
+//             padding-bottom: 32px;
+//             &:before {
+//                 top: 34px;
+//             }
+//             a {
+//                 display: block;
+//                 padding: 22px 0;
+//                 font-size: 18px;
+//                 font-weight: 500;
+//                 line-height: 26px;
+//                 text-decoration: none;
+//                 &:hover {
+//                     text-decoration: underline;
+//                 }
+//                 svg {
+//                     position: relative;
+//                     left: 6px;
+//                 }
+//             }
+//         }
+//         /* Screen 03 - How to get started ======================================================================== */
+//         .how-to-get-section {
+//             flex: 1;
+//             padding-bottom: 50px;
+//             &:before {
+//                 top: 0;
+//             }
+//             ul {
+//                 counter-reset: how-to-get;
+//             }
+//             li:before {
+//                 content: counter(how-to-get);
+//                 counter-increment: how-to-get;
+//                 background: $white !important;
+//                 font-size: 18px;
+//                 font-weight: 500;
+//                 line-height: 26px;
+//                 text-align: center;
+//             }
+//             .title-box {
+//                 padding-bottom: 12px;
+//                 border-bottom: $border-grey;
+//             }
+//         }
+//         /* Screen 03 - Button box ======================================================================== */
+//         .button-box {
+//             position: relative;
+//             display: flex;
+//             justify-content: center;
+//             &:before {
+//                 content: '';
+//                 position: absolute;
+//                 top: 0;
+//                 left: 34px;
+//                 display: block;
+//                 width: 137px;
+//                 height: 25px;
+//                 z-index: -1;
+//             }
+//         }
+//         /* Screen 03 - for orange ======================================================================== */
+//         &.orange {
+//             .list-section,
+//             .how-to-get-section {
+//                 &:before {
+//                     background-color: $orange-light;
+//                 }
+//                 li:before {
+//                     color: $orange-light;
+//                     border-color: $orange-light;
+//                     background-image: url(https://cdn2.hubspot.net/hubfs/3048376/assets/images/check-orange.svg);
+//                 }
+//                 a {
+//                     color: $orange-dark;
+//                     svg {
+//                         fill: $orange-dark;
+//                     }
+//                 }
+//             }
+//             .button-box {
+//                 &:before {
+//                     background: url(https://cdn2.hubspot.net/hubfs/3048376/assets/images/power-for-orange.svg) no-repeat;
+//                 }
+//             }
+//         }
+//         /* Screen 03 - for blue ======================================================================== */
+//         &.blue {
+//             .list-section,
+//             .how-to-get-section {
+//                 &:before {
+//                     background-color: #9FB0F4;
+//                 }
+//                 li:before {
+//                     color: #9FB0F4;
+//                     border-color: #9FB0F4;
+//                     background-image: url(../assets/images/check-blue.svg);
+//                 }
+//                 a {
+//                     color: $blue-dark;
+//                     svg {
+//                         fill: $blue-dark;
+//                     }
+//                 }
+//             }
+//             .button-box {
+//                 &:before {
+//                     background: url(../assets/images/power-for-blue.svg) no-repeat;
+//                 }
+//             }
+//         }
+//     }
+// }
 
 /* Screen 03 < 1140 ======================================================================== */
 
@@ -687,52 +668,52 @@
 
 /* Screen 03 < 860 ======================================================================== */
 
-@media screen and ( max-width: 860px) {
-    .homepage--three-screen {
-        padding: 50px 40px 80px;
-        .wrapper {
-            flex-direction: column;
-            align-items: center;
-        }
-        .power-item {
-            display: block;
-            width: 100%;
-            max-width: 540px;
-            &:last-child {
-                margin: 40px 0 0;
-            }
-        }
-    }
-}
+// @media screen and ( max-width: 860px) {
+//     .homepage--three-screen {
+//         padding: 50px 40px 80px;
+//         .wrapper {
+//             flex-direction: column;
+//             align-items: center;
+//         }
+//         .power-item {
+//             display: block;
+//             width: 100%;
+//             max-width: 540px;
+//             &:last-child {
+//                 margin: 40px 0 0;
+//             }
+//         }
+//     }
+// }
 
 /* Screen 03 < 640 ======================================================================== */
 
-@media screen and ( max-width: 640px) {
-    .homepage--three-screen {
-        padding: 24px 0 50px;
-        .power-item {
-            &:last-child {
-                margin: 24px 0 0;
-            }
-            .list-section,
-            .how-to-get-section {
-                li {
-                    padding-right: 16px;
-                    &:before {
-                        top: 16px;
-                    }
-                }
-            }
-            /* Screen 03 - List section ======================================================================== */
-            .list-section {
-                a {
-                    font-size: 15px;
-                    line-height: 22px;
-                }
-            }
-        }
-    }
-}
+// @media screen and ( max-width: 640px) {
+//     .homepage--three-screen {
+//         padding: 24px 0 50px;
+//         .power-item {
+//             &:last-child {
+//                 margin: 24px 0 0;
+//             }
+//             .list-section,
+//             .how-to-get-section {
+//                 li {
+//                     padding-right: 16px;
+//                     &:before {
+//                         top: 16px;
+//                     }
+//                 }
+//             }
+//             /* Screen 03 - List section ======================================================================== */
+//             .list-section {
+//                 a {
+//                     font-size: 15px;
+//                     line-height: 22px;
+//                 }
+//             }
+//         }
+//     }
+// }
 
 /* Screen 04 ======================================================================== */
 
