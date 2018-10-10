@@ -8,22 +8,21 @@ block const
 block content
     //- Components
     include ../components/_list
-    include ../sections/_first_adv
+    include ../sections/_first
     include ../sections/_eight
     include ../sections/_interests
     include ../sections/_brands
 
     //- Sections
-    +first_adv('how-works', 'How NativeAI Works', 'Learn how we deliver actionable insights', 'Talk to us', 'blue')
-    include ../sections/_anim
-    include ../sections/_language
+    +first('How NativeAI Works', 'Learn how we deliver actionable insights')
+    include ../sections/_nlp
     +interests(false, 'Audience Interests', 'list', 'audience')
     include ../sections/_behavior
     include ../sections/_script
     include ../sections/_dashboard
-    +brands('h3', 'Top Publishers and Brands Rely on NativeAI', 'Download Case Study')
+    +brands('h2', 'Top Publishers and Brands Rely on NativeAI', 'Download Case Study')
     include ../sections/_faq
-    +eight('Get an Audience Match Demo Now', 'Get a quick demo on the power of the NativeAI platform. We\'ll show you five<br>audience insights, and how they apply to your campaigns within 15 minutes.', 'blue', 'Get a Demo', 'home-advertising')
+    +eight('Get an Audience Match Demo Now', 'Get a quick demo on the power of the NativeAI platform. We\'ll show you five audience insights, and how they apply to your campaigns within 15 minutes.', 'orange', 'Get a Demo', 'eight_demo')
 
 block js
     script(src="js/treemap.min.js")

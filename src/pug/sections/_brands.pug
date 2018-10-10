@@ -1,77 +1,20 @@
-// See How NativeAI Works for You =====================================================================
 mixin brands(tag, header, button, icon)
-    .homepage--four-screen
+    -
+        const brands = [
+            ['thomson', 'billboard', 'realclear', 'ozy', 'rollcall', 'euronews'], 
+            ['realclearpolitics', 'ladbible', 'gearpatrol', 'cbs', 'afar', 'fatherly']
+        ]
+    .homepage--four-screen.brands
         .wrapper
             #{tag}.title(class="bold")
                 =header
-            //- .subtitle
-                p
-                    | NativeAI’s sponsored content network provides quality, branded, editorial,
-                    br
-                    | and corporate blog posts and thought leadership papers from today's top brands
             .brands-outer
-                .brands-section
-                    .brand-item
-                        img(src='assets/images/brands/thomson.png')
-                    .brand-item
-                        img(src='assets/images/brands/billboard.png')
-                    .brand-item
-                        img(src='assets/images/brands/realclear.png')
-                    .brand-item
-                        img(src='assets/images/brands/ozy.png')
-                    .brand-item
-                        img(src='assets/images/brands/rollcall.png')
-                    .brand-item
-                        img(src='assets/images/brands/euronews.png')
-                .brands-section
-                    .brand-item
-                        img(src="assets/images/brands/realclearpolitics.png", alt="")
-                    .brand-item
-                        img(src="assets/images/brands/rollingstone.png", alt="")
-                    .brand-item
-                        img(src="assets/images/brands/gearpatrol.png", alt="")
-                    .brand-item
-                        img(src="assets/images/brands/cbs.png", alt="")
-                    .brand-item
-                        img(src="assets/images/brands/afar.png", alt="")
-                    .brand-item
-                        img(src="assets/images/brands/fatherly.png", alt="")
-            a.button.blue(href="#" class=icon ? "width-icon" : "")
+                each brand_section in brands
+                    .brands-section
+                        each brand in brand_section
+                            .brand-item
+                                img(src=`assets/images/brands/${brand}.png` srcset=`assets/images/brands/${brand}@2x.png 2x, assets/images/brands/${brand}.png 1x` alt=brand[0].toUpperCase()+brand.substring(1))
+            a.button.blue(href="#")
                 =button
-            //- .testimonials-section
-                .testimonial-item.card
-                    .user-info-box
-                        .avatar-box
-                            img(src='assets/images/testimonials/user-01.png')
-                        .name-box
-                            .name
-                                h3 Rachel Decker
-                            .company
-                                span.text.size-16.grey HubSpot, inc.
-                    .quote-box
-                        p.italic
-                            | "Never underestimate the power of a great testimonial. A few words of praise from a happy customer can work wonders. A big, friendly smile never hurts, either."
-                .testimonial-item.card
-                    .user-info-box
-                        .avatar-box
-                            img(src='assets/images/testimonials/user-01.png')
-                        .name-box
-                            .name
-                                h3 Rachel Decker
-                            .company
-                                span.text.size-16.grey HubSpot, inc.
-                    .quote-box
-                        p.italic
-                            | "Never underestimate the power of a great testimonial. A few words of praise from a happy customer can work wonders. A big, friendly smile never hurts, either."
-                .testimonial-item.card
-                    .user-info-box
-                        .avatar-box
-                            img(src='assets/images/testimonials/user-01.png')
-                        .name-box
-                            .name
-                                h3 Rachel Decker
-                            .company
-                                span.text.size-16.grey HubSpot, inc.
-                    .quote-box
-                        p.italic
-                            | "Never underestimate the power of a great testimonial. A few words of praise from a happy customer can work wonders. A big, friendly smile never hurts, either."
+                i
+                    +icon('arrow', [20, 14], '#fff')

@@ -1,6 +1,5 @@
 
-.content-wrapper.lead-magnet,
-.content-wrapper.thank-you {
+.content-wrapper.lead-magnet{
     .wrapper {
         position: relative;
         overflow: hidden;
@@ -78,29 +77,6 @@
 }
 
 
-/* =========================================================================
-    Thank you page
-   ========================================================================= */
-
-.content-wrapper.thank-you {
-    .wrapper { padding: 65px 0 62px; }
-
-    .subtitle-text { padding-bottom: 52px; }
-
-    .contact-form-section { max-width: 320px; }
-
-    .ill-col {
-        display: flex;
-        justify-content: flex-end;
-        margin: -70px 0 0;
-        img {
-            width: 100%;
-            max-width: 520px;
-        }
-    }
-}
-
-
 /* Two cols section
 ======================================================================== */
 .two-cols-section {
@@ -152,8 +128,7 @@
   ======================================================================== */
 
 @media screen and ( max-width: 1140px ) {
-    .content-wrapper.lead-magnet,
-    .content-wrapper.thank-you {
+    .content-wrapper.lead-magnet{
         .wrapper {
             padding-left: 40px;
             padding-right: 40px;
@@ -193,49 +168,11 @@
     }
 }
 
-
-/* Thank you page < 920
-  ======================================================================== */
-
-@media screen and ( max-width: 920px ) {
-    .content-wrapper.thank-you {
-        .wrapper { padding-bottom: 80px; }
-
-        .subtitle-text br { display: none; }
-
-        .contact-form-section { margin: auto; }
-
-        .ill-col {
-            position: absolute;
-              top: 10px;
-              right: -50px;
-            margin: 0;
-            opacity: .16;
-            img { max-width: 300px; }
-        }
-
-
-        /* Two cols section
-        ======================================================================== */
-        .two-cols-section {
-            flex-direction: column;
-
-            .col {
-                width: 100%;
-                &:first-child { margin-right: 0; }
-            }
-        }
-
-    }
-}
-
-
 /* Lead magnet page < 480
   ======================================================================== */
 
 @media screen and ( max-width: 480px ) {
-    .content-wrapper.lead-magnet,
-    .content-wrapper.thank-you {
+    .content-wrapper.lead-magnet{
         .wrapper { padding: 40px 16px 50px; }
 
         /* Page title
@@ -246,9 +183,6 @@
         /* Text Section
         ======================================================================== */
         .text-section { padding-bottom: 8px; }
-    }
-
-    .content-wrapper.lead-magnet {
 
         /* Illustration
         ======================================================================== */
@@ -269,15 +203,6 @@
             padding: 30px 16px 40px;
         }
     }
-
-    .content-wrapper.thank-you {
-        .section-title { padding-bottom: 24px; }
-
-        .ill-col { display: none; }
-
-        .contact-form-section { max-width: 375px; }
-    }
-
 
     /* List
     ======================================================================== */

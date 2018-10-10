@@ -1,6 +1,10 @@
 @import "base";
 @import "reset";
 
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/grid';
+
 // Components
 @import 'components/vars';
 @import 'components/base';
@@ -33,11 +37,12 @@ $slick-loader-path: '../assets/images/';
 
 // Sections
 @import 'sections/header';
+@import 'sections/first';
 @import 'sections/start';
 @import 'sections/how';
 @import 'sections/blog_feature';
 @import 'sections/anim';
-@import 'sections/language';
+@import 'sections/nlp';
 @import 'sections/audience';
 @import 'sections/behavior';
 @import 'sections/script';

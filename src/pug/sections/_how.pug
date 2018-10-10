@@ -4,7 +4,8 @@ mixin item(img, title)
             img(src="assets/images/how-it-work/" + img + ".svg" alt=title)
         p.mainhow_item_title
             !=title
-// See How NativeAI Works for You =====================================================================
+
+// See How NativeAI Works for You ====================================================================
 section.mainhow
     .wrapper
         .title
@@ -15,8 +16,10 @@ section.mainhow
                 +item('03', 'Segment Based <br> on Interest Profiles')
                 +item('05', 'Identify Key Engagement <br> Opportunities')
                 +item('00', 'Connect Engagement <br> Quality With Content Char.')
-            a.button.orange.width-icon(href="./register.html")
+            a.button.orange(href="./register.html")
                 | I Want a Demo
+                i
+                    +icon('arrow', [20, 14], '#fff')
         .mainhow_bottom
             .mainhow_bottom_img
                 img(src="assets/images/illustrations/home-publishers.svg", alt="Publisher Analytics")
@@ -24,8 +27,5 @@ section.mainhow
                 | Let us show you how easy it is to get deep intelligence on your audience, and how to use that intelligence to drive 20X engagement.
                 a.mainhow_link(href="#")
                     | Learn more about Publisher Analytics
-                    svg(xmlns='http://www.w3.org/2000/svg', viewbox='-1000 612 17.322 12', width='17', height='12')
-                        g(transform='translate(-1313 163.071)')
-                            rect(width='1.697', height='8.485', rx='0.849', transform='translate(329.122 453.729) rotate(45)')
-                            rect(width='16.971', height='1.697', rx='0.849', transform='translate(313 454.08)')
-                            rect(width='8.485', height='1.697', rx='0.849', transform='translate(324.322 448.929) rotate(45)')
+                    i
+                        +icon('arrow', [20, 14], '#f2751c')

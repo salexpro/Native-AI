@@ -9,7 +9,9 @@ mixin eight(header, text, color, button, img)
                     p
                         !=text
                 .button-box
-                    a.button(href='#' class=color)
+                    a.button(href='./register.html' class=color)
                         =button
+                        i
+                            +icon('arrow', [20, 14], '#fff')
             .ill-section
                 img(src='assets/images/illustrations/' + img +'.svg')

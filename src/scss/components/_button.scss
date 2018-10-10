@@ -1,6 +1,5 @@
 .button {
     display: inline-block;
-    min-width: 180px;
     height: 45px;
     padding: 0 20px;
     border-radius: 4px;
@@ -10,6 +9,7 @@
     text-decoration: none;
     text-align: center;
     text-decoration: none !important;
+    min-width: 240px;
     /* Buttons - border  ======================================================================== */
     &.border {
         line-height: 40px;
@@ -18,6 +18,7 @@
             border: 2px solid transparent;
             background-color: transparent;
             font-weight: 400;
+            box-shadow: none;
         }
         &.orange {
             color: $orange-dark;
@@ -64,17 +65,19 @@
         font-weight: 700;
     }
     &.orange {
-        background-color: $orange-dark;
+        background-color: $orange-main;
+        box-shadow: 0 6px 20px rgba($orange-main, 0.42);
     }
     &.blue {
-        background-color: $blue-dark;
+        background-color: $blue-main;
+        box-shadow: 0 6px 20px rgba(76, 110, 245, 0.42);
     }
     &:hover {
         &.orange {
-            background-color: $orange-main;
+            background-color: $orange-dark;
         }
         &.blue {
-            background-color: $blue-main;
+            background-color: $blue-dark;
         }
     }
     /* Buttons - icon  ======================================================================== */
@@ -88,23 +91,20 @@
             align-items: center;
         }
     }
-    &.width-icon {
-        width: 100%;
-        padding-left: 16px;
-        background-image: url(../assets/images/arrow-right-white.svg);
-        background-position: calc( 100% - 16px) 16px;
-        background-repeat: no-repeat;
-        text-align: left;
-        background-size: 20px;
-        max-width: 250px;
-    }
-    &.glow{
-        box-shadow: 0 6px 20px rgba($orange-main, 0.42);
-        min-width: 240px;
-        i{
-            margin-left: 15px;
-            vertical-align: middle;
-        }
+    // &.width-icon {
+    //     width: 100%;
+    //     padding-left: 16px;
+    //     background-image: url(../assets/images/arrow-right-white.svg);
+    //     background-position: calc( 100% - 16px) 16px;
+    //     background-repeat: no-repeat;
+    //     text-align: left;
+    //     background-size: 20px;
+    //     max-width: 250px;
+    // }
+    i{
+        margin-left: 15px;
+        vertical-align: middle;
+        display: inline-block;
     }
     &.wide{
         width: 100%;

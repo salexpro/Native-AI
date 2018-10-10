@@ -1,13 +1,46 @@
+-
+    const faq = [
+        {
+            question: 'How does NativeAI work?',
+            answer: 'NativeAI uses Natural Language Processing (NLP) to process your articles and stories, analyses how your audience interacts with different articles by measuring the quality of interactions and builds a reader interest graph. Our taxonomy has over 1 Million topics and objects that make up reader interests and you can segment your audiences by these interests. This allows you to view all analytics reports, filtered by interests, authors, your own tags, devices, reader loyalty etc.'
+        },
+        {
+            question: 'Who is NativeAI suited for?',
+            answer: 'NativeAI Analytics is ideal for digital publishers across News Media and Content Marketing. The deep audience data that NativeAI provides is best fit for high-volume publishers who require these inputs for editorial strategy, ideation for content strategy, audience development and paid promotional campaigns for content. Our NLP currently works best for English language websites only and we recommend NativeAI for any publication that averages over 500,000 users a month.'
+        },
+        {
+            question: 'Does NativeAI offer real-time analytics dashboards or API?',
+            answer: 'Yes, NativeAI includes a real-time analytics dashboard which includes audience interest data as well. We are currently working on API integration, please contact us using the chat at the bottom right of your page to find out more.'
+        },
+        {
+            question: 'Is NativeAI GDPR compliant?',
+            answer: 'Yes, as an Editorial Analytics platform with global users, NativeAI is <a href="#">GDPR compliant</a> and you can read more about it on <a href="#" target="_blank">our blog</a>.'
+        },
+        {
+            question: 'How much does NativeAI analytics cost? Is there a free for trial?',
+            answer: 'The pricing of NativeAI depends on the volume of traffic your website receives. Yes, we do offer a free trial to qualified publishers, please <a href="./register.html">signup for the demo</a> for more details.'
+        },
+        {
+            question: 'How many user accounts can I create for my colleagues for our NativeAI subscription?',
+            answer: 'NativeAI Publisher analytics offers a variety of reports which are relevant for marketers, audience development teams, analytics, data science and editorial teams etc. You can create up to 20 accounts with your NativeAI subscription, if you need more accounts, please get in touch.'
+        },
+        {
+            question: 'How can I install NativeAI and access the Analytics Dashboard?',
+            answer: 'To get your NativeAI account, you can <a href="./register.html">signup for a demo</a>. Installing NativeAI is very easy, once we connect with you and understand your requirement, we will share a simple javascript snippet that you can paste in your tag manager. Once this is done, you can login to your dashboard using the credentials we will share over email.'
+        }
+    ]
+
 section.faq
     .wrapper
         h2.faq_header
             | FAQ
-        - let i = 0;
-        while i < 4
-            input(type="radio" name="faq" id="faq"+i checked=i==0?"":false)
-            label.faq_item(for="faq" + i)
-                p.faq_item_title
-                    | Lorem ipsum dolor sit amet, consectetuer
-                p.faq_item_content
-                    | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
-            - i++
+        .faq_container
+            each q, i in faq
+                input(type="radio" name="faq" id=`faq${i}` checked=(i == 0) ? 'checked' : false)
+                label.faq_item(for=`faq${i}`)
+                    p.faq_item_title
+                        =q.question
+                        i
+                            +icon('faq_arrow', [20, 11], '#f2751c')
+                    p.faq_item_content
+                        !=q.answer

@@ -1,4 +1,4 @@
-// @codekit-prepend quiet '../../node_modules/d3/d3.min.js'
+// @codekit-prepend quiet '../../node_modules/d3/d3.js'
 
 /**
  * Core library for web projects

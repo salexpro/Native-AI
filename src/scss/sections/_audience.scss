@@ -1,26 +1,37 @@
 .audience{
-    padding-top: 80px;
+    padding: 80px 0 76px;
     @media screen and (max-width: 1140px){
         padding-top: 66px;
     }
     @media screen and (max-width: 640px) {
         padding-top: 40px;
     }
+    .wrapper{
+        max-width: 930px;
+    }
     .interests-box-wrapper{
-        background: none;
         @media screen and (max-width: 1023px) {
             height: auto;
             padding-bottom: 0;
             margin-bottom: -10%;
         }
+
+        width: 475px;
+        height: 311px;
+        padding: 0;
+        margin-bottom: 4.4%;
+        > img{
+            width: 147%;
+            margin-left: -25.2%;
+        }
+        .screen-box{
+            top: 26px;
+            right: 18px;
+            left: 0;
+            bottom: 0;
+        }
     }
     .title{
-        padding-top: 50px;
-        @media screen and (max-width: 1140px) {
-            padding-top: 0;
-        }
-        @media screen and (max-width: 640px) {
-            padding-bottom: 0;
-        }
+        padding: 15px 0 4px;
     }
 }

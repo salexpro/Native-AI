@@ -1,4 +1,12 @@
 .brands {
+    padding: 100px 0;
+    &-outer{
+        max-width: 1060px;
+        margin: auto;
+    }
+    .title{
+        padding-bottom: 50px;
+    }
     &-section {
         display: flex;
         justify-content: space-between;

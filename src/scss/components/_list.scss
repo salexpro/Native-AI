@@ -26,6 +26,7 @@
             &_circle{
                 counter-increment: num;
                 &::before{
+                    font-weight: 500;
                     content: counter(num);
                 }
             }

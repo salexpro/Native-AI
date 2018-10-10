@@ -302,7 +302,7 @@
 /* Eight screen  ======================================================================== */
 
 .publisher--eight-screen {
-    padding: 70px 0 80px;
+    padding: 60px 0 120px;
     overflow: hidden;
     @media screen and ( max-width: 1140px) {
         padding-left: 40px;
@@ -311,16 +311,20 @@
     @media screen and ( max-width: 480px) {
         padding: 40px 16px 50px;
     }
-    .wrapper { position: relative; }
+    .wrapper { 
+        position: relative; 
+        max-width: 930px;
+    }
 
     .title-box { 
-        padding-bottom: 26px;
+        padding-bottom: 35px;
         @media screen and ( max-width: 480px) {
             padding-bottom: 22px;
         }
     }
     .text-box { 
-        padding-bottom: 24px;
+        padding-bottom: 30px;
+        max-width: 570px;
         @media screen and ( max-width: 480px) {
             padding-bottom: 30px;
         }
@@ -328,9 +332,9 @@
 
     .ill-section {
         position: absolute;
-        top: 20px;
+        top: 50%;
         right: -50px;
-        width: 680px;
+        transform: translateY(-50%);
         z-index: -1;
         @media screen and ( max-width: 1080px) {
             right: -100px;
@@ -343,7 +347,6 @@
             top: 100px;
             width: 400px;
         }
-        img { width: 100%; }
     }
 }
 

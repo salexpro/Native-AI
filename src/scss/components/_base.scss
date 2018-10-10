@@ -31,6 +31,8 @@ body {
 
 .grey-bg {
     background-color: $grey-bg;
+    border-top: $border-grey;
+    border-bottom: $border-grey;
 }
 
 [type='text'],

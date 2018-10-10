@@ -1,34 +1,14 @@
-// First screen =====================================================================
-.homepage--first-screen
-    .wrapper
-        .ill-section
-            img(src='https://cdn2.hubspot.net/hubfs/3048376/assets/images/illustrations/home-01.svg?t=1519765288206', alt='publisher analytics')
-        .text-section
-            .main-title
-                h1
-                    | Analyze, 
-                    br
-                    | Optimize & 
-                    br
-                    | Grow Your Audience
-            .descr
-                p Actionable Audience Intelligence & Engaging Native Advertising
-            .email-box
-                .contact-form
-                    form(action='demo')
-                        .form_inner
-                            input.email-input.promo-field(placeholder='Email address' type='email' name="email" required)
-                            button.button.orange(type='submit')
-                                | Get a Demo
-                        .form_message
-                //- .button-box.contact-form-mobile.permanent-input
-                    form.demo-request-form(action='')
-                        .promo-field-container
-                            input.email-input.promo-field(placeholder='Email address', type='email')
-                        .email-submit-message-container.hidden
-                            span.email-submit-message
-                        input.button.orange.get-email-button(value='Get a Demo', type='submit')
-                .sign-in-offer
-                    span.text.size-16.black
-                        | Already using NativeAI? 
-                        a(href='#') Sign in
+mixin first(header, descr)
+    section.first
+        .wrapper
+            h1=header
+            p.first_descr=descr
+            a.button.orange(href="./register.html")
+                | Talk to Us
+                i
+                    +icon('arrow', [20, 14], '#fff')
+            .first_ill
+                .first_ill_img
+                    img(src="assets/images/illustrations/anim.gif", alt=header)
+                p.first_ill_label
+                    | NativeAI - Under the Hood

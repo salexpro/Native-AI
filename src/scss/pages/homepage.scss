@@ -154,7 +154,7 @@
                     width: 300px;
                 }
             }
-            &.first,
+            &.frst,
             &.second,
             &.third {
                 right: 13px;
@@ -162,7 +162,7 @@
                     left: -308px;
                 }
             }
-            &.first,
+            &.frst,
             &.second,
             &.third,
             &.extra {
@@ -177,7 +177,7 @@
                 right: 336px;
             }
             /* Screen 02 - How work - How work section - Items - First ======================================================================== */
-            &.first {
+            &.frst {
                 top: 105px;
             }
             /* Screen 02 - How work - How work section - Items - Second ======================================================================== */
@@ -268,7 +268,7 @@
                     display: none;
                 }
                 &.start,
-                &.first,
+                &.frst,
                 &.second,
                 &.third,
                 &.four,
@@ -412,7 +412,7 @@
                     height: 80px;
                 }
                 &.start,
-                &.first,
+                &.frst,
                 &.second,
                 &.third,
                 &.four,
@@ -779,7 +779,6 @@
 
 .homepage--five-screen {
     padding: 66px 0 50px;
-    border-bottom: $border-grey;
     overflow: hidden;
     .wrapper {
         &::after {

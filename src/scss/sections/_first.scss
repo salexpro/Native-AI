@@ -1,0 +1,35 @@
+.first{
+    padding: 100px 15px 70px;
+    text-align: center;
+    background-image: url(../assets/images/bg_l_thank@2x.png);
+    background-repeat: no-repeat;
+    background-position: center 60px;
+    background-size: 1805px auto;
+
+    @media screen and (max-width: 1023px) {
+        min-height: 550px;
+        background-image: url(../assets/images/bg_m_thank@2x.png);
+        background-size: auto 550px;
+    }
+
+    @media screen and (max-width: 640px) {
+        min-height: 396px;
+        background-image: url(../assets/images/bg_s_thank@2x.png);
+        background-size: auto 396px;
+    }
+
+    &_descr{
+        margin: 38px 0 45px;
+    }
+    &_ill{
+        margin-top: 70px;
+        &_img{
+            display: flex;
+            justify-content: center;
+        }
+        &_label{
+            font-size: 22px;
+            margin-top: 15px;
+        }
+    }
+}
