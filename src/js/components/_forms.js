@@ -1,7 +1,11 @@
-/* global Cookies */
+/* global Cookies, ga */
 
 let ip = '';
 $.getJSON('https://ipinfo.io', (data) => {ip = data.ip});
+
+const err_msg = {
+    'BLOCKED_EMAIL': 'Please enter a valid Business Email ID'
+}
 
 const form_send = ($form) => {
     const form_type = $form.attr('action');
@@ -11,9 +15,20 @@ const form_send = ($form) => {
             ipAddress: ip,
             hutk: Cookies.get('hubspotutk'),
             pageUri: location.href
+        },
+        legalConsentOptions: {
+            consent: {
+                consentToProcess: true,
+                text: 'I agree to allow NativeAI to store and process my personal data.',
+                // communications: [{
+                //     'value': true,
+                //     'subscriptionTypeId': 999,
+                //     'text': "I agree to receive marketing communications from NativeAI."
+                // }]
+            }
         }
     };
-    
+
     $('.form_message').text('');
     $('input, select, button', $form).prop('disabled', true);
 
@@ -26,25 +41,27 @@ const form_send = ($form) => {
         },
         dataType: 'json',
         success: () => {
-            // ga('send', 'event', 'get demo form submitted');
             switch (form_type) {
                 case 'demo':
-                    location.href = '/register.html';
-                    break;
+                location.href = '/demo-registration';
+                break;
                 case 'step1':
-                    $form.closest('.form_steps').slick('slickNext');
-                    break;
+                $form.closest('.form_steps').slick('slickNext');
+                break;
                 case 'step2':
-                    Cookies.expire('form_email');
-                    location.href = '/thank.html'
-                    break;
+                Cookies.expire('form_email');
+                location.href = '/thank-you-for-requesting-a-demo'
+                break;
             }
+            ga('send', 'event', 'get demo form submitted');
         },
         error: xhr => {
             console.log(xhr);
             const errors = xhr.responseJSON.errors;
             if (errors){
-                $('.form_message').text(errors[0].message.substr(errors[0].message.indexOf('. ')+2));
+                const err_type = errors[0].errorType;
+                const message = (typeof err_msg[err_type] != 'undefined') ? err_msg[err_type] : errors[0].message.substr(errors[0].message.indexOf('. ') + 2);
+                $('.form_message').text(message);
             } else {
                 $('.form_message').text('Email sending failure, please try again');
             }
@@ -77,7 +94,7 @@ const form_validate = ($form) => {
         Cookies.set('form_email', email);
         form_send($form);
     } else {
-        $('.form_message').text('Please enter a valid email address')
+        $('.form_message').text('Please enter a valid Business Email ID')
     }
 }
 
@@ -103,6 +120,18 @@ if ($('form[action="step1"]').length){
         email_check($('form[action="step1"]'));
     }
 }
+
+// Phone validation
+$('[name="phone"]').inputmask({
+    mask: '[a{*}]',
+    placeholder: '',
+    definitions: {
+        'a': {
+            validator: '[+()1234567890]',
+            cardinality: 1,
+        }
+    }
+});
 
 // Register form carousel
 $('.form_steps').slick({

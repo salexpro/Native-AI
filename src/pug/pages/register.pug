@@ -25,7 +25,7 @@ block content
                                 .form_input
                                     input(type="text" placeholder="Your name" name="firstname" required)
                                 .form_input
-                                    input(type="text" placeholder="Email" name="email" pattern="^([\\w]+[\\.]{0,1})+@([\\w-]+\\.)+[\\w]{2,4}$" title="Please enter a valid email address" required)
+                                    input(type="text" placeholder="Email" name="email" required)
                                 .form_input
                                     input(type="tel" placeholder="Phone number" name="phone" minlength="7" maxlength="20" required)
                                 button.button.orange.glow(type="submit")
@@ -51,13 +51,13 @@ block content
                                             option(value="More Than 50 Million") More Than 50 Million
                                 .form_input
                                     .select
-                                        select(name="jobtitle" required)
+                                        select(name="your_role_" required)
                                             option(disabled selected value="") Your Role
                                             option(value="Editorial") Editorial
                                             option(value="Audience Development") Audience Development
                                             option(value="Marketing") Marketing
                                             option(value="Product") Product
-                                            option(value="Writing") Writing
+                                            option(value="Journalist / Writer") Journalist / Writer
                                             
                                 .form_input
                                     .checkbox

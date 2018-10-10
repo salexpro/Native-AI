@@ -5,6 +5,9 @@
 @codekit-prepend quiet '../../node_modules/wow.js/dist/wow.min'
 @codekit-prepend quiet '../../node_modules/cookies-js/dist/cookies.min.js';
 @codekit-prepend quiet '../../node_modules/slick-carousel/slick/slick.min'
+@codekit-prepend quiet '../../node_modules/inputmask/dist/inputmask/inputmask.js'
+@codekit-prepend quiet '../../node_modules/inputmask/dist/inputmask/inputmask.extensions.js'
+@codekit-prepend quiet '../../node_modules/inputmask/dist/inputmask/jquery.inputmask.js'
 
 @codekit-append quiet 'components/_header.js';
 @codekit-append quiet 'components/_forms.js';
