@@ -1,25 +1,24 @@
 .audience{
-    padding: 80px 0 76px;
-    @media screen and (max-width: 1140px){
-        padding-top: 66px;
+    padding-top: 80px;
+    padding-bottom: 76px;
+    @media screen and (max-width: 1023px) {
+        padding-top: 65px;
     }
     @media screen and (max-width: 640px) {
         padding-top: 40px;
+        display: none;
     }
     .wrapper{
         max-width: 930px;
     }
     .interests-box-wrapper{
-        @media screen and (max-width: 1023px) {
-            height: auto;
-            padding-bottom: 0;
-            margin-bottom: -10%;
-        }
-
         width: 475px;
         height: 311px;
         padding: 0;
         margin-bottom: 4.4%;
+        @media screen and (max-width: 1023px) {
+            margin: 55px auto 6%;
+        }
         > img{
             width: 147%;
             margin-left: -25.2%;
@@ -29,9 +28,31 @@
             right: 18px;
             left: 0;
             bottom: 0;
+            height: auto;
         }
     }
     .title{
         padding: 15px 0 4px;
+        @media screen and (max-width: 1023px) {
+            padding: 0 0 15px;
+            text-align: center;
+        }
+    }
+    .list{
+        @media screen and (max-width: 1023px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            &_item{
+                flex: 0 1 49%;
+                margin: 0;
+                &:nth-last-child(-n+2){
+                    margin-top: 20px;
+                }
+                br{
+                    display: none;
+                }
+            }
+        }
     }
 }

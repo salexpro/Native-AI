@@ -2,10 +2,12 @@
     padding: 65px 40px 70px;
     overflow: hidden;
     @media screen and (max-width: 640px) {
-        padding: 10px 16px 232px;
-    }
-    @media screen and (max-width: 640px) {
+        padding: 50px 40px 195px;
         position: relative;
+    }
+    @media screen and (max-width: 480px) {
+        padding-left: 16px;
+        padding-right: 16px;
     }
     .wrapper{
         max-width: 930px;
@@ -46,7 +48,7 @@
         }
         @media screen and (max-width: 640px) {
             top: auto;
-            bottom: 60px;
+            bottom: 25px;
             max-width: 340px;
             right: calc(50% - 170px);
             opacity: 1;

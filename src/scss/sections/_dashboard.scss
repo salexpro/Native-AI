@@ -1,12 +1,15 @@
 .dashboard{
-    padding: 0 40px 75px;
+    padding: 0 30px 75px;
+    @media screen and (max-width: 990px) {
+        padding-bottom: 68px;
+    } 
     @media screen and (max-width: 640px) {
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 25px;
+        padding-bottom: 55px;
     }
     @media screen and (max-width: 480px) {
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: 0;
+        padding-right: 0;
     }
     &_img{
         max-width: 488px;
@@ -15,8 +18,8 @@
         border: $border-grey;
         overflow: hidden;
         float: left;
-        @media screen and (max-width: 991px) {
-            margin: auto;
+        @media screen and (max-width: 990px) {
+            display: none;
         }
         img{
             display: block;
@@ -37,13 +40,24 @@
             bottom: 0;
             left: 0;
         }
-        @media screen and (max-width: 991px) {
-            margin-top: 40px;
+        @media screen and (max-width: 990px) {
+            margin-top: 0;
+        }
+    }
+    &_text{
+        @media screen and (max-width: 990px) {
+            margin-bottom: 50px;
+        }
+        @media screen and (max-width: 640px) {
+            margin-bottom: 0;
         }
     }
     .mainhow_link{
         margin-top: 35px;
         margin-left: 42px;
         font-size: 18px;
+        @media screen and (max-width: 640px) {
+            margin-top: 25px;
+        }
     }
 }

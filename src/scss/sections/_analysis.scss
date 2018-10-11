@@ -5,7 +5,7 @@
     &_wrapper{
         padding: 80px 40px 124px;
         border-bottom: $border-grey;
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 1023px) {
             padding: 65px 40px 100px;
         }
         @media screen and (max-width: 640px) {

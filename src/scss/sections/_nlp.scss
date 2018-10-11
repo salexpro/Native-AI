@@ -4,20 +4,36 @@
     border-top: $border-grey;
     border-bottom: $border-grey;
     @media screen and (max-width: 640px) {
-        padding-bottom: 40px;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
     &_header{
         margin-bottom: 30px;
+        @media screen and (max-width: 767px) {
+            margin-bottom: 0;
+        }
     }
     &_item{
         max-width: 250px;
         margin: auto;
+        @media screen and (max-width: 1023px) {
+            max-width: 210px;
+        }
+        @media screen and (max-width: 767px) {
+            margin-top: 30px;
+        }
         &_img{
             width: 170px;
             margin: auto;
             margin-bottom: 15px;
-            @media screen and (max-width: 480px) {
+            @media screen and (max-width: 1023px) {
                 width: 120px;
+            }
+        }
+        &_title{
+            @media screen and (max-width: 1023px) {
+                font-size: 15px;
+                line-height: 1.33;
             }
         }
     }

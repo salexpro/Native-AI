@@ -2272,19 +2272,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/blocks/_brands.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/build/css/blocks/_brands.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"/src/scss/blocks/_case_study.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2636,6 +2623,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/src/scss/sections/_brands.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/css/sections/_brands.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/src/scss/sections/_carousel.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2829,7 +2829,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/favicon/apple-touch-icon-120x120.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 560872900.93198705
+	"lastBuiltDate": 560937468.91593504
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

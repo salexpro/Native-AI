@@ -42,5 +42,6 @@ section.faq
                         =q.question
                         i
                             +icon('faq_arrow', [20, 11], '#f2751c')
-                    p.faq_item_content
-                        !=q.answer
+                    .faq_item_content
+                        p.faq_item_content_inner
+                            !=q.answer
