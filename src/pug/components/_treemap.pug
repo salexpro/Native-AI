@@ -1,5 +1,8 @@
 .interests-box-wrapper
-    img(src=`assets/images/macbook.png` srcset=`assets/images/macbook.png 1x, assets/images/macbook@2x.png 2x` alt='audience interests')
+    if page == 'main'
+        img(src=`assets/images/ipad.png` srcset=`assets/images/ipad.png 1x, assets/images/ipad@2x.png 2x` alt='audience interests')
+    else
+        img(src=`assets/images/macbook.png` srcset=`assets/images/macbook.png 1x, assets/images/macbook@2x.png 2x` alt='audience interests')
     .screen-box
         .report-treemap
             .report-treemap-navigation

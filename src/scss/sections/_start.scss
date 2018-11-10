@@ -1,15 +1,18 @@
 .started{
-    padding: 70px 0 80px;
+    padding: 0 0 100px;
     text-align: center;
-    border-bottom: $border-grey;
     @media screen and (max-width: 920px) {
         padding-top: 60px;
         padding-bottom: 50px;
     }
+    &_wrapper{
+        border-top: $border-grey;
+        padding-top: 65px;
+    }
     &_steps{
         display: flex;
         justify-content: space-between;
-        margin: 60px 0 50px;
+        margin: 30px 0 50px;
         counter-reset: steps;
         padding: 0 60px;
         @media screen and (max-width: 1199px) {
@@ -41,11 +44,8 @@
         &_num{
             width: 32px;
             height: 32px;
-            border: 2px solid $orange-dark;
-            background-color: $white;
-            box-shadow: 0 0 0 4px $white;
             border-radius: 50%;
-            color: $orange-dark;
+            color: $white;
             font-size: 18px;
             font-weight: 500;
             display: flex;
@@ -54,6 +54,8 @@
             margin: auto;
             position: relative;
             margin-bottom: 15px;
+            box-shadow: 0 5px 15px rgba(242, 117, 28, 0.5);
+            background-color: $orange-dark;
             &::before{
                 content: counter(steps);
             }
@@ -64,7 +66,7 @@
                     content: '';
                     position: absolute;
                     top: 50%;
-                    right: calc(100% + 6px);
+                    right: 100%;
                     width: 29vw;
                     max-width: 350px;
                     border: 1px solid $orange-light;

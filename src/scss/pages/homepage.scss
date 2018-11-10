@@ -62,421 +62,421 @@
 
 /* Screen 02 - How work ======================================================================== */
 
-.homepage--second-screen {
-    overflow: hidden;
-    padding-bottom: 76px;
-    .wrapper {
-        position: relative;
-    }
-    /* Screen 02 - How work - Text section ======================================================================== */
-    .text-section {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 570px;
-        .title-box,
-        .text-box p,
-        .paragraph {
-            padding-bottom: 30px;
-        }
-    }
-    /* Screen 02 - How work - How work section ======================================================================== */
-    .how-work-section {
-        height: 848px;
-        .bg {
-            position: absolute;
-            top: 90px;
-            right: 197px;
-            width: 552px;
-            height: 581px;
-            background: url(https://cdn2.hubspot.net/hubfs/3048376/assets/images/how-it-work/lines-test.svg) no-repeat;
-        }
-        /* Screen 02 - How work - How work section - Items ======================================================================== */
-        .how-work-item {
-            position: absolute;
-            .number {
-                position: absolute;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 32px;
-                height: 32px;
-                background-color: $orange-dark;
-                border-radius: 50%;
-                color: $white;
-                font-size: 20px;
-                font-weight: 700;
-                line-height: 32px;
-            }
-            .ill {
-                display: flex;
-                flex-direction: column;
-                &:hover~.drop-info {
-                    visibility: visible;
-                    opacity: .93;
-                    transform: translateX( 0);
-                }
-            }
-            .drop-info {
-                position: absolute;
-                top: 0;
-                visibility: hidden;
-                width: 250px;
-                padding: 18px 20px;
-                box-shadow: 0 4px 12px $shadow-color;
-                border-radius: 8px;
-                background-color: $blue-dark;
-                opacity: 0;
-                transform: translateX( 100px);
-                transition: transform .4s, opacity .3s, visibility .4s;
-                color: $white;
-                z-index: 40;
-            }
-            &.start,
-            &.four,
-            &.fifth,
-            &.extra,
-            &.sixth,
-            &.final {
-                .ill {
-                    align-items: center;
-                }
-            }
-            &.start,
-            &.four,
-            &.fifth {
-                .number {
-                    top: -42px;
-                    left: calc( 50% - 16px);
-                }
-                .drop-info {
-                    left: -350px;
-                    width: 300px;
-                }
-            }
-            &.frst,
-            &.second,
-            &.third {
-                right: 13px;
-                .drop-info {
-                    left: -308px;
-                }
-            }
-            &.frst,
-            &.second,
-            &.third,
-            &.extra {
-                .number {
-                    top: calc( 50% - 16px);
-                    left: -42px;
-                }
-            }
-            /* Screen 02 - How work - How work section - Items - Start ======================================================================== */
-            &.start {
-                top: 117px;
-                right: 336px;
-            }
-            /* Screen 02 - How work - How work section - Items - First ======================================================================== */
-            &.frst {
-                top: 105px;
-            }
-            /* Screen 02 - How work - How work section - Items - Second ======================================================================== */
-            &.second {
-                top: 305px;
-                right: 25px;
-            }
-            /* Screen 02 - How work - How work section - Items - Third ======================================================================== */
-            &.third {
-                top: 502px;
-                right: 52px;
-            }
-            /* Screen 02 - How work - How work section - Items - Four ======================================================================== */
-            &.four {
-                bottom: 0;
-                right: 227px;
-            }
-            /* Screen 02 - How work - How work section - Items - Fifth ======================================================================== */
-            &.fifth {
-                bottom: 0;
-                right: 402px;
-            }
-            /* Screen 02 - How work - How work section - Items - Extra ======================================================================== */
-            &.extra {
-                right: 336px;
-                top: 372px;
-                .number {
-                    background-color: $blue-dark;
-                    left: -46px;
-                }
-            }
-            /* Screen 02 - How work - How work section - Items - Final ======================================================================== */
-            &.final {
-                left: -35px;
-                bottom: 0;
-                .number {
-                    top: calc( 50% - 50px);
-                    right: -50px;
-                    width: 40px;
-                    height: 40px;
-                }
-            }
-        }
-    }
-}
+// .homepage--second-screen {
+//     overflow: hidden;
+//     padding-bottom: 76px;
+//     .wrapper {
+//         position: relative;
+//     }
+//     /* Screen 02 - How work - Text section ======================================================================== */
+//     .text-section {
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         width: 570px;
+//         .title-box,
+//         .text-box p,
+//         .paragraph {
+//             padding-bottom: 30px;
+//         }
+//     }
+//     /* Screen 02 - How work - How work section ======================================================================== */
+//     .how-work-section {
+//         height: 848px;
+//         .bg {
+//             position: absolute;
+//             top: 90px;
+//             right: 197px;
+//             width: 552px;
+//             height: 581px;
+//             background: url(https://cdn2.hubspot.net/hubfs/3048376/assets/images/how-it-work/lines-test.svg) no-repeat;
+//         }
+//         /* Screen 02 - How work - How work section - Items ======================================================================== */
+//         .how-work-item {
+//             position: absolute;
+//             .number {
+//                 position: absolute;
+//                 display: flex;
+//                 justify-content: center;
+//                 align-items: center;
+//                 width: 32px;
+//                 height: 32px;
+//                 background-color: $orange-dark;
+//                 border-radius: 50%;
+//                 color: $white;
+//                 font-size: 20px;
+//                 font-weight: 700;
+//                 line-height: 32px;
+//             }
+//             .ill {
+//                 display: flex;
+//                 flex-direction: column;
+//                 &:hover~.drop-info {
+//                     visibility: visible;
+//                     opacity: .93;
+//                     transform: translateX( 0);
+//                 }
+//             }
+//             .drop-info {
+//                 position: absolute;
+//                 top: 0;
+//                 visibility: hidden;
+//                 width: 250px;
+//                 padding: 18px 20px;
+//                 box-shadow: 0 4px 12px $shadow-color;
+//                 border-radius: 8px;
+//                 background-color: $blue-dark;
+//                 opacity: 0;
+//                 transform: translateX( 100px);
+//                 transition: transform .4s, opacity .3s, visibility .4s;
+//                 color: $white;
+//                 z-index: 40;
+//             }
+//             &.start,
+//             &.four,
+//             &.fifth,
+//             &.extra,
+//             &.sixth,
+//             &.final {
+//                 .ill {
+//                     align-items: center;
+//                 }
+//             }
+//             &.start,
+//             &.four,
+//             &.fifth {
+//                 .number {
+//                     top: -42px;
+//                     left: calc( 50% - 16px);
+//                 }
+//                 .drop-info {
+//                     left: -350px;
+//                     width: 300px;
+//                 }
+//             }
+//             &.frst,
+//             &.second,
+//             &.third {
+//                 right: 13px;
+//                 .drop-info {
+//                     left: -308px;
+//                 }
+//             }
+//             &.frst,
+//             &.second,
+//             &.third,
+//             &.extra {
+//                 .number {
+//                     top: calc( 50% - 16px);
+//                     left: -42px;
+//                 }
+//             }
+//             /* Screen 02 - How work - How work section - Items - Start ======================================================================== */
+//             &.start {
+//                 top: 117px;
+//                 right: 336px;
+//             }
+//             /* Screen 02 - How work - How work section - Items - First ======================================================================== */
+//             &.frst {
+//                 top: 105px;
+//             }
+//             /* Screen 02 - How work - How work section - Items - Second ======================================================================== */
+//             &.second {
+//                 top: 305px;
+//                 right: 25px;
+//             }
+//             /* Screen 02 - How work - How work section - Items - Third ======================================================================== */
+//             &.third {
+//                 top: 502px;
+//                 right: 52px;
+//             }
+//             /* Screen 02 - How work - How work section - Items - Four ======================================================================== */
+//             &.four {
+//                 bottom: 0;
+//                 right: 227px;
+//             }
+//             /* Screen 02 - How work - How work section - Items - Fifth ======================================================================== */
+//             &.fifth {
+//                 bottom: 0;
+//                 right: 402px;
+//             }
+//             /* Screen 02 - How work - How work section - Items - Extra ======================================================================== */
+//             &.extra {
+//                 right: 336px;
+//                 top: 372px;
+//                 .number {
+//                     background-color: $blue-dark;
+//                     left: -46px;
+//                 }
+//             }
+//             /* Screen 02 - How work - How work section - Items - Final ======================================================================== */
+//             &.final {
+//                 left: -35px;
+//                 bottom: 0;
+//                 .number {
+//                     top: calc( 50% - 50px);
+//                     right: -50px;
+//                     width: 40px;
+//                     height: 40px;
+//                 }
+//             }
+//         }
+//     }
+// }
 
 /* Screen 02 < 1140 ======================================================================== */
 
-@media screen and ( max-width: 1140px) {
-    .homepage--second-screen {
-        padding: 0 40px 107px;
-        /* Screen 02 - How work - Text section ======================================================================== */
-        .text-section {
-            position: relative;
-            width: 100%;
-            br {
-                display: none;
-            }
-        }
-        /* Screen 02 - How work - How work section ======================================================================== */
-        .how-work-section {
-            position: relative;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin: 40px auto 0;
-            width: 100%;
-            max-width: 720px;
-            height: auto;
-            .bg {
-                display: none;
-            }
-            /* Screen 02 - How work - How work section - Items ======================================================================== */
-            .how-work-item {
-                position: initial;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                .ill {
-                    &:hover+.drop-info {
-                        visibility: hidden;
-                    }
-                }
-                .img {
-                    text-align: center;
-                }
-                .drop-info {
-                    display: none;
-                }
-                &.start,
-                &.frst,
-                &.second,
-                &.third,
-                &.four,
-                &.fifth {
-                    top: auto;
-                    left: auto;
-                    right: auto;
-                    width: 30%;
-                    margin-bottom: 40px;
-                    .number {
-                        position: relative;
-                        top: auto;
-                        left: auto;
-                        bottom: auto;
-                        margin-top: 16px;
-                    }
-                }
-                /* Screen 02 - How work - How work section - Items - Start ======================================================================== */
-                &.start,
-                &.third,
-                &.extra,
-                &.final {
-                    &:before {
-                        content: '';
-                        position: absolute;
-                        display: block;
-                    }
-                }
-                &.start,
-                &.third,
-                &.final {
-                    &:before {
-                        height: 2px;
-                        background-color: $orange-main;
-                    }
-                }
-                &.start {
-                    &:before {
-                        top: 183px;
-                        left: 123px;
-                        width: calc( 100vw - ( 50% - 360px));
-                    }
-                }
-                /* Screen 02 - How work - How work section - Items - Third ======================================================================== */
-                &.third {
-                    &:before {
-                        top: 423px;
-                        left: calc( 360px - 50vw);
-                        width: 100vw;
-                    }
-                }
-                /* Screen 02 - How work - How work section - Items - Extra ======================================================================== */
-                &.extra {
-                    position: absolute;
-                    right: 48px;
-                    top: auto;
-                    bottom: 0;
-                    &:before {
-                        top: -190px;
-                        width: 2px;
-                        height: 150px;
-                        z-index: -1;
-                        background-color: $blue-main;
-                    }
-                    .number {
-                        top: -40px;
-                        left: calc( 50% - 16px);
-                    }
-                }
-                /* Screen 02 - How work - How work section - Items - Final ======================================================================== */
-                &.final {
-                    position: relative;
-                    left: 128px;
-                    right: 0px;
-                    bottom: 0px;
-                    &:before {
-                        top: 197px;
-                        left: calc( 230px - 50vw);
-                        width: calc( 50vw - 230px);
-                    }
-                    .number {
-                        top: 178px;
-                        left: -40px;
-                        right: auto;
-                    }
-                }
-            }
-        }
-    }
-}
+// @media screen and ( max-width: 1140px) {
+//     .homepage--second-screen {
+//         padding: 0 40px 107px;
+//         /* Screen 02 - How work - Text section ======================================================================== */
+//         .text-section {
+//             position: relative;
+//             width: 100%;
+//             br {
+//                 display: none;
+//             }
+//         }
+//         /* Screen 02 - How work - How work section ======================================================================== */
+//         .how-work-section {
+//             position: relative;
+//             display: flex;
+//             flex-wrap: wrap;
+//             justify-content: space-between;
+//             margin: 40px auto 0;
+//             width: 100%;
+//             max-width: 720px;
+//             height: auto;
+//             .bg {
+//                 display: none;
+//             }
+//             /* Screen 02 - How work - How work section - Items ======================================================================== */
+//             .how-work-item {
+//                 position: initial;
+//                 display: flex;
+//                 flex-direction: column;
+//                 align-items: center;
+//                 .ill {
+//                     &:hover+.drop-info {
+//                         visibility: hidden;
+//                     }
+//                 }
+//                 .img {
+//                     text-align: center;
+//                 }
+//                 .drop-info {
+//                     display: none;
+//                 }
+//                 &.start,
+//                 &.frst,
+//                 &.second,
+//                 &.third,
+//                 &.four,
+//                 &.fifth {
+//                     top: auto;
+//                     left: auto;
+//                     right: auto;
+//                     width: 30%;
+//                     margin-bottom: 40px;
+//                     .number {
+//                         position: relative;
+//                         top: auto;
+//                         left: auto;
+//                         bottom: auto;
+//                         margin-top: 16px;
+//                     }
+//                 }
+//                 /* Screen 02 - How work - How work section - Items - Start ======================================================================== */
+//                 &.start,
+//                 &.third,
+//                 &.extra,
+//                 &.final {
+//                     &:before {
+//                         content: '';
+//                         position: absolute;
+//                         display: block;
+//                     }
+//                 }
+//                 &.start,
+//                 &.third,
+//                 &.final {
+//                     &:before {
+//                         height: 2px;
+//                         background-color: $orange-main;
+//                     }
+//                 }
+//                 &.start {
+//                     &:before {
+//                         top: 183px;
+//                         left: 123px;
+//                         width: calc( 100vw - ( 50% - 360px));
+//                     }
+//                 }
+//                 /* Screen 02 - How work - How work section - Items - Third ======================================================================== */
+//                 &.third {
+//                     &:before {
+//                         top: 423px;
+//                         left: calc( 360px - 50vw);
+//                         width: 100vw;
+//                     }
+//                 }
+//                 /* Screen 02 - How work - How work section - Items - Extra ======================================================================== */
+//                 &.extra {
+//                     position: absolute;
+//                     right: 48px;
+//                     top: auto;
+//                     bottom: 0;
+//                     &:before {
+//                         top: -190px;
+//                         width: 2px;
+//                         height: 150px;
+//                         z-index: -1;
+//                         background-color: $blue-main;
+//                     }
+//                     .number {
+//                         top: -40px;
+//                         left: calc( 50% - 16px);
+//                     }
+//                 }
+//                 /* Screen 02 - How work - How work section - Items - Final ======================================================================== */
+//                 &.final {
+//                     position: relative;
+//                     left: 128px;
+//                     right: 0px;
+//                     bottom: 0px;
+//                     &:before {
+//                         top: 197px;
+//                         left: calc( 230px - 50vw);
+//                         width: calc( 50vw - 230px);
+//                     }
+//                     .number {
+//                         top: 178px;
+//                         left: -40px;
+//                         right: auto;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
 /* Screen 02 < 800 ======================================================================== */
 
-@media screen and ( max-width: 800px) {
-    .homepage--second-screen {
-        padding: 0 40px 107px;
-        /* Screen 02 - How work - How work section ======================================================================== */
-        .how-work-section {
-            .how-work-item {
-                /* Screen 02 - How work - How work section - Items - Start ======================================================================== */
-                &.start {
-                    &:before {
-                        left: -40px;
-                    }
-                }
-                /* Screen 02 - How work - How work section - Items - Third ======================================================================== */
-                &.third {
-                    &:before {
-                        left: -40px;
-                    }
-                }
-                /* Screen 02 - How work - How work section - Items - Extra ======================================================================== */
-                &.extra {
-                    right: 5.8%;
-                }
-                /* Screen 02 - How work - How work section - Items - Final ======================================================================== */
-                &.final {
-                    left: 17.8%;
-                    &:before {
-                        left: calc( 180px - 50vw);
-                        width: calc( 50vw - 200px);
-                    }
-                }
-            }
-        }
-    }
-}
+// @media screen and ( max-width: 800px) {
+//     .homepage--second-screen {
+//         padding: 0 40px 107px;
+//         /* Screen 02 - How work - How work section ======================================================================== */
+//         .how-work-section {
+//             .how-work-item {
+//                 /* Screen 02 - How work - How work section - Items - Start ======================================================================== */
+//                 &.start {
+//                     &:before {
+//                         left: -40px;
+//                     }
+//                 }
+//                 /* Screen 02 - How work - How work section - Items - Third ======================================================================== */
+//                 &.third {
+//                     &:before {
+//                         left: -40px;
+//                     }
+//                 }
+//                 /* Screen 02 - How work - How work section - Items - Extra ======================================================================== */
+//                 &.extra {
+//                     right: 5.8%;
+//                 }
+//                 /* Screen 02 - How work - How work section - Items - Final ======================================================================== */
+//                 &.final {
+//                     left: 17.8%;
+//                     &:before {
+//                         left: calc( 180px - 50vw);
+//                         width: calc( 50vw - 200px);
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
 /* Screen 02 < 640 ======================================================================== */
 
-@media screen and ( max-width: 640px) {
-    .homepage--second-screen {
-        padding: 0 16px 60px !important;
-        /* Screen 02 - How work - How work section ======================================================================== */
-        .how-work-section {
-            margin: 30px auto 0;
-            /* Screen 02 - How work - How work section - Items ======================================================================== */
-            .how-work-item {
-                .img img {
-                    width: 80px;
-                    height: 80px;
-                }
-                &.start,
-                &.frst,
-                &.second,
-                &.third,
-                &.four,
-                &.fifth {
-                    width: 50%;
-                }
-                /* Screen 02 - How work - How work section - Items - Start ======================================================================== */
-                &.start {
-                    &:before {
-                        top: 137px;
-                        left: 25%;
-                        z-index: -1;
-                    }
-                }
-                /* Screen 02 - How work - How work section - Items - Third ======================================================================== */
-                &.third {
-                    &:before {
-                        top: 331px;
-                        left: -16px;
-                        z-index: -1;
-                    }
-                }
-                /* Screen 02 - How work - How work section - Items - Four ======================================================================== */
-                &.four {
-                    &:before {
-                        content: '';
-                        position: absolute;
-                        top: 525px;
-                        left: -16px;
-                        display: block;
-                        width: 100vw;
-                        height: 2px;
-                        background-color: $orange-main;
-                    }
-                }
-                /* Screen 02 - How work - How work section - Items - Extra ======================================================================== */
-                &.extra {
-                    display: none;
-                }
-                /* Screen 02 - How work - How work section - Items - Final ======================================================================== */
-                &.final {
-                    position: relative;
-                    left: 27%;
-                    right: 0px;
-                    bottom: 0px;
-                    .img img {
-                        width: 200px;
-                        height: 140px;
-                    }
-                    &:before {
-                        top: 153px;
-                        left: -54vw;
-                        width: 52vw;
-                    }
-                    .number {
-                        top: 134px;
-                        left: -40px;
-                        right: auto;
-                    }
-                }
-            }
-        }
-    }
-}
+// @media screen and ( max-width: 640px) {
+//     .homepage--second-screen {
+//         padding: 0 16px 60px !important;
+//         /* Screen 02 - How work - How work section ======================================================================== */
+//         .how-work-section {
+//             margin: 30px auto 0;
+//             /* Screen 02 - How work - How work section - Items ======================================================================== */
+//             .how-work-item {
+//                 .img img {
+//                     width: 80px;
+//                     height: 80px;
+//                 }
+//                 &.start,
+//                 &.frst,
+//                 &.second,
+//                 &.third,
+//                 &.four,
+//                 &.fifth {
+//                     width: 50%;
+//                 }
+//                 /* Screen 02 - How work - How work section - Items - Start ======================================================================== */
+//                 &.start {
+//                     &:before {
+//                         top: 137px;
+//                         left: 25%;
+//                         z-index: -1;
+//                     }
+//                 }
+//                 /* Screen 02 - How work - How work section - Items - Third ======================================================================== */
+//                 &.third {
+//                     &:before {
+//                         top: 331px;
+//                         left: -16px;
+//                         z-index: -1;
+//                     }
+//                 }
+//                 /* Screen 02 - How work - How work section - Items - Four ======================================================================== */
+//                 &.four {
+//                     &:before {
+//                         content: '';
+//                         position: absolute;
+//                         top: 525px;
+//                         left: -16px;
+//                         display: block;
+//                         width: 100vw;
+//                         height: 2px;
+//                         background-color: $orange-main;
+//                     }
+//                 }
+//                 /* Screen 02 - How work - How work section - Items - Extra ======================================================================== */
+//                 &.extra {
+//                     display: none;
+//                 }
+//                 /* Screen 02 - How work - How work section - Items - Final ======================================================================== */
+//                 &.final {
+//                     position: relative;
+//                     left: 27%;
+//                     right: 0px;
+//                     bottom: 0px;
+//                     .img img {
+//                         width: 200px;
+//                         height: 140px;
+//                     }
+//                     &:before {
+//                         top: 153px;
+//                         left: -54vw;
+//                         width: 52vw;
+//                     }
+//                     .number {
+//                         top: 134px;
+//                         left: -40px;
+//                         right: auto;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
 /* Screen 03 - Power for ======================================================================== */
 
@@ -660,11 +660,11 @@
 
 /* Screen 03 < 1140 ======================================================================== */
 
-@media screen and ( max-width: 1140px) {
-    .homepage--second-screen {
-        padding: 0 40px 107px;
-    }
-}
+// @media screen and ( max-width: 1140px) {
+//     .homepage--second-screen {
+//         padding: 0 40px 107px;
+//     }
+// }
 
 /* Screen 03 < 860 ======================================================================== */
 
@@ -780,67 +780,72 @@
         }
     }
     /* Screen 05 - Interests box ======================================================================== */
-    .interests-box-wrapper {
-        float: right;
-        width: 560px;
-        height: 390px;
-        padding: 0 0 40px 40px;
-        background-color: $grey-bg;
-        position: relative;
-        @media screen and (max-width: 1199px) {
-            margin-left: 50px;
+    
+    /* Screen 05 - Title ======================================================================== */
+    .title {
+        padding-bottom: 25px;
+    }
+}
+.interests-box-wrapper {
+    float: right;
+    width: 560px;
+    height: 390px;
+    padding: 0 0 40px 40px;
+    background-color: $grey-bg;
+    position: relative;
+    @media screen and (max-width: 1199px) {
+        margin-left: 50px;
+    }
+    >img {
+        width: 145%;
+        margin-left: -24%;
+        max-width: none;
+    }
+}
+.screen-box {
+    overflow: hidden;
+    position: absolute;
+    top: 28px;
+    left: 42px;
+    right: 23px;
+    bottom: 53px;
+    z-index: 100;
+    background-color: #fff;
+}
+.report-treemap {
+    background: #e3e4e6;
+    font-weight: 300;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    &-navigation {
+        padding: 6px 10px 4px;
+        font-size: 12px;
+        line-height: 17px;
+        white-space: nowrap;
+        a {
+            color: #4c87cd;
+            text-decoration: underline;
+            cursor: pointer;
         }
-        >img {
-            width: 145%;
-            margin-left: -24%;
-            max-width: none;
-        }
-        .screen-box {
-            overflow: hidden;
-            position: absolute;
-            top: 28px;
-            left: 42px;
-            right: 23px;
-            bottom: 53px;
-            z-index: 100;
-            background-color: #fff;
+        span {
+            &::after {
+                content: " >> ";
+            }
+            &:last-child::after {
+                content: "";
+            }
         }
     }
-    .report-treemap {
-        background: #e3e4e6;
-        font-weight: 300;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        &-navigation {
-            padding: 6px 10px 4px;
-            font-size: 12px;
-            line-height: 17px;
-            white-space: nowrap;
-            a {
-                color: #4c87cd;
-                text-decoration: underline;
-                cursor: pointer;
-            }
-            span {
-                &::after {
-                    content: " >> ";
-                }
-                &:last-child::after {
-                    content: "";
-                }
-            }
-        }
+}
+.treemap-container {
+    flex: 1 1 100%;
+    svg {
+        overflow: hidden;
+        // background: #e3e4e6;
     }
-    .treemap-container {
-        flex: 1 1 100%;
-        svg {
-            overflow: hidden;
-            // background: #e3e4e6;
-        }
-        &.touch g:hover>rect.foreground {
-            fill-opacity: 0;
-        }
+    &.touch g:hover>rect.foreground {
+        fill-opacity: 0;
     }
     g {
         &.root {
@@ -903,88 +908,41 @@
             transform: rotate(0deg);
         }
     }
-    .treemap-hint {
+}
+
+.treemap-hint {
+    position: absolute;
+    background-image: url(https://cdn2.hubspot.net/hubfs/3048376/assets/images/hint_baloon.png?t=1526875186821);
+    background-repeat: no-repeat;
+    background-position: center;
+    left: calc(50% - 198px);
+    top: 15%;
+    z-index: 101;
+    width: 396px;
+    height: 188px;
+    cursor: pointer;
+    transition: opacity 0.2s ease-out,
+    transform 1s ease-out,
+    margin 0.3s ease-out;
+    &.wiggle {
+        animation: wiggle .33s 3;
+    }
+    &.hidden {
+        opacity: 0;
+        transform: scale(0);
+    }
+    &-text {
         position: absolute;
-        background-image: url(https://cdn2.hubspot.net/hubfs/3048376/assets/images/hint_baloon.png?t=1526875186821);
-        background-repeat: no-repeat;
-        background-position: center;
-        left: calc(50% - 198px);
-        top: 15%;
-        z-index: 101;
-        width: 396px;
-        height: 188px;
-        cursor: pointer;
-        transition: opacity 0.2s ease-out,
-        transform 1s ease-out,
-        margin 0.3s ease-out;
-        &.wiggle {
-            animation: wiggle .33s 3;
-        }
-        &.hidden {
-            opacity: 0;
-            transform: scale(0);
-        }
-        &-text {
-            position: absolute;
-            line-height: 31px;
-            text-align: center;
-            font-size: 20px;
-            color: #656565;
-            left: 48px;
-            top: 49px;
-            width: 300px;
-        }
-    }
-    blockquote {
-        display: block;
-        margin-bottom: 25px;
-    }
-    p {
-        // padding-bottom: 30px;
-    }
-    /* Screen 05 - Title ======================================================================== */
-    .title,
-    blockquote {
-        padding-bottom: 25px;
-    }
-    .interests {
-        display: flex;
-        align-items: flex-end;
-        padding-top: 45px;
-        @media screen and (max-width: 1023px) {
-            padding-top: 130px;
-        }
-        @media screen and ( max-width: 640px) {
-            padding-top: 0;
-        }
-        &_img {
-            margin-right: 44px;
-            flex: 0 0 47%;
-            @media screen and (max-width: 1023px) {
-                flex: 1 1 auto;
-                margin: auto;
-            }
-            img {
-                max-width: 100%;
-                @media screen and ( max-width: 640px) {
-                    display: none;
-                }
-            }
-        }
-        &_content {
-            h3,
-            h4 {
-                font-weight: 700;
-            }
-            h3 {
-                margin-bottom: 30px;
-            }
-            .paragraph {
-                padding-bottom: 25px;
-            }
-        }
+        line-height: 31px;
+        text-align: center;
+        font-size: 20px;
+        color: #656565;
+        left: 48px;
+        top: 49px;
+        width: 300px;
     }
 }
+
 
 /* Screen 05 < 1140 ======================================================================== */
 

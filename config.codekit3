@@ -45,6 +45,13 @@
 		"oAP": "/build/.gitignore",
 		"oF": 1
 		},
+	"/.sasslintrc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/build/.sasslintrc",
+		"oF": 0
+		},
 	"/build": {
 		"ft": 65536,
 		"oA": 1,
@@ -1520,6 +1527,36 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/src/assets/images/illustrations/insights/analysis.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/assets/images/illustrations/insights/analysis.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/src/assets/images/illustrations/insights/analytics.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/assets/images/illustrations/insights/analytics.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/src/assets/images/illustrations/insights/optimization.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/assets/images/illustrations/insights/optimization.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/src/assets/images/illustrations/interests.svg": {
 		"ft": 2097152,
 		"miP": 1,
@@ -1528,6 +1565,26 @@
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
+		"prP": 0
+		},
+	"/src/assets/images/illustrations/main.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/assets/images/illustrations/main.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/src/assets/images/illustrations/optimization.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/assets/images/illustrations/optimization.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
 		"prP": 0
 		},
 	"/src/assets/images/illustrations/pub-1.svg": {
@@ -1722,6 +1779,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/src/assets/images/ipad.png": {
+		"ft": 32768,
+		"iS": 295637,
+		"oA": 0,
+		"oAP": "/build/assets/images/ipad.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/images/ipad@2x.png": {
+		"ft": 32768,
+		"iS": 911518,
+		"oA": 0,
+		"oAP": "/build/assets/images/ipad@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/src/assets/images/language/classification.svg": {
 		"ft": 2097152,
 		"miP": 1,
@@ -1869,6 +1948,15 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"/src/pug/components/_head.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "/build/_head.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/src/pug/components/_icons.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -2013,12 +2101,21 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_analytics.pug": {
+	"/src/pug/sections/_analytics (legacy).pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_analytics.html",
+		"oAP": "/build/_analytics (legacy).html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_api.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "/build/_api.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2094,6 +2191,15 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/src/pug/sections/_first (legacy).pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "/build/_first (legacy).html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/src/pug/sections/_first.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -2109,15 +2215,6 @@
 		"ft": 512,
 		"oA": 1,
 		"oAP": "/build/_first_adv.html",
-		"oF": 0,
-		"oS": 0
-		},
-	"/src/pug/sections/_first_old.pug": {
-		"cB": 1,
-		"cOD": 0,
-		"ft": 512,
-		"oA": 1,
-		"oAP": "/build/_first_old.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2139,15 +2236,6 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_head.pug": {
-		"cB": 1,
-		"cOD": 0,
-		"ft": 512,
-		"oA": 1,
-		"oAP": "/build/_head.html",
-		"oF": 0,
-		"oS": 0
-		},
 	"/src/pug/sections/_header.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -2157,12 +2245,21 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_how.pug": {
+	"/src/pug/sections/_how (old).pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_how.html",
+		"oAP": "/build/_how (old).html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_insights.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "/build/_insights.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2175,21 +2272,39 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_nlp.pug": {
+	"/src/pug/sections/_nlp_classify.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_nlp.html",
+		"oAP": "/build/_nlp_classify.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_power (old).pug": {
+	"/src/pug/sections/_nlp_understand.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "/build/_power (old).html",
+		"oAP": "/build/_nlp_understand.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_optimization.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "/build/_optimization.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_power (legacy).pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "/build/_power (legacy).html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2571,6 +2686,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/src/scss/sections/_analytics.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/css/sections/_analytics.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/src/scss/sections/_anim.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2580,6 +2708,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/build/css/sections/_anim.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/src/scss/sections/_api.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/css/sections/_api.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -2727,6 +2868,32 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/src/scss/sections/_insights.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/css/sections/_insights.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/src/scss/sections/_interests.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/css/sections/_interests.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/src/scss/sections/_metrics.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2749,6 +2916,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/build/css/sections/_nlp.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/src/scss/sections/_optimization.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/css/sections/_optimization.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -2829,7 +3009,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/favicon/apple-touch-icon-120x120.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 560937468.91593504
+	"lastBuiltDate": 563566217.54267001
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

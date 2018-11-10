@@ -1,23 +1,27 @@
 extends ../layout
 block const
     -
+        const page = 'main'
         const title = 'NativeAI - Publisher Analytics & Monetization Platform'
         const description = 'NativeAI is an advertising and analytics platform for news publishers on web and mobile. It uses advanced personalization algorithms to help content creators understand their audience and predict which content would do well, as well as use those insights to target native advertising and monetize their properties more effectively.'
         const keywords = 'native advertising, native content, native marketing, content advertising, publisher content, promo content'
 
 block content
     // Components
+    include ../sections/_first
     include ../sections/_interests
     include ../sections/_brands
     include ../components/_list
 
     // Sections
-    include ../sections/_first_old
-    include ../sections/_analytics
-    +brands('h2', 'Top Brands Rely on NativeAI', 'View case study', true)
+    +first('Optimization Platform<br> for Digital Publishers', 'Analytics, Engagement & Subscription Optimization powered by AI', 'Get a Demo')
+    include ../sections/_insights
+    +brands('h2', 'Top Publishers and Brands Rely on NativeAI', 'Download Case Study', true)
+    include ../sections/_nlp_understand
+    +interests(true, 'True Publisher Analytics', 'list', 'analytics')
+    include ../sections/_api
+    include ../sections/_optimization
     include ../sections/_start
-    +interests(true, 'Content Intelligence that lets you take data-informed decisions', '<blockquote>isn’t marketing, it’s guessing.</blockquote><p>Content Analytics tools are plenty, Data is everywhere, but how much of it are you able to use immediately?  The problem has traditionally been a lack of actionable, understandable intelligence and insight.</p>', 'grey-bg')
-    include ../sections/_how
     include ../sections/_blog_feature
 
 block js

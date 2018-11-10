@@ -53,7 +53,8 @@ const form_send = ($form) => {
                 location.href = '/thank-you-for-requesting-a-demo'
                 break;
             }
-            ga('send', 'event', 'get demo form submitted');
+            if(typeof ga === 'function')
+                ga('send', 'event', 'get demo form submitted');
         },
         error: xhr => {
             console.log(xhr);

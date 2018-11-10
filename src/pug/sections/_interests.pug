@@ -1,18 +1,30 @@
 mixin interests(second, header, text, mod)
     section.homepage--five-screen(class=mod)
         .wrapper
-            include ../components/_treemap
+            if page == 'main'
+                .interests_img.interests_img--top
+                    img(src="assets/images/illustrations/interests.svg", alt="")
+            else
+                include ../components/_treemap
             .title
                 h2= header
             .text-section
                 if text === 'list'
-                    +list(['Understands content', 'Groups similar articles', 'Maps Audience behavior to Grouped <br>& Individual Interests', 'Allows you to deep dive and identify insights <br>by Topic Affinities & Audience profiles'])
+                    if page == 'main'
+                        blockquote.blockquote--simple
+                            | Every question you have as a Digital Publisher, answered:
+                        +list(['Who reads your content?', 'How much do they engage with it?', 'Which audience segment likes what content topics?', 'What other topics will each audience segment be interested in?'])
+                    else
+                        +list(['Understands content', 'Groups similar articles', 'Maps Audience behavior to Grouped <br>& Individual Interests', 'Allows you to deep dive and identify insights <br>by Topic Affinities & Audience profiles'])
                 else
                     !=text
         if second
             .wrapper.interests
                 .interests_img
-                    img(src="assets/images/illustrations/interests.svg", alt="")
+                    if page == 'main'
+
+                    else
+                        img(src="assets/images/illustrations/interests.svg", alt="")
                 .interests_content
                     h3 How NativeAI solves Data Overload
                     .paragraph

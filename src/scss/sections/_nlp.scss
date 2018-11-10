@@ -1,3 +1,22 @@
+.nlp{
+    padding-top: 65px;
+    h2{
+        text-align: center;
+    }
+    &_anim{
+        margin-top: 15px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        img{
+            // max-width: 100%;
+        }
+    }
+    &_bottom{
+        text-align: center;
+    }
+}
+
 .language{
     text-align: center;
     padding: 65px 15px 70px;

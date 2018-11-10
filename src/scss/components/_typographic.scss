@@ -4,7 +4,7 @@ h1 {
     color: $black;
     font-size: 55px;
     font-weight: 700;
-    line-height: 65px;
+    line-height: 1.27;
     @media screen and ( max-width: 640px) {
         font-size: 32px;
         line-height: 42px;
@@ -84,6 +84,7 @@ strong {
 }
 
 blockquote {
+    display: block;
     padding: 24px 0 26px;
     border-top: $border-grey;
     border-bottom: $border-grey;
@@ -91,4 +92,8 @@ blockquote {
     font-size: 18px;
     font-weight: 500;
     line-height: 30px;
+}
+.blockquote--simple{
+    padding: 15px 0 0;
+    border: 0;
 }

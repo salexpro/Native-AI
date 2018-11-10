@@ -3,66 +3,19 @@
     height: 45px;
     padding: 0 20px;
     border-radius: 4px;
-    transition: border-color .3s, background-color .3s, color .3s, fill .3s;
+    transition: 300ms;
     cursor: pointer;
     font: 16px/42px $font;
-    text-decoration: none;
-    text-align: center;
     text-decoration: none !important;
+    text-align: center;
     min-width: 240px;
-    /* Buttons - border  ======================================================================== */
-    &.border {
-        line-height: 40px;
-        &.orange,
-        &.blue {
-            border: 2px solid transparent;
-            background-color: transparent;
-            font-weight: 400;
-            box-shadow: none;
-        }
-        &.orange {
-            color: $orange-dark;
-            border-color: $orange-main;
-            svg {
-                fill: $orange-dark;
-            }
-        }
-        &.blue {
-            color: $blue-dark;
-            border-color: $blue-main;
-            svg {
-                fill: $blue-dark;
-            }
-        }
-        &:hover {
-            &.orange {
-                color: $white;
-                background-color: $orange-main;
-                svg {
-                    fill: $white;
-                }
-            }
-            &.blue {
-                color: $white;
-                background-color: $blue-main;
-                svg {
-                    fill: $white;
-                }
-            }
-        }
-    }
-    /* Buttons - slim  ======================================================================== */
-    &.slim {
-        min-width: 170px;
-        height: 35px;
-        line-height: 30px;
-    }
-    /* Buttons - colors  ======================================================================== */
-    &.orange,
-    &.blue {
+    border: none;
+    font-weight: 700;
+    &:not(.clear){
         color: $white;
-        border: none;
-        font-weight: 700;
+    }
+    use{
+        transition: 300ms;
     }
     &.orange {
         background-color: $orange-main;
@@ -72,14 +25,60 @@
         background-color: $blue-main;
         box-shadow: 0 6px 20px rgba(76, 110, 245, 0.42);
     }
-    &:hover {
+    &.dust{
+        background-color: #d66c20;
+    }
+    &:hover:not(.clear){
         &.orange {
             background-color: $orange-dark;
+            border-color: $orange-dark;
         }
         &.blue {
             background-color: $blue-dark;
+            border-color: $blue-dark;
         }
     }
+    /* Buttons - border  ======================================================================== */
+    &.border {
+        line-height: 40px;
+        border: 2px solid transparent;
+        background-color: transparent;
+        box-shadow: none;
+        &.slim{
+            font-weight: 400;
+        }
+        &.orange {
+            color: $orange-dark;
+            border-color: $orange-main;
+        }
+        &.blue {
+            color: $blue-dark;
+            border-color: $blue-main;
+        }
+        &:hover {
+            &.orange {
+                color: $white;
+                background-color: $orange-main;
+                use {
+                    fill: $white;
+                }
+            }
+            &.blue {
+                color: $white;
+                background-color: $blue-main;
+                use {
+                    fill: $white;
+                }
+            }
+        }
+    }
+    &.slim {
+        min-width: 170px;
+        height: 35px;
+        line-height: 30px;
+    }
+
+    
     /* Buttons - icon  ======================================================================== */
     &.icon {
         display: flex;
@@ -112,6 +111,24 @@
     &.baseline{
         i{
             vertical-align: baseline;
+        }
+    }
+    &.clear{
+        padding-left: 0;
+        min-width: auto;
+        background: none;
+        box-shadow: none;
+        i{
+            margin-left: 10px;
+        }
+        &.blue{
+            color: $blue-main;
+            &:hover{
+                color: $blue-dark;
+                use{
+                    fill: $blue-dark;
+                }
+            }
         }
     }
 }

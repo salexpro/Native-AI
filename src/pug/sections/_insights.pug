@@ -1,0 +1,20 @@
+mixin insight(img, title, descr)
+    .insights_item
+        .insights_item_img
+            img(src=`assets/images/illustrations/insights/${img}.svg`, alt=title)
+        h3.insights_item_header
+            =title
+        p.insights_item_descr
+            =descr
+        a.button.blue.clear(href="#")
+            | Learn more
+            i
+                +icon('arrow', [20, 14], '#4c6ef5')
+
+section.insights
+    .wrapper
+        h2 Actionable Data & Insights for Digital Media
+        .insights_items
+            +insight('analytics', 'Editorial & Engagement Analytics', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.')
+            +insight('analysis', 'Content Analysis & API Integration', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.')
+            +insight('optimization', 'Subscriptions & Conversion Optimization', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.')

@@ -4,7 +4,7 @@ mixin brands(tag, header, button, icon)
             ['thomson', 'billboard', 'realclear', 'ozy', 'rollcall', 'euronews'], 
             ['realclearpolitics', 'ladbible', 'gearpatrol', 'cbs', 'afar', 'fatherly']
         ]
-    .homepage--four-screen.brands
+    .homepage--four-screen.brands(class=page?'brands--'+page:false)
         .wrapper
             #{tag}.title(class="bold")
                 =header

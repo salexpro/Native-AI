@@ -9,7 +9,7 @@ mixin step(img, title)
 
 // ===== How to Get Started =====
 section.started
-    .wrapper
+    .wrapper.started_wrapper
         h2.started_header
             | How to Get Started
         .started_steps
@@ -17,4 +17,6 @@ section.started
             +step(2, 'Add a simple tag to your Tag Manager')
             +step(3, 'You\'re good to go!')
         a.button.orange(href="./register.html")
-            | I want a demo
+            | Get a Demo
+            i
+                +icon('arrow', [20, 14], '#fff')

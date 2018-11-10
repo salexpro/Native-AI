@@ -37,11 +37,16 @@ $slick-loader-path: '../assets/images/';
 // Sections
 @import 'sections/header';
 @import 'sections/first';
+@import 'sections/insights';
+@import 'sections/nlp';
+@import 'sections/analytics';
+@import 'sections/interests';
+@import 'sections/api';
+@import 'sections/optimization';
 @import 'sections/start';
 @import 'sections/how';
 @import 'sections/blog_feature';
 @import 'sections/anim';
-@import 'sections/nlp';
 @import 'sections/audience';
 @import 'sections/behavior';
 @import 'sections/script';

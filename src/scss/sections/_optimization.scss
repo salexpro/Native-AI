@@ -1,0 +1,40 @@
+.optimization{
+    padding-bottom: 80px;
+    &_row{
+        display: flex;
+    }
+    &_img{
+        flex: 1 1 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-height: 495px;
+        img{
+            width: 100%;
+            max-width: 390px;
+        }
+    }
+    &_content{
+        flex: 0 1 57.6%;
+        margin-left: 20px;
+    }
+    &_header{
+        padding-bottom: 30px;
+        position: relative;
+        margin-bottom: 30px;
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 180px;
+            border-bottom: 2px solid $blue-main;
+        }
+    }
+    &_descr{
+        margin-bottom: 30px;
+    }
+    &_bottom{
+        margin-top: 30px;
+    }
+}
