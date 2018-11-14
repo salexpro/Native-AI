@@ -2,14 +2,15 @@ mixin insight(img, title, descr)
     .insights_item
         .insights_item_img
             img(src=`assets/images/illustrations/insights/${img}.svg`, alt=title)
-        h3.insights_item_header
-            =title
-        p.insights_item_descr
-            =descr
-        a.button.blue.clear(href="#")
-            | Learn more
-            i
-                +icon('arrow', [20, 14], '#4c6ef5')
+        .insights_item_content
+            h3.insights_item_header
+                =title
+            p.insights_item_descr
+                =descr
+            a.button.blue.clear(href="#")
+                | Learn more
+                i
+                    +icon('arrow', [20, 14], '#4c6ef5')
 
 section.insights
     .wrapper

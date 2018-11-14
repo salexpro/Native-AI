@@ -1,5 +1,12 @@
 .api{
-    margin-bottom: 72px;
+    padding: 0 10px 72px;
+    overflow: hidden;
+    @media screen and ( max-width: 1080px) {
+        padding-bottom: 290px;
+    }
+    @media screen and (max-width: 640px) {
+        padding: 0 16px 50px;
+    }
     &_card{
         display: flex;
         box-shadow: 0 12px 30px rgba(255, 131, 42, 0.75);
@@ -7,12 +14,30 @@
         background-color: $orange-main;
         margin-right: 95px;
         padding: 46px 40px;
+        @media screen and ( max-width: 1080px) {
+            margin: 0;
+            flex-direction: column;
+            padding: 46px 60px 0;
+        }
+        @media screen and (max-width: 640px) {
+            padding: 40px 16px 50px;
+        }
         &_header{
             color: $white;
             text-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
             padding-bottom: 32px;
             position: relative;
             margin-bottom: 25px;
+            @media screen and ( max-width: 1080px) {
+                br{
+                    display: none;
+                }
+            }
+            @media screen and (max-width: 640px) {
+                text-align: center;
+                padding-bottom: 22px;
+                margin-bottom: 24px;
+            }
             &::after{
                 content: '';
                 position: absolute;
@@ -20,28 +45,52 @@
                 left: 0;
                 width: 180px;
                 border-bottom: 2px solid rgba($white, 0.25);
+                @media screen and (max-width: 640px) {
+                    width: 100px;
+                    left: calc(50% - 50px);
+                }
             }
         }
         &_content{
             color: $white;
+            .button{
+                @media screen and (max-width: 640px) {
+                    display: table;
+                    margin: auto;
+                }
+            }
         }
         &_ipad{
             margin-right: -164px;
             margin-bottom: -42px;
+            @media screen and ( max-width: 1080px) {
+                margin: 0 -60px;
+            }
+            @media screen and (max-width: 640px) {
+                display: none;
+            }
             .interests-box-wrapper{
                 width: 702px;
-                height: 522px;
+                height: auto;
                 padding: 0;
+                margin: 0;
                 background: none;
+                @media screen and ( max-width: 1080px) {
+                    float: none;
+                    margin: 27px auto -290px;
+                    width: 100%;
+                    max-width: 750px;
+                }
                 > img{
-                    width: auto;
+                    width: 100%;
                     margin: 0;
+                    display: block;
                 }
                 .screen-box{
-                    top: 38px;
-                    right: 82px;
-                    left: 66px;
-                    bottom: 68px;
+                    top: 7.3%;
+                    right: 11.7%;
+                    left: 9.4%;
+                    bottom: 12.4%;
                     height: auto;
                 }
                 .report-treemap{

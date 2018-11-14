@@ -1,5 +1,12 @@
 .nlp{
-    padding-top: 65px;
+    padding: 0 40px;
+    @media screen and (max-width: 640px) {
+        display: none;
+    }
+    &_inner{
+        border-top: $border-grey;
+        padding-top: 65px;
+    }
     h2{
         text-align: center;
     }
@@ -8,8 +15,20 @@
         margin-bottom: 20px;
         display: flex;
         justify-content: center;
+        @media screen and (max-width: 1199px) {
+            display: block;
+            margin-left: -12px;
+            margin-right: -20px;
+        }
+        @media screen and (max-width: 1023px) {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            margin: 25px -15px 25px -9px;
+        }
         img{
-            // max-width: 100%;
+            @media screen and (max-width: 1199px) {
+                max-width: 100%;
+            }
         }
     }
     &_bottom{

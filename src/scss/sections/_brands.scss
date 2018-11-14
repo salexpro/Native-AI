@@ -9,6 +9,11 @@
         padding-top: 65px;
         padding-bottom: 80px;
         border-top: 0;
+        border: 0;
+        @media screen and (max-width: 640px) {
+            padding-top: 50px;
+            padding-bottom: 60px;
+        }
     }
     &-outer{
         max-width: 1060px;
@@ -17,6 +22,7 @@
     }
     .title{
         padding-bottom: 50px;
+        text-align: center;
         @media screen and (max-width: 990px) {
             padding-bottom: 45px;
         }

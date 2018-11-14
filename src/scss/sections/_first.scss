@@ -31,7 +31,19 @@
             margin-top: 60px;
         }
         &--main{
-            margin-top: 50px;
+            margin: 50px 5px 0;
+            @media screen and (max-width: 1023px) {
+                margin-top: 115px;
+            }
+            @media screen and (max-width: 640px) {
+                margin: 78px 0 0;
+                display: flex;
+                justify-content: center;
+                img{
+                    min-width: 515px;
+                    height: 135px;
+                }
+            }
         }
         &_img{
             display: flex;

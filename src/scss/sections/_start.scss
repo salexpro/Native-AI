@@ -1,13 +1,19 @@
 .started{
-    padding: 0 0 100px;
+    padding: 0 40px 100px;
     text-align: center;
+    overflow: hidden;
     @media screen and (max-width: 920px) {
-        padding-top: 60px;
-        padding-bottom: 50px;
+        padding-bottom: 100px;
+    }
+    @media screen and (max-width: 640px) {
+        padding: 0 16px 60px;
     }
     &_wrapper{
         border-top: $border-grey;
         padding-top: 65px;
+        @media screen and (max-width: 640px) {
+            padding-top: 50px;
+        }
     }
     &_steps{
         display: flex;
@@ -16,7 +22,7 @@
         counter-reset: steps;
         padding: 0 60px;
         @media screen and (max-width: 1199px) {
-            padding: 0 40px;
+            padding: 0;
         }
         @media screen and (max-width: 920px) {
             flex-direction: column;
@@ -24,22 +30,46 @@
             margin-top: 30px;
             margin-bottom: 20px;
         }
+        @media screen and (max-width: 640px) {
+            margin-bottom: -15px;
+        }
     }
     &_step{
         counter-increment: steps;
+        position: relative;
         @media screen and (max-width: 920px) {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            width: 310px;
+        }
+        @media screen and (max-width: 640px) {
+            margin-bottom: 45px;
+            margin-right: -50px;
+            width: 280px;
         }
         &:first-child{
             .started_step_img{
                 margin-right: -20px;
+                @media screen and (max-width: 640px) {
+                    margin: 0;
+                }
             }
         }
         &_img{
             height: 118px;
             display: flex;
             align-items: flex-end;
+            justify-content: center;
             margin-bottom: 26px;
+            @media screen and (max-width: 920px) {
+                height: auto;
+                margin-bottom: 30px;
+            }
+            @media screen and (max-width: 640px) {
+                margin-bottom: 20px;
+                img{
+                    width: 100%;
+                }
+            }
         }
         &_num{
             width: 32px;
@@ -56,6 +86,19 @@
             margin-bottom: 15px;
             box-shadow: 0 5px 15px rgba(242, 117, 28, 0.5);
             background-color: $orange-dark;
+            @media screen and (max-width: 920px) {
+                position: absolute;
+                top: calc(50% - 45px);
+                right: calc(50% + 28vw);
+                margin: 0;
+            }
+            @media screen and (max-width: 640px) {
+                top: calc(50% - 40px);
+                right: calc(100% + 20px);
+            }
+            @media screen and (max-width: 480px) {
+                right: calc(50% + 42.7vw);
+            }
             &::before{
                 content: counter(steps);
             }
@@ -67,12 +110,19 @@
                     position: absolute;
                     top: 50%;
                     right: 100%;
-                    width: 29vw;
-                    max-width: 350px;
+                    width: 33vw;
                     border: 1px solid $orange-light;
                     z-index: -1;
+                    @media screen and (min-width: 1200px) {
+                        max-width: 360px;
+                    }
                     @media screen and (max-width: 920px) {
-                        display: none;
+                        // display: none;
+                        width: auto;
+                        height: 170px;
+                        top: auto;
+                        bottom: 100%;
+                        right: calc(50% - 1px);
                     }
                 }
             }

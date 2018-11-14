@@ -71,7 +71,11 @@
     &--white{
         color: #ffd9be;
         margin-bottom: 22px;
+        margin-left: 0;
         .list_content{
+            @media screen and (max-width: 640px) {
+                line-height: 1.5;
+            }
             color: $white;
         }
     }

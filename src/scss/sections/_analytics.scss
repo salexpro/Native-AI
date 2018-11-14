@@ -1,7 +1,19 @@
 .analytics{
     padding-top: 48px;
     padding-bottom: 80px;
+    position: relative;
+    @media screen and (max-width: 640px) {
+        padding-top: 0;
+        padding-bottom: 55px;
+        .wrapper:not(.interests){
+            border-top: $border-grey;
+        }
+    }
     .title{
         padding-top: 32px;
+        @media screen and (max-width: 640px) {
+            padding-top: 50px;
+            text-align: center;
+        }
     }
 }
