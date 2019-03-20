@@ -1,0 +1,17 @@
+.testdrive{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    &_descr{
+        color: rgba($black, 0.5);
+        line-height: 1.67;
+        margin-top: 48px;
+    }
+    &_ill{
+        text-align: center;
+        img{
+            display: block;
+            width: 100%;
+            margin-bottom: 24px;
+        }
+    }
+}

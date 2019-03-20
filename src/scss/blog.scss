@@ -1,5 +1,5 @@
 @import "reset";
-@import "base";
+@import "normalize";
 
 // Components
 @import 'components/vars';
@@ -51,7 +51,6 @@
 @media only screen and (min-width: 768px) {
     .blog-masthead {
         display: flex;
-        flex-direction: column;
         flex-direction: row;
     }
 }
@@ -437,7 +436,6 @@ article a {
     .featured-articles-section {
         min-height: 25em;
         display: flex;
-        flex-direction: column;
         flex-direction: row;
     }
 }
@@ -557,7 +555,6 @@ article a {
 #hs_form_target_subscribe-blog .hs_submit input {
     display: inline-block;
     margin-bottom: 0;
-    font-weight: normal;
     text-align: center;
     vertical-align: middle;
     touch-action: manipulation;

@@ -1,0 +1,24 @@
+extends ../layout
+block const
+    -
+        const page = 'recommend'
+        const title = 'NativeAI - Publisher Analytics & Monetization Platform'
+        const description = 'NativeAI is an advertising and analytics platform for news publishers on web and mobile. It uses advanced personalization algorithms to help content creators understand their audience and predict which content would do well, as well as use those insights to target native advertising and monetize their properties more effectively.'
+        const keywords = 'native advertising, native content, native marketing, content advertising, publisher content, promo content'
+
+block content
+    // Components
+    include ../sections/_first
+    include ../components/_list
+    include ../sections/_brands
+
+    // Sections
+    +first('Content Recommendations', 'Boost Audirence Retention & Loyalty Using AI-Power Related Stories', 'Get a Demo', true)(class="first--white")
+
+    include ../sections/_recommend_hints
+    include ../sections/_recommend_articles
+    include ../sections/_suggestions
+    +brands('h2', 'Leaders Publishers Lorem Ipsum', 'Case Study', 'Get a Demo')
+    include ../sections/_deploy
+    include ../sections/_recommend_help
+    include ../sections/_testdrive

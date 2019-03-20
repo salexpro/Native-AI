@@ -27,7 +27,8 @@
   },
   "dependencies": {
     "animate.css": "^3.7.0",
-    "bootstrap-sass": "^3.3.7",
+    "bootstrap": "^4.3.1",
+    "bootstrap-sass": "^3.4.1",
     "cookies-js": "^1.2.3",
     "d3": "^3.5.17",
     "inputmask": "^4.0.2",

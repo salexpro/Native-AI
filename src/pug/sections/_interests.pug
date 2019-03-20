@@ -21,6 +21,10 @@ mixin interests(second, header, text, mod)
         if second
             .wrapper.interests
                 .interests_img
+                    video(preload loop muted playsinline autoplay)
+                        source(src='/assets/videos/interests.mp4', type='video/mp4')
+                        source(src='/assets/videos/interests.webm', type='video/webm')
+                        | Your browser doesn't support HTML5 video tag.
 
                 .interests_content
                     h3 How NativeAI solves Data Overload

@@ -1,5 +1,5 @@
-mixin first(header, descr, button)
-    section.first
+mixin first(header, descr, button, wo_ill)
+    section.first&attributes(attributes)
         .wrapper
             h1!=header
             p.first_descr=descr
@@ -7,11 +7,12 @@ mixin first(header, descr, button)
                 =button
                 i
                     +icon('arrow', [20, 14], '#fff')
-            .first_ill(class=page ? 'first_ill--' + page : false)
-                if page == 'main'
-                    img(src="assets/images/illustrations/main.svg", alt=header)
-                else
-                    .first_ill_img
-                        img(src="assets/images/illustrations/anim.gif", alt=header)
-                    p.first_ill_label
-                        | NativeAI - Under the Hood
+            if !wo_ill
+                .first_ill(class=page ? 'first_ill--' + page : false)
+                    if page == 'main'
+                        img(src="assets/images/illustrations/main.svg", alt=header)
+                    else
+                        .first_ill_img
+                            img(src="assets/images/illustrations/anim.gif", alt=header)
+                        p.first_ill_label
+                            | NativeAI - Under the Hood

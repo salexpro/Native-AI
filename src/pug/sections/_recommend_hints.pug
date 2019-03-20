@@ -1,0 +1,30 @@
+
+mixin circle_hint(title, pos)
+    .hints_circle_hint&attributes({'class': `hints_circle_hint--${pos}`})
+        .hints_circle_hint_icon
+            +icon('question', [32, 32], '#030104')
+        p.hints_circle_hint_title
+            =title
+
+mixin circle(title, hints)
+    - const positions = ['top_left', 'top_right', 'bottom'];
+    .hints_col.col-lg-6
+        .hints_circle
+            h3=title
+            .hints_circle_lines
+                each pos in positions
+                    .hints_circle_line&attributes({'class': `hints_circle_line--${pos}`})
+            .hints_circle_hints
+                each hint, i in hints
+                    +circle_hint(hint, positions[i])
+section.hints
+    .container.hints_container
+        .row
+            +circle('Grow', ['Engagement', 'Loremipsum', 'Revenue'])
+            +circle('Avoid', ['Engagement', 'Loremipsum', 'Revenue'])
+    .hints_footer
+        .container
+            a.button.blue.actual(href="#")
+                | Demo
+                i
+                    +icon('arrow', [20, 14], '#fff')

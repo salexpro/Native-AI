@@ -1,0 +1,26 @@
+
+mixin help_item
+    .col-lg-6
+        h3.rechelp_item_header
+            | Lorem ipsum dolor sit amet
+        p.rechelp_item_descr
+            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes
+
+mixin help_ill(mod)
+    .col-lg-5
+        .rechelp_item_ill
+            img(src=`./assets/images/illustrations/insights/${mod}.svg`, alt="ill")
+
+
+section.container.rechelp
+    h2.rechelp_header
+        | Why content Recommendation Help
+    .rechelp_inner
+        each _, i in Array(4)
+            .row.align-items-center.justify-content-between.rechelp_item
+                if i % 2 == 0
+                    +help_item
+                    +help_ill('analytics')
+                else
+                    +help_ill('optimization')
+                    +help_item

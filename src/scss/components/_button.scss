@@ -131,6 +131,10 @@
             }
         }
     }
+    &.actual{
+        min-width: auto;
+        padding: 0 56px;
+    }
 }
 
 @media screen and ( max-width: 480px) {

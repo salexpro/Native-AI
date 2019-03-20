@@ -15,11 +15,12 @@
 		"uuidString": "DEBFEEF4-B418-4FB2-BBCE-ACA737088705"
 		}
 	],
-"creatorBuild": "28905",
+"creatorBuild": "29156",
 "files": {
 	"/.babelrc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/.babelrc",
 		"oF": 1
@@ -27,6 +28,7 @@
 	"/.eslintrc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/.eslintrc",
 		"oF": 1
@@ -34,6 +36,7 @@
 	"/.gitattributes": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/.gitattributes",
 		"oF": 1
@@ -41,6 +44,7 @@
 	"/.gitignore": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/.gitignore",
 		"oF": 1
@@ -54,6 +58,7 @@
 	"/build.zip": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/build.zip",
 		"oF": 1
@@ -505,7 +510,138 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/node_modules/bootstrap/scss/_functions.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/node_modules/bootstrap/css/_functions.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/node_modules/bootstrap/scss/_grid.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/node_modules/bootstrap/css/_grid.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/node_modules/bootstrap/scss/_variables.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/node_modules/bootstrap/css/_variables.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/node_modules/bootstrap/scss/bootstrap-grid.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/node_modules/bootstrap/css/bootstrap-grid.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/node_modules/bootstrap/scss/mixins/_breakpoints.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/node_modules/bootstrap/css/mixins/_breakpoints.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/node_modules/bootstrap/scss/mixins/_grid-framework.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/node_modules/bootstrap/css/mixins/_grid-framework.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/node_modules/bootstrap/scss/mixins/_grid.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/node_modules/bootstrap/css/mixins/_grid.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/node_modules/bootstrap/scss/utilities/_display.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/node_modules/bootstrap/css/utilities/_display.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/node_modules/bootstrap/scss/utilities/_flex.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/node_modules/bootstrap/css/utilities/_flex.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/node_modules/bootstrap/scss/utilities/_spacing.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/node_modules/bootstrap/css/utilities/_spacing.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/node_modules/cookies-js/dist/cookies.min.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -516,6 +652,7 @@
 		"tS": 1
 		},
 	"/node_modules/d3/d3.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -526,6 +663,7 @@
 		"tS": 1
 		},
 	"/node_modules/inputmask/dist/inputmask/inputmask.extensions.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -536,6 +674,7 @@
 		"tS": 1
 		},
 	"/node_modules/inputmask/dist/inputmask/inputmask.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -546,6 +685,7 @@
 		"tS": 1
 		},
 	"/node_modules/inputmask/dist/inputmask/jquery.inputmask.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -556,6 +696,7 @@
 		"tS": 1
 		},
 	"/node_modules/jquery/dist/jquery.min.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -579,6 +720,7 @@
 		"uL": 1
 		},
 	"/node_modules/slick-carousel/slick/slick.min.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -602,6 +744,7 @@
 		"uL": 1
 		},
 	"/node_modules/wow.js/dist/wow.min.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -613,17 +756,17 @@
 		},
 	"/package-lock.json": {
 		"ft": 524288,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "/build/package-lock.json",
-		"oF": 0,
+		"oF": 1,
 		"oO": 0,
 		"oS": 1
 		},
 	"/package.json": {
 		"ft": 524288,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "/build/package.json",
-		"oF": 0,
+		"oF": 1,
 		"oO": 0,
 		"oS": 1
 		},
@@ -707,6 +850,7 @@
 	"/src/assets/favicon/browserconfig.xml": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/build/assets/favicon/browserconfig.xml",
 		"oF": 0
@@ -792,6 +936,26 @@
 		"oF": 0,
 		"opt": 0,
 		"plM": 553513902079,
+		"prP": 0
+		},
+	"/src/assets/images/bg_brain.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/assets/images/bg_brain.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/src/assets/images/bg_hints.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/assets/images/bg_hints.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
 		"prP": 0
 		},
 	"/src/assets/images/bg_l_thank.png": {
@@ -907,7 +1071,7 @@
 	"/src/assets/images/brands/bnb.jpg": {
 		"ft": 16384,
 		"iS": 1391,
-		"jF": 0,
+		"jF": 2,
 		"oA": 0,
 		"oAP": "/build/assets/images/brands/bnb.jpg",
 		"oF": 0,
@@ -1750,6 +1914,36 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/src/assets/images/infographic/line_green.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/assets/images/infographic/line_green.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/src/assets/images/infographic/line_orange.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/assets/images/infographic/line_orange.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/src/assets/images/infographic/line_violet.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/assets/images/infographic/line_violet.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/src/assets/images/infographic/traffic.png": {
 		"ft": 32768,
 		"iS": 29598,
@@ -1867,9 +2061,48 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/src/assets/images/web_window.jpg": {
+		"ft": 16384,
+		"iS": 113630,
+		"jF": 2,
+		"oA": 0,
+		"oAP": "/build/assets/images/web_window.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/images/web_window@2x.jpg": {
+		"ft": 16384,
+		"iS": 376589,
+		"jF": 2,
+		"oA": 0,
+		"oAP": "/build/assets/images/web_window@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/videos/interests.mp4": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/assets/videos/interests.mp4",
+		"oF": 0
+		},
+	"/src/assets/videos/interests.webm": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/assets/videos/interests.webm",
+		"oF": 0
+		},
 	"/src/CNAME": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 2,
 		"oAP": "/build/CNAME",
 		"oF": 1
@@ -1877,11 +2110,13 @@
 	"/src/favicon.ico": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/build/favicon.ico",
 		"oF": 0
 		},
 	"/src/js/app.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -1892,6 +2127,7 @@
 		"tS": 1
 		},
 	"/src/js/components/_carousel.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -1902,6 +2138,7 @@
 		"tS": 1
 		},
 	"/src/js/components/_forms.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -1912,6 +2149,7 @@
 		"tS": 1
 		},
 	"/src/js/components/_header.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -1922,6 +2160,7 @@
 		"tS": 1
 		},
 	"/src/js/components/fastnav.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
@@ -1932,6 +2171,7 @@
 		"tS": 1
 		},
 	"/src/js/treemap.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
@@ -1945,6 +2185,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_head.html",
 		"oF": 0,
@@ -1954,6 +2195,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_icons.html",
 		"oF": 0,
@@ -1963,6 +2205,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_list.html",
 		"oF": 0,
@@ -1972,6 +2215,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_treemap.html",
 		"oF": 0,
@@ -1981,6 +2225,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/layout.html",
 		"oF": 0,
@@ -1990,6 +2235,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/build/advertising.html",
 		"oF": 0,
@@ -1999,6 +2245,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/build/analytics.html",
 		"oF": 0,
@@ -2008,6 +2255,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/build/blog.html",
 		"oF": 0,
@@ -2017,6 +2265,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/build/dashboard.html",
 		"oF": 0,
@@ -2026,6 +2275,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/build/how.html",
 		"oF": 0,
@@ -2035,6 +2285,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/build/index.html",
 		"oF": 0,
@@ -2044,6 +2295,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/build/lead_magnet.html",
 		"oF": 0,
@@ -2053,8 +2305,19 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/build/native_advertising_content.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/pages/recommendations.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/recommendations.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2062,6 +2325,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/build/register.html",
 		"oF": 0,
@@ -2071,6 +2335,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 0,
 		"oAP": "/build/thank.html",
 		"oF": 0,
@@ -2080,6 +2345,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_3col.html",
 		"oF": 0,
@@ -2089,6 +2355,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_analysis.html",
 		"oF": 0,
@@ -2098,6 +2365,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_analytics (legacy).html",
 		"oF": 0,
@@ -2107,6 +2375,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_api.html",
 		"oF": 0,
@@ -2116,6 +2385,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_behavior.html",
 		"oF": 0,
@@ -2125,6 +2395,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_blog_feature.html",
 		"oF": 0,
@@ -2134,6 +2405,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_brands.html",
 		"oF": 0,
@@ -2143,6 +2415,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_carousel.html",
 		"oF": 0,
@@ -2152,6 +2425,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_case_study.html",
 		"oF": 0,
@@ -2161,8 +2435,19 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_dashboard.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_deploy.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/build/_deploy.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2170,6 +2455,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_eight.html",
 		"oF": 0,
@@ -2179,6 +2465,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_faq.html",
 		"oF": 0,
@@ -2188,6 +2475,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_first (legacy).html",
 		"oF": 0,
@@ -2197,6 +2485,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_first.html",
 		"oF": 0,
@@ -2206,6 +2495,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_first_adv.html",
 		"oF": 0,
@@ -2215,6 +2505,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_footer.html",
 		"oF": 0,
@@ -2224,6 +2515,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_grip.html",
 		"oF": 0,
@@ -2233,6 +2525,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_header.html",
 		"oF": 0,
@@ -2242,6 +2535,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_how (old).html",
 		"oF": 0,
@@ -2251,6 +2545,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_insights.html",
 		"oF": 0,
@@ -2260,6 +2555,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_interests.html",
 		"oF": 0,
@@ -2269,6 +2565,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_nlp_classify.html",
 		"oF": 0,
@@ -2278,6 +2575,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_nlp_understand.html",
 		"oF": 0,
@@ -2287,6 +2585,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_optimization.html",
 		"oF": 0,
@@ -2296,8 +2595,39 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_power (legacy).html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_recommend_articles.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/build/_recommend_articles.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_recommend_help.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/build/_recommend_help.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_recommend_hints.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/build/_recommend_hints.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -2305,6 +2635,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_script.html",
 		"oF": 0,
@@ -2314,6 +2645,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_six.html",
 		"oF": 0,
@@ -2323,23 +2655,31 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
+		"hM": 0,
 		"oA": 1,
 		"oAP": "/build/_start.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/scss/base.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
+	"/src/pug/sections/_suggestions.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/css/base.css",
+		"oAP": "/build/_suggestions.html",
 		"oF": 0,
-		"oS": 0,
-		"uL": 1
+		"oS": 0
+		},
+	"/src/pug/sections/_testdrive.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/build/_testdrive.html",
+		"oF": 0,
+		"oS": 0
 		},
 	"/src/scss/blocks/_2cols.scss": {
 		"aP": 0,
@@ -2588,6 +2928,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/src/scss/normalize.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/css/normalize.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/src/scss/pages/adv-c.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2796,6 +3149,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/src/scss/sections/_deploy.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/css/sections/_deploy.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/src/scss/sections/_faq.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2844,6 +3210,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/build/css/sections/_header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/src/scss/sections/_hints.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/css/sections/_hints.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -2926,6 +3305,32 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/src/scss/sections/_recarticles.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/css/sections/_recarticles.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/src/scss/sections/_rechelp.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/css/sections/_rechelp.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/src/scss/sections/_script.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2948,6 +3353,32 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/build/css/sections/_start.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/src/scss/sections/_suggestions.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/css/sections/_suggestions.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/src/scss/sections/_testdrive.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/css/sections/_testdrive.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -3002,7 +3433,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/favicon/apple-touch-icon-120x120.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 563855616.63566601
+	"lastBuiltDate": 574737849.33106506
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -4141,6 +4572,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-useless-catch": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-useless-computed-key": {
 			"active": 0,
 			"optionString": ""
@@ -4803,6 +5238,7 @@
 		"noEscapeInAttributes": 0,
 		"outputFormat": 2,
 		"shouldRunCacheBuster": 0,
+		"shouldRunHTMLMinifier": 0,
 		"useCDATA": 0,
 		"useDoubleQuotes": 0,
 		"useUnixNewlines": 0
@@ -4814,7 +5250,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
-		"outputFormat": 0,
+		"outputFormat": 2,
 		"quality": 100
 		},
 	"languageDefaultsJS": {
@@ -4824,6 +5260,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"bundleFormat": 0,
 		"createSourceMap": 0,
 		"minifyOutput": 1,
 		"syntaxCheckerStyle": 3,
@@ -4846,7 +5283,8 @@
 		"autoOutputPathReplace1": "kit",
 		"autoOutputPathReplace2": "html",
 		"autoOutputPathStyle": 0,
-		"shouldRunCacheBuster": 0
+		"shouldRunCacheBuster": 0,
+		"shouldRunHTMLMinifier": 0
 		},
 	"languageDefaultsLESS": {
 		"allowInsecureImports": 0,
@@ -4885,6 +5323,7 @@
 		"processHTML": 0,
 		"randomFootnoteNumbers": 0,
 		"shouldRunCacheBuster": 0,
+		"shouldRunHTMLMinifier": 0,
 		"useCompatibilityMode": 0
 		},
 	"languageDefaultsOTHER": {
@@ -4894,7 +5333,8 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
-		"shouldRunCacheBuster": 0
+		"shouldRunCacheBuster": 0,
+		"shouldRunHTMLMinifier": 0
 		},
 	"languageDefaultsPNG": {
 		"autoOutputAction": 0,
@@ -4915,7 +5355,8 @@
 		"autoOutputPathStyle": 1,
 		"compileDebug": 0,
 		"outputStyle": 0,
-		"shouldRunCacheBuster": 1
+		"shouldRunCacheBuster": 1,
+		"shouldRunHTMLMinifier": 0
 		},
 	"languageDefaultsSASS": {
 		"autoOutputAction": 0,
@@ -4944,7 +5385,8 @@
 		"outputFormat": 0,
 		"outputStyle": 1,
 		"railsCompatible": 0,
-		"shouldRunCacheBuster": 0
+		"shouldRunCacheBuster": 0,
+		"shouldRunHTMLMinifier": 0
 		},
 	"languageDefaultsSTYLUS": {
 		"autoOutputAction": 0,
@@ -5032,16 +5474,20 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"ascii_only": {
-			"active": 0,
+		"arrows": {
+			"active": 1,
 			"flagValue": -1
 			},
-		"bare_returns": {
+		"ascii_only": {
 			"active": 0,
 			"flagValue": -1
 			},
 		"booleans": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"booleans_as_integers": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"braces": {
@@ -5053,14 +5499,14 @@
 			"flagValue": -1
 			},
 		"comments": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"comparisons": {
 			"active": 1,
 			"flagValue": -1
 			},
-		"compress": {
+		"computed_props": {
 			"active": 1,
 			"flagValue": -1
 			},
@@ -5083,6 +5529,10 @@
 		"drop_debugger": {
 			"active": 1,
 			"flagValue": -1
+			},
+		"ecma": {
+			"active": 1,
+			"flagValue": 5
 			},
 		"eval": {
 			"active": 0,
@@ -5108,10 +5558,6 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"html5_comments": {
-			"active": 1,
-			"flagValue": -1
-			},
 		"ie8": {
 			"active": 0,
 			"flagValue": -1
@@ -5120,13 +5566,13 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"indent-start": {
-			"active": 0,
-			"flagValue": 0
-			},
 		"indent_level": {
 			"active": 0,
 			"flagValue": 4
+			},
+		"indent_start": {
+			"active": 0,
+			"flagValue": 0
 			},
 		"inline": {
 			"active": 1,
@@ -5138,6 +5584,10 @@
 			},
 		"join_vars": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"keep_classnames": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"keep_fargs": {
@@ -5160,13 +5610,13 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"mangle": {
-			"active": 1,
-			"flagValue": -1
-			},
 		"max_line_len": {
 			"active": 1,
 			"flagValue": 32000
+			},
+		"module": {
+			"active": 0,
+			"flagValue": -1
 			},
 		"negate_iife": {
 			"active": 1,
@@ -5175,10 +5625,6 @@
 		"passes": {
 			"active": 1,
 			"flagValue": 1
-			},
-		"preserve_line": {
-			"active": 0,
-			"flagValue": -1
 			},
 		"properties": {
 			"active": 1,
@@ -5202,6 +5648,10 @@
 			},
 		"reduce_vars": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"safari10": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"semicolons": {
@@ -5236,6 +5686,10 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"unsafe_arrows": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"unsafe_comps": {
 			"active": 0,
 			"flagValue": -1
@@ -5245,6 +5699,10 @@
 			"flagValue": -1
 			},
 		"unsafe_math": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unsafe_methods": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -5272,15 +5730,12 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"width": {
-			"active": 1,
-			"flagValue": 80
-			},
 		"wrap_iife": {
 			"active": 0,
 			"flagValue": -1
 			}
 		},
+	"uglifyMangleNames": 1,
 	"uglifyReservedNamesString": "$",
 	"websiteRelativeRoot": "/build"
 	},

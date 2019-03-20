@@ -1,9 +1,16 @@
-@import "base";
+@import "normalize";
 @import "reset";
 
-@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
-@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
-@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/grid';
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+);
+$grid-gutter-width: 20px;
+
+@import '../../node_modules/bootstrap/scss/bootstrap-grid.scss';
 
 // Components
 @import 'components/vars';
@@ -59,4 +66,10 @@ $slick-loader-path: '../assets/images/';
 @import 'sections/register';
 @import 'sections/thank';
 @import 'sections/brands';
+@import 'sections/hints';
+@import 'sections/recarticles';
+@import 'sections/suggestions';
+@import 'sections/deploy';
+@import 'sections/rechelp';
+@import 'sections/testdrive';
 @import 'sections/footer';

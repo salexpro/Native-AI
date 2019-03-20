@@ -1,0 +1,16 @@
+section.recarticles.container
+    .row.align-items-center
+        .col-lg-3
+            +list(['<h3>Relevant</h3>', '<h3>Personalized</h3>', '<h3>Customizeble content library</h3>'], 'list--orange list--big')
+        .col-lg-9
+            .recarticles_block
+                h2.recarticles_header
+                    | Recommended Articles:
+                .recarticles_items
+                    each article in ['Top US envoy on North Korea: \'We are not going to invade North Korea\'', 'This bird’s drumming on his body lures the lady', 'Chinese Probe Uncovers New Mystery on the Dark Side of the Moon']
+                        .recarticles_item
+                            .recarticles_item_img
+                                img(srcset=`https://placeimg.com/225/130/tech?${Math.random()} 1x, https://placeimg.com/450/260/tech?${Math.random()} 2x` src=`https://placeimg.com/225/130/tech?${Math.random()}`, alt=article)
+                            p.recarticles_item_title
+                                =article
+                                

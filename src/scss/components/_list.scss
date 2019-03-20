@@ -103,6 +103,46 @@
             }
         }
     }
+    &--big {
+        .list{
+            &_item{
+                align-items: center;
+                & + li {
+                    margin-top: 30px;
+                    .list_circle{
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            bottom: 100%;
+                            height: 36px;
+                            border-left: 2px solid $orange-main;
+                        }
+                    }
+                }
+                &:last-child{
+                    margin-top: 20px;
+                }
+            }
+            &_circle{
+                position: relative;
+                width: 32px;
+                height: 32px;
+                flex: 0 0 32px;
+                margin-right: 24px;
+                svg{
+                    width: 16px;
+                    height: 12px;
+                }
+            }
+            &_content{
+                h3{
+                    font-size: 26px;
+                    font-weight: 700;
+                    line-height: 1.15;
+                }
+            }
+        }
+    }
     &_item{
         display: flex;
         align-items: flex-start;

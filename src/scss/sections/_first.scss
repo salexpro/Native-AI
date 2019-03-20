@@ -16,6 +16,17 @@
         overflow: hidden;
     }
 
+    &--white{
+        padding-top: 160px;
+        padding-bottom: 160px;
+        background: #d2dbe0;
+        color: $white;
+        .first_descr{
+            margin-top: 24px;
+            margin-bottom: 62px;
+        }
+    }
+
     &_descr{
         margin: 38px 0 45px;
         @media screen and (max-width: 640px) {

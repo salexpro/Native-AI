@@ -1,4 +1,4 @@
-mixin brands(tag, header, button, icon)
+mixin brands(tag, header, button, button2)
     -
         const brands = [
             ['thomson', 'billboard', 'realclear', 'ozy', 'rollcall', 'euronews'], 
@@ -18,3 +18,8 @@ mixin brands(tag, header, button, icon)
                 =button
                 i
                     +icon('arrow', [20, 14], '#fff')
+            if button2
+                a.button.orange(href="#")
+                    =button2
+                    i
+                        +icon('arrow', [20, 14], '#fff')
