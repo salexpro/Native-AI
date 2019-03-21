@@ -3,7 +3,7 @@
         {
             mod: 'green',
             title: 'Sidebar / Bottom Widget',
-            descr: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.'
+            descr: 'Lorem ipsum dolor sit amet, consectetuer adi&shy;piscing elit. Aenean commodo li&shy;gula eget dolor. Aenean massa.'
         },
         {
             mod: 'orange',
@@ -31,24 +31,25 @@
         
 
 mixin deploy_item(data)
-    .col-lg-4&attributes(attributes)
+    .col-sm-4&attributes(attributes)
         .deploy_item&attributes({'class': `deploy_item--${data.mod}`})
             h3.deploy_item_title
                 =data.title
             p.deploy_item_descr
-                =data.descr
+                !=data.descr
 
-section.container.deploy
-    h2.deploy_header
-        | Flexible & Easy to Deploy
-    .row.deploy_inner
-        each item, i in deploy_items
-            +deploy_item(item)&attributes(item.attrs)
-            if i % 2  === 0
-                .col-md-4
-        h2.deploy_brain
-            | NAI
-            br
-            | Lorem
-            br
-            | Ipsum
+section.deploy
+    .container
+        h2.deploy_header
+            | Flexible & Easy to Deploy
+        .row.deploy_inner
+            each item, i in deploy_items
+                +deploy_item(item)&attributes(item.attrs)
+                if i % 2  === 0
+                    .col-sm-4
+            h2.deploy_brain
+                | NAI
+                br
+                | Lorem
+                br
+                | Ipsum

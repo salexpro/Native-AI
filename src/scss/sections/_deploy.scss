@@ -6,13 +6,25 @@ $accents: (
 );
 
 .deploy{
+    padding: 0 6px;
     &_header{
         text-align: center;
         margin-bottom: 80px;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 60px;
+        }
+        @include media-breakpoint-down(xs) {
+            font-size: 18px;
+            line-height: 1.39;
+            margin-bottom: 32px;
+        }
     }
     &_inner{
         min-height: 490px;
         position: relative;
+        @include media-breakpoint-down(md) {
+            min-height: 320px;
+        }
     }
     &_brain{
         position: absolute;
@@ -27,6 +39,14 @@ $accents: (
         align-items: center;
         justify-content: center;
         text-align: center;
+        @include media-breakpoint-down(md) {
+            width: 194px;
+            height: 194px;
+            font-size: 16px;
+        }
+        @include media-breakpoint-down(xs) {
+            display: none;
+        }
         &::before, &::after{
             content: '';
             position: absolute;
@@ -35,7 +55,7 @@ $accents: (
             width: 100%;
             height: 100%;
             background-image: url(../assets/images/bg_brain.svg);
-            background-position: center -9px;
+            background-size: cover;
             z-index: -1;
         }
         &::after{
@@ -48,6 +68,10 @@ $accents: (
             background-color: $white;
             border-radius: 50%;
             z-index: -2;
+            @include media-breakpoint-down(md) {
+                width: 173px;
+                height: 173px;
+            }
         }
     }
     &_item{
@@ -55,6 +79,13 @@ $accents: (
         box-shadow: 0 5px 30px rgba(150, 164, 165, 0.3);
         border-radius: 6px;
         background-color: $white;
+        @include media-breakpoint-down(md) {
+            padding: 12px;
+        }
+        @include media-breakpoint-down(xs) {
+            padding: 16px;
+            margin-bottom: 24px;
+        }
         @each $name, $color in $accents {
             &--#{$name} {
                 color: $color;
@@ -65,10 +96,20 @@ $accents: (
             color: currentColor;
             margin-bottom: 16px;
             font-weight: 700;
+            @include media-breakpoint-down(md) {
+                font-size: 16px;
+                margin-bottom: 14px;
+            }
+            @include media-breakpoint-down(xs) {
+                margin-bottom: 8px;
+            }
         }
         &_descr{
             line-height: 1.67;
             color: rgba($black, 0.5);
+            @include media-breakpoint-down(md) {
+                font-size: 12px;
+            }
         }
     }
 }

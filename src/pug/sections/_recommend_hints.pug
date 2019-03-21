@@ -18,10 +18,11 @@ mixin circle(title, hints)
                 each hint, i in hints
                     +circle_hint(hint, positions[i])
 section.hints
-    .container.hints_container
-        .row
-            +circle('Grow', ['Engagement', 'Loremipsum', 'Revenue'])
-            +circle('Avoid', ['Engagement', 'Loremipsum', 'Revenue'])
+    .hints_container
+        .container
+            .row
+                +circle('Grow', ['Engagement', 'Loremipsum', 'Revenue'])
+                +circle('Avoid', ['Engagement', 'Loremipsum', 'Revenue'])
     .hints_footer
         .container
             a.button.blue.actual(href="#")

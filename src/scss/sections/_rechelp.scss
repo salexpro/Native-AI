@@ -1,17 +1,38 @@
 .rechelp{
-    padding-top: 96px;
-    border-bottom: 1px solid #edeff2;
+    padding: 96px 6px 0;
+    @include media-breakpoint-down(md) {
+        padding-top: 80px;
+    }
+    @include media-breakpoint-down(xs) {
+        padding-top: 32px;
+    }
     &_header{
         text-align: center;
+        @include media-breakpoint-down(xs) {
+            font-size: 18px;
+        }
     }
     &_inner{
         padding: 80px 0;
+        border-bottom: 1px solid #edeff2;
+        @include media-breakpoint-down(xs) {
+            padding: 40px 0 48px;
+        }
     }
     &_item{
         & + & {
             margin-top: 48px;
+            @include media-breakpoint-down(md) {
+                margin-top: 54px;
+            }
+            @include media-breakpoint-down(xs) {
+                margin-top: 40px;
+            }
         }
         &_ill{
+            @include media-breakpoint-down(xs) {
+                margin-bottom: 16px;
+            }
             img{
                 display: block;
                 max-width: 100%;
@@ -21,10 +42,21 @@
             font-weight: 700;
             line-height: 1.4;
             margin-bottom: 24px;
+            @include media-breakpoint-down(md) {
+                font-size: 20px;
+                line-height: 1.15;
+            }
+            @include media-breakpoint-down(xs) {
+                margin-bottom: 16px;
+            }
         }
         &_descr{
             color: rgba($black, 0.5);
             line-height: 1.67;
+            @include media-breakpoint-down(md) {
+                font-size: 14px;
+                line-height: 2.14;
+            }
         }
     }
 }

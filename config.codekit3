@@ -8,7 +8,7 @@
 		},
 	{
 		"name": "Demo mode with Github Pages",
-		"scriptSourceString": "rm -rf docs/\ncp -rf build/ docs/\nrm -f build/CNAME\necho \"\\n\" >> docs/js/app.min.js\ncat docs/js/components/fastnav.min.js >> docs/js/app.min.js\nzip -r build.zip build/",
+		"scriptSourceString": "rm -rf docs/\ncp -rf build/ docs/\nrm -f build/CNAME\nsed -i '' -e '$a\\' docs/js/app.min.js\ncat docs/js/components/fastnav.min.js >> docs/js/app.min.js\nzip -r build.zip build/",
 		"scriptType": 1,
 		"scriptUUIDString": "2ACAD006-D322-4B47-93EE-F79F7CB01B13",
 		"stepType": 2,
@@ -1924,6 +1924,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/src/assets/images/infographic/line_green_m.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/assets/images/infographic/line_green_m.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/src/assets/images/infographic/line_orange.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1934,11 +1944,31 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/src/assets/images/infographic/line_orange_m.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/assets/images/infographic/line_orange_m.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/src/assets/images/infographic/line_violet.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/build/assets/images/infographic/line_violet.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/src/assets/images/infographic/line_violet_m.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/assets/images/infographic/line_violet_m.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -2173,7 +2203,7 @@
 	"/src/js/treemap.js": {
 		"bF": 0,
 		"ft": 64,
-		"ma": 1,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/build/js/treemap.min.js",
@@ -3331,6 +3361,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/src/scss/sections/_register.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/build/css/sections/_register.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/src/scss/sections/_script.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -3408,19 +3451,6 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
-		},
-	"/src/scss/sections/register.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/build/css/sections/register.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
 		}
 	},
 "hooks": [
@@ -3433,7 +3463,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/favicon/apple-touch-icon-120x120.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 574737849.33106506
+	"lastBuiltDate": 574824582.76520503
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

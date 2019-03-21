@@ -1,7 +1,13 @@
 .hints{
     &_container{
-        padding-top: 120px;
-        padding-bottom: 120px;
+        padding: 120px 6px;
+        @include media-breakpoint-down(md) {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        @include media-breakpoint-down(xs) {
+            padding-top: 7px;
+        }
     }
     &_col{
         display: flex;
@@ -9,8 +15,33 @@
         justify-content: center;
         padding-top: 40px;
         padding-bottom: 82px;
+        @include media-breakpoint-down(md) {
+            padding-top: 97px;
+            padding-bottom: 155px;
+        }
+        @include media-breakpoint-down(xs) {
+            padding-top: 60px;
+            padding-bottom: 104px;
+        }
         & + & {
-            border-left: 1px solid $grey-border;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                border: 1px solid $grey-border;
+                border-width: 0 1px 0 0;
+                height: 100%;
+                @include media-breakpoint-down(md) {
+                    border-width: 1px 0 0;
+                    height: auto;
+                    width: calc(100% - 20px);
+                    max-width: 360px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
         }
     }
     &_circle{
@@ -23,6 +54,10 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        @include media-breakpoint-down(xs) {
+            width: 132px;
+            height: 132px;
+        }
         h3{
             font-weight: 700;
         }
@@ -35,11 +70,18 @@
             left: 50%;
             transform: translate(-50%, -50%);
             border-radius: 50%;
+            @include media-breakpoint-down(xs) {
+                width: 94px;
+                height: 94px;
+            }
         }
         &_line{
             position: absolute;
             height: 44px;
             border-left: 1px solid $orange-main;
+            @include media-breakpoint-down(xs) {
+                height: 34px;
+            }
             &::before, &::after{
                 content: '';
                 position: absolute;
@@ -50,16 +92,28 @@
                 width: 20px;
                 height: 20px;
                 border: 1px solid $orange-main;
+                @include media-breakpoint-down(xs) {
+                    width: 15px;
+                    height: 15px;
+                }
             }
             &::after{
                 width: 8px;
                 height: 8px;
                 background: $orange-main;
+                @include media-breakpoint-down(xs) {
+                    width: 6px;
+                    height: 6px;
+                }
             }
             &--bottom{
                 height: 64px;
                 left: 50%;
                 bottom: -24px;
+                @include media-breakpoint-down(xs) {
+                    height: 50px;
+                    bottom: -18.5px;
+                }
                 &::before, &::after{
                     bottom: 0;
                     transform: translate(-52%, 50%);
@@ -71,12 +125,20 @@
                     left: -8px;
                     transform: rotate(-45deg);
                     transform-origin: top;
+                    @include media-breakpoint-down(xs) {
+                        top: 7px;
+                        left: -5px;
+                    }
                 }
                 &_right{
                     top: 10px;
                     right: -8px;
                     transform: rotate(45deg);
                     transform-origin: top;
+                    @include media-breakpoint-down(xs) {
+                        top: 7px;
+                        right: -5px;
+                    }
                 }
             }
         }
@@ -87,6 +149,10 @@
             transform: translateX(-50%);
             width: 280px;
             height: 280px;
+            @include media-breakpoint-down(xs) {
+                width: 218px;
+                height: 215px;
+            }
         }
         &_hint{
             position: absolute;
@@ -108,15 +174,24 @@
             }
             &_icon{
                 margin-bottom: 6px;
+                @include media-breakpoint-down(xs) {
+                    width: 24px;
+                    margin: 0 auto 5px;
+                }
                 svg{
                     display: block;
                     margin: auto;
+                    max-width: 100%;
+                    height: 100%;
                 }
             }
             &_title{
                 opacity: 0.5;
                 font-size: 16px;
                 line-height: 1.19;
+                @include media-breakpoint-down(xs) {
+                    font-size: 12px;
+                }
             }
         }
     }
@@ -124,13 +199,26 @@
         text-align: center;
         padding: 20px 0 7px;
         position: relative;
+        @include media-breakpoint-down(md) {
+            padding: 13.5px 0;
+        }
+        @include media-breakpoint-down(xs) {
+            padding: 24px 0 0;
+        }
         &::before, &::after{
             content: '';
             position: absolute;
             top: 0;
-            width: 315px;
+            max-width: 315px;
+            width: 32%;
             height: 72px;
             background-image: url(../assets/images/bg_hints.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            @include media-breakpoint-down(xs) {
+                display: none;
+            }
         }
         &::before{
             left: 0;

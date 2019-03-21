@@ -1,11 +1,27 @@
 .suggestions{
-    padding-top: 80px;
+    padding: 80px 6px 0;
+    @include media-breakpoint-down(xs) {
+        padding: 48px 6px;   
+    }
     &_header{
         text-align: center;
+        @include media-breakpoint-down(md) {
+            font-size: 30px;
+        }
+        @include media-breakpoint-down(xs) {
+            font-size: 18px;
+            line-height: 1.39;
+        }
     }
     &_infographics{
         margin: 88px 0;
         position: relative;
+        @include media-breakpoint-down(md) {
+            margin: 147px 0 192px;
+        }
+        @include media-breakpoint-down(xs) {
+            margin: 50px 0 0;
+        }
     }
     &_person{
         box-shadow: 0px 5px 20px rgba(150, 164, 165, 0.3);
@@ -15,29 +31,31 @@
         position: absolute;
         z-index: 2;
         left: 0;
-        &::after{
-            content: '';
-            position: absolute;
-            top: 50%;
-            right: 0;
-            transform: translate(50%, -50%);
-            width: 16px;
-            height: 16px;
-            background: #E9ECEF;
-            border-radius: 50%;
+        @include media-breakpoint-down(xs) {
+            position: static;
+            margin: auto;
         }
         &--green{
             top: 76px;
             background: #4CCD9B;
+            @include media-breakpoint-down(md) {
+                top: -4px;
+            }
         }
         &--orange{
             top: 50%;
             transform: translateY(-50%);
             background: #F9BA5B;
+            @include media-breakpoint-down(xs) {
+                transform: none;
+            }
         }
         &--violet{
             bottom: 76px;
             background: #5D79E8;
+            @include media-breakpoint-down(md) {
+                bottom: -4px;
+            }
         }
         &_top{
             display: flex;
@@ -76,45 +94,39 @@
         padding: 16px 24px;
         max-width: 230px;
         position: absolute;
+        right: 130px;
+        @include media-breakpoint-down(md) {
+            right: 0;
+            padding: 16px;
+            max-width: 170px;
+        }
+        @include media-breakpoint-down(xs) {
+            position: static;
+            max-width: 288px;
+            margin: 0 auto 32px;
+        }
         &--green{
             top: 24px;
-            right: 130px;
-            .suggestions_article_ref, &::before, &::after{
-                color: #4CCD9B;
+            color: #4CCD9B;
+            @include media-breakpoint-down(md) {
+                top: -83px;
             }
         }
         &--orange{
             top: 50%;
             right: 0;
             transform: translateY(-50%);
-            .suggestions_article_ref, &::before, &::after{
-                color: #F9BA5B;
+            color: #F9BA5B;
+            @include media-breakpoint-down(xs) {
+                transform: none;
             }
         }
         &--violet{
             bottom: 24px;
-            right: 130px;
-            .suggestions_article_ref, &::before, &::after{
-                color: #5D79E8;
+            color: #5D79E8;
+            @include media-breakpoint-down(md) {
+                bottom: -95px;
             }
-        }
-        &::before, &::after{
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 0;
-            transform: translate(-50%, -50%);
-            border-radius: 50%;
-        }
-        &::before {
-            width: 8px;
-            height: 8px;
-            background: currentColor;
-        }
-        &::after{
-            width: 20px;
-            height: 20px;
-            border: 1px solid currentColor;
         }
         &_top{
             display: flex;
@@ -123,6 +135,18 @@
         }
         &_ref{
             font-weight: bold;
+            @include media-breakpoint-down(md) {
+                font-size: 14px;
+            }
+        }
+        &_link{
+            @include media-breakpoint-down(md) {
+                width: 12px;
+            }
+            svg{
+                display: block;
+                max-width: 100%;
+            }
         }
         &_img{
             border-radius: 4px;
@@ -130,6 +154,7 @@
             margin-bottom: 8px;
             img{
                 display: block;
+                max-width: 100%;
             }
         }
         &_title{
@@ -137,42 +162,212 @@
             font-weight: bold;
             line-height: 1.2;
             margin-bottom: 8px;
+            color: $black;
+            @include media-breakpoint-down(md) {
+                margin-bottom: 0;
+            }
+            @include media-breakpoint-down(xs) {
+                font-size: 12px;
+            }
         }
         &_descr{
             display: block;
             font-size: 8px;
             line-height: 1.38;
             font-style: italic;
+            color: $black;
+            @include media-breakpoint-down(md) {
+                display: none;
+            }
         }
     }
     &_line{
         position: absolute;
-        z-index: 1;
-        left: 162px;
+        z-index: 3;
+        left: 170px;
+        width: calc(100% - 170px - 230px - 130px);
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: 101%;
+        @include media-breakpoint-down(md) {
+            width: calc(100% - 170px - 170px);
+        }
+        @include media-breakpoint-down(xs) {
+            position: relative;
+            border: 1px solid currentColor;
+            border-width: 0 1px 0;
+            margin: auto;
+            left: auto;
+            width: 0;
+        }
+        &::before, &::after{
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+        }
+        &::before{
+            left: 0;
+            transform: translateX(-50%);
+            width: 16px;
+            height: 16px;
+            background: #E9ECEF;
+            @include media-breakpoint-down(xs) {
+                transform: translate(-50%, -50%);
+            }
+        }
+        &::after{
+            right: 0;
+            transform: translateX(50%);
+            width: 20px;
+            height: 20px;
+            border: 1px solid currentColor;
+            background-image: radial-gradient(currentColor 3.8px, transparent 4px);
+            @include media-breakpoint-down(xs) {
+                transform: translate(50%, 50%);
+            }
+        }
         &--green{
             top: 120px;
-            width: 600px;
-            height: 128px;
+            height: 121px;
             background-image: url(../assets/images/infographic/line_green.svg);
+            color: #4CCD9B;
+            @include media-breakpoint-down(md) {
+                top: 3px;
+                background-image: url(../assets/images/infographic/line_green_m.svg);
+                height: 193px;
+            }
+            @include media-breakpoint-down(xs) {
+                background: none;
+                height: 54px;
+                top: auto;
+            }
+            &::before{
+                top: 0;
+                @include media-breakpoint-down(md) {
+                    top: 38px;
+                }
+                @include media-breakpoint-down(sm) {
+                    top: calc(20px + (38 - 20) * (100vw - 576px) / (768 - 576));
+                }
+                @include media-breakpoint-down(xs) {
+                    top: 0;   
+                }
+            }
+            &::after{
+                top: 1px;
+                @media screen and(max-width: map-get($grid-breakpoints, xl) + 12){
+                    top: calc(-2px + (1 - -2) * (100vw - 992px) / (1152 - 992));
+                }
+                @include media-breakpoint-down(md) {
+                    top: -8px;
+                }
+                @include media-breakpoint-down(xs) {
+                    top: auto;
+                    bottom: 0;
+                }
+            }
         }
         &--orange{
             top: 50%;
             transform: translateY(-50%);
-            width: 730px;
             height: 38px;
             background-image: url(../assets/images/infographic/line_orange.svg);
+            width: calc(100% - 170px - 230px);
+            background-position: center;
+            color: #F9BA5B;
+            @include media-breakpoint-down(md) {
+                background-image: url(../assets/images/infographic/line_orange_m.svg);
+                height: 52px;
+                top: 203px;
+                transform: none;
+                width: calc(100% - 170px - 170px);
+            }
+            @include media-breakpoint-down(sm) {
+                background-position: center top;
+            }
+            @include media-breakpoint-down(xs) {
+                background: none;
+                top: auto;
+                height: 54px;
+                width: 0;
+            }
+            &::before{
+                top: 13px;
+                @include media-breakpoint-down(md) {
+                    top: -5px;
+                }
+                @include media-breakpoint-down(xs) {
+                    top: 0;
+                }
+            }
+            &::after{
+                top: 9px;
+                @include media-breakpoint-down(md) {
+                    top: -6px;
+                }
+                @include media-breakpoint-down(sm) {
+                    top: calc(-8px + (-6 - -8) * (100vw - 576px) / (768 - 576));
+                }
+                @include media-breakpoint-down(xs) {
+                    top: auto;
+                    bottom: 0;
+                }
+            }
         }
         &--violet{
             bottom: 120px;
+            color: #5D79E8;
+            background-image: url(../assets/images/infographic/line_violet.svg);
+            background-position: center bottom;
+            height: 125px;
+            @include media-breakpoint-down(md) {
+                background-image: url(../assets/images/infographic/line_violet_m.svg);
+                height: 197px;
+                bottom: -25px;
+            }
+            @include media-breakpoint-down(xs) {
+                bottom: auto;
+                height: 54px;
+            }
+            &::before{
+                bottom: -3px;
+                @include media-breakpoint-down(md) {
+                    bottom: 64px;
+                }
+                @include media-breakpoint-down(sm) {
+                    bottom: calc(29px + (64 - 29) * (100vw - 576px) / (768 - 576));
+                }
+                @include media-breakpoint-down(xs) {
+                    bottom: auto;
+                    top: 0;
+                }
+            }
+            &::after{
+                bottom: -1px;
+                @include media-breakpoint-down(md) {
+                    bottom: -7px;
+                }
+                @include media-breakpoint-down(xs) {
+                    bottom: 0;
+                }
+            }
         }
         img{
             display: block;
         }
     }
     &_window{
+        @include media-breakpoint-down(md) {
+            max-width: 360px;
+            margin: auto;
+        }
+        @include media-breakpoint-down(xs) {
+            display: none;
+        }
         img{
             display: block;
             margin: auto;
+            max-width: 100%;
         }
     }
 }

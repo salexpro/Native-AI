@@ -21,9 +21,26 @@
         padding-bottom: 160px;
         background: #d2dbe0;
         color: $white;
+        @include media-breakpoint-down(xs) {
+            padding-bottom: 128px;
+        }
+        h1{
+            @include media-breakpoint-down(xs) {
+                text-align: left;
+                line-height: 1.17;
+                font-size: 30px;
+            }
+        }
         .first_descr{
             margin-top: 24px;
             margin-bottom: 62px;
+            @include media-breakpoint-down(xs) {
+                text-align: left;
+                font-size: 14px;
+                margin-top: 8px;
+                margin-bottom: 46px;
+                line-height: 2.14;
+            }
         }
     }
 

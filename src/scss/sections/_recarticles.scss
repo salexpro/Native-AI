@@ -1,14 +1,19 @@
 .recarticles{
-    padding-top: 84px;
-    padding-bottom: 84px;
+    padding: 84px 6px;
     position: relative;
+    @include media-breakpoint-down(md) {
+        padding: 72px 6px 80px;
+    }
+    @include media-breakpoint-down(xs) {
+        padding: 0 6px 40px;
+    }
     &::after{
         content: '';
         position: absolute;
         bottom: 0;
-        left: 10px;
+        left: 16px;
         border-bottom: 1px solid #EDEFF2;
-        width: calc(100% - 20px);
+        width: calc(100% - 32px);
     }
     &_block{
         margin: 88px 0;
@@ -16,6 +21,14 @@
         border-radius: 6px;
         background-color: $white;
         padding: 40px;
+        @include media-breakpoint-down(md) {
+            padding: 32px;
+        }
+        @include media-breakpoint-down(xs) {
+            padding: 24px 16px 32px;
+            margin: 64px auto 40px;
+            max-width: 288px;
+        }
         &::before, &::after{
             content: '';
             position: absolute;
@@ -24,6 +37,9 @@
             transform: translate(-50%, -50%);
             border-radius: 50%;
             z-index: -1;
+            @include media-breakpoint-down(xs) {
+                display: none;
+            }
         }
         &::before{
             background: linear-gradient(225.13deg, #D9EDF6 0%, #B9DDEE 100%);
@@ -41,20 +57,32 @@
         line-height: 1.18;
         text-align: center;
         margin-bottom: 24px;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 32px;
+        }
     }
     &_items{
         display: flex;
+        @include media-breakpoint-down(xs) {
+            flex-direction: column;
+        }
     }
     &_item{
+        flex: 1 1 100%;
         & + & {
             margin-left: 40px;
+            @include media-breakpoint-down(xs) {
+                margin: 24px 0 0;
+            }
         }
         &_img{
             overflow: hidden;
             border-radius: 4px;
-            margin-bottom: 8px;
+            display: table;
+            margin: 0 auto 8px;
             img{
                 display: block;
+                max-width: 100%;
             }
         }
         &_title{

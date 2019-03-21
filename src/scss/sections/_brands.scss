@@ -18,6 +18,13 @@
     &--recommend{
         padding-top: 0;
         border: 0;
+        @include media-breakpoint-down(xs) {
+            padding-bottom: 80px;
+            .title{
+                font-size: 18px;
+                line-height: 1.39;
+            }
+        }
     }
     &-outer{
         max-width: 1060px;
@@ -67,5 +74,9 @@
     }
     .button + .button{
         margin-left: 56px;
+        @include media-breakpoint-down(sm) {
+            display: table;
+            margin: 24px auto 0;
+        }
     }
 }

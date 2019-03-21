@@ -33,36 +33,38 @@
     ]
 
 
-section.container.suggestions
-    h2.suggestions_header
-        | Personalized Suggestions Lorem Ipsum 
-    .suggestions_infographics
-        each person in persons
-            .suggestions_person&attributes({'class': `suggestions_person--${person.mod}`})
-                .suggestions_person_top
-                    .suggestions_person_photo
-                        img(src=person.photo, alt=person.name)
-                    p.suggestions_person_name
-                        =person.name
-                .suggestions_person_bottom
-                    =person.info
+section.suggestions
+    .container
+        h2.suggestions_header
+            | Personalized Suggestions Lorem Ipsum 
+        .suggestions_infographics
+            each person in persons
+                .suggestions_person&attributes({'class': `suggestions_person--${person.mod}`})
+                    .suggestions_person_top
+                        .suggestions_person_photo
+                            img(src=person.photo, alt=person.name)
+                        p.suggestions_person_name
+                            =person.name
+                    .suggestions_person_bottom
+                        =person.info
 
-            .suggestions_line&attributes({'class': `suggestions_line--${person.mod}`})
+                .suggestions_line&attributes({'class': `suggestions_line--${person.mod}`})
 
-            .suggestions_article&attributes({'class': `suggestions_article--${person.mod}`})
-                .suggestions_article_top
-                    .suggestions_article_ref
-                        =person.name
-                        | 
-                        | sees:
-                    +icon('link', [16, 16], '#DEE2E6')
-                .suggestions_article_img
-                    img(srcset=`https://placeimg.com/180/104/tech?${Math.random()} 1x, https://placeimg.com/360/208/tech?${Math.random()} 2x` src=`https://placeimg.com/180/104/tech?${Math.random()}`, alt=person.article.title)
-                p.suggestions_article_title
-                    =person.article.title
-                i.suggestions_article_descr
-                    =person.article.descr
-                
+                .suggestions_article&attributes({'class': `suggestions_article--${person.mod}`})
+                    .suggestions_article_top
+                        .suggestions_article_ref
+                            =person.name
+                            | 
+                            | sees:
+                        .suggestions_article_link
+                            +icon('link', [16, 16], '#DEE2E6')
+                    .suggestions_article_img
+                        img(src=`https://placeimg.com/360/208/tech?${Math.random()}`, alt=person.article.title)
+                    p.suggestions_article_title
+                        =person.article.title
+                    i.suggestions_article_descr
+                        =person.article.descr
+                    
 
-        .suggestions_window
-            img(srcset=`./assets/images/web_window.jpg 1x, ./assets/images/web_window@2x.jpg 2x` src=`./assets/images/web_window.jpg`, alt=article)
+            .suggestions_window
+                img(srcset=`./assets/images/web_window.jpg 1x, ./assets/images/web_window@2x.jpg 2x` src=`./assets/images/web_window.jpg`, alt=article)
