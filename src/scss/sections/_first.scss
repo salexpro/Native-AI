@@ -20,9 +20,12 @@
         padding-top: 160px;
         padding-bottom: 160px;
         background: #d2dbe0;
+        background-size: cover;
+        background-position: center;
         color: $white;
         @include media-breakpoint-down(xs) {
-            padding-bottom: 128px;
+            padding-top: 60px;
+            padding-bottom: 60px;
         }
         h1{
             @include media-breakpoint-down(xs) {

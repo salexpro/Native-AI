@@ -1,10 +1,10 @@
 
-mixin circle_hint(title, pos)
+mixin circle_hint(hint, pos)
     .hints_circle_hint&attributes({'class': `hints_circle_hint--${pos}`})
         .hints_circle_hint_icon
-            +icon('question', [32, 32], '#030104')
+            +icon(...hint.icon)
         p.hints_circle_hint_title
-            =title
+            =hint.title
 
 mixin circle(title, hints)
     - const positions = ['top_left', 'top_right', 'bottom'];
@@ -21,8 +21,34 @@ section.hints
     .hints_container
         .container
             .row
-                +circle('Grow', ['Engagement', 'Recirculation', 'Revenue'])
-                +circle('Avoid', ['Reader Churn', 'Sleazy Ads', 'Stale or Creepy Recommendations'])
+                +circle('Grow', [
+                    {
+                        title: 'Engagement',
+                        icon: ['recommend_engagement', [32, 32]]
+                    }, 
+                    {
+                        title: 'Recirculation',
+                        icon: ['recommend_recirculation', [33, 33]]
+                    }, 
+                    {
+                        title: 'Revenue',
+                        icon: ['recommend_revenue', [32, 31]]
+                    }
+                ])
+                +circle('Avoid', [
+                    {
+                        title: 'Reader Churn',
+                        icon: ['recommend_churn', [43, 41], 'none']
+                    },
+                    {
+                        title: 'Sleazy Ads',
+                        icon: ['recommend_ads', [32, 32], 'none']
+                    },
+                    {
+                        title: 'Stale or Creepy Recommendations',
+                        icon: ['recommend_creepy', [32, 32], 'none']
+                    }
+                ])
     .hints_footer
         .container
             a.button.blue.actual(href="#")

@@ -1,5 +1,5 @@
 /* eslint no-unused-vars: ['off'] */
-/* global WOW, checkStickyNavigation */
+/* global WOW, checkStickyNavigation, svg4everybody */
 /* 
 @codekit-prepend quiet '../../node_modules/jquery/dist/jquery.min'
 @codekit-prepend quiet '../../node_modules/wow.js/dist/wow.min'
@@ -8,6 +8,7 @@
 @codekit-prepend quiet '../../node_modules/inputmask/dist/inputmask/inputmask.js'
 @codekit-prepend quiet '../../node_modules/inputmask/dist/inputmask/inputmask.extensions.js'
 @codekit-prepend quiet '../../node_modules/inputmask/dist/inputmask/jquery.inputmask.js'
+@codekit-prepend quiet '../../node_modules/svg4everybody/dist/svg4everybody.min.js'
 
 @codekit-append quiet 'components/_header.js';
 @codekit-append quiet 'components/_forms.js';
@@ -15,6 +16,7 @@
 */
 
 new WOW().init();
+svg4everybody();
 
 // $(document).ready(function () {
 // Initialise WOW
