@@ -169,8 +169,11 @@
                 }
             }
             &--bottom{
-                bottom: 0;
+                top: calc(100% - 57px);
                 left: 50%;
+                @include media-breakpoint-down(xs) {
+                    top: calc(100% - 43px);
+                }
             }
             &_icon{
                 margin-bottom: 6px;

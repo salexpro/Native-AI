@@ -5,15 +5,7 @@
         padding: 72px 6px 80px;
     }
     @include media-breakpoint-down(xs) {
-        padding: 0 6px 40px;
-    }
-    &::after{
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 16px;
-        border-bottom: 1px solid #EDEFF2;
-        width: calc(100% - 32px);
+        padding: 0 6px 64px;
     }
     &_block{
         margin: 88px 0;

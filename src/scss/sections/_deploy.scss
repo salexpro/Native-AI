@@ -91,6 +91,9 @@ $accents: (
                 color: $color;
             }
         }
+        &--orange{
+            margin-bottom: 24px;
+        }
         &_title{
             line-height: 1.16;
             color: currentColor;

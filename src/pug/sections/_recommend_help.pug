@@ -1,29 +1,53 @@
+-
+    const content = [
+        {
+            ill: 'recommend_1',
+            title: 'How NativeAI Content Recommendations Work',
+            descr: 'NativeAI uses session attributes such as traffic source, location, referrer as well as user attributes such as stories read, engagement quality with different stories & topic entities with an advanced machine learning algorithm to suggest highly relevant story recommendations.'
+        },
+        {
+            ill: 'recommend_2',
+            title: 'Increase Reads per Session',
+            descr: 'Our AI-powered content recommendations help you grow the number of stories each reader reads per visit to your website, allowing you to maximize loyalty, ad-revenue and the value perception that your publication gives to the reader.'
+        },
+        {
+            ill: 'recommend_3',
+            title: 'Grow Revenues',
+            descr: 'With smart content recommendations, you can make more revenues from subscriptions, advertising and branded content. This is possible due to higher impressions, more value to the subscriber leading to reduced churn and better targeting of promoted content.'
+        },
+        {
+            ill: 'recommend_4',
+            title: 'Delight Your Readers',
+            descr: 'Show fresh, interesting and relevant story suggestions to reduce bounce rate, boost recirculatio and increase reader loyalty and engagement with your stories.'
+        }
+    ]
 
-mixin help_item
+
+mixin help_item(data)
     .col-sm-6&attributes(attributes)
         h3.rechelp_item_header
-            | Lorem ipsum dolor sit amet
+            =data.title
         p.rechelp_item_descr
-            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes
+            =data.descr
 
-mixin help_ill(mod)
+mixin help_ill(ill)
     .col-lg-5.col-sm-6&attributes(attributes)
         .rechelp_item_ill
-            img(src=`./assets/images/illustrations/insights/${mod}.svg`, alt="ill")
+            img(src=`./assets/images/illustrations/${ill}.svg`, alt="ill")
 
-mixin help_row(odd)
+mixin help_row(data, odd)
     .row.align-items-center.justify-content-between.rechelp_item
         if odd
-            +help_item()(class="order-2 order-sm-1")
-            +help_ill('analytics')(class="order-1 order-sm-2")
+            +help_item(data)(class="order-2 order-sm-1")
+            +help_ill(data.ill)(class="order-1 order-sm-2")
         else
-            +help_ill('optimization')
-            +help_item
+            +help_ill(data.ill)
+            +help_item(data)
 
 section.rechelp
     .container.rechelp_container
         h2.rechelp_header
-            | Why content Recommendation Help
+            | Why Use Content Recommendations
         .rechelp_inner
-            each _, i in Array(4)
-                +help_row((i % 2 == 0))
+            each item, i in content
+                +help_row(item, (i % 2 == 0))
