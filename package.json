@@ -34,7 +34,7 @@
     "cookies-js": "^1.2.3",
     "d3": "^3.5.17",
     "inputmask": "^4.0.2",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "slick-carousel": "^1.8.1",
     "svg4everybody": "^2.1.9",
     "wow.js": "^1.2.2"
